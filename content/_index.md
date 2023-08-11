@@ -1,5 +1,5 @@
 ---
-title: Hello
+title: Title
 hero:
   heading: Test
   subheading: the
