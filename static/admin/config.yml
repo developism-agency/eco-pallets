@@ -13,12 +13,6 @@ collections:
         fields:
           - { label: 'Головна секція', name: 'content', widget: 'object',
               fields: [
-                { label: 'Лейбл', name: 'label', widget: 'object',
-                  fields: [
-                    { label: 'Число', name: 'number', widget: 'string', required: false },
-                    { label: 'Текст', name: 'text', widget: 'string' },
-                  ] 
-                },
                 { label: 'Заголовок', name: 'title', widget: 'string' },
                 { label: 'Текст', name: 'text', widget: 'string' },
                 { label: 'Зображення', name: 'image', widget: 'image' },
