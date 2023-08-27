@@ -11,13 +11,14 @@ collections:
         label: 'Головна секція'
         name: 'main-section'
         fields:
-          - {
-            label: 'Головна секція',
-            name: 'content',
-            widget: 'object',
-            fields:
-              [
-                { label: 'Лейбл', name: 'label', widget: 'string' },
+          - { label: 'Головна секція', name: 'content', widget: 'object',
+              fields: [
+                { label: 'Лейбл', name: 'label', widget: 'object',
+                  fields: [
+                    { label: 'Число', name: 'number', widget: 'string', required: false },
+                    { label: 'Текст', name: 'text', widget: 'string' },
+                  ] 
+                },
                 { label: 'Заголовок', name: 'title', widget: 'string' },
                 { label: 'Текст', name: 'text', widget: 'string' },
                 { label: 'Зображення', name: 'image', widget: 'image' },
@@ -27,22 +28,14 @@ collections:
         label: 'Про нас'
         name: 'about'
         fields:
-          - {
-            label: 'Про нас',
-            name: 'content',
-            widget: 'object',
-            fields:
-              [
+          - { label: 'Про нас', name: 'content', widget: 'object',
+              fields: [
                 { label: 'Лейбл', name: 'label', widget: 'string' },
                 { label: 'Заголовок', name: 'title', widget: 'string' },
-                { 
-                  label: 'Текст', 
-                  name: 'text', 
-                  widget: 'object',
-                  fields: 
-                    [
-                      { label: 'Видимий текст', name: 'visible', widget: 'string' },
-                      { label: 'Схований текст', name: 'hidden', widget: 'string' },
+                { label: 'Текст', name: 'text', widget: 'object',
+                  fields: [
+                    { label: 'Видимий текст', name: 'visible', widget: 'string' },
+                    { label: 'Схований текст', name: 'hidden', widget: 'string' },
                   ]
                 },
                 { label: 'Зображення', name: 'image', widget: 'image' },
