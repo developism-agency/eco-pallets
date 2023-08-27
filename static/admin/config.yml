@@ -7,13 +7,13 @@ collections:
   - name: 'main-page'
     label: 'Main Page'
     files:
-      - file: 'content/hero/_index.md'
+      - file: 'content/hero.md'
         label: 'Головна секція'
-        name: 'Hero'
+        name: 'main-section'
         fields:
           - {
-            label: 'Hero',
-            name: 'Content',
+            label: 'Головна секція',
+            name: 'content',
             widget: 'object',
             fields:
               [
@@ -23,13 +23,13 @@ collections:
                 { label: 'Зображення', name: 'image', widget: 'image' },
               ]
             }
-      - file: 'content/about/_index.md'
+      - file: 'content/about.md'
         label: 'Про нас'
         name: 'about'
         fields:
           - {
-            label: 'About',
-            name: 'about',
+            label: 'Про нас',
+            name: 'content',
             widget: 'object',
             fields:
               [
