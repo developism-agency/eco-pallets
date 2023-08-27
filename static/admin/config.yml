@@ -7,22 +7,23 @@ collections:
   - name: 'main-page'
     label: 'Main Page'
     files:
-      - file: 'content/hero.md'
+      - file: 'content/hero/_index.md'
         label: 'Головна секція'
-        name: 'hero'
+        name: 'Hero'
         fields:
           - {
             label: 'Hero',
-            name: 'hero',
+            name: 'Content',
             widget: 'object',
             fields:
               [
                 { label: 'Лейбл', name: 'label', widget: 'string' },
                 { label: 'Заголовок', name: 'title', widget: 'string' },
-                { label: 'Background Image', name: 'background', widget: 'image' },
+                { label: 'Текст', name: 'text', widget: 'string' },
+                { label: 'Зображення', name: 'image', widget: 'image' },
               ]
             }
-      - file: 'content/about.md'
+      - file: 'content/about/_index.md'
         label: 'Про нас'
         name: 'about'
         fields:
