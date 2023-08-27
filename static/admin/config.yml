@@ -24,7 +24,6 @@ collections:
         fields:
           - { label: 'Про нас', name: 'content', widget: 'object',
               fields: [
-                { label: 'Лейбл', name: 'label', widget: 'string' },
                 { label: 'Заголовок', name: 'title', widget: 'string' },
                 { label: 'Текст', name: 'text', widget: 'object',
                   fields: [
@@ -33,5 +32,31 @@ collections:
                   ]
                 },
                 { label: 'Зображення', name: 'image', widget: 'image' },
+              ]
+            }
+      - file: 'content/products.md'
+        label: 'Продукція'
+        name: 'products'
+        fields:
+          - { label: 'Продукція', name: 'content', widget: 'object',
+              fields: [
+                { label: 'Заголовок', name: 'title', widget: 'string' },
+                { label: 'Підзаголовок', name: 'subtitle', widget: 'string' },
+                { label: 'Спецзамовлення', name: 'special', widget: 'object',
+                  fields: [
+                    { label: 'Заголовок', name: 'title', widget: 'string' },
+                    { label: 'Текст', name: 'text', widget: 'string' },
+                  ]
+                }
+              ]
+            }
+      - file: 'content/services.md'
+        label: 'Послуги'
+        name: 'services'
+        fields:
+          - { label: 'Послуги', name: 'content', widget: 'object',
+              fields: [
+                { label: 'Заголовок', name: 'title', widget: 'string' },
+                { label: 'Список послуг', name: 'services', widget: 'list' },
               ]
             }

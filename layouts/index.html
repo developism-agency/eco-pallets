@@ -170,10 +170,10 @@
           <div class="title-label">продукція</div>
           <div class="products__head">
             <h2 class="title">
-              Великий вибір товарів та можливість реалізувати практично будь-яке замовлення
+              {{ with .Site.GetPage "products.md" }}{{ .Params.content.title }}{{ end }}
             </h2>
             <p class="subtitle">
-              Наша місія полягає в тому, щоб надавати клієнтам кращі рішення для розміщення, зберігання та транспортування різноманітного вантажу. 
+              {{ with .Site.GetPage "products.md" }}{{ .Params.content.subtitle }}{{ end }}
             </p>
           </div>
           <div class="products__list">
@@ -253,9 +253,9 @@
           <div class="special">
             <div class="special__inner">
               <div class="special__info">
-                <h3 class="title">Спецзамовлення</h3>
+                <h3 class="title">{{ with .Site.GetPage "products.md" }}{{ .Params.content.special.title }}{{ end }}</h3>
                 <p class="subtitle">
-                  Пропонуємо виготовлення різноманітних дерев'яних виробів за власними кресленнями та специфікаціями або за кресленнями та специфікаціями наших клієнтів.
+                  {{ with .Site.GetPage "products.md" }}{{ .Params.content.special.text }}{{ end }}
                 </p>
                 <button class="btn btn--arrow">
                   <span class="name">Зробити замовлення</span>
@@ -274,8 +274,13 @@
       <div class="container">
         <div class="services__inner">
           <div class="title-label">Послуги</div>
-          <h2 class="title">Пропонуємо весь спектр послуг, пов'язаних з виробництвом, продажем, обміном чи орендою піддонів.</h2>
+          <h2 class="title">{{ with .Site.GetPage "services.md" }}{{ .Params.content.title }}{{ end }}</h2>
           <div class="services__list">
+            {{ with .Site.GetPage "services.md" }}
+              {{ range .Params.content.services }}
+                <div class="services__item">{{ . }}</div>
+              {{ end }}
+            {{ end }}
             <div class="services__item">Продаж і виробництво піддонів</div>
             <div class="services__item">Закупівля та ремонт піддонів</div>
             <div class="services__item">Обмін всіх видів піддонів</div>
