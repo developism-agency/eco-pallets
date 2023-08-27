@@ -3,11 +3,538 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {{ with resources.Get "scss/main.scss" | toCSS | postCSS }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+  {{ end }}
   <title>Document</title>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-  <h1>{{ .Params.heading }}</h1>
-  <h4>{{ .Params.subheading }}</h4>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo">
+          <img src="img/logo.svg" alt="">
+        </div>
+        <nav class="header__nav" id="menu">
+          <ul>
+            <li><a href="" class="nav-link">Про нас</a></li>
+            <li><a href="" class="nav-link">Продукти</a></li>
+            <li><a href="" class="nav-link">Послуги</a></li>
+            <li><a href="" class="nav-link">Чому ми?</a></li>
+            <li><a href="" class="nav-link">Сертифікати</a></li>
+            <li><a href="" class="nav-link">Контакти</a></li>
+          </ul>
+          <div class="header__nav-actions">
+            <button class="btn btn--dark mobile">Зв'язок з нами</button>
+            <a href="/" class="btn btn--logo mobile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <g clip-path="url(#clip0_820_852)">
+                  <path d="M4.18998 5.79102H0.576455C0.416081 5.79102 0.286133 5.92102 0.286133 6.08134V17.6901C0.286133 17.8504 0.416081 17.9804 0.576455 17.9804H4.18998C4.35036 17.9804 4.48031 17.8504 4.48031 17.6901V6.08134C4.48031 5.92102 4.35036 5.79102 4.18998 5.79102Z" fill="#0E0D12"/>
+                  <path d="M2.38448 0.0200195C1.06966 0.0200195 0 1.08852 0 2.40188C0 3.71583 1.06966 4.78474 2.38448 4.78474C3.69825 4.78474 4.76704 3.71577 4.76704 2.40188C4.7671 1.08852 3.69825 0.0200195 2.38448 0.0200195Z" fill="#0E0D12"/>
+                  <path d="M13.3812 5.50244C11.9299 5.50244 10.857 6.12634 10.2063 6.83525V6.08129C10.2063 5.92097 10.0763 5.79096 9.91595 5.79096H6.45536C6.29499 5.79096 6.16504 5.92097 6.16504 6.08129V17.69C6.16504 17.8504 6.29499 17.9803 6.45536 17.9803H10.061C10.2214 17.9803 10.3513 17.8504 10.3513 17.69V11.9464C10.3513 10.0109 10.877 9.25689 12.2262 9.25689C13.6956 9.25689 13.8124 10.4657 13.8124 12.046V17.6901C13.8124 17.8504 13.9423 17.9804 14.1027 17.9804H17.7097C17.87 17.9804 18 17.8504 18 17.6901V11.3225C18 8.44451 17.4512 5.50244 13.3812 5.50244Z" fill="#0E0D12"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_820_852">
+                    <rect width="18" height="18" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </nav>
+        <a href="/" class="btn btn--logo desktop">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <g clip-path="url(#clip0_820_852)">
+              <path d="M4.18998 5.79102H0.576455C0.416081 5.79102 0.286133 5.92102 0.286133 6.08134V17.6901C0.286133 17.8504 0.416081 17.9804 0.576455 17.9804H4.18998C4.35036 17.9804 4.48031 17.8504 4.48031 17.6901V6.08134C4.48031 5.92102 4.35036 5.79102 4.18998 5.79102Z" fill="#0E0D12"/>
+              <path d="M2.38448 0.0200195C1.06966 0.0200195 0 1.08852 0 2.40188C0 3.71583 1.06966 4.78474 2.38448 4.78474C3.69825 4.78474 4.76704 3.71577 4.76704 2.40188C4.7671 1.08852 3.69825 0.0200195 2.38448 0.0200195Z" fill="#0E0D12"/>
+              <path d="M13.3812 5.50244C11.9299 5.50244 10.857 6.12634 10.2063 6.83525V6.08129C10.2063 5.92097 10.0763 5.79096 9.91595 5.79096H6.45536C6.29499 5.79096 6.16504 5.92097 6.16504 6.08129V17.69C6.16504 17.8504 6.29499 17.9803 6.45536 17.9803H10.061C10.2214 17.9803 10.3513 17.8504 10.3513 17.69V11.9464C10.3513 10.0109 10.877 9.25689 12.2262 9.25689C13.6956 9.25689 13.8124 10.4657 13.8124 12.046V17.6901C13.8124 17.8504 13.9423 17.9804 14.1027 17.9804H17.7097C17.87 17.9804 18 17.8504 18 17.6901V11.3225C18 8.44451 17.4512 5.50244 13.3812 5.50244Z" fill="#0E0D12"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_820_852">
+                <rect width="18" height="18" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <div class="header__lang">
+          <select class="custom-select" id="lang-select">
+            <option value="ua">UA</option>
+            <option value="pl">PL</option>
+            <option value="en">EN</option>
+          </select>
+        </div>
+        <button class="btn btn--dark desktop">Зв'язок з нами</button>
+        <div class="burger" id="burger">
+          <div class="burger__inner">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__content">
+            <span class="title-label diff">
+              <mark>50+</mark>  Видів нестандартних піддонів
+            </span>
+            <h1 class="title">
+              <mark>Еко Палета</mark>  — це сучасне виробництво кращих дерев'яних палет
+            </h1>
+            <p class="text">
+              Ми пропонуємо піддони та інші дерев’яні вироби, розраховані на широкий спектр галузей: від фармацевтики та харчової промисловості — до нафтогазової промисловості чи транспортного сектору.
+            </p>
+            <button class="btn btn--arrow">
+              <span class="name">Наші продукти</span>
+              <span class="arrow"><img src="img/btn-arrow.svg" alt=""></span>
+            </button>
+          </div>
+          <div class="hero__img">
+          </div>
+          <div class="scroll-down" id="scrollDown">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="28" viewBox="0 0 26 28" fill="none">
+              <g clip-path="url(#clip0_816_3748)">
+                <path d="M13 5.25C13.2155 5.25 13.4222 5.34219 13.5745 5.50628C13.7269 5.67038 13.8125 5.89294 13.8125 6.125V9.625C13.8125 9.85706 13.7269 10.0796 13.5745 10.2437C13.4222 10.4078 13.2155 10.5 13 10.5C12.7845 10.5 12.5778 10.4078 12.4255 10.2437C12.2731 10.0796 12.1875 9.85706 12.1875 9.625V6.125C12.1875 5.89294 12.2731 5.67038 12.4255 5.50628C12.5778 5.34219 12.7845 5.25 13 5.25ZM19.5 19.25C19.5 21.1065 18.8152 22.887 17.5962 24.1997C16.3772 25.5125 14.7239 26.25 13 26.25C11.2761 26.25 9.62279 25.5125 8.40381 24.1997C7.18482 22.887 6.5 21.1065 6.5 19.25V8.75C6.5 6.89348 7.18482 5.11301 8.40381 3.80025C9.62279 2.4875 11.2761 1.75 13 1.75C14.7239 1.75 16.3772 2.4875 17.5962 3.80025C18.8152 5.11301 19.5 6.89348 19.5 8.75V19.25ZM13 0C10.8451 0 8.77849 0.921872 7.25476 2.56282C5.73102 4.20376 4.875 6.42936 4.875 8.75V19.25C4.875 21.5706 5.73102 23.7962 7.25476 25.4372C8.77849 27.0781 10.8451 28 13 28C15.1549 28 17.2215 27.0781 18.7452 25.4372C20.269 23.7962 21.125 21.5706 21.125 19.25V8.75C21.125 6.42936 20.269 4.20376 18.7452 2.56282C17.2215 0.921872 15.1549 0 13 0V0Z" fill="#0E0D12"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_816_3748">
+                  <rect width="26" height="28" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__content">
+            <div class="title-label green">Про нас</div>
+            <h2 class="title white">
+              Про компанію
+            </h2>
+            <p class="text white">
+              Компанія Еко Палета була заснована у 2017 році. Спочатку бренд спеціалізувався на виробництві стандартних піддонів. Проте буквально за рік Еко Палета збільшує обсяги свого виробництва, суттєво розширюючи лінійку продукції, до якої додаються ящики, піраміди, палетні заготовки та дрова.
+              <br>
+              <br>
+              В цей самий час ми опанували технології роботи з індивідуальними замовленнями на збивання піддонів нестандартних розмірів. Ще через рік, у 2019 р., наше підприємство отримало європейську ліцензію на виробництво піддонів EPAL.
+            </p>
+            <div class="text-accordion">
+              <div class="text-accordion__content" id="accordion-content">
+                <p class="text white">
+                  Наша місія полягає в тому, щоб надавати клієнтам кращі рішення для розміщення, зберігання та транспортування різноманітного вантажу. Завдяки великому вибору товарів та можливості реалізувати практично будь-яке замовлення, наші покупці завжди отримують якісні, екологічні, практичні та зручні піддони з довгим терміном вжитку.   Ми — експерти з піддонів і ящиків. Звертайтесь, і ми охоче підберемо таку продукцію, що здатна задовольнити всі потреби вашого бізнесу! Зараз Еко Палета — це сучасне виробництво кращих дерев'яних палет, стандартизованих під європейську сертифікацію.  Ми пропонуємо понад 50 видів нестандартних піддонів та інших дерев’яних виробів, розрахованих на широкий спектр галузей: від фармацевтики та харчової промисловості — до нафтогазової промисловості чи транспортного сектору.
+                </p>
+              </div>
+              <button class="text-accordion__btn" id="accordion-trigger">
+                <span class="name">Детальніше</span>
+                <span class="arrow"><img src="img/btn-arrow.svg" alt=""></span>
+              </button>
+            </div>
+            <div class="about__stats">
+              <div class="stat-card">
+                <div class="img">
+                  <img src="img/qty-icon.png" alt="">
+                </div>
+                <div class="text">
+                  <span>100 000+</span>
+                  <p>Кількість вироблених піддонів у місяць</p>
+                </div>
+              </div>
+              <div class="stat-card">
+                <div class="img">
+                  <img src="img/employees-icon.png" alt="">
+                </div>
+                <div class="text">
+                  <span>30+</span>
+                  <p>Кількість працівників підприємства</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about__img">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="products">
+      <div class="container">
+        <div class="products__inner">
+          <div class="title-label">продукція</div>
+          <div class="products__head">
+            <h2 class="title">
+              Великий вибір товарів та можливість реалізувати практично будь-яке замовлення
+            </h2>
+            <p class="subtitle">
+              Наша місія полягає в тому, щоб надавати клієнтам кращі рішення для розміщення, зберігання та транспортування різноманітного вантажу. 
+            </p>
+          </div>
+          <div class="products__list">
+            <div class="product">
+              <div class="product__info">
+                <h3 class="title">Дрова в ящику</h3>
+                <button class="btn btn--arrow">
+                  <span class="name">Детальніше</span>
+                  <span class="arrow"><img src="img/btn-arrow.svg" alt=""></span>
+                </button>
+              </div>
+              <div class="product__img">
+                <img src="img/products-img.png" alt="">
+              </div>
+            </div>
+            <div class="product">
+              <div class="product__info">
+                <h3 class="title">Дрова в ящику</h3>
+                <button class="btn btn--arrow">
+                  <span class="name">Детальніше</span>
+                  <span class="arrow"><img src="img/btn-arrow.svg" alt=""></span>
+                </button>
+              </div>
+              <div class="product__img">
+                <img src="img/products-img.png" alt="">
+              </div>
+            </div>
+            <div class="product">
+              <div class="product__info">
+                <h3 class="title">Дрова в ящику</h3>
+                <button class="btn btn--arrow">
+                  <span class="name">Детальніше</span>
+                  <span class="arrow"><img src="img/btn-arrow.svg" alt=""></span>
+                </button>
+              </div>
+              <div class="product__img">
+                <img src="img/products-img.png" alt="">
+              </div>
+            </div>
+            <div class="product">
+              <div class="product__info">
+                <h3 class="title">Дрова в ящику</h3>
+                <button class="btn btn--arrow">
+                  <span class="name">Детальніше</span>
+                  <span class="arrow"><img src="img/btn-arrow.svg" alt=""></span>
+                </button>
+              </div>
+              <div class="product__img">
+                <img src="img/products-img.png" alt="">
+              </div>
+            </div>
+            <div class="product">
+              <div class="product__info">
+                <h3 class="title">Дрова в ящику</h3>
+                <button class="btn btn--arrow">
+                  <span class="name">Детальніше</span>
+                  <span class="arrow"><img src="img/btn-arrow.svg" alt=""></span>
+                </button>
+              </div>
+              <div class="product__img">
+                <img src="img/products-img.png" alt="">
+              </div>
+            </div>
+            <div class="product">
+              <div class="product__info">
+                <h3 class="title">Дрова в ящику</h3>
+                <button class="btn btn--arrow">
+                  <span class="name">Детальніше</span>
+                  <span class="arrow"><img src="img/btn-arrow.svg" alt=""></span>
+                </button>
+              </div>
+              <div class="product__img">
+                <img src="img/products-img.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="special">
+            <div class="special__inner">
+              <div class="special__info">
+                <h3 class="title">Спецзамовлення</h3>
+                <p class="subtitle">
+                  Пропонуємо виготовлення різноманітних дерев'яних виробів за власними кресленнями та специфікаціями або за кресленнями та специфікаціями наших клієнтів.
+                </p>
+                <button class="btn btn--arrow">
+                  <span class="name">Зробити замовлення</span>
+                  <span class="arrow"><img src="img/btn-arrow.svg" alt=""></span>
+                </button>
+              </div>
+              <div class="special__img">
+                <img src="img/special-img.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="container">
+        <div class="services__inner">
+          <div class="title-label">Послуги</div>
+          <h2 class="title">Пропонуємо весь спектр послуг, пов'язаних з виробництвом, продажем, обміном чи орендою піддонів.</h2>
+          <div class="services__list">
+            <div class="services__item">Продаж і виробництво піддонів</div>
+            <div class="services__item">Закупівля та ремонт піддонів</div>
+            <div class="services__item">Обмін всіх видів піддонів</div>
+            <div class="services__item">Доставка піддонів на замовлення</div>
+            <div class="services__item">Оренда піддонів</div>
+            <div class="services__item">Додаткові послуги</div>
+            <button class="btn btn--arrow">
+              <span class="name">Зробити замовлення</span>
+              <span class="arrow"><img src="img/btn-arrow.svg" alt=""></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pros">
+      <div class="container">
+        <div class="pros__inner">
+          <div class="title-label green">чому ми ?</div>
+          <h2 class="title white">Наші переваги</h2>
+          <div class="pros__list">
+            <div class="pros__item">
+              <div class="img">
+                <img src="img/leafs-icon.svg" alt="">
+              </div>
+              <h4 class="title white">Матеріали найвищої якості</h4>
+              <div class="text white sm">Використовуємо якісні екологічні матеріали, завдяки чому наша продукція довго залишатиметься практичною, міцною, зручною та безпечною.
+              </div>
+            </div>
+            <div class="pros__item">
+              <div class="img">
+                <img src="img/mechanism-icon.svg" alt="">
+              </div>
+              <h4 class="title white">Відповідність технічному завданню
+              </h4>
+              <div class="text white sm">Маємо автоматичні лінії для збивання піддонів, коління дров, пилорами та багато інших устаткувань, що забезпечує високу точність виробництва у суворій відповідності до технічного завдання.
+              </div>
+            </div>
+            <div class="pros__item">
+              <div class="img">
+                <img src="img/layers-icon.svg" alt="">
+              </div>
+              <h4 class="title white">Широкий ассортимент</h4>
+              <div class="text white sm">Виготовляємо понад 50 видів товарів, а також можемо реалізувати індивідуальне замовлення. Можемо постачати малі та великі обсяги в короткі терміни. Необхідна кількість піддонів завжди в наявності на складах, завдяки чому ви отримаєте своє замовлення якомога швидше.
+              </div>
+            </div>
+            <div class="pros__item">
+              <div class="img">
+                <img src="img/shapes-icon.svg" alt="">
+              </div>
+              <h4 class="title white">Нові та вживані товари</h4>
+              <div class="text white sm">Пропонуємо як нові, так й вживані товари, тому кожен клієнт може підібрати продукцію, яка влаштує його за якістю та ціною.</div>
+            </div>
+            <div class="pros__item">
+              <div class="img">
+                <img src="img/cert-icon.svg" alt="">
+              </div>
+              <h4 class="title white">Європейська сертифікація EPAL</h4>
+              <div class="text white sm">Реалізуємо кращі палети, стандартизовані під європейську сертифікацію: маємо всі потрібні сертифікати якості та виробляємо продукцію згідно з прийнятими в Європі нормами.</div>
+            </div>
+            <div class="pros__item white">
+              <div class="img">
+                <img src="img/phone-icon.svg" alt="">
+              </div>
+              <h4 class="subtitle bold">Обирайте Еко Палета — ми пропонуємо кращі комфортні та вигідні умови для співробітництва!</h4>
+              <button class="btn btn--dark">Зв'язок з нами</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cert">
+      <div class="container">
+        <div class="cert__inner">
+          <div class="title-label">сертифікати</div>
+          <h2 class="title">Наші палети стандартизовані під європейську сертифікацію</h2>
+          <div class="cert__list">
+            <div class="cert__item">
+              <div class="img"><img src="img/epal-icon.svg" alt=""></div>
+              <h3 class="title">Сертифікція EPAL</h3>
+            </div>
+            <div class="divider"></div>
+            <div class="cert__item">
+              <div class="img"><img src="img/cert-icon.svg" alt=""></div>
+              <h3 class="title">Фітосанітарний сертифікат</h3>
+            </div>
+            <div class="divider"></div>
+            <div class="cert__item">
+              <div class="img"><img src="img/cert-icon.svg" alt=""></div>
+              <h3 class="title">Санітарно-епідеміологічна експертиза</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-us">
+      <div class="container">
+        <div class="contact-us__inner">
+          <div class="title-label green">СПІВПРАЦЯ З НАМИ</div>
+          <h2 class="title white">Написати нам</h2>
+          <div class="contact-us__content">
+            <div class="contact-us__form">
+              <div class="row">
+                <input type="text" placeholder="Як вас звати">
+                <input type="email" placeholder="Ваш e-mail">
+              </div>
+              <div class="phone">
+                <select class="custom-select custom-select--number" id="number-select">
+                  <option value="+380" data-src="img/ua.png">
+                    +380
+                  </option>
+                  <option value="+48" data-src="img/ua.png">
+                    +48
+                  </option>
+                </select>
+                <input type="phone" placeholder="Номер телефону*">
+              </div>
+              <div class="product-type">
+                <h3 class="product-type__title">ВИБЕРІТЬ ТИП ТОВАРУ*:</h3>
+                <div class="product-type__list">
+                  <label class="product-type__item">
+                    <input type="checkbox" class="input" value="Дрова в ящику">
+                    <div class="check">Дрова в ящику</div>
+                  </label>
+                  <label class="product-type__item">
+                    <input type="checkbox" class="input" value="Палетні борти">
+                    <div class="check">Палетні борти</div>
+                  </label>
+                  <label class="product-type__item">
+                    <input type="checkbox" class="input" value="Піддони б/в">
+                    <div class="check">Піддони б/в</div>
+                  </label>
+                  <label class="product-type__item">
+                    <input type="checkbox" class="input" value="Спец. замовлення">
+                    <div class="check">Спец. замовлення</div>
+                  </label>
+                  <label class="product-type__item">
+                    <input type="checkbox" class="input" value="Палетна заготовка">
+                    <div class="check">Палетна заготовка</div>
+                  </label>
+                  <label class="product-type__item">
+                    <input type="checkbox" class="input" value="Піддони нестандартних розмірів">
+                    <div class="check">Піддони нестандартних розмірів</div>
+                  </label>
+                  <label class="product-type__item">
+                    <input type="checkbox" class="input" value="Дерев'яні піддони">
+                    <div class="check">Дерев'яні піддони</div>
+                  </label>
+                </div>
+              </div>
+              <textarea name="" id="" class="message" placeholder="Повідомлення"></textarea>
+              <button class="btn btn--arrow">
+                <span class="name">Зробити замовлення</span>
+                <span class="arrow"><img src="img/btn-arrow.svg" alt=""></span>
+              </button>
+            </div>
+            <div class="contact-us__img">
+              <img src="img/form-img.png" alt="pallets">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="map">
+      <div class="container">
+        <div class="map__inner">
+          <div class="title-label">КОНТАКТИ</div>
+          <h2 class="title">Зв'яжіться з нами — і ми відправимо замовлення якомога швидше!</h2>
+          <div class="map__content">
+            <div class="map__info">
+              <div class="title-label sub">Виробництво</div>
+              <ul>
+                <li>
+                  <div class="img"><img src="img/location-icon.png" alt=""></div>
+                  <div class="text">
+                    Львівська область, Кам’янка-Бузький р-н, с. Велике Колодно, вул. Богдана Хмельницького 101
+                    <button class="btn-link" data-address="firstAddress">
+                      <span class="btn-text">Показати на мапі</span>
+                      <span class="arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                          <path d="M0.993352 11.9985C0.761661 11.9988 0.537126 11.9292 0.358724 11.8017C0.258315 11.7299 0.175316 11.6418 0.114479 11.5423C0.0536416 11.4428 0.0161625 11.3339 0.00418798 11.2219C-0.00778654 11.1098 0.00597897 10.9969 0.0446958 10.8895C0.0834126 10.7821 0.146319 10.6823 0.229814 10.5958L4.67221 6.01173L0.388472 1.41906C0.306104 1.33158 0.244592 1.23092 0.207475 1.12286C0.170357 1.01481 0.158365 0.901501 0.172187 0.789439C0.186009 0.677378 0.225373 0.568777 0.288017 0.469879C0.35066 0.370982 0.435349 0.283737 0.537213 0.213159C0.639811 0.135301 0.75996 0.0765731 0.89012 0.0406621C1.02028 0.00475112 1.15764 -0.00756759 1.29359 0.00447845C1.42953 0.0165245 1.56112 0.0526755 1.68009 0.110663C1.79907 0.16865 1.90286 0.247221 1.98496 0.341446L6.77442 5.47292C6.92027 5.62596 7 5.81791 7 6.01601C7 6.2141 6.92027 6.40606 6.77442 6.55909L1.81639 11.6906C1.71691 11.7941 1.59055 11.8759 1.44755 11.9294C1.30455 11.9829 1.14894 12.0065 0.993352 11.9985Z" fill="#1B4D3E"/>
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </li>
+                <li>
+                  <div class="img"><img src="img/phone-icon.png" alt=""></div>
+                  <div class="text"><a href="tel:+380678368907">+380 (67) 836 89 07</a></div>
+                </li>
+                <li>
+                  <div class="img"><img src="img/mail-icon.png" alt=""></div>
+                  <div class="text"><a href="mailto:ecopalletinternational@gmail.com">ecopalletinternational@gmail.com</a></div>
+                </li>
+              </ul>
+              <div class="divider"></div>
+              <div class="title-label sub">Склад в Європі</div>
+              <ul>
+                <li>
+                  <div class="img"><img src="img/location-icon.png" alt=""></div>
+                  <div class="text">
+                    Словенія, Марібор 2000, вул. Гундулічева 12
+                    <button class="btn-link" data-address="secondAddress">
+                      <span class="btn-text">Показати на мапі</span>
+                      <span class="arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                          <path d="M0.993352 11.9985C0.761661 11.9988 0.537126 11.9292 0.358724 11.8017C0.258315 11.7299 0.175316 11.6418 0.114479 11.5423C0.0536416 11.4428 0.0161625 11.3339 0.00418798 11.2219C-0.00778654 11.1098 0.00597897 10.9969 0.0446958 10.8895C0.0834126 10.7821 0.146319 10.6823 0.229814 10.5958L4.67221 6.01173L0.388472 1.41906C0.306104 1.33158 0.244592 1.23092 0.207475 1.12286C0.170357 1.01481 0.158365 0.901501 0.172187 0.789439C0.186009 0.677378 0.225373 0.568777 0.288017 0.469879C0.35066 0.370982 0.435349 0.283737 0.537213 0.213159C0.639811 0.135301 0.75996 0.0765731 0.89012 0.0406621C1.02028 0.00475112 1.15764 -0.00756759 1.29359 0.00447845C1.42953 0.0165245 1.56112 0.0526755 1.68009 0.110663C1.79907 0.16865 1.90286 0.247221 1.98496 0.341446L6.77442 5.47292C6.92027 5.62596 7 5.81791 7 6.01601C7 6.2141 6.92027 6.40606 6.77442 6.55909L1.81639 11.6906C1.71691 11.7941 1.59055 11.8759 1.44755 11.9294C1.30455 11.9829 1.14894 12.0065 0.993352 11.9985Z" fill="#1B4D3E"/>
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="map__map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.9143067351333!2d24.277662982750268!3d49.99421604332794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ace56df37893f%3A0xa79093f4a54544f5!2sSchool%20of%20Velyke%20Kolodno!5e0!3m2!1suk!2sua!4v1693070158395!5m2!1suk!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <div class="header__logo">
+            <img src="img/logo.svg" alt="">
+          </div>
+          <nav class="header__nav">
+            <ul>
+              <li><a href="" class="nav-link">Про нас</a></li>
+              <li><a href="" class="nav-link">Продукти</a></li>
+              <li><a href="" class="nav-link">Послуги</a></li>
+              <li><a href="" class="nav-link">Чому ми?</a></li>
+              <li><a href="" class="nav-link">Сертифікати</a></li>
+              <li><a href="" class="nav-link">Контакти</a></li>
+            </ul>
+          </nav>
+          <a href="/" class="btn-linkedin">
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <g clip-path="url(#clip0_820_852)">
+                  <path d="M4.18998 5.79102H0.576455C0.416081 5.79102 0.286133 5.92102 0.286133 6.08134V17.6901C0.286133 17.8504 0.416081 17.9804 0.576455 17.9804H4.18998C4.35036 17.9804 4.48031 17.8504 4.48031 17.6901V6.08134C4.48031 5.92102 4.35036 5.79102 4.18998 5.79102Z" fill="#FFFFFF"></path>
+                  <path d="M2.38448 0.0200195C1.06966 0.0200195 0 1.08852 0 2.40188C0 3.71583 1.06966 4.78474 2.38448 4.78474C3.69825 4.78474 4.76704 3.71577 4.76704 2.40188C4.7671 1.08852 3.69825 0.0200195 2.38448 0.0200195Z" fill="#FFFFFF"></path>
+                  <path d="M13.3812 5.50244C11.9299 5.50244 10.857 6.12634 10.2063 6.83525V6.08129C10.2063 5.92097 10.0763 5.79096 9.91595 5.79096H6.45536C6.29499 5.79096 6.16504 5.92097 6.16504 6.08129V17.69C6.16504 17.8504 6.29499 17.9803 6.45536 17.9803H10.061C10.2214 17.9803 10.3513 17.8504 10.3513 17.69V11.9464C10.3513 10.0109 10.877 9.25689 12.2262 9.25689C13.6956 9.25689 13.8124 10.4657 13.8124 12.046V17.6901C13.8124 17.8504 13.9423 17.9804 14.1027 17.9804H17.7097C17.87 17.9804 18 17.8504 18 17.6901V11.3225C18 8.44451 17.4512 5.50244 13.3812 5.50244Z" fill="#FFFFFF"></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_820_852">
+                    <rect width="18" height="18" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            LinkedIn
+          </a>
+        </div>
+        <div class="divider"></div>
+        <div class="footer__bottom">
+          <span>© 2023, eco pallet. All Rights Reserved.</span>
+          <span>Website created by Developism Agency</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>

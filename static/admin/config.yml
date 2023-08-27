@@ -4,22 +4,46 @@ backend:
 media_folder: static/img
 public_folder: /img
 collections:
-  - name: 'pages'
-    label: 'Pages'
+  - name: 'main-page'
+    label: 'Main Page'
     files:
-      - file: 'content/_index.md'
-        label: 'Main Page'
-        name: 'main'
+      - file: 'content/hero.md'
+        label: 'Головна секція'
+        name: 'hero'
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
           - {
             label: 'Hero',
             name: 'hero',
             widget: 'object',
             fields:
               [
-                { label: 'Heading', name: 'heading', widget: 'string' },
-                { label: 'Subheading', name: 'subheading', widget: 'string' },
+                { label: 'Лейбл', name: 'label', widget: 'string' },
+                { label: 'Заголовок', name: 'title', widget: 'string' },
                 { label: 'Background Image', name: 'background', widget: 'image' },
+              ]
+            }
+      - file: 'content/about.md'
+        label: 'Про нас'
+        name: 'about'
+        fields:
+          - {
+            label: 'About',
+            name: 'about',
+            widget: 'object',
+            fields:
+              [
+                { label: 'Лейбл', name: 'label', widget: 'string' },
+                { label: 'Заголовок', name: 'title', widget: 'string' },
+                { 
+                  label: 'Текст', 
+                  name: 'text', 
+                  widget: 'object',
+                  fields: 
+                    [
+                      { label: 'Видимий текст', name: 'visible', widget: 'string' },
+                      { label: 'Схований текст', name: 'hidden', widget: 'string' },
+                  ]
+                },
+                { label: 'Зображення', name: 'image', widget: 'image' },
               ]
             }

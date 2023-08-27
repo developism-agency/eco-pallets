@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap');
+
+@import 'reset';
+@import 'constants';
+
+@import 'custom-select';
+@import 'typography';
+@import 'btns';
+
+* {
+  font-family: 'Manrope';
+}
+
+body {
+  padding-top: 90px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 77px;
+}
+
+.nav-link {
+  font-weight: 700;
+  font-size: 14px;
+  color: $font-black;
+  text-decoration: none;
+
+  &:hover {
+    color: $font-light-green;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    padding-top: 72px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    padding-top: 60px;
+  }
+}
+
+@import 'components/header';
+@import 'components/hero';
+@import 'components/about';
+@import 'components/products';
+@import 'components/services';
+@import 'components/pros';
+@import 'components/cert';
+@import 'components/contact-us';
+@import 'components/map';
+@import 'components/footer';

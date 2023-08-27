@@ -1,0 +1,151 @@
+.title-label {
+  background-color: $font-light;
+  padding: 10px 28px;
+  color: $font-black;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+
+  &.diff {
+    padding: 12px;
+    color: $font-gray;
+    text-transform: unset;
+    font-weight: 500;
+  }
+
+  &.green {
+    background-color: #325F51;
+    color: $white;
+  }
+
+  mark {
+    color: $light-green;
+    background-color: unset;
+    line-height: 1.25;
+    font-weight: 800;
+    margin-right: 6px;
+  }
+
+  &.sub {
+    font-size: 18px;
+    text-transform: unset;
+  }
+}
+
+.title {
+  color: $font-black;
+  line-height: normal;
+
+  mark {
+    color: $green;
+    background-color: unset;
+  }
+
+  &.white {
+    color: $white;
+  }
+}
+
+h1.title, h2.title {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h3.title {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+h4.title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: $font-gray;
+
+  &.bold {
+    font-weight: 700;
+  }
+}
+
+.text {
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 500;
+  color: $font-gray;
+
+  &.white {
+    color: $font-light;
+  }
+
+  &.sm {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  h1.title, h2.title {
+    font-size: 30px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  h3.title {
+    font-size: 22px;
+  }
+
+  h4.title {
+    font-size: 18px;
+  }
+
+  .text {
+    font-size: 14px;
+
+    &.sm {
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  h1.title {
+    font-size: 22px;
+  }
+
+  h2.title {
+    font-size: 20px;
+  }
+
+  h3.title {
+    font-size: 16px;
+  }
+
+  h4.title {
+    font-size: 16px;
+  }
+
+  .title-label {
+    padding: 8px;
+    font-size: 12px;
+
+    &.diff {
+      padding: 6px;
+      font-size: 12px;
+    }
+  }
+
+  .text {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .subtitle {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+}
