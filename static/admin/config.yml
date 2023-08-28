@@ -100,9 +100,9 @@ collections:
                 { label: 'Заголовок', name: 'title', widget: 'string' },
               ]
             }
-      - file: 'content/form.md'
+      - name: 'form'
+        file: 'content/form.md'
         label: 'Форма зворотнього зв\'язку'
-        name: 'form'
         fields:
           - { label: 'Форма зворотнього зв\'язку', name: 'content', widget: 'object',
               fields: [
