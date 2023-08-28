@@ -44,8 +44,8 @@ collections:
                 { label: 'Підзаголовок', name: 'subtitle', widget: 'string' },
                 { label: 'Список продуктів', name: 'list', widget: 'list',
                   fields: 
-                    - { label: 'Назва продукту', name: 'name', widget: 'string' }
-                    - { label: 'Зображення', name: 'image', widget: 'image' }
+                    - { label: 'Назва продукту', name: 'name', widget: 'string' },
+                    - { label: 'Зображення', name: 'image', widget: 'image' },
                 },
                 { label: 'Спецзамовлення', name: 'special', widget: 'object',
                   fields: [
