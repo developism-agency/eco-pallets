@@ -2,7 +2,7 @@
 content:
   list:
     - name: Дрова в ящику
-      image: /img/products-img.png
+      image: /img/products-img.webp
   special:
     title: Спецзамовлення
     text: Пропонуємо виготовлення різноманітних дерев'яних виробів за власними
