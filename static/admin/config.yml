@@ -108,7 +108,7 @@ collections:
               fields: [
                 { label: 'Заголовок', name: 'title', widget: 'string' },
                 { label: 'Типи товарів', name: 'types', widget: 'list', 
-                  field: { label: 'Назва типу', name: 'name', widget: 'string' }
+                  field: { label: 'Назва типу', name: 'name', widget: 'string' },
                 },
               ]
             }
