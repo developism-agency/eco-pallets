@@ -91,3 +91,24 @@ collections:
                 },
               ]
             }
+      - file: 'content/cert.md'
+        label: 'Сертифікати'
+        name: 'cert'
+        fields:
+          - { label: 'Сертифікати', name: 'content', widget: 'object',
+              fields: [
+                { label: 'Заголовок', name: 'title', widget: 'string' },
+              ]
+            }
+      - file: 'content/form.md'
+        label: 'Форма зворотнього зв\'язку'
+        name: 'form'
+        fields:
+          - { label: 'Форма зворотнього зв\'язку', name: 'content', widget: 'object',
+              fields: [
+                { label: 'Заголовок', name: 'title', widget: 'string' },
+                { label: 'Типи товарів', name: 'types', widget: 'list', 
+                  field: { label: 'Назва типу', name: 'name', widget: 'string' }
+                },
+              ]
+            }

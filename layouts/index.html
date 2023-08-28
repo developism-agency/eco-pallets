@@ -117,20 +117,14 @@
             <div class="title-label green">Про нас</div>
             <h2 class="title white">
               {{ with .Site.GetPage "about.md" }}{{ .Params.content.title }}{{ end }}
-              {{/*  Про компанію  */}}
             </h2>
             <p class="text white">
               {{ with .Site.GetPage "about.md" }}{{ .Params.content.text.visible }}{{ end }}
-              {{/*  Компанія Еко Палета була заснована у 2017 році. Спочатку бренд спеціалізувався на виробництві стандартних піддонів. Проте буквально за рік Еко Палета збільшує обсяги свого виробництва, суттєво розширюючи лінійку продукції, до якої додаються ящики, піраміди, палетні заготовки та дрова.
-              <br>
-              <br>
-              В цей самий час ми опанували технології роботи з індивідуальними замовленнями на збивання піддонів нестандартних розмірів. Ще через рік, у 2019 р., наше підприємство отримало європейську ліцензію на виробництво піддонів EPAL.  */}}
             </p>
             <div class="text-accordion">
               <div class="text-accordion__content" id="accordion-content">
                 <p class="text white">
                   {{ with .Site.GetPage "about.md" }}{{ .Params.content.text.hidden }}{{ end }}
-                  {{/*  Наша місія полягає в тому, щоб надавати клієнтам кращі рішення для розміщення, зберігання та транспортування різноманітного вантажу. Завдяки великому вибору товарів та можливості реалізувати практично будь-яке замовлення, наші покупці завжди отримують якісні, екологічні, практичні та зручні піддони з довгим терміном вжитку.   Ми — експерти з піддонів і ящиків. Звертайтесь, і ми охоче підберемо таку продукцію, що здатна задовольнити всі потреби вашого бізнесу! Зараз Еко Палета — це сучасне виробництво кращих дерев'яних палет, стандартизованих під європейську сертифікацію.  Ми пропонуємо понад 50 видів нестандартних піддонів та інших дерев’яних виробів, розрахованих на широкий спектр галузей: від фармацевтики та харчової промисловості — до нафтогазової промисловості чи транспортного сектору.  */}}
                 </p>
               </div>
               <button class="text-accordion__btn" id="accordion-trigger">
@@ -261,98 +255,80 @@
         </div>
       </div>
     </section>
-    <section class="cert">
-      <div class="container">
-        <div class="cert__inner">
-          <div class="title-label">сертифікати</div>
-          <h2 class="title">Наші палети стандартизовані під європейську сертифікацію</h2>
-          <div class="cert__list">
-            <div class="cert__item">
-              <div class="img"><img src="img/epal-icon.svg" alt=""></div>
-              <h3 class="title">Сертифікція EPAL</h3>
-            </div>
-            <div class="divider"></div>
-            <div class="cert__item">
-              <div class="img"><img src="img/cert-icon.svg" alt=""></div>
-              <h3 class="title">Фітосанітарний сертифікат</h3>
-            </div>
-            <div class="divider"></div>
-            <div class="cert__item">
-              <div class="img"><img src="img/cert-icon.svg" alt=""></div>
-              <h3 class="title">Санітарно-епідеміологічна експертиза</h3>
+    {{ with .Site.GetPage "cert.md" }}
+      <section class="cert">
+        <div class="container">
+          <div class="cert__inner">
+            <div class="title-label">сертифікати</div>
+            <h2 class="title">{{ .Params.content.title }}</h2>
+            <div class="cert__list">
+              <div class="cert__item">
+                <div class="img"><img src="img/epal-icon.svg" alt=""></div>
+                <h3 class="title">Сертифікція EPAL</h3>
+              </div>
+              <div class="divider"></div>
+              <div class="cert__item">
+                <div class="img"><img src="img/cert-icon.svg" alt=""></div>
+                <h3 class="title">Фітосанітарний сертифікат</h3>
+              </div>
+              <div class="divider"></div>
+              <div class="cert__item">
+                <div class="img"><img src="img/cert-icon.svg" alt=""></div>
+                <h3 class="title">Санітарно-епідеміологічна експертиза</h3>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="contact-us">
-      <div class="container">
-        <div class="contact-us__inner">
-          <div class="title-label green">СПІВПРАЦЯ З НАМИ</div>
-          <h2 class="title white">Написати нам</h2>
-          <div class="contact-us__content">
-            <div class="contact-us__form">
-              <div class="row">
-                <input type="text" placeholder="Як вас звати">
-                <input type="email" placeholder="Ваш e-mail">
-              </div>
-              <div class="phone">
-                <select class="custom-select custom-select--number" id="number-select">
-                  <option value="+380" data-src="img/ua.png">
-                    +380
-                  </option>
-                  <option value="+48" data-src="img/ua.png">
-                    +48
-                  </option>
-                </select>
-                <input type="phone" placeholder="Номер телефону*">
-              </div>
-              <div class="product-type">
-                <h3 class="product-type__title">ВИБЕРІТЬ ТИП ТОВАРУ*:</h3>
-                <div class="product-type__list">
-                  <label class="product-type__item">
-                    <input type="checkbox" class="input" value="Дрова в ящику">
-                    <div class="check">Дрова в ящику</div>
-                  </label>
-                  <label class="product-type__item">
-                    <input type="checkbox" class="input" value="Палетні борти">
-                    <div class="check">Палетні борти</div>
-                  </label>
-                  <label class="product-type__item">
-                    <input type="checkbox" class="input" value="Піддони б/в">
-                    <div class="check">Піддони б/в</div>
-                  </label>
-                  <label class="product-type__item">
-                    <input type="checkbox" class="input" value="Спец. замовлення">
-                    <div class="check">Спец. замовлення</div>
-                  </label>
-                  <label class="product-type__item">
-                    <input type="checkbox" class="input" value="Палетна заготовка">
-                    <div class="check">Палетна заготовка</div>
-                  </label>
-                  <label class="product-type__item">
-                    <input type="checkbox" class="input" value="Піддони нестандартних розмірів">
-                    <div class="check">Піддони нестандартних розмірів</div>
-                  </label>
-                  <label class="product-type__item">
-                    <input type="checkbox" class="input" value="Дерев'яні піддони">
-                    <div class="check">Дерев'яні піддони</div>
-                  </label>
+      </section>
+    {{ end }}
+    {{ with .Site.GetPage "form.md" }}
+      <section class="contact-us">
+        <div class="container">
+          <div class="contact-us__inner">
+            <div class="title-label green">СПІВПРАЦЯ З НАМИ</div>
+            <h2 class="title white">{{ .Params.content.title }}</h2>
+            <div class="contact-us__content">
+              <div class="contact-us__form">
+                <div class="row">
+                  <input type="text" placeholder="Як вас звати">
+                  <input type="email" placeholder="Ваш e-mail">
                 </div>
+                <div class="phone">
+                  <select class="custom-select custom-select--number" id="number-select">
+                    <option value="+380" data-src="img/ua.png">
+                      +380
+                    </option>
+                    <option value="+48" data-src="img/ua.png">
+                      +48
+                    </option>
+                  </select>
+                  <input type="phone" placeholder="Номер телефону*">
+                </div>
+                <div class="product-type">
+                  <h3 class="product-type__title">ВИБЕРІТЬ ТИП ТОВАРУ*:</h3>
+                  <div class="product-type__list">
+                    {{ range .Params.content.types }}
+                      <label class="product-type__item">
+                        <input type="checkbox" class="input" value="Дрова в ящику">
+                        <div class="check">{{ .name }}</div>
+                      </label>
+                    {{ end }}
+                  </div>
+                </div>
+                <textarea name="" id="" class="message" placeholder="Повідомлення"></textarea>
+                <button class="btn btn--arrow">
+                  <span class="name">Зробити замовлення</span>
+                  <span class="arrow"><img src="img/btn-arrow.svg" alt=""></span>
+                </button>
               </div>
-              <textarea name="" id="" class="message" placeholder="Повідомлення"></textarea>
-              <button class="btn btn--arrow">
-                <span class="name">Зробити замовлення</span>
-                <span class="arrow"><img src="img/btn-arrow.svg" alt=""></span>
-              </button>
-            </div>
-            <div class="contact-us__img">
-              <img src="img/form-img.png" alt="pallets">
+              <div class="contact-us__img">
+                <img src="img/form-img.png" alt="pallets">
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    {{ end }}
     <section class="map">
       <div class="container">
         <div class="map__inner">
