@@ -5,15 +5,16 @@ media_folder: static/img
 public_folder: /img
 locale: 'uk'
 i18n:
-  structure: single_file
-  locales: [en, fr, de, it, pl, ua]
+  structure: miltiple_folders
+  locales: [uk, en, fr, de, it, pl]
   default_locale: ua
 collections:
-  - name: 'main-page'
-    label: 'Main Page'
+  - label: 'Головна сторінка'
+    name: 'main-page'
+    folder: 'content'
     i18n: true
     files:
-      - file: 'content/hero.md'
+      - file: 'hero.md'
         label: 'Головна секція'
         name: 'main-section'
         i18n: true
@@ -21,7 +22,7 @@ collections:
           - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
           - { label: 'Текст', name: 'text', widget: 'string', i18n: true }
           - { label: 'Зображення', name: 'image', widget: 'image', i18n: true }
-      - file: 'content/about.md'
+      - file: 'about.md'
         label: 'Про нас'
         name: 'about'
         i18n: true
@@ -34,7 +35,7 @@ collections:
               ]
             }
           - { label: 'Зображення', name: 'image', widget: 'image', i18n: true }
-      - file: 'content/products.md'
+      - file: 'products.md'
         label: 'Продукція'
         name: 'products'
         i18n: true
@@ -53,14 +54,14 @@ collections:
                 { label: 'Текст', name: 'text', widget: 'text', i18n: true },
               ]
             }
-      - file: 'content/services.md'
+      - file: 'services.md'
         label: 'Послуги'
         name: 'services'
         i18n: true
         fields:
           - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
           - { label: 'Список послуг', name: 'services', widget: 'list', i18n: true, field: { label: 'Назва послуги', name: 'name', widget: 'string', i18n: true } }
-      - file: 'content/pros.md'
+      - file: 'pros.md'
         label: 'Переваги'
         name: 'pros'
         i18n: true
@@ -74,14 +75,14 @@ collections:
               ]
             }
           - { label: 'CTA', name: 'cta', widget: 'string', i18n: true }
-      - file: 'content/cert.md'
+      - file: 'cert.md'
         label: 'Сертифікати'
         name: 'cert'
         i18n: true
         fields:
           - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
       - name: 'form'
-        file: 'content/form.md'
+        file: 'form.md'
         label: "Форма зворотнього зв'язку"
         i18n: true
         fields:
@@ -89,7 +90,7 @@ collections:
           - { label: 'Типи товарів', name: 'types', widget: 'list', i18n: true,
               field: { label: 'Назва типу', name: 'name', widget: 'string', i18n: true }
             }
-      - file: 'content/map.md'
+      - file: 'map.md'
         name: 'contacts'
         label: 'Контакти'
         i18n: true

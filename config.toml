@@ -1,4 +1,47 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'Eco-pallets'
-
+defaultContentLanguage = 'en'
+[languages]
+  [languages.uk]
+    disabled = false
+    languageCode = ''
+    languageDirection = ''
+    languageName = ''
+    title = ''
+    weight = 0
+  [languages.en]
+    disabled = false
+    languageCode = ''
+    languageDirection = ''
+    languageName = ''
+    title = ''
+    weight = 0
+  [languages.fr]
+    disabled = false
+    languageCode = ''
+    languageDirection = ''
+    languageName = ''
+    title = ''
+    weight = 0
+  [languages.de]
+    disabled = false
+    languageCode = ''
+    languageDirection = ''
+    languageName = ''
+    title = ''
+    weight = 0
+  [languages.it]
+    disabled = false
+    languageCode = ''
+    languageDirection = ''
+    languageName = ''
+    title = ''
+    weight = 0
+  [languages.pl]
+    disabled = false
+    languageCode = ''
+    languageDirection = ''
+    languageName = ''
+    title = ''
+    weight = 0
