@@ -82,3 +82,24 @@ document.querySelectorAll('.btn-link').forEach(btn => {
     
   })
 })
+
+//send form
+document.getElementById("contact-form").addEventListener("submit", async function(event) {
+  event.preventDefault();
+  const form = event.target;
+  // const formData = new FormData(form);
+  // const responseContainer = document.getElementById("response-form");
+  
+  try {
+      const response = await fetch("/.netlify/functions/submitForm", {
+          method: "POST",
+          body: JSON.stringify(Object.fromEntries(formData.entries())),
+      });
+      
+      const data = await response.json();
+      // responseContainer.textContent = data.message;
+  } catch (error) {
+      // responseContainer.textContent = "Error submitting form.";
+      console.error(error);
+  }
+});

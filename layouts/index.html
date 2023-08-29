@@ -272,10 +272,10 @@
             <div class="title-label green">СПІВПРАЦЯ З НАМИ</div>
             <h2 class="title white">{{ .Params.title }}</h2>
             <div class="contact-us__content">
-              <div class="contact-us__form">
+              <form class="contact-us__form" id="contact-form">
                 <div class="row">
-                  <input type="text" placeholder="Як вас звати">
-                  <input type="email" placeholder="Ваш e-mail">
+                  <input type="text" name="name" placeholder="Як вас звати">
+                  <input type="email" name="email" placeholder="Ваш e-mail">
                 </div>
                 <div class="phone">
                   <select class="custom-select custom-select--number" id="number-select">
@@ -286,25 +286,25 @@
                       +48
                     </option>
                   </select>
-                  <input type="phone" placeholder="Номер телефону*">
+                  <input type="phone" placeholder="Номер телефону*" name="phone-number">
                 </div>
                 <div class="product-type">
                   <h3 class="product-type__title">ВИБЕРІТЬ ТИП ТОВАРУ*:</h3>
                   <div class="product-type__list">
                     {{ range .Params.types }}
                       <label class="product-type__item">
-                        <input type="checkbox" class="input" value="Дрова в ящику">
+                        <input type="checkbox" name="product-type" class="input" value="Дрова в ящику">
                         <div class="check">{{ .name }}</div>
                       </label>
                     {{ end }}
                   </div>
                 </div>
-                <textarea name="" id="" class="message" placeholder="Повідомлення"></textarea>
-                <button class="btn btn--arrow">
+                <textarea name="message" class="message" placeholder="Повідомлення"></textarea>
+                <button type="submit" class="btn btn--arrow" id="response-form">
                   <span class="name">Зробити замовлення</span>
                   <span class="arrow"><img src="img/btn-arrow.svg" alt=""></span>
                 </button>
-              </div>
+              </form>
               <div class="contact-us__img">
                 <img src="img/form-img.webp" alt="pallets">
               </div>
