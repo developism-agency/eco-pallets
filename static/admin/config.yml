@@ -5,7 +5,7 @@ media_folder: static/img
 public_folder: /img
 locale: 'uk'
 i18n:
-  structure: miltiple_folders
+  structure: multiple_folders
   locales: [uk, en, fr, de, it, pl]
   default_locale: ua
 collections:
