@@ -4,7 +4,7 @@ backend:
 media_folder: static/img
 public_folder: /img
 i18n:
-  structure: multiples_files
+  structure: multiple_files
   locales: [en, fr, de, it, pl, ua]
   default_locale: ua
 collections:
