@@ -11,63 +11,47 @@ collections:
         label: 'Головна секція'
         name: 'main-section'
         fields:
-          - { label: 'Головна секція', name: 'content', widget: 'object',
-              fields: [
-                { label: 'Заголовок', name: 'title', widget: 'string' },
-                { label: 'Текст', name: 'text', widget: 'string' },
-                { label: 'Зображення', name: 'image', widget: 'image' },
-              ]
-            }
+          - { label: 'Заголовок', name: 'title', widget: 'string' }
+          - { label: 'Текст', name: 'text', widget: 'string' }
+          - { label: 'Зображення', name: 'image', widget: 'image' }
       - file: 'content/about.md'
         label: 'Про нас'
         name: 'about'
         fields:
-          - { label: 'Про нас', name: 'content', widget: 'object',
+          - { label: 'Заголовок', name: 'title', widget: 'string' }
+          - { label: 'Текст', name: 'text', widget: 'object',
               fields: [
-                { label: 'Заголовок', name: 'title', widget: 'string' },
-                { label: 'Текст', name: 'text', widget: 'object',
-                  fields: [
-                    { label: 'Видимий текст', name: 'visible', widget: 'text' },
-                    { label: 'Схований текст', name: 'hidden', widget: 'text' },
-                  ]
-                },
-                { label: 'Зображення', name: 'image', widget: 'image' },
+                { label: 'Видимий текст', name: 'visible', widget: 'text' },
+                { label: 'Схований текст', name: 'hidden', widget: 'text' },
               ]
             }
+          - { label: 'Зображення', name: 'image', widget: 'image' }
       - file: 'content/products.md'
         label: 'Продукція'
         name: 'products'
         fields:
-          - { label: 'Продукція', name: 'content', widget: 'object',
+          - { label: 'Заголовок', name: 'title', widget: 'string' }
+          - { label: 'Підзаголовок', name: 'subtitle', widget: 'string' }
+          - { label: 'Список продуктів', name: 'list', widget: 'list',
+              fields: [
+                { label: 'Назва продукту', name: 'name', widget: 'string' },
+                { label: 'Зображення', name: 'image', widget: 'image' },
+              ]
+            }
+          - { label: 'Спецзамовлення', name: 'special', widget: 'object',
               fields: [
                 { label: 'Заголовок', name: 'title', widget: 'string' },
-                { label: 'Підзаголовок', name: 'subtitle', widget: 'string' },
-                { label: 'Список продуктів', name: 'list', widget: 'list',
-                  fields: [
-                    { label: 'Назва продукту', name: 'name', widget: 'string' },
-                    { label: 'Зображення', name: 'image', widget: 'image' },
-                  ]
-                },
-                { label: 'Спецзамовлення', name: 'special', widget: 'object',
-                  fields: [
-                    { label: 'Заголовок', name: 'title', widget: 'string' },
-                    { label: 'Текст', name: 'text', widget: 'text' },
-                  ]
-                }
+                { label: 'Текст', name: 'text', widget: 'text' },
               ]
             }
       - file: 'content/services.md'
         label: 'Послуги'
         name: 'services'
         fields:
-          - { label: 'Послуги', name: 'content', widget: 'object',
-              fields: [
-                { label: 'Заголовок', name: 'title', widget: 'string' },
-                { label: 'Список послуг', name: 'services', widget: 'list',
-                  field: { label: 'Назва послуги', name: 'name', widget: 'string' } 
-                },
-              ]
-            }
+          - { label: 'Заголовок', name: 'title', widget: 'string' },
+          - { label: 'Список послуг', name: 'services', widget: 'list',
+            field: { label: 'Назва послуги', name: 'name', widget: 'string' } 
+          }
       - file: 'content/pros.md'
         label: 'Переваги'
         name: 'pros'
@@ -85,11 +69,7 @@ collections:
         label: 'Сертифікати'
         name: 'cert'
         fields:
-          - { label: 'Сертифікати', name: 'content', widget: 'object',
-              fields: [
-                { label: 'Заголовок', name: 'title', widget: 'string' },
-              ]
-            }
+          - { label: 'Заголовок', name: 'title', widget: 'string' }
       # - name: 'form'
       #   file: 'content/form.md'
       #   label: 'Форма зворотнього зв\'язку'

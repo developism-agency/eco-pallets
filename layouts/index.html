@@ -81,14 +81,14 @@
               <span class="title-label diff">
                 <mark>50+</mark>  Видів нестандартних піддонів
               </span>
-              <h1 class="title">{{ .Params.content.title }}</h1>
-              <p class="text">{{ .Params.content.text }}</p>
+              <h1 class="title">{{ .Params.title }}</h1>
+              <p class="text">{{ .Params.text }}</p>
               <button class="btn btn--arrow">
                 <span class="name">Наші продукти</span>
                 <span class="arrow"><img src="img/btn-arrow.svg" alt=""></span>
               </button>
             </div>
-            <div class="hero__img" data-img="{{ .Params.content.image }}"></div>
+            <div class="hero__img" data-img="{{ .Params.image }}"></div>
             <div class="scroll-down" id="scrollDown">
               <svg xmlns="http://www.w3.org/2000/svg" width="26" height="28" viewBox="0 0 26 28" fill="none">
                 <g clip-path="url(#clip0_816_3748)">
@@ -111,11 +111,11 @@
           <div class="about__inner">
             <div class="about__content">
               <div class="title-label green">Про нас</div>
-              <h2 class="title white">{{ .Params.content.title }}</h2>
-              <p class="text white">{{ .Params.content.text.visible }}</p>
+              <h2 class="title white">{{ .Params.title }}</h2>
+              <p class="text white">{{ .Params.text.visible }}</p>
               <div class="text-accordion">
                 <div class="text-accordion__content" id="accordion-content">
-                  <p class="text white">{{ .Params.content.text.hidden }}</p>
+                  <p class="text white">{{ .Params.text.hidden }}</p>
                 </div>
                 <button class="text-accordion__btn" id="accordion-trigger">
                   <span class="name">Детальніше</span>
@@ -143,7 +143,7 @@
                 </div>
               </div>
             </div>
-            <div class="about__img" data-img="{{ .Params.content.image }}"></div>
+            <div class="about__img" data-img="{{ .Params.image }}"></div>
           </div>
         </div>
       </section>
@@ -154,11 +154,11 @@
           <div class="products__inner">
             <div class="title-label">продукція</div>
             <div class="products__head">
-              <h2 class="title">{{ .Params.content.title }}</h2>
-              <p class="subtitle">{{ .Params.content.subtitle }}</p>
+              <h2 class="title">{{ .Params.title }}</h2>
+              <p class="subtitle">{{ .Params.subtitle }}</p>
             </div>
             <div class="products__list">
-              {{ range .Params.content.list }}
+              {{ range .Params.list }}
                 <div class="product">
                   <div class="product__info">
                     <h3 class="title">{{ .name }}</h3>
@@ -176,8 +176,8 @@
             <div class="special">
               <div class="special__inner">
                 <div class="special__info">
-                  <h3 class="title">{{ .Params.content.special.title }}</h3>
-                  <p class="subtitle">{{ .Params.content.special.text }}</p>
+                  <h3 class="title">{{ .Params.special.title }}</h3>
+                  <p class="subtitle">{{ .Params.special.text }}</p>
                   <button class="btn btn--arrow">
                     <span class="name">Зробити замовлення</span>
                     <span class="arrow"><img src="img/btn-arrow.svg" alt=""></span>
@@ -197,9 +197,9 @@
         <div class="container">
           <div class="services__inner">
             <div class="title-label">Послуги</div>
-            <h2 class="title">{{ .Params.content.title }}</h2>
+            <h2 class="title">{{ .Params.title }}</h2>
             <div class="services__list">
-              {{ range .Params.content.services }}
+              {{ range .Params.services }}
                 <div class="services__item">{{ . }}</div>
               {{ end }}
               <button class="btn btn--arrow">
@@ -244,7 +244,7 @@
         <div class="container">
           <div class="cert__inner">
             <div class="title-label">сертифікати</div>
-            <h2 class="title">{{ .Params.content.title }}</h2>
+            <h2 class="title">{{ .Params.title }}</h2>
             <div class="cert__list">
               <div class="cert__item">
                 <div class="img"><img src="img/epal-icon.svg" alt=""></div>
@@ -270,7 +270,7 @@
         <div class="container">
           <div class="contact-us__inner">
             <div class="title-label green">СПІВПРАЦЯ З НАМИ</div>
-            <h2 class="title white">{{ .Params.content.title }}</h2>
+            <h2 class="title white">{{ .Params.title }}</h2>
             <div class="contact-us__content">
               <div class="contact-us__form">
                 <div class="row">
@@ -291,7 +291,7 @@
                 <div class="product-type">
                   <h3 class="product-type__title">ВИБЕРІТЬ ТИП ТОВАРУ*:</h3>
                   <div class="product-type__list">
-                    {{ range .Params.content.types }}
+                    {{ range .Params.types }}
                       <label class="product-type__item">
                         <input type="checkbox" class="input" value="Дрова в ящику">
                         <div class="check">{{ .name }}</div>
