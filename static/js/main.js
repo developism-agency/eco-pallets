@@ -87,7 +87,7 @@ document.querySelectorAll('.btn-link').forEach(btn => {
 document.getElementById("contact-form").addEventListener("submit", async function(event) {
   event.preventDefault();
   const form = event.target;
-  // const formData = new FormData(form);
+  const formData = new FormData(form);
   // const responseContainer = document.getElementById("response-form");
   
   try {
