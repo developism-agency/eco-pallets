@@ -26,31 +26,31 @@ collections:
         name: 'about'
         i18n: true
         fields:
-          - { label: 'Заголовок', name: 'title', widget: 'string' }
-          - { label: 'Текст', name: 'text', widget: 'object',
+          - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
+          - { label: 'Текст', name: 'text', widget: 'object', i18n: true, 
               fields: [
-                { label: 'Видимий текст', name: 'visible', widget: 'text' },
-                { label: 'Схований текст', name: 'hidden', widget: 'text' },
+                { label: 'Видимий текст', name: 'visible', widget: 'text', i18n: true },
+                { label: 'Схований текст', name: 'hidden', widget: 'text', i18n: true },
               ]
             }
-          - { label: 'Зображення', name: 'image', widget: 'image' }
+          - { label: 'Зображення', name: 'image', widget: 'image', i18n: true }
       - file: 'content/products.md'
         label: 'Продукція'
         name: 'products'
         i18n: true
         fields:
-          - { label: 'Заголовок', name: 'title', widget: 'string' }
-          - { label: 'Підзаголовок', name: 'subtitle', widget: 'string' }
-          - { label: 'Список продуктів', name: 'list', widget: 'list',
+          - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
+          - { label: 'Підзаголовок', name: 'subtitle', widget: 'string', i18n: true }
+          - { label: 'Список продуктів', name: 'list', widget: 'list', i18n: true,
               fields: [
-                { label: 'Назва продукту', name: 'name', widget: 'string' },
-                { label: 'Зображення', name: 'image', widget: 'image' },
+                { label: 'Назва продукту', name: 'name', widget: 'string', i18n: true },
+                { label: 'Зображення', name: 'image', widget: 'image', i18n: true },
               ]
             }
-          - { label: 'Спецзамовлення', name: 'special', widget: 'object',
+          - { label: 'Спецзамовлення', name: 'special', widget: 'object', i18n: true,
               fields: [
-                { label: 'Заголовок', name: 'title', widget: 'string' },
-                { label: 'Текст', name: 'text', widget: 'text' },
+                { label: 'Заголовок', name: 'title', widget: 'string', i18n: true },
+                { label: 'Текст', name: 'text', widget: 'text', i18n: true },
               ]
             }
       - file: 'content/services.md'
@@ -58,54 +58,54 @@ collections:
         name: 'services'
         i18n: true
         fields:
-          - { label: 'Заголовок', name: 'title', widget: 'string' }
-          - { label: 'Список послуг', name: 'services', widget: 'list', field: { label: 'Назва послуги', name: 'name', widget: 'string' } }
+          - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
+          - { label: 'Список послуг', name: 'services', widget: 'list', i18n: true, field: { label: 'Назва послуги', name: 'name', widget: 'string', i18n: true } }
       - file: 'content/pros.md'
         label: 'Переваги'
         name: 'pros'
         i18n: true
         fields:
-          - { label: 'Заголовок', name: 'title', widget: 'string' }
-          - { label: 'Список переваг', name: 'pros', widget: 'list', min: 5, max: 5,
+          - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
+          - { label: 'Список переваг', name: 'pros', widget: 'list', min: 5, max: 5, i18n: true,
               fields: [
-                { label: 'Назва переваги', name: 'name', widget: 'string' },
-                { label: 'Текст', name: 'text', widget: 'text' },
-                { label: 'Зображення', name: 'image', widget: 'image' },
+                { label: 'Назва переваги', name: 'name', widget: 'string', i18n: true },
+                { label: 'Текст', name: 'text', widget: 'text', i18n: true },
+                { label: 'Зображення', name: 'image', widget: 'image', i18n: true },
               ]
             }
-          - { label: 'CTA', name: 'cta', widget: 'string' }
+          - { label: 'CTA', name: 'cta', widget: 'string', i18n: true }
       - file: 'content/cert.md'
         label: 'Сертифікати'
         name: 'cert'
         i18n: true
         fields:
-          - { label: 'Заголовок', name: 'title', widget: 'string' }
+          - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
       - name: 'form'
         file: 'content/form.md'
         label: "Форма зворотнього зв'язку"
         i18n: true
         fields:
-          - { label: 'Заголовок', name: 'title', widget: 'string' }
-          - { label: 'Типи товарів', name: 'types', widget: 'list', 
-              field: { label: 'Назва типу', name: 'name', widget: 'string' }
+          - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
+          - { label: 'Типи товарів', name: 'types', widget: 'list', i18n: true,
+              field: { label: 'Назва типу', name: 'name', widget: 'string', i18n: true }
             }
       - file: 'content/map.md'
         name: 'contacts'
         label: 'Контакти'
         i18n: true
         fields:
-          - { label: 'Заголовок', name: 'title', widget: 'string' }
-          - { label: 'Виробництво', name: 'assembly', widget: 'object',
+          - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
+          - { label: 'Виробництво', name: 'assembly', widget: 'object', i18n: true,
               fields: [
-                { label: 'Локація', name: 'location', widget: 'string' },
-                { label: 'Посилання на локацію', name: 'locationLink', widget: 'string' },
-                { label: 'Телефон', name: 'phone', widget: 'string' },
-                { label: 'Email', name: 'email', widget: 'string' },
+                { label: 'Локація', name: 'location', widget: 'string', i18n: true },
+                { label: 'Посилання на локацію', name: 'locationLink', widget: 'string', i18n: true },
+                { label: 'Телефон', name: 'phone', widget: 'string', i18n: true },
+                { label: 'Email', name: 'email', widget: 'string', i18n: true },
               ]
             }
-          - { label: 'Склад в Європі', name: 'euStorage', widget: 'object',
+          - { label: 'Склад в Європі', name: 'euStorage', widget: 'object', i18n: true,
               fields: [
-                { label: 'Локація', name: 'location', widget: 'string' },
-                { label: 'Посилання на локацію', name: 'locationLink', widget: 'string' },
+                { label: 'Локація', name: 'location', widget: 'string', i18n: true },
+                { label: 'Посилання на локацію', name: 'locationLink', widget: 'string', i18n: true },
               ]
             }
