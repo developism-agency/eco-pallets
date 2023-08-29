@@ -1,18 +1,26 @@
 ---
-title: Еко Палета — це сучасне виробництво кращих дерев'яних палет
-hero:
-  heading: Test
-  subheading: the
-  background: /img/logo-rudi.jpg
-content:
-  title: Еко Палета — це сучасне виробництво кращих дерев'яних палет
-  text: "Ми пропонуємо піддони та інші дерев’яні вироби, розраховані на широкий
-    спектр галузей: від фармацевтики та харчової промисловості — до нафтогазової
-    промисловості чи транспортного сектору."
-  label: Тест
-  image: /img/hero-img.jpg
-text: "Ми пропонуємо піддони та інші дерев’яні вироби, розраховані на широкий
-  спектр галузей: від фармацевтики та харчової промисловості — до нафтогазової
-  промисловості чи транспортного сектору."
-image: /img/hero-img.webp
+en:
+  title: Test
+  text: test
+  image: /img/hero-img.webp
+fr:
+  title: Test
+  text: test
+  image: /img/hero-img.webp
+de:
+  title: Test
+  text: test
+  image: /img/hero-img.webp
+it:
+  title: Test
+  text: test
+  image: /img/hero-img.webp
+pl:
+  title: Test
+  text: test
+  image: /img/hero-img.webp
+ua:
+  title: Слава Україні
+  text: тест
+  image: /img/hero-img.webp
 ---
