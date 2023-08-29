@@ -42,6 +42,12 @@
         font-weight: 700;
         color: $font-black;
         text-decoration: none;
+        transition: all .2s;
+      }
+
+      .text:hover a {
+        color: $light-green;
+        border-bottom: 1px solid $light-green;
       }
 
       &:not(:last-child) {

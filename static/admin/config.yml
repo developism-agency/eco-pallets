@@ -76,3 +76,22 @@ collections:
           - { label: 'Типи товарів', name: 'types', widget: 'list', 
               field: { label: 'Назва типу', name: 'name', widget: 'string' }
             }
+      - file: 'content/map.md'
+        name: 'contacts'
+        label: 'Контакти'
+        fields:
+          - { label: 'Заголовок', name: 'title', widget: 'string' }
+          - { label: 'Виробництво', name: 'assembly', widget: 'object',
+              fields: [
+                { label: 'Локація', name: 'location', widget: 'string' },
+                { label: 'Посилання на локацію', name: 'locationLink', widget: 'string' },
+                { label: 'Телефон', name: 'phone', widget: 'string' },
+                { label: 'Email', name: 'email', widget: 'string' },
+              ]
+            }
+          - { label: 'Склад в Європі', name: 'euStorage', widget: 'object',
+              fields: [
+                { label: 'Локація', name: 'location', widget: 'string' },
+                { label: 'Посилання на локацію', name: 'locationLink', widget: 'string' },
+              ]
+            }

@@ -1279,7 +1279,11 @@ body {
       font-size: 18px;
       font-weight: 700;
       color: #0E0D12;
-      text-decoration: none; }
+      text-decoration: none;
+      transition: all .2s; }
+    .map__info li .text:hover a {
+      color: #388D46;
+      border-bottom: 1px solid #388D46; }
     .map__info li:not(:last-child) {
       margin-bottom: 22px; }
   .map__info .img {
