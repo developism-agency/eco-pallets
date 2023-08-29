@@ -72,19 +72,15 @@ collections:
         label: 'Переваги'
         name: 'pros'
         fields:
-          - { label: 'Переваги', name: 'content', widget: 'object',
+          - { label: 'Заголовок', name: 'title', widget: 'string' },
+          - { label: 'Список переваг', name: 'pros', widget: 'list', allow_add: false,
               fields: [
-                { label: 'Заголовок', name: 'title', widget: 'string' },
-                { label: 'Список переваг', name: 'pros', widget: 'list', allow_add: false,
-                  fields: [
-                    { label: 'Назва переваги', name: 'name', widget: 'string' },
-                    { label: 'Текст', name: 'text', widget: 'text' },
-                    { label: 'Зображення', name: 'image', widget: 'image' },
-                  ]
-                },
-                { label: 'CTA', name: 'cta', widget: 'string' }
+                { label: 'Назва переваги', name: 'name', widget: 'string' },
+                { label: 'Текст', name: 'text', widget: 'text' },
+                { label: 'Зображення', name: 'image', widget: 'image' },
               ]
             }
+          - { label: 'CTA', name: 'cta', widget: 'string' }
       - file: 'content/cert.md'
         label: 'Сертифікати'
         name: 'cert'

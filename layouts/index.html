@@ -216,9 +216,9 @@
         <div class="container">
           <div class="pros__inner">
             <div class="title-label green">чому ми ?</div>
-            <h2 class="title white">{{ .Params.content.title }}</h2>
+            <h2 class="title white">{{ .Params.title }}</h2>
             <div class="pros__list">
-              {{ range .Params.content.pros }}
+              {{ range .Params.pros }}
                 <div class="pros__item">
                   <div class="img">
                     <img src="{{ .image }}" alt="">
@@ -231,7 +231,7 @@
                 <div class="img">
                   <img src="img/phone-icon.svg" alt="">
                 </div>
-                <h4 class="subtitle bold">{{ .Params.content.cta }}</h4>
+                <h4 class="subtitle bold">{{ .Params.cta }}</h4>
                 <button class="btn btn--dark">Зв'язок з нами</button>
               </div>
             </div>
