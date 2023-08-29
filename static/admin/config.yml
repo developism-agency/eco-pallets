@@ -16,9 +16,9 @@ collections:
         name: 'main-section'
         i18n: true
         fields:
-          - { label: 'Заголовок', name: 'title', widget: 'string' }
-          - { label: 'Текст', name: 'text', widget: 'string' }
-          - { label: 'Зображення', name: 'image', widget: 'image' }
+          - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
+          - { label: 'Текст', name: 'text', widget: 'string', i18n: true }
+          - { label: 'Зображення', name: 'image', widget: 'image', i18n: true }
       - file: 'content/about.md'
         label: 'Про нас'
         name: 'about'
