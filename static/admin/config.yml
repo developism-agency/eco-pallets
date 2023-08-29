@@ -81,11 +81,10 @@ collections:
                 name: 'pros'
                 widget: 'list'
                 allow_add: false
-                fields: [
-                  { label: 'Назва переваги', name: 'name', widget: 'string' },
-                  { label: 'Текст', name: 'text', widget: 'text' },
-                  { label: 'Зображення', name: 'image', widget: 'image' },
-                ]
+                fields: 
+                  - { label: 'Назва переваги', name: 'name', widget: 'string' }
+                  - { label: 'Текст', name: 'text', widget: 'text' }
+                  - { label: 'Зображення', name: 'image', widget: 'image' }
                 default: 
                   - { name: 'Матеріали найвищої якості', text: 'Використовуємо якісні екологічні матеріали, завдяки чому наша продукція довго залишатиметься практичною, міцною, зручною та безпечною.', image: '/img/leafs-icon.svg' }
                   - { name: 'Відповідність технічному завданню', text: 'Маємо автоматичні лінії для збивання піддонів, коління дров, пилорами та багато інших устаткувань, що забезпечує високу точність виробництва у суворій відповідності до технічного завдання.', image: '/img/mechanism-icon.svg'}
