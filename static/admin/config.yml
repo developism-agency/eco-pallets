@@ -80,7 +80,6 @@ collections:
               - label: 'Список переваг'
                 name: 'pros'
                 widget: 'list'
-                allow_add: false
                 fields: 
                   - { label: 'Назва переваги', name: 'name', widget: 'string' }
                   - { label: 'Текст', name: 'text', widget: 'text' }
