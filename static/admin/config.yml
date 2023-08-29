@@ -55,7 +55,7 @@ collections:
         name: 'pros'
         fields:
           - { label: 'Заголовок', name: 'title', widget: 'string' }
-          - { label: 'Список переваг', name: 'pros', widget: 'list', allow_add: false, min: 5, max: 5,
+          - { label: 'Список переваг', name: 'pros', widget: 'list', min: 5, max: 5,
               fields: [
                 { label: 'Назва переваги', name: 'name', widget: 'string' },
                 { label: 'Текст', name: 'text', widget: 'text' },
@@ -68,15 +68,15 @@ collections:
         name: 'cert'
         fields:
           - { label: 'Заголовок', name: 'title', widget: 'string' }
-      # - name: 'form'
-      #   file: 'content/form.md'
-      #   label: 'Форма зворотнього зв\'язку'
-      #   fields:
-      #     - { label: 'Форма зворотнього зв\'язку', name: 'content', widget: 'object',
-      #         fields: [
-      #           { label: 'Заголовок', name: 'title', widget: 'string' },
-      #           { label: 'Типи товарів', name: 'types', widget: 'list', 
-      #             field: { label: 'Назва типу', name: 'name', widget: 'string' },
-      #           },
-      #         ]
-      #       }
+      - name: 'form'
+        file: 'content/form.md'
+        label: "Форма зворотнього зв'язку"
+        fields:
+          - { label: "Форма зворотнього зв'язку", name: 'content', widget: 'object',
+              fields: [
+                { label: 'Заголовок', name: 'title', widget: 'string' },
+                { label: 'Типи товарів', name: 'types', widget: 'list', 
+                  field: { label: 'Назва типу', name: 'name', widget: 'string' },
+                },
+              ]
+            }
