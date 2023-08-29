@@ -4,12 +4,13 @@ backend:
 media_folder: static/img
 public_folder: /img
 i18n:
-  structure: multiple_files
+  structure: single_file
   locales: [en, fr, de, it, pl, ua]
   default_locale: ua
 collections:
   - name: 'main-page'
     label: 'Main Page'
+    i18n: true
     files:
       - file: 'content/hero.md'
         label: 'Головна секція'
