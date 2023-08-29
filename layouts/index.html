@@ -286,14 +286,14 @@
                       +48
                     </option>
                   </select>
-                  <input type="phone" placeholder="Номер телефону*" name="phone-number">
+                  <input type="phone" placeholder="Номер телефону*" name="phone_number">
                 </div>
                 <div class="product-type">
                   <h3 class="product-type__title">ВИБЕРІТЬ ТИП ТОВАРУ*:</h3>
                   <div class="product-type__list">
                     {{ range .Params.types }}
                       <label class="product-type__item">
-                        <input type="checkbox" name="product-type" class="input" value="Дрова в ящику">
+                        <input type="checkbox" name="product_type" class="input" value="Дрова в ящику">
                         <div class="check">{{ .name }}</div>
                       </label>
                     {{ end }}
