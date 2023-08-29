@@ -73,7 +73,7 @@ collections:
         name: 'pros'
         fields:
           - { label: 'Заголовок', name: 'title', widget: 'string' },
-          - { label: 'Список переваг', name: 'pros', widget: 'list', allow_add: false,
+          - { label: 'Список переваг', name: 'pros', widget: 'list', allow_add: false, min: 5, max: 5,
               fields: [
                 { label: 'Назва переваги', name: 'name', widget: 'string' },
                 { label: 'Текст', name: 'text', widget: 'text' },
