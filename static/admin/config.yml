@@ -50,7 +50,7 @@ collections:
         fields:
           - { label: 'Заголовок', name: 'title', widget: 'string' },
           - { label: 'Список послуг', name: 'services', widget: 'list',
-            field: { label: 'Назва послуги', name: 'name', widget: 'string' } 
+              field: { label: 'Назва послуги', name: 'name', widget: 'string' } 
           }
       - file: 'content/pros.md'
         label: 'Переваги'
