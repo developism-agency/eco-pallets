@@ -529,7 +529,6 @@ body {
       margin-bottom: 22px; }
   .hero__img {
     height: 100%;
-    background-image: url(attr(data-img));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
@@ -630,7 +629,6 @@ body {
     .about__stats > * {
       width: 50%; }
   .about__img {
-    background-image: url(attr(data-img));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -819,6 +817,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
     grid-row-gap: 20px;
     padding: max(12px, min(2.361vw, 34px));
     padding-right: unset; }
