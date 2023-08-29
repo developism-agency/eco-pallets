@@ -2,6 +2,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.14",
     "custom-select": "^1.1.15",
+    "nodemailer": "^6.9.4",
     "postcss": "^8.4.27",
     "postcss-cli": "^10.1.0"
   },

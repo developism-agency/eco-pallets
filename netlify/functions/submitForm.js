@@ -15,9 +15,6 @@ exports.handler = async (event) => {
       }
     });
 
-    // q: in transporter i must use email and pass of reciving account or what ?
-    // a: 
-
     // Set up email data
     const mailOptions = {
       from: 'your-email@example.com',
