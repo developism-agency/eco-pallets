@@ -13,19 +13,19 @@ collections:
     name: 'main-page'
     folder: 'content'
     i18n: true
-    files:
-      - file: 'hero.md'
-        label: 'Головна секція'
-        name: 'main-section'
+    fields:
+      - label: 'Головна секція'
+        name: 'hero'
         i18n: true
+        widget: 'object'
         fields:
           - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
           - { label: 'Текст', name: 'text', widget: 'string', i18n: true }
           - { label: 'Зображення', name: 'image', widget: 'image', i18n: true }
-      - file: 'about.md'
-        label: 'Про нас'
+      - label: 'Про нас'
         name: 'about'
         i18n: true
+        widget: 'object'
         fields:
           - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
           - { label: 'Текст', name: 'text', widget: 'object', i18n: true, 
@@ -35,10 +35,10 @@ collections:
               ]
             }
           - { label: 'Зображення', name: 'image', widget: 'image', i18n: true }
-      - file: 'products.md'
-        label: 'Продукція'
+      - label: 'Продукція'
         name: 'products'
         i18n: true
+        widget: 'object'
         fields:
           - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
           - { label: 'Підзаголовок', name: 'subtitle', widget: 'string', i18n: true }
@@ -54,17 +54,17 @@ collections:
                 { label: 'Текст', name: 'text', widget: 'text', i18n: true },
               ]
             }
-      - file: 'services.md'
-        label: 'Послуги'
+      - label: 'Послуги'
         name: 'services'
         i18n: true
+        widget: 'object'
         fields:
           - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
           - { label: 'Список послуг', name: 'services', widget: 'list', i18n: true, field: { label: 'Назва послуги', name: 'name', widget: 'string', i18n: true } }
-      - file: 'pros.md'
-        label: 'Переваги'
+      - label: 'Переваги'
         name: 'pros'
         i18n: true
+        widget: 'object'
         fields:
           - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
           - { label: 'Список переваг', name: 'pros', widget: 'list', min: 5, max: 5, i18n: true,
@@ -75,25 +75,25 @@ collections:
               ]
             }
           - { label: 'CTA', name: 'cta', widget: 'string', i18n: true }
-      - file: 'cert.md'
-        label: 'Сертифікати'
+      - label: 'Сертифікати'
         name: 'cert'
         i18n: true
+        widget: 'object'
         fields:
           - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
       - name: 'form'
-        file: 'form.md'
         label: "Форма зворотнього зв'язку"
         i18n: true
+        widget: 'object'
         fields:
           - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
           - { label: 'Типи товарів', name: 'types', widget: 'list', i18n: true,
               field: { label: 'Назва типу', name: 'name', widget: 'string', i18n: true }
             }
-      - file: 'map.md'
-        name: 'contacts'
+      - name: 'contacts'
         label: 'Контакти'
         i18n: true
+        widget: 'object'
         fields:
           - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
           - { label: 'Виробництво', name: 'assembly', widget: 'object', i18n: true,

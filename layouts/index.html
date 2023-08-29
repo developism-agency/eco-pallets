@@ -73,309 +73,293 @@
     </div>
   </header>
   <main>
-    {{ with .GetPage "./hero" }}
-      <section class="hero">
-        <div class="container">
-          <div class="hero__inner">
-            <div class="hero__content">
-              <span class="title-label diff">
-                <mark>50+</mark>  Видів нестандартних піддонів
-              </span>
-              <h1 class="title">{{ .Params.title }}</h1>
-              <p class="text">{{ .Params.text }}</p>
-              <button class="btn btn--arrow">
-                <span class="name">Наші продукти</span>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__content">
+            <span class="title-label diff">
+              <mark>50+</mark>  Видів нестандартних піддонів
+            </span>
+            <h1 class="title">{{ .Params.hero.title }}</h1>
+            <p class="text">{{ .Params.hero.text }}</p>
+            <button class="btn btn--arrow">
+              <span class="name">Наші продукти</span>
+              <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
+            </button>
+          </div>
+          <div class="hero__img" style="background-image: url({{ .Params.hero.image }})">
+          </div>
+          <div class="scroll-down" id="scrollDown">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="28" viewBox="0 0 26 28" fill="none">
+              <g clip-path="url(#clip0_816_3748)">
+                <path d="M13 5.25C13.2155 5.25 13.4222 5.34219 13.5745 5.50628C13.7269 5.67038 13.8125 5.89294 13.8125 6.125V9.625C13.8125 9.85706 13.7269 10.0796 13.5745 10.2437C13.4222 10.4078 13.2155 10.5 13 10.5C12.7845 10.5 12.5778 10.4078 12.4255 10.2437C12.2731 10.0796 12.1875 9.85706 12.1875 9.625V6.125C12.1875 5.89294 12.2731 5.67038 12.4255 5.50628C12.5778 5.34219 12.7845 5.25 13 5.25ZM19.5 19.25C19.5 21.1065 18.8152 22.887 17.5962 24.1997C16.3772 25.5125 14.7239 26.25 13 26.25C11.2761 26.25 9.62279 25.5125 8.40381 24.1997C7.18482 22.887 6.5 21.1065 6.5 19.25V8.75C6.5 6.89348 7.18482 5.11301 8.40381 3.80025C9.62279 2.4875 11.2761 1.75 13 1.75C14.7239 1.75 16.3772 2.4875 17.5962 3.80025C18.8152 5.11301 19.5 6.89348 19.5 8.75V19.25ZM13 0C10.8451 0 8.77849 0.921872 7.25476 2.56282C5.73102 4.20376 4.875 6.42936 4.875 8.75V19.25C4.875 21.5706 5.73102 23.7962 7.25476 25.4372C8.77849 27.0781 10.8451 28 13 28C15.1549 28 17.2215 27.0781 18.7452 25.4372C20.269 23.7962 21.125 21.5706 21.125 19.25V8.75C21.125 6.42936 20.269 4.20376 18.7452 2.56282C17.2215 0.921872 15.1549 0 13 0V0Z" fill="#0E0D12"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_816_3748">
+                  <rect width="26" height="28" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__content">
+            <div class="title-label green">Про нас</div>
+            <h2 class="title white">{{ .Params.about.title }}</h2>
+            <p class="text white">{{ .Params.about.text.visible }}</p>
+            <div class="text-accordion">
+              <div class="text-accordion__content" id="accordion-content">
+                <p class="text white">{{ .Params.about.text.hidden }}</p>
+              </div>
+              <button class="text-accordion__btn" id="accordion-trigger">
+                <span class="name">Детальніше</span>
                 <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
               </button>
             </div>
-            <div class="hero__img" style="background-image: url({{ .Params.image }})">
-            </div>
-            <div class="scroll-down" id="scrollDown">
-              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="28" viewBox="0 0 26 28" fill="none">
-                <g clip-path="url(#clip0_816_3748)">
-                  <path d="M13 5.25C13.2155 5.25 13.4222 5.34219 13.5745 5.50628C13.7269 5.67038 13.8125 5.89294 13.8125 6.125V9.625C13.8125 9.85706 13.7269 10.0796 13.5745 10.2437C13.4222 10.4078 13.2155 10.5 13 10.5C12.7845 10.5 12.5778 10.4078 12.4255 10.2437C12.2731 10.0796 12.1875 9.85706 12.1875 9.625V6.125C12.1875 5.89294 12.2731 5.67038 12.4255 5.50628C12.5778 5.34219 12.7845 5.25 13 5.25ZM19.5 19.25C19.5 21.1065 18.8152 22.887 17.5962 24.1997C16.3772 25.5125 14.7239 26.25 13 26.25C11.2761 26.25 9.62279 25.5125 8.40381 24.1997C7.18482 22.887 6.5 21.1065 6.5 19.25V8.75C6.5 6.89348 7.18482 5.11301 8.40381 3.80025C9.62279 2.4875 11.2761 1.75 13 1.75C14.7239 1.75 16.3772 2.4875 17.5962 3.80025C18.8152 5.11301 19.5 6.89348 19.5 8.75V19.25ZM13 0C10.8451 0 8.77849 0.921872 7.25476 2.56282C5.73102 4.20376 4.875 6.42936 4.875 8.75V19.25C4.875 21.5706 5.73102 23.7962 7.25476 25.4372C8.77849 27.0781 10.8451 28 13 28C15.1549 28 17.2215 27.0781 18.7452 25.4372C20.269 23.7962 21.125 21.5706 21.125 19.25V8.75C21.125 6.42936 20.269 4.20376 18.7452 2.56282C17.2215 0.921872 15.1549 0 13 0V0Z" fill="#0E0D12"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_816_3748">
-                    <rect width="26" height="28" fill="white"/>
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </section>
-    {{ end }}
-    {{ with .GetPage "./about" }}
-      <section class="about" id="about">
-        <div class="container">
-          <div class="about__inner">
-            <div class="about__content">
-              <div class="title-label green">Про нас</div>
-              <h2 class="title white">{{ .Params.title }}</h2>
-              <p class="text white">{{ .Params.text.visible }}</p>
-              <div class="text-accordion">
-                <div class="text-accordion__content" id="accordion-content">
-                  <p class="text white">{{ .Params.text.hidden }}</p>
+            <div class="about__stats">
+              <div class="stat-card">
+                <div class="img">
+                  <img src="../img/qty-icon.png" alt="">
                 </div>
-                <button class="text-accordion__btn" id="accordion-trigger">
-                  <span class="name">Детальніше</span>
-                  <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
-                </button>
+                <div class="text">
+                  <span>100 000+</span>
+                  <p>Кількість вироблених піддонів у місяць</p>
+                </div>
               </div>
-              <div class="about__stats">
-                <div class="stat-card">
-                  <div class="img">
-                    <img src="../img/qty-icon.png" alt="">
-                  </div>
-                  <div class="text">
-                    <span>100 000+</span>
-                    <p>Кількість вироблених піддонів у місяць</p>
-                  </div>
+              <div class="stat-card">
+                <div class="img">
+                  <img src="../img/employees-icon.png" alt="">
                 </div>
-                <div class="stat-card">
-                  <div class="img">
-                    <img src="../img/employees-icon.png" alt="">
-                  </div>
-                  <div class="text">
-                    <span>30+</span>
-                    <p>Кількість працівників підприємства</p>
-                  </div>
+                <div class="text">
+                  <span>30+</span>
+                  <p>Кількість працівників підприємства</p>
                 </div>
               </div>
             </div>
-            <div class="about__img" style="background-image: url({{ .Params.image }})"></div>
           </div>
+          <div class="about__img" style="background-image: url({{ .Params.about.image }})"></div>
         </div>
-      </section>
-    {{ end }}
-    {{ with .GetPage "./products" }}
-      <section class="products">
-        <div class="container">
-          <div class="products__inner">
-            <div class="title-label">продукція</div>
-            <div class="products__head">
-              <h2 class="title">{{ .Params.title }}</h2>
-              <p class="subtitle">{{ .Params.subtitle }}</p>
-            </div>
-            <div class="products__list">
-              {{ range .Params.list }}
-                <div class="product">
-                  <div class="product__info">
-                    <h3 class="title">{{ .name }}</h3>
-                    <button class="btn btn--arrow">
-                      <span class="name">Детальніше</span>
-                      <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
-                    </button>
-                  </div>
-                  <div class="product__img">
-                    <img src="{{ .image }}" alt="">
-                  </div>
-                </div>
-              {{ end }}
-            </div>
-            <div class="special">
-              <div class="special__inner">
-                <div class="special__info">
-                  <h3 class="title">{{ .Params.special.title }}</h3>
-                  <p class="subtitle">{{ .Params.special.text }}</p>
+      </div>
+    </section>
+    <section class="products">
+      <div class="container">
+        <div class="products__inner">
+          <div class="title-label">продукція</div>
+          <div class="products__head">
+            <h2 class="title">{{ .Params.products.title }}</h2>
+            <p class="subtitle">{{ .Params.products.subtitle }}</p>
+          </div>
+          <div class="products__list">
+            {{ range .Params.products.list }}
+              <div class="product">
+                <div class="product__info">
+                  <h3 class="title">{{ .name }}</h3>
                   <button class="btn btn--arrow">
-                    <span class="name">Зробити замовлення</span>
+                    <span class="name">Детальніше</span>
                     <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
                   </button>
                 </div>
-                <div class="special__img">
-                  <img src="../img/special-img.webp" alt="">
+                <div class="product__img">
+                  <img src="{{ .image }}" alt="">
                 </div>
               </div>
-            </div>
+            {{ end }}
           </div>
-        </div>
-      </section>
-    {{ end }}
-    {{ with .GetPage "./services" }}
-      <section class="services">
-        <div class="container">
-          <div class="services__inner">
-            <div class="title-label">Послуги</div>
-            <h2 class="title">{{ .Params.title }}</h2>
-            <div class="services__list">
-              {{ range .Params.services }}
-                <div class="services__item">{{ . }}</div>
-              {{ end }}
-              <button class="btn btn--arrow">
-                <span class="name">Зробити замовлення</span>
-                <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-    {{ end }}
-    {{ with .GetPage "./pros" }}
-      <section class="pros">
-        <div class="container">
-          <div class="pros__inner">
-            <div class="title-label green">чому ми ?</div>
-            <h2 class="title white">{{ .Params.title }}</h2>
-            <div class="pros__list">
-              {{ range .Params.pros }}
-                <div class="pros__item">
-                  <div class="img">
-                    <img src="{{ .image }}" alt="">
-                  </div>
-                  <h4 class="title white">{{ .name }}</h4>
-                  <div class="text white sm">{{ .text }}</div>
-                </div>
-              {{ end }}
-              <div class="pros__item white">
-                <div class="img">
-                  <img src="../img/phone-icon.svg" alt="">
-                </div>
-                <h4 class="subtitle bold">{{ .Params.cta }}</h4>
-                <button class="btn btn--dark">Зв'язок з нами</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    {{ end }}
-    {{ with .GetPage "./cert" }}
-      <section class="cert">
-        <div class="container">
-          <div class="cert__inner">
-            <div class="title-label">сертифікати</div>
-            <h2 class="title">{{ .Params.title }}</h2>
-            <div class="cert__list">
-              <div class="cert__item">
-                <div class="img"><img src="../img/epal-icon.svg" alt=""></div>
-                <h3 class="title">Сертифікція EPAL</h3>
-              </div>
-              <div class="divider"></div>
-              <div class="cert__item">
-                <div class="img"><img src="../img/cert-icon.svg" alt=""></div>
-                <h3 class="title">Фітосанітарний сертифікат</h3>
-              </div>
-              <div class="divider"></div>
-              <div class="cert__item">
-                <div class="img"><img src="../img/cert-icon.svg" alt=""></div>
-                <h3 class="title">Санітарно-епідеміологічна експертиза</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    {{ end }}
-    {{ with .GetPage "./form" }}
-      <section class="contact-us">
-        <div class="container">
-          <div class="contact-us__inner">
-            <div class="title-label green">СПІВПРАЦЯ З НАМИ</div>
-            <h2 class="title white">{{ .Params.title }}</h2>
-            <div class="contact-us__content">
-              <form class="contact-us__form" id="contact-form">
-                <div class="row">
-                  <input type="text" name="name" placeholder="Як вас звати">
-                  <input type="email" name="email" placeholder="Ваш e-mail">
-                </div>
-                <div class="phone">
-                  <select class="custom-select custom-select--number" id="number-select">
-                    <option value="+380" data-src="../img/ua.png">
-                      +380
-                    </option>
-                    <option value="+48" data-src="../img/ua.png">
-                      +48
-                    </option>
-                  </select>
-                  <input type="phone" placeholder="Номер телефону*" name="phone_number">
-                </div>
-                <div class="product-type">
-                  <h3 class="product-type__title">ВИБЕРІТЬ ТИП ТОВАРУ*:</h3>
-                  <div class="product-type__list">
-                    {{ range .Params.types }}
-                      <label class="product-type__item">
-                        <input type="checkbox" name="product_type" class="input" value="Дрова в ящику">
-                        <div class="check">{{ . }}</div>
-                      </label>
-                    {{ end }}
-                  </div>
-                </div>
-                <textarea name="message" class="message" placeholder="Повідомлення"></textarea>
-                <button type="submit" class="btn btn--arrow" id="response-form">
+          <div class="special">
+            <div class="special__inner">
+              <div class="special__info">
+                <h3 class="title">{{ .Params.products.special.title }}</h3>
+                <p class="subtitle">{{ .Params.products.special.text }}</p>
+                <button class="btn btn--arrow">
                   <span class="name">Зробити замовлення</span>
                   <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
                 </button>
-              </form>
-              <div class="contact-us__img">
-                <img src="../img/form-img.webp" alt="pallets">
+              </div>
+              <div class="special__img">
+                <img src="../img/special-img.webp" alt="">
               </div>
             </div>
           </div>
         </div>
-      </section>
-    {{ end }}
-    {{ with .GetPage "./map" }}
-      <section class="map">
-        <div class="container">
-          <div class="map__inner">
-            <div class="title-label">КОНТАКТИ</div>
-            <h2 class="title">{{ .Params.title }}</h2>
-            <div class="map__content">
-              <div class="map__info">
-                <div class="title-label sub">Виробництво</div>
-                <ul>
-                  <li>
-                    <div class="img"><img src="../img/location-icon.png" alt=""></div>
-                    <div class="text">
-                      {{ .Params.assembly.location }}
-                      <button class="btn-link" data-address="{{ .Params.assembly.locationLink }}">
-                        {{/*  https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.9143067351333!2d24.277662982750268!3d49.99421604332794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ace56df37893f%3A0xa79093f4a54544f5!2sSchool%20of%20Velyke%20Kolodno!5e0!3m2!1suk!2sua!4v1693070158395!5m2!1suk!2sua  */}}
-                        <span class="btn-text">Показати на мапі</span>
-                        <span class="arrow">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
-                            <path d="M0.993352 11.9985C0.761661 11.9988 0.537126 11.9292 0.358724 11.8017C0.258315 11.7299 0.175316 11.6418 0.114479 11.5423C0.0536416 11.4428 0.0161625 11.3339 0.00418798 11.2219C-0.00778654 11.1098 0.00597897 10.9969 0.0446958 10.8895C0.0834126 10.7821 0.146319 10.6823 0.229814 10.5958L4.67221 6.01173L0.388472 1.41906C0.306104 1.33158 0.244592 1.23092 0.207475 1.12286C0.170357 1.01481 0.158365 0.901501 0.172187 0.789439C0.186009 0.677378 0.225373 0.568777 0.288017 0.469879C0.35066 0.370982 0.435349 0.283737 0.537213 0.213159C0.639811 0.135301 0.75996 0.0765731 0.89012 0.0406621C1.02028 0.00475112 1.15764 -0.00756759 1.29359 0.00447845C1.42953 0.0165245 1.56112 0.0526755 1.68009 0.110663C1.79907 0.16865 1.90286 0.247221 1.98496 0.341446L6.77442 5.47292C6.92027 5.62596 7 5.81791 7 6.01601C7 6.2141 6.92027 6.40606 6.77442 6.55909L1.81639 11.6906C1.71691 11.7941 1.59055 11.8759 1.44755 11.9294C1.30455 11.9829 1.14894 12.0065 0.993352 11.9985Z" fill="#1B4D3E"/>
-                          </svg>
-                        </span>
-                      </button>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="img"><img src="../img/phone-icon.png" alt=""></div>
-                    <div class="text"><a href="tel:{{ .Params.assembly.phone }}">{{ .Params.assembly.phone }}</a></div>
-                  </li>
-                  <li>
-                    <div class="img"><img src="../img/mail-icon.png" alt=""></div>
-                    <div class="text"><a href="mailto:{{ .Params.assembly.email }}">{{ .Params.assembly.email }}</a></div>
-                  </li>
-                </ul>
-                <div class="divider"></div>
-                <div class="title-label sub">Склад в Європі</div>
-                <ul>
-                  <li>
-                    <div class="img"><img src="../img/location-icon.png" alt=""></div>
-                    <div class="text">
-                      {{ .Params.euStorage.location }}
-                      <button class="btn-link" data-address="{{ .Params.euStorage.locationLink }}">
-                        {{/*  https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2743.7518396693945!2d15.669558776687664!3d46.55259566016454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476f771770cbf365%3A0x2afd82719b7fc5aa!2zR3VuZHVsacSNZXZhIHVsaWNhIDEyLCAyMDAwIE1hcmlib3IsINCh0LvQvtCy0LXQvdGW0Y8!5e0!3m2!1suk!2sua!4v1693070311213!5m2!1suk!2sua  */}}
-                        <span class="btn-text">Показати на мапі</span>
-                        <span class="arrow">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
-                            <path d="M0.993352 11.9985C0.761661 11.9988 0.537126 11.9292 0.358724 11.8017C0.258315 11.7299 0.175316 11.6418 0.114479 11.5423C0.0536416 11.4428 0.0161625 11.3339 0.00418798 11.2219C-0.00778654 11.1098 0.00597897 10.9969 0.0446958 10.8895C0.0834126 10.7821 0.146319 10.6823 0.229814 10.5958L4.67221 6.01173L0.388472 1.41906C0.306104 1.33158 0.244592 1.23092 0.207475 1.12286C0.170357 1.01481 0.158365 0.901501 0.172187 0.789439C0.186009 0.677378 0.225373 0.568777 0.288017 0.469879C0.35066 0.370982 0.435349 0.283737 0.537213 0.213159C0.639811 0.135301 0.75996 0.0765731 0.89012 0.0406621C1.02028 0.00475112 1.15764 -0.00756759 1.29359 0.00447845C1.42953 0.0165245 1.56112 0.0526755 1.68009 0.110663C1.79907 0.16865 1.90286 0.247221 1.98496 0.341446L6.77442 5.47292C6.92027 5.62596 7 5.81791 7 6.01601C7 6.2141 6.92027 6.40606 6.77442 6.55909L1.81639 11.6906C1.71691 11.7941 1.59055 11.8759 1.44755 11.9294C1.30455 11.9829 1.14894 12.0065 0.993352 11.9985Z" fill="#1B4D3E"/>
-                          </svg>
-                        </span>
-                      </button>
-                    </div>
-                  </li>
-                </ul>
+      </div>
+    </section>
+    <section class="services">
+      <div class="container">
+        <div class="services__inner">
+          <div class="title-label">Послуги</div>
+          <h2 class="title">{{ .Params.services.title }}</h2>
+          <div class="services__list">
+            {{ range .Params.services.services }}
+              <div class="services__item">{{ . }}</div>
+            {{ end }}
+            <button class="btn btn--arrow">
+              <span class="name">Зробити замовлення</span>
+              <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pros">
+      <div class="container">
+        <div class="pros__inner">
+          <div class="title-label green">чому ми ?</div>
+          <h2 class="title white">{{ .Params.pros.title }}</h2>
+          <div class="pros__list">
+            {{ range .Params.pros.pros }}
+              <div class="pros__item">
+                <div class="img">
+                  <img src="{{ .image }}" alt="">
+                </div>
+                <h4 class="title white">{{ .name }}</h4>
+                <div class="text white sm">{{ .text }}</div>
               </div>
-              <div class="map__map">
-                <iframe src="{{ .Params.assembly.locationLink }}" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            {{ end }}
+            <div class="pros__item white">
+              <div class="img">
+                <img src="../img/phone-icon.svg" alt="">
               </div>
+              <h4 class="subtitle bold">{{ .Params.pros.cta }}</h4>
+              <button class="btn btn--dark">Зв'язок з нами</button>
             </div>
           </div>
         </div>
-      </section>
-    {{ end }}
+      </div>
+    </section>
+    <section class="cert">
+      <div class="container">
+        <div class="cert__inner">
+          <div class="title-label">сертифікати</div>
+          <h2 class="title">{{ .Params.cert.title }}</h2>
+          <div class="cert__list">
+            <div class="cert__item">
+              <div class="img"><img src="../img/epal-icon.svg" alt=""></div>
+              <h3 class="title">Сертифікція EPAL</h3>
+            </div>
+            <div class="divider"></div>
+            <div class="cert__item">
+              <div class="img"><img src="../img/cert-icon.svg" alt=""></div>
+              <h3 class="title">Фітосанітарний сертифікат</h3>
+            </div>
+            <div class="divider"></div>
+            <div class="cert__item">
+              <div class="img"><img src="../img/cert-icon.svg" alt=""></div>
+              <h3 class="title">Санітарно-епідеміологічна експертиза</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-us">
+      <div class="container">
+        <div class="contact-us__inner">
+          <div class="title-label green">СПІВПРАЦЯ З НАМИ</div>
+          <h2 class="title white">{{ .Params.from.title }}</h2>
+          <div class="contact-us__content">
+            <form class="contact-us__form" id="contact-form">
+              <div class="row">
+                <input type="text" name="name" placeholder="Як вас звати">
+                <input type="email" name="email" placeholder="Ваш e-mail">
+              </div>
+              <div class="phone">
+                <select class="custom-select custom-select--number" id="number-select">
+                  <option value="+380" data-src="../img/ua.png">
+                    +380
+                  </option>
+                  <option value="+48" data-src="../img/ua.png">
+                    +48
+                  </option>
+                </select>
+                <input type="phone" placeholder="Номер телефону*" name="phone_number">
+              </div>
+              <div class="product-type">
+                <h3 class="product-type__title">ВИБЕРІТЬ ТИП ТОВАРУ*:</h3>
+                <div class="product-type__list">
+                  {{ range .Params.form.types }}
+                    <label class="product-type__item">
+                      <input type="checkbox" name="product_type" class="input" value="Дрова в ящику">
+                      <div class="check">{{ . }}</div>
+                    </label>
+                  {{ end }}
+                </div>
+              </div>
+              <textarea name="message" class="message" placeholder="Повідомлення"></textarea>
+              <button type="submit" class="btn btn--arrow" id="response-form">
+                <span class="name">Зробити замовлення</span>
+                <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
+              </button>
+            </form>
+            <div class="contact-us__img">
+              <img src="../img/form-img.webp" alt="pallets">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="map">
+      <div class="container">
+        <div class="map__inner">
+          <div class="title-label">КОНТАКТИ</div>
+          <h2 class="title">{{ .Params.contacts.title }}</h2>
+          <div class="map__content">
+            <div class="map__info">
+              <div class="title-label sub">Виробництво</div>
+              <ul>
+                <li>
+                  <div class="img"><img src="../img/location-icon.png" alt=""></div>
+                  <div class="text">
+                    {{ .Params.contacts.assembly.location }}
+                    <button class="btn-link" data-address="{{ .Params.contacts.assembly.locationLink }}">
+                      {{/*  https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.9143067351333!2d24.277662982750268!3d49.99421604332794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ace56df37893f%3A0xa79093f4a54544f5!2sSchool%20of%20Velyke%20Kolodno!5e0!3m2!1suk!2sua!4v1693070158395!5m2!1suk!2sua  */}}
+                      <span class="btn-text">Показати на мапі</span>
+                      <span class="arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                          <path d="M0.993352 11.9985C0.761661 11.9988 0.537126 11.9292 0.358724 11.8017C0.258315 11.7299 0.175316 11.6418 0.114479 11.5423C0.0536416 11.4428 0.0161625 11.3339 0.00418798 11.2219C-0.00778654 11.1098 0.00597897 10.9969 0.0446958 10.8895C0.0834126 10.7821 0.146319 10.6823 0.229814 10.5958L4.67221 6.01173L0.388472 1.41906C0.306104 1.33158 0.244592 1.23092 0.207475 1.12286C0.170357 1.01481 0.158365 0.901501 0.172187 0.789439C0.186009 0.677378 0.225373 0.568777 0.288017 0.469879C0.35066 0.370982 0.435349 0.283737 0.537213 0.213159C0.639811 0.135301 0.75996 0.0765731 0.89012 0.0406621C1.02028 0.00475112 1.15764 -0.00756759 1.29359 0.00447845C1.42953 0.0165245 1.56112 0.0526755 1.68009 0.110663C1.79907 0.16865 1.90286 0.247221 1.98496 0.341446L6.77442 5.47292C6.92027 5.62596 7 5.81791 7 6.01601C7 6.2141 6.92027 6.40606 6.77442 6.55909L1.81639 11.6906C1.71691 11.7941 1.59055 11.8759 1.44755 11.9294C1.30455 11.9829 1.14894 12.0065 0.993352 11.9985Z" fill="#1B4D3E"/>
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </li>
+                <li>
+                  <div class="img"><img src="../img/phone-icon.png" alt=""></div>
+                  <div class="text"><a href="tel:{{ .Params.contacts.assembly.phone }}">{{ .Params.contacts.assembly.phone }}</a></div>
+                </li>
+                <li>
+                  <div class="img"><img src="../img/mail-icon.png" alt=""></div>
+                  <div class="text"><a href="mailto:{{ .Params.contacts.assembly.email }}">{{ .Params.contacts.assembly.email }}</a></div>
+                </li>
+              </ul>
+              <div class="divider"></div>
+              <div class="title-label sub">Склад в Європі</div>
+              <ul>
+                <li>
+                  <div class="img"><img src="../img/location-icon.png" alt=""></div>
+                  <div class="text">
+                    {{ .Params.contacts.euStorage.location }}
+                    <button class="btn-link" data-address="{{ .Params.contacts.euStorage.locationLink }}">
+                      {{/*  https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2743.7518396693945!2d15.669558776687664!3d46.55259566016454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476f771770cbf365%3A0x2afd82719b7fc5aa!2zR3VuZHVsacSNZXZhIHVsaWNhIDEyLCAyMDAwIE1hcmlib3IsINCh0LvQvtCy0LXQvdGW0Y8!5e0!3m2!1suk!2sua!4v1693070311213!5m2!1suk!2sua  */}}
+                      <span class="btn-text">Показати на мапі</span>
+                      <span class="arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                          <path d="M0.993352 11.9985C0.761661 11.9988 0.537126 11.9292 0.358724 11.8017C0.258315 11.7299 0.175316 11.6418 0.114479 11.5423C0.0536416 11.4428 0.0161625 11.3339 0.00418798 11.2219C-0.00778654 11.1098 0.00597897 10.9969 0.0446958 10.8895C0.0834126 10.7821 0.146319 10.6823 0.229814 10.5958L4.67221 6.01173L0.388472 1.41906C0.306104 1.33158 0.244592 1.23092 0.207475 1.12286C0.170357 1.01481 0.158365 0.901501 0.172187 0.789439C0.186009 0.677378 0.225373 0.568777 0.288017 0.469879C0.35066 0.370982 0.435349 0.283737 0.537213 0.213159C0.639811 0.135301 0.75996 0.0765731 0.89012 0.0406621C1.02028 0.00475112 1.15764 -0.00756759 1.29359 0.00447845C1.42953 0.0165245 1.56112 0.0526755 1.68009 0.110663C1.79907 0.16865 1.90286 0.247221 1.98496 0.341446L6.77442 5.47292C6.92027 5.62596 7 5.81791 7 6.01601C7 6.2141 6.92027 6.40606 6.77442 6.55909L1.81639 11.6906C1.71691 11.7941 1.59055 11.8759 1.44755 11.9294C1.30455 11.9829 1.14894 12.0065 0.993352 11.9985Z" fill="#1B4D3E"/>
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="map__map">
+              <iframe src="{{ .Params.contacts.assembly.locationLink }}" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="container">
