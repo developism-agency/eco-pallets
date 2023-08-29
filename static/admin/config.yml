@@ -14,6 +14,7 @@ collections:
       - file: 'content/hero.md'
         label: 'Головна секція'
         name: 'main-section'
+        i18n: true
         fields:
           - { label: 'Заголовок', name: 'title', widget: 'string' }
           - { label: 'Текст', name: 'text', widget: 'string' }
@@ -21,6 +22,7 @@ collections:
       - file: 'content/about.md'
         label: 'Про нас'
         name: 'about'
+        i18n: true
         fields:
           - { label: 'Заголовок', name: 'title', widget: 'string' }
           - { label: 'Текст', name: 'text', widget: 'object',
@@ -33,6 +35,7 @@ collections:
       - file: 'content/products.md'
         label: 'Продукція'
         name: 'products'
+        i18n: true
         fields:
           - { label: 'Заголовок', name: 'title', widget: 'string' }
           - { label: 'Підзаголовок', name: 'subtitle', widget: 'string' }
@@ -51,12 +54,14 @@ collections:
       - file: 'content/services.md'
         label: 'Послуги'
         name: 'services'
+        i18n: true
         fields:
           - { label: 'Заголовок', name: 'title', widget: 'string' }
           - { label: 'Список послуг', name: 'services', widget: 'list', field: { label: 'Назва послуги', name: 'name', widget: 'string' } }
       - file: 'content/pros.md'
         label: 'Переваги'
         name: 'pros'
+        i18n: true
         fields:
           - { label: 'Заголовок', name: 'title', widget: 'string' }
           - { label: 'Список переваг', name: 'pros', widget: 'list', min: 5, max: 5,
@@ -70,11 +75,13 @@ collections:
       - file: 'content/cert.md'
         label: 'Сертифікати'
         name: 'cert'
+        i18n: true
         fields:
           - { label: 'Заголовок', name: 'title', widget: 'string' }
       - name: 'form'
         file: 'content/form.md'
         label: "Форма зворотнього зв'язку"
+        i18n: true
         fields:
           - { label: 'Заголовок', name: 'title', widget: 'string' }
           - { label: 'Типи товарів', name: 'types', widget: 'list', 
@@ -83,6 +90,7 @@ collections:
       - file: 'content/map.md'
         name: 'contacts'
         label: 'Контакти'
+        i18n: true
         fields:
           - { label: 'Заголовок', name: 'title', widget: 'string' }
           - { label: 'Виробництво', name: 'assembly', widget: 'object',
