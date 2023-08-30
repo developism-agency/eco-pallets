@@ -14,17 +14,17 @@
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <div class="header__logo">
+        <a href="/" class="header__logo">
           <img src="../img/logo.svg" alt="">
-        </div>
+        </a>
         <nav class="header__nav" id="menu">
           <ul>
-            <li><a href="" class="nav-link">Про нас</a></li>
-            <li><a href="" class="nav-link">Продукти</a></li>
-            <li><a href="" class="nav-link">Послуги</a></li>
-            <li><a href="" class="nav-link">Чому ми?</a></li>
-            <li><a href="" class="nav-link">Сертифікати</a></li>
-            <li><a href="" class="nav-link">Контакти</a></li>
+            <li><a href="#about" class="nav-link">Про нас</a></li>
+            <li><a href="#products" class="nav-link">Продукти</a></li>
+            <li><a href="#services" class="nav-link">Послуги</a></li>
+            <li><a href="#pros" class="nav-link">Чому ми?</a></li>
+            <li><a href="#cert" class="nav-link">Сертифікати</a></li>
+            <li><a href="#contacts" class="nav-link">Контакти</a></li>
           </ul>
           <div class="header__nav-actions">
             <button class="btn btn--dark mobile">Зв'язок з нами</button>
@@ -58,13 +58,27 @@
             </defs>
           </svg>
         </a>
-        <div class="header__lang">
-          <select class="custom-select" id="lang-select">
-            <option value="ua">UA</option>
-            <option value="pl">PL</option>
-            <option value="en">EN</option>
-          </select>
-        </div>
+        {{ if .Site.IsMultiLingual }}
+          <div class="header__lang">
+            <div class="dropdown">
+              <input type="checkbox" class="dropdown__switch" id="filter-switch" hidden />
+              <label for="filter-switch" class="dropdown__options-filter">
+                <ul class="dropdown__filter" role="listbox" tabindex="-1">
+                  <li class="dropdown__filter-selected" aria-selected="true">
+                    {{ .Site.Language.Lang }}
+                  </li>
+                  <li>
+                    <ul class="dropdown__select">
+                      {{ range $.Translations }}
+                          <li class="dropdown__select-option" role="option"><a href="{{ .Permalink }}">{{ .Lang }}</a></li>
+                      {{ end }}
+                    </ul>
+                  </li>
+                </ul>			
+              </label>
+            </div>
+          </div>
+        {{ end }}
         <button class="btn btn--dark desktop">Зв'язок з нами</button>
         <div class="burger" id="burger">
           <div class="burger__inner">
@@ -146,7 +160,7 @@
         </div>
       </div>
     </section>
-    <section class="products">
+    <section class="products" id="products">
       <div class="container">
         <div class="products__inner">
           <div class="title-label">продукція</div>
@@ -171,7 +185,7 @@
                   <div class="product-modal__inner">
                     <div class="product-modal__info">
                       <h2 class="title">{{ .modal.title }}</h2>
-                      <div class="text">{{ .modal.text }}</div>
+                      <div class="text">{{ .modal.text | markdownify }}</div>
                       <button class="btn btn--arrow">
                         <span class="name">Зробити замовлення</span>
                         <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
@@ -207,7 +221,7 @@
         </div>
       </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
       <div class="container">
         <div class="services__inner">
           <div class="title-label">Послуги</div>
@@ -224,7 +238,7 @@
         </div>
       </div>
     </section>
-    <section class="pros">
+    <section class="pros" id="pros">
       <div class="container">
         <div class="pros__inner">
           <div class="title-label green">чому ми ?</div>
@@ -250,7 +264,7 @@
         </div>
       </div>
     </section>
-    <section class="cert">
+    <section class="cert" id="cert">
       <div class="container">
         <div class="cert__inner">
           <div class="title-label">сертифікати</div>
@@ -312,7 +326,7 @@
         </div>
       </div>
     </section>
-    <section class="map">
+    <section class="map" id="contacts">
       <div class="container">
         <div class="map__inner">
           <div class="title-label">КОНТАКТИ</div>

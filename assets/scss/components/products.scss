@@ -40,7 +40,7 @@
   justify-content: space-between;
   column-gap: 24px;
   width: 100%;
-  height: clamp(148px, 19.792vw, 285px);
+  max-height: 285px;
   max-width: 626px;
   background-color: $font-light;
 
@@ -222,6 +222,7 @@
       width: 100%;
       max-width: unset;
       margin-right: unset;
+      margin: auto 0;
     }
 
     &__img {
@@ -279,6 +280,11 @@
         margin-bottom: 12px;
       }
     }
+  }
+
+  .product {
+    max-width: unset;
+    max-height: 180px;
   }
 
   .product-modal {
