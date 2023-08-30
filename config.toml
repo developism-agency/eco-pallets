@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://earnest-vacherin-ad7e04.netlify.app/'
 languageCode = 'en-us'
 title = 'Eco-pallets'
 defaultContentLanguage = 'en'
