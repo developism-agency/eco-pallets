@@ -92,7 +92,7 @@ pros:
         have all the necessary quality certificates, and manufacture products in
         accordance with European standards.
       image: /img/cert-icon.svg
-  title: Наші переваги
+  title: Our benefits
   cta: Choose Eco Pallet - we offer the best conditions for cooperation!
 cert:
   title: Our pallets are standardized for European certification
