@@ -169,12 +169,14 @@
             <p class="subtitle">{{ .Params.products.subtitle }}</p>
           </div>
           <div class="products__list">
+            {{ $moreBtn := .Params.utils.btns.more }}
+            {{ $orderBtn := .Params.utils.btns.order }}
             {{ range .Params.products.list }}
               <div class="product">
                 <div class="product__info">
                   <h3 class="title">{{ .name }}</h3>
                   <button class="btn btn--arrow" data-modal-trigger>
-                    <span class="name">{{ .Params.utils.btns.more }}</span>
+                    <span class="name">{{ $moreBtn }}</span>
                     <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
                   </button>
                 </div>
@@ -187,7 +189,7 @@
                       <h2 class="title">{{ .modal.title }}</h2>
                       <div class="text">{{ .modal.text | markdownify }}</div>
                       <button class="btn btn--arrow">
-                        <span class="name">{{ .Params.utils.btns.order }}</span>
+                        <span class="name">{{ $orderBtn }}</span>
                         <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
                       </button>
                       <button class="close">
