@@ -1,120 +1,120 @@
 ---
 title: null
 hero:
-  title: Eco Pallet — is a modern production of the best wooden pallets
-  text: "We offer pallets and other wooden products designed for a wide range of
-    industries: from pharmaceuticals and food processing to the oil and gas
-    industry or transportation."
+  title: Еко Палета — це сучасне виробництво кращих дерев'яних палет
+  text: "Ми пропонуємо піддони та інші дерев’яні вироби, розраховані на широкий
+    спектр галузей: від фармацевтики та харчової промисловості — до нафтогазової
+    промисловості чи транспортного сектору."
   image: /img/hero-img.webp
 about:
   title: About company
   text:
     visible: >-
-      Eco Pallet Company was founded in 2017. Initially, the brand specialized
-      in the production of standard pallets. However, over the course of a year,
-      Eco Pallet expanded its product line significantly, adding boxes, pyramid
-      stacks, pallet blanks, and firewood.
+      Компанія Еко Палета була заснована у 2017 році. Спочатку бренд
+      спеціалізувався на виробництві стандартних піддонів. Проте буквально за
+      рік Еко Палета збільшує обсяги свого виробництва, суттєво розширюючи
+      лінійку продукції, до якої додаються ящики, піраміди, палетні заготовки та
+      дрова.
 
 
-      At the same time, we mastered the art of custom orders, producing pallets of non-standard dimensions on demand. A year later, in 2019, our company received a European license for the production of EPAL pallets.
+      В цей самий час ми опанували технології роботи з індивідуальними замовленнями на збивання піддонів нестандартних розмірів. Ще через рік, у 2019 р., наше підприємство отримало європейську ліцензію на виробництво піддонів EPAL.
     hidden: >-
-      Our mission is to provide our customers with the best solutions for
-      placing, storing and transporting various types of cargo. Thanks to a wide
-      range of products and the ability to fulfill almost any order, our
-      customers always receive high-quality, environmentally friendly, practical
-      and convenient pallets with a long service life.   We are experts in
-      pallets and boxes. Contact us, and we will be happy to select products
-      that can meet all the needs of your business!  
+      Наша місія полягає в тому, щоб надавати клієнтам кращі рішення для
+      розміщення, зберігання та транспортування різноманітного вантажу. Завдяки
+      великому вибору товарів та можливості реалізувати практично будь-яке
+      замовлення, наші покупці завжди отримують якісні, екологічні, практичні та
+      зручні піддони з довгим терміном вжитку.   Ми — експерти з піддонів і
+      ящиків. Звертайтесь, і ми охоче підберемо таку продукцію, що здатна
+      задовольнити всі потреби вашого бізнесу!
 
 
-      Today Eco Pallet is a modern production of the best wooden pallets standardized for European certification.  We offer more than 50 types of non-standard pallets and other wooden products designed for a wide range of industries: from pharmaceuticals and food processing to oil and gas or transportation.
+      Зараз Еко Палета — це сучасне виробництво кращих дерев'яних палет, стандартизованих під європейську сертифікацію.  Ми пропонуємо понад 50 видів нестандартних піддонів та інших дерев’яних виробів, розрахованих на широкий спектр галузей: від фармацевтики та харчової промисловості — до нафтогазової промисловості чи транспортного сектору.
   image: /img/about-img.webp
 products:
-  title: Large selection of goods and the ability to fulfill almost any order
-  subtitle: Our mission is to provide our customers with the best solutions for
-    placing, storing and transporting a variety of cargo.
+  title: Великий вибір товарів та можливість реалізувати практично будь-яке замовлення
+  subtitle: "Наша місія полягає в тому, щоб надавати клієнтам кращі рішення для
+    розміщення, зберігання та транспортування різноманітного вантажу. "
   list:
-    - name: Firewood in a box
+    - name: Дрова в ящику
       image: /img/products-img.webp
-    - name: Used pallets of various dimensions
+    - name: Вживані піддони різних розмірів
       image: /img/піддони.webp
-    - name: EPAL wooden pallets
+    - name: Дерев'яні піддони EPAL
       image: /img/піддон.webp
     - name: "Pallets of non-standard dimensions "
       image: /img/нес-піддон.webp
-    - name: Pallet workpiece
+    - name: Піддони нестандартних розмірів
       image: /img/заготовка.webp
-    - name: Pallet boards
+    - name: Палетна заготовка
       image: /img/борд.webp
   special:
-    title: Special order
-    text: >
-      We offer various wooden products, either based on our own drawings and
-      specifications or according to the drawings and specifications provided by
-      our customers.
+    title: Спецзамовлення
+    text: Пропонуємо виготовлення різноманітних дерев'яних виробів за власними
+      кресленнями та специфікаціями або за кресленнями та специфікаціями наших
+      клієнтів.
 services:
-  title: "We provide the full range of services: manufacture, selling, swapping
-    and lease of the pallets. "
+  title: Пропонуємо весь спектр послуг, пов'язаних з виробництвом, продажем,
+    обміном чи орендою піддонів.
   services:
-    - Sale and production of pallets
-    - Purchasing and repair of pallets
-    - Exchange of all types of pallets
-    - Delivery of pallets to order
-    - Pallet rental
-    - Additional services
+    - Продаж і виробництво піддонів
+    - Закупівля та ремонт піддонів
+    - Обмін всіх видів піддонів
+    - Доставка піддонів на замовлення
+    - Оренда піддонів
+    - Додаткові послуги
 pros:
   pros:
-    - name: "Materials of the highest quality "
+    - name: Матеріали найвищої якості
       text: >
-        We use high-quality eco-friendly materials, so our products will remain
-        practical, durable, comfortable, and safe.
+        Використовуємо якісні екологічні матеріали, завдяки чому наша продукція
+        довго залишатиметься практичною, міцною, зручною та безпечною.
       image: /img/leafs-icon.svg
-    - name: "Compliance with technical requirements  "
+    - name: Відповідність технічному завданню
       text: >
-        We have automated lines for palletizing, firewood splitting, sawmilling,
-        and many other mechanical processes that ensure high-precision
-        production in strict accordance with your technical specifications.
+        Маємо автоматичні лінії для збивання піддонів, коління дров, пилорами та
+        багато інших устаткувань, що забезпечує високу точність виробництва у
+        суворій відповідності до технічного завдання.
       image: /img/mechanism-icon.svg
-    - name: "Wide product range "
+    - name: Широкий ассортимент
       text: >
-        We produce more than 50 types of goods, and can also fulfil individual
-        orders. We can supply small and large volumes in a short time. However
-        many pallets you need, they’re always available in our warehouses, so
-        you will receive your order as soon as possible.
+        Виготовляємо понад 50 видів товарів, а також можемо реалізувати
+        індивідуальне замовлення. Можемо постачати малі та великі обсяги в
+        короткі терміни. Необхідна кількість піддонів завжди в наявності на
+        складах, завдяки чому ви отримаєте своє замовлення якомога швидше.
       image: /img/layers-icon.svg
-    - name: "Brand new and used products "
-      text: We offer both new and used goods, so each customer can choose products
-        that suit them in terms of quality and price.
+    - name: Нові та вживані товари
+      text: Пропонуємо як нові, так й вживані товари, тому кожен клієнт може підібрати
+        продукцію, яка влаштує його за якістю та ціною.
       image: /img/shapes-icon.svg
-    - name: "European certification  "
-      text: >
-        We sell the best pallets, standardized for European certification: we
-        have all the necessary quality certificates, and manufacture products in
-        accordance with European standards.
+    - name: Європейська сертифікація EPAL
+      text: "Реалізуємо кращі палети, стандартизовані під європейську сертифікацію:
+        маємо всі потрібні сертифікати якості та виробляємо продукцію згідно з
+        прийнятими в Європі нормами."
       image: /img/cert-icon.svg
   title: Наші переваги
-  cta: Choose Eco Pallet - we offer the best conditions for cooperation!
+  cta: Обирайте Еко Палета — ми пропонуємо кращі комфортні та вигідні умови
+    для співробітництва!
 cert:
-  title: Our pallets are standardized for European certification
+  title: Наші палети стандартизовані під європейську сертифікацію
 form:
-  title: COOPERATION WITH US
+  title: Написати нам
   types:
-    - Firewood in a box
-    - Used pallets of various dimensions
-    - EPAL wooden pallets
-    - "Pallets of non-standard dimensions "
-    - Pallet workpiece
-    - Pallet boards
-    - Special order
+    - Дрова в ящику
+    - Вживані піддони різних розмірів
+    - Дерев'яні піддони EPAL
+    - Піддони нестандартних розмірів
+    - Палетна заготовка
+    - Палетні борти
+    - Спецзамовлення
 contacts:
-  title: Please, contact us,  and we deliver your order ASAP!
+  title: Зв'яжіться з нами — і ми відправимо замовлення якомога швидше!
   assembly:
-    location: Lviv oblast, Kamianka-Buzka district, Velyke Kolodne village, 101
-      Bohdana Khmelnytskoho str.
+    location: "Львівська область, Кам’янка-Бузький р-н, с. Велике Колодно, вул.
+      Богдана Хмельницького 101  "
     phone: +380 (67) 836 89 07
     email: ecopalletinternational@gmail.com
     locationLink: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.9143067351333!2d24.277662982750268!3d49.99421604332794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ace56df37893f%3A0xa79093f4a54544f5!2sSchool%20of%20Velyke%20Kolodno!5e0!3m2!1suk!2sua!4v1693070158395!5m2!1suk!2sua
   euStorage:
-    location: Slovenia, Maribor 2000, 12 Gunduliceva str.
+    location: Словенія, Марібор 2000, вул. Гундулічева 12
     locationLink: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2743.7518396693945!2d15.669558776687664!3d46.55259566016454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476f771770cbf365%3A0x2afd82719b7fc5aa!2zR3VuZHVsacSNZXZhIHVsaWNhIDEyLCAyMDAwIE1hcmlib3IsINCh0LvQvtCy0LXQvdGW0Y8!5e0!3m2!1suk!2sua!4v1693070311213!5m2!1suk!2sua
 ---
