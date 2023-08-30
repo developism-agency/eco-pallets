@@ -19,16 +19,16 @@
         </a>
         <nav class="header__nav" id="menu">
           <ul>
-            <li><a href="#about" class="nav-link">Про нас</a></li>
-            <li><a href="#products" class="nav-link">Продукти</a></li>
-            <li><a href="#services" class="nav-link">Послуги</a></li>
-            <li><a href="#pros" class="nav-link">Чому ми?</a></li>
-            <li><a href="#cert" class="nav-link">Сертифікати</a></li>
-            <li><a href="#contacts" class="nav-link">Контакти</a></li>
+            <li><a href="#about" class="nav-link">{{ .Params.header.nav.about }}</a></li>
+            <li><a href="#products" class="nav-link">{{ .Params.header.nav.products }}</a></li>
+            <li><a href="#services" class="nav-link">{{ .Params.header.nav.services }}</a></li>
+            <li><a href="#pros" class="nav-link">{{ .Params.header.nav.pros }}</a></li>
+            <li><a href="#cert" class="nav-link">{{ .Params.header.nav.cert }}</a></li>
+            <li><a href="#contacts" class="nav-link">{{ .Params.header.nav.contacts }}</a></li>
           </ul>
           <div class="header__nav-actions">
-            <button class="btn btn--dark mobile">Зв'язок з нами</button>
-            <a href="/" class="btn btn--logo mobile">
+            <button class="btn btn--dark mobile" href="#form">Зв'язок з нами</button>
+            <a href="{{ .Params.header.linkedIn }}" class="btn btn--logo mobile" target="_blanc">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                 <g clip-path="url(#clip0_820_852)">
                   <path d="M4.18998 5.79102H0.576455C0.416081 5.79102 0.286133 5.92102 0.286133 6.08134V17.6901C0.286133 17.8504 0.416081 17.9804 0.576455 17.9804H4.18998C4.35036 17.9804 4.48031 17.8504 4.48031 17.6901V6.08134C4.48031 5.92102 4.35036 5.79102 4.18998 5.79102Z" fill="#0E0D12"/>
@@ -396,15 +396,15 @@
           </div>
           <nav class="header__nav">
             <ul>
-              <li><a href="" class="nav-link">Про нас</a></li>
-              <li><a href="" class="nav-link">Продукти</a></li>
-              <li><a href="" class="nav-link">Послуги</a></li>
-              <li><a href="" class="nav-link">Чому ми?</a></li>
-              <li><a href="" class="nav-link">Сертифікати</a></li>
-              <li><a href="" class="nav-link">Контакти</a></li>
+              <li><a href="#about" class="nav-link">{{ .Params.header.nav.about }}</a></li>
+              <li><a href="#products" class="nav-link">{{ .Params.header.nav.products }}</a></li>
+              <li><a href="#services" class="nav-link">{{ .Params.header.nav.services }}</a></li>
+              <li><a href="#pros" class="nav-link">{{ .Params.header.nav.pros }}</a></li>
+              <li><a href="#cert" class="nav-link">{{ .Params.header.nav.cert }}</a></li>
+              <li><a href="#contacts" class="nav-link">{{ .Params.header.nav.contacts }}</a></li>
             </ul>
           </nav>
-          <a href="/" class="btn-linkedin">
+          <a href="{{ .Params.header.linkedIn }}" class="btn-linkedin" target="_blanc">
             <div class="icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                 <g clip-path="url(#clip0_820_852)">
@@ -430,6 +430,33 @@
       </div>
     </div>
   </footer>
+  <div class="form-modal">
+    <form class="contact-us__form" id="contact-form">
+      <div class="row">
+        <input type="text" name="name" placeholder="Як вас звати">
+        <input type="email" name="email" placeholder="Ваш e-mail">
+      </div>
+      <div class="phone">
+        <input type="phone" name="phone_number" id="phone-select">
+      </div>
+      <div class="product-type">
+        <h3 class="product-type__title">ВИБЕРІТЬ ТИП ТОВАРУ*:</h3>
+        <div class="product-type__list">
+          {{ range .Params.form.types }}
+            <label class="product-type__item">
+              <input type="checkbox" name="product_type" class="input" value="Дрова в ящику">
+              <div class="check">{{ . }}</div>
+            </label>
+          {{ end }}
+        </div>
+      </div>
+      <textarea name="message" class="message" placeholder="Повідомлення"></textarea>
+      <button type="submit" class="btn btn--arrow" id="response-form">
+        <span class="name">Зробити замовлення</span>
+        <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
+      </button>
+    </form>
+  </div>
   <div class="modal-bg"></div>
   <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
   <script type="module" src="../js/main.js"></script>

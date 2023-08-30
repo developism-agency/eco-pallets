@@ -381,6 +381,20 @@ body {
   .modal-bg.active {
     transform: scale(1); }
 
+.form-modal {
+  display: none;
+  position: fixed;
+  z-index: 999999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1B4D3E;
+  padding: 50px;
+  width: 100%;
+  max-width: 726px; }
+  .form-modal .contact-us__form {
+    width: unset; }
+
 @media screen and (max-width: 1200px) {
   .container {
     padding: 0 20px; } }
@@ -391,7 +405,15 @@ body {
 
 @media screen and (max-width: 720px) {
   body {
-    padding-top: 60px; } }
+    padding-top: 60px; }
+  .form-modal {
+    padding: 20px;
+    height: 100vh;
+    max-width: unset;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
 .header {
   background-color: #F3F3F3;
@@ -482,7 +504,7 @@ body {
     background-color: #F3F3F3;
     padding: 12px 20px 24px;
     transition: .3s;
-    box-shadow: 0px 8px 13px 8px rgba(87, 87, 87, 0.3); }
+    box-shadow: 0px 20px 13px 8px rgba(87, 87, 87, 0.3); }
     .header__nav ul {
       flex-direction: column;
       margin-bottom: 12px; }
@@ -1232,84 +1254,84 @@ body {
         color: #FFFFFF; }
         .contact-us__form > .btn:hover .arrow:after {
           transform: scale(3500%) !important; }
-  .contact-us input:not([type='checkbox']), .contact-us textarea {
-    border: none;
-    height: 52px;
-    display: flex;
-    align-items: center;
-    padding: 10px 18px;
-    color: #535353;
-    font-size: 16px;
-    font-weight: 700;
-    outline: none; }
-  .contact-us .row {
-    display: flex;
-    grid-gap: 18px;
-    margin-bottom: 18px; }
-    .contact-us .row > * {
-      width: 50%; }
-  .contact-us .phone {
-    display: flex;
-    grid-gap: 10px;
-    margin-bottom: 22px; }
-    .contact-us .phone .iti {
+    .contact-us__form .product-type {
+      margin-bottom: 22px; }
+      .contact-us__form .product-type__title {
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 16px; }
+      .contact-us__form .product-type__list {
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 12px; }
+      .contact-us__form .product-type__item {
+        display: inline-flex;
+        cursor: pointer; }
+      .contact-us__form .product-type .input {
+        position: absolute;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none; }
+      .contact-us__form .product-type .check {
+        padding: 10px 22px;
+        height: 39px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        background-color: transparent;
+        border: 1px solid #F3F3F3;
+        color: #F3F3F3;
+        font-size: 14px;
+        font-weight: 500; }
+      .contact-us__form .product-type .input:checked + .check {
+        background-color: #FFFFFF;
+        color: #0E0D12;
+        -webkit-text-stroke: 0.6px #0E0D12; }
+    .contact-us__form .message {
+      margin-bottom: 32px;
       width: 100%;
-      display: block; }
-      .contact-us .phone .iti__flag-container {
-        overflow: visible; }
-        .contact-us .phone .iti__flag-container:after {
-          content: '';
-          position: absolute;
-          height: 103%;
-          border-right: 10px solid #1B4D3E;
-          right: -10px;
-          top: 50%;
-          transform: translateY(-50%);
-          z-index: 99; }
-      .contact-us .phone .iti__selected-flag {
-        padding: 14px; }
-    .contact-us .phone input {
-      width: 100%;
-      padding: 10px 18px 10px 90px; }
-  .contact-us .product-type {
-    margin-bottom: 22px; }
-    .contact-us .product-type__title {
-      color: #FFFFFF;
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 16px; }
-    .contact-us .product-type__list {
-      display: flex;
-      flex-wrap: wrap;
-      grid-gap: 12px; }
-    .contact-us .product-type__item {
-      display: inline-flex;
-      cursor: pointer; }
-    .contact-us .product-type .input {
-      position: absolute;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none; }
-    .contact-us .product-type .check {
-      padding: 10px 22px;
-      height: 39px;
+      max-width: 100%;
+      min-height: 104px; }
+    .contact-us__form input:not([type='checkbox']), .contact-us__form textarea {
+      border: none;
+      height: 52px;
       display: flex;
       align-items: center;
-      overflow: hidden;
-      background-color: transparent;
-      border: 1px solid #F3F3F3;
-      color: #F3F3F3;
-      font-size: 14px;
-      font-weight: 500; }
-    .contact-us .product-type .input:checked + .check {
-      background-color: #FFFFFF;
-      color: #0E0D12;
-      -webkit-text-stroke: 0.6px #0E0D12; }
-  .contact-us .message {
-    margin-bottom: 32px;
-    width: 100%;
-    max-width: 100%;
-    min-height: 104px; }
+      padding: 10px 18px;
+      color: #535353;
+      font-size: 16px;
+      font-weight: 700;
+      outline: none; }
+    .contact-us__form .row {
+      display: flex;
+      grid-gap: 18px;
+      margin-bottom: 18px; }
+      .contact-us__form .row > * {
+        width: 50%; }
+    .contact-us__form .phone {
+      display: flex;
+      grid-gap: 10px;
+      margin-bottom: 22px; }
+      .contact-us__form .phone .iti {
+        width: 100%;
+        display: block; }
+        .contact-us__form .phone .iti__flag-container {
+          overflow: visible; }
+          .contact-us__form .phone .iti__flag-container:after {
+            content: '';
+            position: absolute;
+            height: 103%;
+            border-right: 10px solid #1B4D3E;
+            right: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 99; }
+        .contact-us__form .phone .iti__selected-flag {
+          padding: 14px; }
+      .contact-us__form .phone input {
+        width: 100%;
+        padding: 10px 18px 10px 90px; }
 
 @media screen and (max-width: 1200px) {
   .contact-us__img {
@@ -1337,49 +1359,63 @@ body {
     display: none; }
   .contact-us__form {
     width: 100%;
-    max-width: unset; } }
+    max-width: unset; }
+    .contact-us__form .row {
+      flex-direction: column;
+      grid-gap: 14px;
+      margin-bottom: 14px; }
+      .contact-us__form .row > * {
+        width: 100%; }
+    .contact-us__form input:not([type='checkbox']), .contact-us__form textarea {
+      padding: 12px;
+      height: 43px;
+      font-size: 14px; }
+    .contact-us__form .phone {
+      margin-bottom: 20px;
+      grid-gap: 10px; }
+      .contact-us__form .phone input {
+        padding: 12px 12px 12px 80px;
+        width: 100%; }
+    .contact-us__form .message {
+      margin-bottom: 16px; }
+    .contact-us__form .product-type {
+      margin-bottom: 20px; }
+      .contact-us__form .product-type__title {
+        margin-bottom: 20px; }
+      .contact-us__form .product-type__list {
+        grid-row-gap: 12px;
+        grid-column-gap: 14px; }
+      .contact-us__form .product-type__item .check {
+        padding: 8px 16px;
+        font-size: 12px; } }
 
 @media screen and (max-width: 440px) {
-  .contact-us__form .custom-select-container {
-    height: 43px;
-    min-width: 104px;
-    font-size: 14px; }
-  .contact-us__form .custom-select-opener {
-    padding: 12px;
-    align-items: center; }
-    .contact-us__form .custom-select-opener img {
-      width: 22px;
-      height: 22px; }
-  .contact-us__form .custom-select-option {
-    padding: 12px;
-    width: 22px;
-    height: 22px;
-    align-items: center; }
-  .contact-us .row {
+  .contact-us__form .row {
     flex-direction: column;
     grid-gap: 14px;
     margin-bottom: 14px; }
-    .contact-us .row > * {
+    .contact-us__form .row > * {
       width: 100%; }
-  .contact-us .phone {
-    margin-bottom: 20px;
-    grid-gap: 10px; }
-    .contact-us .phone input {
-      width: 100%; }
-  .contact-us input:not([type='checkbox']), .contact-us textarea {
+  .contact-us__form input:not([type='checkbox']), .contact-us__form textarea {
     padding: 12px;
     height: 43px;
     font-size: 14px; }
-  .contact-us .message {
+  .contact-us__form .phone {
+    margin-bottom: 20px;
+    grid-gap: 10px; }
+    .contact-us__form .phone input {
+      padding: 12px 12px 12px 80px;
+      width: 100%; }
+  .contact-us__form .message {
     margin-bottom: 16px; }
-  .contact-us .product-type {
+  .contact-us__form .product-type {
     margin-bottom: 20px; }
-    .contact-us .product-type__title {
+    .contact-us__form .product-type__title {
       margin-bottom: 20px; }
-    .contact-us .product-type__list {
+    .contact-us__form .product-type__list {
       grid-row-gap: 12px;
       grid-column-gap: 14px; }
-    .contact-us .product-type__item .check {
+    .contact-us__form .product-type__item .check {
       padding: 8px 16px;
       font-size: 12px; } }
 
@@ -1498,7 +1534,8 @@ body {
     right: unset;
     z-index: unset;
     padding: unset;
-    background-color: unset; }
+    background-color: unset;
+    box-shadow: none !important; }
     .footer .header__nav ul {
       flex-direction: row;
       margin-bottom: unset; } }

@@ -14,6 +14,22 @@ collections:
     folder: 'content'
     i18n: true
     fields:
+      - label: 'Шапка сторінки'
+        name: 'header'
+        widget: 'object'
+        i18n: true
+        fields:
+          - { label: 'Посилання LinkedIn', name: 'linkedIn', widget: 'string', i18n: true }
+          - { label: 'Навігація', name: 'nav', widget: 'object', i18n: true,
+              fields: [
+                { label: 'Про нас', name: 'about', widget: 'string', i18n: true },
+                { label: 'Продукти', name: 'products', widget: 'string', i18n: true },
+                { label: 'Послуги', name: 'services', widget: 'string', i18n: true },
+                { label: 'Чому ми?', name: 'pros', widget: 'string', i18n: true },
+                { label: 'Сертифікати', name: 'cert', widget: 'string', i18n: true },
+                { label: 'Контакти', name: 'contacts', widget: 'string', i18n: true },
+              ]
+            }
       - label: 'Головна секція'
         name: 'hero'
         i18n: true
