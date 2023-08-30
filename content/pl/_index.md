@@ -1,120 +1,121 @@
 ---
 title: null
 hero:
-  title: Eco Pallet — is a modern production of the best wooden pallets
-  text: "We offer pallets and other wooden products designed for a wide range of
-    industries: from pharmaceuticals and food processing to the oil and gas
-    industry or transportation."
+  title: Eco Pallet — to nowoczesna produkcja najlepszych palet drewnianych
+  text: "Oferujemy palety i inne produkty drewniane przeznaczone dla szerokiej
+    gamy branż: od przemysłu farmaceutycznego i spożywczego po przemysł naftowy
+    i gazowy czy transport."
   image: /img/hero-img.webp
 about:
-  title: About company
+  title: O firmie
   text:
     visible: >-
-      Eco Pallet Company was founded in 2017. Initially, the brand specialized
-      in the production of standard pallets. However, over the course of a year,
-      Eco Pallet expanded its product line significantly, adding boxes, pyramid
-      stacks, pallet blanks, and firewood.
+      Firma Eco Paleta została założona w 2017 roku. Początkowo marka
+      specjalizowała się w produkcji standardowych palet. Jednak w ciągu
+      zaledwie roku Eco Paleta zwiększyła wielkość swojej produkcji, znacznie
+      rozszerzając swoją linię produktów, do której się dodają skrzynie,
+      piramidy, półfabrykaty palet i drewno opałowe.
 
 
-      At the same time, we mastered the art of custom orders, producing pallets of non-standard dimensions on demand. A year later, in 2019, our company received a European license for the production of EPAL pallets.
+      Jednocześnie opanowaliśmy technologię pracy z indywidualnymi zamówieniami na zbijanie palet o niestandardowych rozmiarach. Jeszcze rok później, w 2019 roku, nasze przedsiębiorstwo otrzymało europejską licencję na produkcję palet EPAL.
     hidden: >-
-      Our mission is to provide our customers with the best solutions for
-      placing, storing and transporting various types of cargo. Thanks to a wide
-      range of products and the ability to fulfill almost any order, our
-      customers always receive high-quality, environmentally friendly, practical
-      and convenient pallets with a long service life.   We are experts in
-      pallets and boxes. Contact us, and we will be happy to select products
-      that can meet all the needs of your business!  
+      Naszą misją jest dostarczanie klientom najlepszych rozwiązań do
+      umieszczania, przechowywania i transportu różnego rodzaju ładunków. Dzięki
+      szerokiej gamie produktów i możliwości realizacji niemal każdego
+      zamówienia, nasi klienci zawsze otrzymują wysokiej jakości, przyjazne dla
+      środowiska, praktyczne i wygodne palety o długiej żywotności.   Jesteśmy
+      ekspertami w dziedzinie palet i skrzyń. Skontaktuj się z nami, a z
+      przyjemnością dobierzemy produkty, które spełnią wszystkie potrzeby Twojej
+      firmy!  
 
 
-      Today Eco Pallet is a modern production of the best wooden pallets standardized for European certification.  We offer more than 50 types of non-standard pallets and other wooden products designed for a wide range of industries: from pharmaceuticals and food processing to oil and gas or transportation.
+      Dziś Eco Pallet to nowoczesna produkcja najlepszych palet drewnianych standaryzowanych do certyfikacji europejskiej.  Oferujemy ponad 50 rodzajów niestandardowych palet i innych produktów drewnianych przeznaczonych dla szerokiej gamy branż: od farmaceutycznej i przetwórstwa spożywczego po ropę i gaz czy transport.
   image: /img/about-img.webp
 products:
-  title: Large selection of goods and the ability to fulfill almost any order
-  subtitle: Our mission is to provide our customers with the best solutions for
-    placing, storing and transporting a variety of cargo.
+  title: Szeroka gama produktów i możliwość realizacji niemal każdego zamówienia
+  subtitle: Naszą misją jest dostarczanie naszym klientom najlepszych rozwiązań w
+    zakresie umieszczania, przechowywania i transportu szerokiej gamy ładunków.
   list:
-    - name: Firewood in a box
+    - name: Drewno opałowe w skrzyni
       image: /img/products-img.webp
-    - name: Used pallets of various dimensions
+    - name: Używane palety w różnych rozmiarach
       image: /img/піддони.webp
-    - name: EPAL wooden pallets
+    - name: Palety drewniane EPAL
       image: /img/піддон.webp
-    - name: "Pallets of non-standard dimensions "
+    - name: Palety o niestandardowych rozmiarach
       image: /img/нес-піддон.webp
-    - name: Pallet workpiece
+    - name: Prefabrykat do produkcji palet
       image: /img/заготовка.webp
-    - name: Pallet boards
+    - name: Nadstawki paletowe
       image: /img/борд.webp
   special:
-    title: Special order
-    text: >
-      We offer various wooden products, either based on our own drawings and
-      specifications or according to the drawings and specifications provided by
-      our customers.
+    title: Zamówienie specjalne
+    text: Oferujemy produkcję różnych wyrobów drewnianych zgodnie z własnymi
+      rysunkami i specyfikacjami lub zgodnie z rysunkami i specyfikacjami
+      naszych klientów.
 services:
-  title: "We provide the full range of services: manufacture, selling, swapping
-    and lease of the pallets. "
+  title: Oferujemy pełen zakres usług związanych z produkcją, sprzedażą, wymianą
+    lub wynajmem palet.
   services:
-    - Sale and production of pallets
-    - Purchasing and repair of pallets
-    - Exchange of all types of pallets
-    - Delivery of pallets to order
-    - Pallet rental
-    - Additional services
+    - Sprzedaż i produkcja palet
+    - Zakup i naprawa palet
+    - Wymiana wszystkich typów palet
+    - Dostawa palet na zamówienie
+    - Wynajem palet
+    - Usługi dodatkowe
 pros:
   pros:
-    - name: "Materials of the highest quality "
-      text: >
-        We use high-quality eco-friendly materials, so our products will remain
-        practical, durable, comfortable, and safe.
+    - name: "Materiały najwyższej jakości lub Wysokogatunkowe materiały "
+      text: Wykorzystujemy jakościowe materiały przyjazne dla środowiska, dzięki czemu
+        nasze produkty przez długi czas pozostaną praktyczne, trwałe, wygodne i
+        bezpieczne.
       image: /img/leafs-icon.svg
-    - name: "Compliance with technical requirements  "
-      text: >
-        We have automated lines for palletizing, firewood splitting, sawmilling,
-        and many other mechanical processes that ensure high-precision
-        production in strict accordance with your technical specifications.
+    - name: "Zgodność z zadaniem technicznym "
+      text: Posiadamy automatyczne linie do zbijania palet, rąbania drewna opałowego,
+        tartaki i wiele innych urządzeń, które zapewniają wysoką precyzyjność
+        produkcji w ścisłej zgodności z zadaniem technicznym.
       image: /img/mechanism-icon.svg
-    - name: "Wide product range "
-      text: >
-        We produce more than 50 types of goods, and can also fulfil individual
-        orders. We can supply small and large volumes in a short time. However
-        many pallets you need, they’re always available in our warehouses, so
-        you will receive your order as soon as possible.
+    - name: Szeroki asortyment
+      text: Produkujemy ponad 50 gatunków towarów i możemy również realizować
+        indywidualne zamówienia. Możemy dostarczyć małe i duże ilości w krótkim
+        czasie. Wymagana liczba palet jest zawsze do dyspozycji w naszych
+        magazynach, dzięki czemu otrzymasz swoje zamówienie w najkrótszym
+        terminie.
       image: /img/layers-icon.svg
-    - name: "Brand new and used products "
-      text: We offer both new and used goods, so each customer can choose products
-        that suit them in terms of quality and price.
+    - name: Towary nowe i używane
+      text: Oferujemy zarówno towary nowe, jak i używane, dlatego każdy klient może
+        wybrać produkty odpowiadające mu pod względem jakości i ceny.
       image: /img/shapes-icon.svg
-    - name: "European certification  "
-      text: >
-        We sell the best pallets, standardized for European certification: we
-        have all the necessary quality certificates, and manufacture products in
-        accordance with European standards.
+    - name: Certyfikacja europejska
+      text: "Sprzedajemy najlepsze palety, które są znormalizowane pod kątem
+        certyfikacji europejskiej: posiadamy wszystkie niezbędne certyfikaty
+        jakości i wytwarzamy produkty zgodnie z normami obowiązującymi w
+        Europie."
       image: /img/cert-icon.svg
-  title: Наші переваги
-  cta: Choose Eco Pallet - we offer the best conditions for cooperation!
+  title: Nasze zalety
+  cta: Wybieraj Eco Paleta - oferujemy lepsze, komfortowe i korzystne warunki
+    współpracy!
 cert:
-  title: Our pallets are standardized for European certification
+  title: Nasze palety są standaryzowane zgodnie z europejską certyfikacją
 form:
-  title: COOPERATION WITH US
+  title: Napisz do nas
   types:
-    - Firewood in a box
-    - Used pallets of various dimensions
-    - EPAL wooden pallets
-    - "Pallets of non-standard dimensions "
-    - Pallet workpiece
-    - Pallet boards
-    - Special order
+    - Drewno opałowe w skrzyni
+    - Używane palety w różnych rozmiarach
+    - Palety drewniane EPAL
+    - Palety o niestandardowych rozmiarach
+    - Prefabrykat do produkcji palet
+    - Nadstawki paletowe
+    - Zamówienie specjalne
 contacts:
-  title: Please, contact us,  and we deliver your order ASAP!
+  title: Skontaktuj się z nami, a wyślemy Twoje zamówienie jak najszybciej!
   assembly:
-    location: Lviv oblast, Kamianka-Buzka district, Velyke Kolodne village, 101
-      Bohdana Khmelnytskoho str.
+    location: Obwód lwowski, rejon Kamianka-Buzka, wieś Velyke Kolodne, ulica
+      Bohdana Chmielnickiego 101
     phone: +380 (67) 836 89 07
     email: ecopalletinternational@gmail.com
     locationLink: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.9143067351333!2d24.277662982750268!3d49.99421604332794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ace56df37893f%3A0xa79093f4a54544f5!2sSchool%20of%20Velyke%20Kolodno!5e0!3m2!1suk!2sua!4v1693070158395!5m2!1suk!2sua
   euStorage:
-    location: Slovenia, Maribor 2000, 12 Gunduliceva str.
+    location: 12 Gunduliceva Street, Maribor, Słowenia, 2000
     locationLink: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2743.7518396693945!2d15.669558776687664!3d46.55259566016454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476f771770cbf365%3A0x2afd82719b7fc5aa!2zR3VuZHVsacSNZXZhIHVsaWNhIDEyLCAyMDAwIE1hcmlib3IsINCh0LvQvtCy0LXQvdGW0Y8!5e0!3m2!1suk!2sua!4v1693070311213!5m2!1suk!2sua
 ---
