@@ -6,6 +6,7 @@
   {{ with resources.Get "scss/main.scss" | toCSS | postCSS }}
     <link rel="stylesheet" href="{{ .RelPermalink }}">
   {{ end }}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
   <title>Eco-Pallets</title>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
@@ -158,13 +159,32 @@
               <div class="product">
                 <div class="product__info">
                   <h3 class="title">{{ .name }}</h3>
-                  <button class="btn btn--arrow">
+                  <button class="btn btn--arrow" data-modal-trigger>
                     <span class="name">Детальніше</span>
                     <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
                   </button>
                 </div>
                 <div class="product__img">
                   <img src="{{ .image }}" alt="">
+                </div>
+                <div class="product-modal">
+                  <div class="product-modal__inner">
+                    <div class="product-modal__info">
+                      <h2 class="title">{{ .modal.title }}</h2>
+                      <div class="text">{{ .modal.text }}</div>
+                      <button class="btn btn--arrow">
+                        <span class="name">Зробити замовлення</span>
+                        <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
+                      </button>
+                      <button class="close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                          <path d="M17.4538 0.666016L10.0004 8.11935L2.54711 0.666016L0.667114 2.54602L8.12045 9.99935L0.667114 17.4527L2.54711 19.3327L10.0004 11.8793L17.4538 19.3327L19.3338 17.4527L11.8804 9.99935L19.3338 2.54602L17.4538 0.666016Z" fill="#0E0D12"/>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="product-modal__img" style="background-image: url({{ .modal.image }})">
+                    </div>
+                  </div>
                 </div>
               </div>
             {{ end }}
@@ -258,7 +278,7 @@
       <div class="container">
         <div class="contact-us__inner">
           <div class="title-label green">СПІВПРАЦЯ З НАМИ</div>
-          <h2 class="title white">{{ .Params.from.title }}</h2>
+          <h2 class="title white">{{ .Params.form.title }}</h2>
           <div class="contact-us__content">
             <form class="contact-us__form" id="contact-form">
               <div class="row">
@@ -266,15 +286,7 @@
                 <input type="email" name="email" placeholder="Ваш e-mail">
               </div>
               <div class="phone">
-                <select class="custom-select custom-select--number" id="number-select">
-                  <option value="+380" data-src="../img/ua.png">
-                    +380
-                  </option>
-                  <option value="+48" data-src="../img/ua.png">
-                    +48
-                  </option>
-                </select>
-                <input type="phone" placeholder="Номер телефону*" name="phone_number">
+                <input type="phone" name="phone_number" id="phone-select">
               </div>
               <div class="product-type">
                 <h3 class="product-type__title">ВИБЕРІТЬ ТИП ТОВАРУ*:</h3>
@@ -404,6 +416,8 @@
       </div>
     </div>
   </footer>
+  <div class="modal-bg"></div>
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
   <script type="module" src="../js/main.js"></script>
 </body>
 </html>

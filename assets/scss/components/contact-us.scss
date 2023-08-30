@@ -23,6 +23,7 @@
 
   &__form {
     max-width: 626px;
+    width: 100%;
     align-self: flex-start;
 
     &>.btn {
@@ -38,19 +39,6 @@
           transform: scale(3500%) !important;
         }
       }
-    }
-
-    .custom-select-container {
-      height: 52px;
-      min-width: 123px;
-    }
-
-    .custom-select-opener {
-      padding: 12px 14px;
-    }
-
-    .custom-select-option {
-      padding: 12px 14px;
     }
   }
 
@@ -81,8 +69,32 @@
     gap: 10px;
     margin-bottom: 22px;
 
+    .iti {
+      width: 100%;
+      display: block;
+
+      &__flag-container {
+        overflow: visible;
+        &:after {
+          content: '';
+          position: absolute;
+          height: 103%;
+          border-right: 10px solid $green;
+          right: -10px;
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: 99;
+        }
+      }
+
+      &__selected-flag {
+        padding: 14px;
+      }
+    }
+
     input {
-      flex-grow: 1;
+      width: 100%;
+      padding: 10px 18px 10px 90px;
     }
   }
 

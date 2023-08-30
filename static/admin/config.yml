@@ -14,7 +14,6 @@ collections:
     folder: 'content'
     i18n: true
     fields:
-      - { label: 'Вміст', name: 'title', widget: 'string', i18n: true, required: false }
       - label: 'Головна секція'
         name: 'hero'
         i18n: true
@@ -50,6 +49,13 @@ collections:
               fields: [
                 { label: 'Назва продукту', name: 'name', widget: 'string', i18n: true },
                 { label: 'Зображення', name: 'image', widget: 'image', i18n: true },
+                { lable: 'Повна інформація', name: 'modal', widget: 'object', i18n: true,
+                  fields: [
+                    { label: 'Заголовок', name: 'title', widget: 'string', i18n: true },
+                    { label: 'Текст', name: 'text', widget: 'markdown', i18n: true },
+                    { label: 'Зображення', name: 'image', widget: 'image', i18n: true },
+                  ]
+                }
               ]
             }
           - { label: 'Спецзамовлення', name: 'special', widget: 'object', i18n: true,

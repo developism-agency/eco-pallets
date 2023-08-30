@@ -2,21 +2,6 @@ import customSelect from './custom-select.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const cstSlct = customSelect(document.querySelectorAll('.custom-select'))
-
-  const customSelectOptions = document.querySelectorAll('.contact-us .custom-select-option')
-  customSelectOptions.forEach((option) => {
-    const img = document.createElement('img')
-    const nativeOption = document.querySelector(`.contact-us option[value="${option.dataset.value}"]`)
-    img.src = nativeOption.dataset.src
-    option.prepend(img)
-  })
-  
-  const customSelectOpener = document.querySelector('.contact-us .custom-select-opener')
-  const img = document.createElement('img')
-  const nativeOption = document.querySelector(`.contact-us option[value="${customSelectOpener.textContent}"]`)
-  img.src = nativeOption.dataset.src
-  customSelectOpener.prepend(img)
-
 })
 
 //burger menu
@@ -103,3 +88,47 @@ document.getElementById("contact-form").addEventListener("submit", async functio
       console.error(error);
   }
 });
+
+//init country code select
+const input = document.querySelector("#phone-select");
+window.intlTelInput(input, {
+  initialCountry: "ua",
+  formatOnDisplay: true,
+  utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+});
+
+//open/close product modal
+let activeModal;
+const body = document.querySelector('body')
+
+const modalBg = document.querySelector('.modal-bg')
+
+modalBg.addEventListener('click', () => {
+  if (activeModal) {
+    activeModal.classList.remove('active')
+    modalBg.classList.remove('active')
+    body.classList.remove('fixed')
+  }
+})
+
+const products = document.querySelectorAll('.product')
+
+products.forEach(product => {
+  const btnOpen = product.querySelector('[data-modal-trigger]')
+  const modal = product.querySelector('.product-modal')
+  const btnClose = modal.querySelector('.close')
+
+  btnOpen.addEventListener('click', () => {
+    activeModal = modal
+    modal.classList.add('active')
+    modalBg.classList.add('active')
+    body.classList.add('fixed')
+  })
+
+  btnClose.addEventListener('click', () => {
+    activeModal = null
+    modal.classList.remove('active')
+    modalBg.classList.remove('active')
+    body.classList.remove('fixed')
+  })
+})
