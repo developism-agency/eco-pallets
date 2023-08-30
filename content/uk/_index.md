@@ -83,18 +83,6 @@ products:
 
 
           ### У нас можна придбати наступні вживані піддони:
-
-
-          * <!--StartFragment-->
-
-            1 категорія А клас — світлий
-
-            <!--EndFragment-->
-          * <!--StartFragment-->
-
-            2 категорія В клас — темний
-
-            <!--EndFragment-->
         image: /img/вживані-піддони-різних-розмірів.webp
     - name: Дерев'яні піддони EPAL
       image: /img/піддон.webp
@@ -168,29 +156,6 @@ products:
 
 
           <!--EndFragment-->
-
-
-          * <!--StartFragment-->
-
-            Розміри: 1200x800x20-22x78-140-143
-
-            <!--EndFragment-->
-          * <!--StartFragment-->
-
-            Вологість: 16%
-
-            <!--EndFragment-->
-          * <!--StartFragment-->
-
-            Деревина: сосна
-
-            <!--EndFragment-->
-
-            <!--StartFragment-->
-
-            Також у нашому асортименті представлено хвойний брусок та палетні заготовки нестандартних розмірів.
-
-            <!--EndFragment-->
     - name: Палетні борти
       image: /img/борд.webp
       modal:
@@ -213,29 +178,6 @@ products:
 
 
           <!--EndFragment-->
-
-
-          * <!--StartFragment-->
-
-            1200x1000x200 мм
-
-            <!--EndFragment-->
-          * <!--StartFragment-->
-
-            1200х800х200 мм
-
-            <!--EndFragment-->
-          * <!--StartFragment-->
-
-            600x800x200 мм
-
-            <!--EndFragment-->
-
-            <!--StartFragment-->
-
-            **4 шарнірних з'єднання**
-
-            <!--EndFragment-->
   special:
     title: Спецзамовлення
     text: Пропонуємо виготовлення різноманітних дерев'яних виробів за власними
@@ -306,5 +248,20 @@ contacts:
   euStorage:
     location: Словенія, Марібор 2000, вул. Гундулічева 12
     locationLink: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2743.7518396693945!2d15.669558776687664!3d46.55259566016454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476f771770cbf365%3A0x2afd82719b7fc5aa!2zR3VuZHVsacSNZXZhIHVsaWNhIDEyLCAyMDAwIE1hcmlib3IsINCh0LvQvtCy0LXQvdGW0Y8!5e0!3m2!1suk!2sua!4v1693070311213!5m2!1suk!2sua
+utils:
+  nav:
+    about: Про нас
+    products: Продукти
+    services: Послуги
+    pros: Чому ми?
+    cert: Сертифікати
+    contacts: Контакти
+  btns:
+    call: Зв'язок з нами
+    products: Наші продукти
+    more: Детальніше
+    order: Зробити замовлення
+    showOnMap: Показати на мапі
+  linkedIn: https://www.linkedin.com/company/developism/?viewAsMember=true
 title: null
 ---
