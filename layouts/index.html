@@ -27,7 +27,7 @@
             <li><a href="#contacts" class="nav-link">{{ .Params.header.nav.contacts }}</a></li>
           </ul>
           <div class="header__nav-actions">
-            <button class="btn btn--dark mobile" href="#form">Зв'язок з нами</button>
+            <button class="btn btn--dark mobile" href="#form">{{ .Params.utils.btns.call }}</button>
             <a href="{{ .Params.header.linkedIn }}" class="btn btn--logo mobile" target="_blanc">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                 <g clip-path="url(#clip0_820_852)">
@@ -79,7 +79,7 @@
             </div>
           </div>
         {{ end }}
-        <button class="btn btn--dark desktop">Зв'язок з нами</button>
+        <button class="btn btn--dark desktop" href="#form">{{ .Params.utils.btns.call }}</button>
         <div class="burger" id="burger">
           <div class="burger__inner">
           </div>
@@ -97,8 +97,8 @@
             </span>
             <h1 class="title">{{ .Params.hero.title }}</h1>
             <p class="text">{{ .Params.hero.text }}</p>
-            <button class="btn btn--arrow">
-              <span class="name">Наші продукти</span>
+            <button class="btn btn--arrow" href="#products">
+              <span class="name">{{ .Params.utils.btns.products }}</span>
               <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
             </button>
           </div>
@@ -131,7 +131,7 @@
                 <p class="text white">{{ .Params.about.text.hidden }}</p>
               </div>
               <button class="text-accordion__btn" id="accordion-trigger">
-                <span class="name">Детальніше</span>
+                <span class="name">{{ .Params.utils.btns.more }}</span>
                 <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
               </button>
             </div>
@@ -174,7 +174,7 @@
                 <div class="product__info">
                   <h3 class="title">{{ .name }}</h3>
                   <button class="btn btn--arrow" data-modal-trigger>
-                    <span class="name">Детальніше</span>
+                    <span class="name">{{ .Params.utils.btns.more }}</span>
                     <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
                   </button>
                 </div>
@@ -187,7 +187,7 @@
                       <h2 class="title">{{ .modal.title }}</h2>
                       <div class="text">{{ .modal.text | markdownify }}</div>
                       <button class="btn btn--arrow">
-                        <span class="name">Зробити замовлення</span>
+                        <span class="name">{{ .Params.utils.btns.order }}</span>
                         <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
                       </button>
                       <button class="close">
@@ -209,7 +209,7 @@
                 <h3 class="title">{{ .Params.products.special.title }}</h3>
                 <p class="subtitle">{{ .Params.products.special.text }}</p>
                 <button class="btn btn--arrow">
-                  <span class="name">Зробити замовлення</span>
+                  <span class="name">{{ .Params.utils.btns.order }}</span>
                   <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
                 </button>
               </div>
@@ -231,7 +231,7 @@
               <div class="services__item">{{ . }}</div>
             {{ end }}
             <button class="btn btn--arrow">
-              <span class="name">Зробити замовлення</span>
+              <span class="name">{{ .Params.utils.btns.order }}</span>
               <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
             </button>
           </div>
@@ -258,7 +258,7 @@
                 <img src="../img/phone-icon.svg" alt="">
               </div>
               <h4 class="subtitle bold">{{ .Params.pros.cta }}</h4>
-              <button class="btn btn--dark">Зв'язок з нами</button>
+              <button class="btn btn--dark">{{ .Params.utils.btns.call }}</button>
             </div>
           </div>
         </div>
@@ -315,7 +315,7 @@
               </div>
               <textarea name="message" class="message" placeholder="Повідомлення"></textarea>
               <button type="submit" class="btn btn--arrow" id="response-form">
-                <span class="name">Зробити замовлення</span>
+                <span class="name">{{ .Params.utils.btns.order }}</span>
                 <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
               </button>
             </form>
@@ -341,7 +341,7 @@
                     {{ .Params.contacts.assembly.location }}
                     <button class="btn-link" data-address="{{ .Params.contacts.assembly.locationLink }}">
                       {{/*  https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.9143067351333!2d24.277662982750268!3d49.99421604332794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ace56df37893f%3A0xa79093f4a54544f5!2sSchool%20of%20Velyke%20Kolodno!5e0!3m2!1suk!2sua!4v1693070158395!5m2!1suk!2sua  */}}
-                      <span class="btn-text">Показати на мапі</span>
+                      <span class="btn-text">{{ .Params.utils.btns.showOnMap }}</span>
                       <span class="arrow">
                         <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
                           <path d="M0.993352 11.9985C0.761661 11.9988 0.537126 11.9292 0.358724 11.8017C0.258315 11.7299 0.175316 11.6418 0.114479 11.5423C0.0536416 11.4428 0.0161625 11.3339 0.00418798 11.2219C-0.00778654 11.1098 0.00597897 10.9969 0.0446958 10.8895C0.0834126 10.7821 0.146319 10.6823 0.229814 10.5958L4.67221 6.01173L0.388472 1.41906C0.306104 1.33158 0.244592 1.23092 0.207475 1.12286C0.170357 1.01481 0.158365 0.901501 0.172187 0.789439C0.186009 0.677378 0.225373 0.568777 0.288017 0.469879C0.35066 0.370982 0.435349 0.283737 0.537213 0.213159C0.639811 0.135301 0.75996 0.0765731 0.89012 0.0406621C1.02028 0.00475112 1.15764 -0.00756759 1.29359 0.00447845C1.42953 0.0165245 1.56112 0.0526755 1.68009 0.110663C1.79907 0.16865 1.90286 0.247221 1.98496 0.341446L6.77442 5.47292C6.92027 5.62596 7 5.81791 7 6.01601C7 6.2141 6.92027 6.40606 6.77442 6.55909L1.81639 11.6906C1.71691 11.7941 1.59055 11.8759 1.44755 11.9294C1.30455 11.9829 1.14894 12.0065 0.993352 11.9985Z" fill="#1B4D3E"/>
@@ -368,7 +368,7 @@
                     {{ .Params.contacts.euStorage.location }}
                     <button class="btn-link" data-address="{{ .Params.contacts.euStorage.locationLink }}">
                       {{/*  https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2743.7518396693945!2d15.669558776687664!3d46.55259566016454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476f771770cbf365%3A0x2afd82719b7fc5aa!2zR3VuZHVsacSNZXZhIHVsaWNhIDEyLCAyMDAwIE1hcmlib3IsINCh0LvQvtCy0LXQvdGW0Y8!5e0!3m2!1suk!2sua!4v1693070311213!5m2!1suk!2sua  */}}
-                      <span class="btn-text">Показати на мапі</span>
+                      <span class="btn-text">{{ .Params.utils.btns.showOnMap }}</span>
                       <span class="arrow">
                         <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
                           <path d="M0.993352 11.9985C0.761661 11.9988 0.537126 11.9292 0.358724 11.8017C0.258315 11.7299 0.175316 11.6418 0.114479 11.5423C0.0536416 11.4428 0.0161625 11.3339 0.00418798 11.2219C-0.00778654 11.1098 0.00597897 10.9969 0.0446958 10.8895C0.0834126 10.7821 0.146319 10.6823 0.229814 10.5958L4.67221 6.01173L0.388472 1.41906C0.306104 1.33158 0.244592 1.23092 0.207475 1.12286C0.170357 1.01481 0.158365 0.901501 0.172187 0.789439C0.186009 0.677378 0.225373 0.568777 0.288017 0.469879C0.35066 0.370982 0.435349 0.283737 0.537213 0.213159C0.639811 0.135301 0.75996 0.0765731 0.89012 0.0406621C1.02028 0.00475112 1.15764 -0.00756759 1.29359 0.00447845C1.42953 0.0165245 1.56112 0.0526755 1.68009 0.110663C1.79907 0.16865 1.90286 0.247221 1.98496 0.341446L6.77442 5.47292C6.92027 5.62596 7 5.81791 7 6.01601C7 6.2141 6.92027 6.40606 6.77442 6.55909L1.81639 11.6906C1.71691 11.7941 1.59055 11.8759 1.44755 11.9294C1.30455 11.9829 1.14894 12.0065 0.993352 11.9985Z" fill="#1B4D3E"/>
