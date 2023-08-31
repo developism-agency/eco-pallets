@@ -28,44 +28,48 @@ exports.handler = async (event) => {
         Message: ${message}
       `,
       html: `
-      <table>
-        <tr>
-          <th>Ім'я</th>
-          <th>Email</th>
-          <th>Телефон</th>
-          <th>Тип продукту</th>
-          <th>Повідомлення</th>
-        </tr>
-        <tr>
-          <td>${name}</td>
-          <td>${email}</td>
-          <td>${phone_number}</td>
-          <td>${product_type}</td>
-          <td>${message}</td>
-        </tr>
-      </table>
-      <style>
-        table {
-          border-collapse: collapse;
-          width: 80%;
-          margin: 20px auto;
-          background-color: white;
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-      
-        th, td {
-          text-align: left;
-          padding: 12px;
-        }
-      
-        th {
-          background-color: #f2f2f2;
-        }
-      
-        tr:nth-child(even) {
-          background-color: #f2f2f2;
-        }
-      </style>
+      <div>
+        <table>
+          <tr>
+            <th>Ім'я</th>
+            <th>Email</th>
+            <th>Телефон</th>
+            <th>Тип продукту</th>
+            <th>Повідомлення</th>
+          </tr>
+          <tr>
+            <td>${name}</td>
+            <td>${email}</td>
+            <td>${phone_number}</td>
+            <td>${product_type}</td>
+            <td>${message}</td>
+          </tr>
+        </table>
+        <style>
+          table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+            border: 1px solid #0E0D12;
+          }
+        
+          th, td {
+            text-align: left;
+            padding: 12px;
+            border: 1px solid #0E0D12;
+          }
+        
+          th {
+            background-color: #f2f2f2;
+            font-size: 18px;
+            font-weight: 700;
+          }
+        
+          tr:nth-child(even) {
+            background-color: #f2f2f2;
+          }
+        </style>
+      </div>
       `
     };
 
