@@ -26,18 +26,89 @@
     width: 100%;
     align-self: flex-start;
 
-    &>.btn {
+    &>.btn-submit {
       width: 100%;
+      border: none;
+      cursor: pointer;
       background-color: #DDEDED;
       color: $font-black;
+      height: 68px;
+      font-weight: 700;
+      padding: 16px 24px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
       justify-content: space-between;
+      align-items: center;
+      transition: .2s;
+
+      .name {
+        position: relative;
+        z-index: 2;
+      }
+
+      .arrow, .check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 14px;
+        width: 36px;
+        height: 36px;
+        background-color: $light-green;
+        border-radius: 50%;
+        transition: .2s;
+
+        img {
+          transition: .2s;
+        }
+      }
+
+      .check {
+        display: none;
+        background-color: $white;
+      }
 
       &:hover {
         color: $white;
+        background-color: $light-green;
 
-        .arrow:after {
-          transform: scale(3500%) !important;
+        .arrow {
+          background-color: $white;
+
+          img {
+            filter: grayscale(100%) brightness(45%) sepia(100%) hue-rotate(32deg) saturate(300%);
+          }
         }
+      }
+
+      &.submited {
+        pointer-events: none;
+        background-color: $light-green;
+
+        .name {
+          font-size: 16px;
+          color: $white
+        }
+        
+        .arrow {
+          display: none;
+        }
+  
+        .check {
+          display: flex;
+        }
+      }
+    }
+
+    .error {
+      color: #FF4949;
+
+      .product-type__title, small {
+        color: #FF4949;
+      }
+
+      &>input {
+        border-bottom: 2px solid #FF4949 !important;
       }
     }
 
@@ -110,17 +181,22 @@
   
     .row {
       display: flex;
+      align-items: flex-start;
       gap: 18px;
       margin-bottom: 18px;
   
       &>* {
         width: 50%;
       }
+
+      label input {
+        width: 100%;
+      }
     }
   
     .phone {
       display: flex;
-      gap: 10px;
+      flex-direction: column;
       margin-bottom: 22px;
   
       .iti {

@@ -1,29 +1,8 @@
-// native js dom loaded event
+import accordionModule from './accordionModule.js'
+import dropdownModule from './dropdownModule.js'
+import formModule from './formModule.js'
+
 document.addEventListener("DOMContentLoaded", function(event) {
-  // Change option selected
-  const label = document.querySelector('.dropdown__filter-selected')
-  const options = Array.from(document.querySelectorAll('.dropdown__select-option'))
-
-  options.forEach((option) => {
-    option.addEventListener('click', () => {
-      label.textContent = option.textContent
-    })
-  })
-
-  // Close dropdown onclick outside
-  document.addEventListener('click', (e) => {
-    const toggle = document.querySelector('.dropdown__switch')
-    const element = e.target
-
-    if (element == toggle) return;
-
-    const isDropdownChild = element.closest('.dropdown__filter')		
-    
-    if (!isDropdownChild) {
-      toggle.checked = false
-    }
-  })
-
   //burger menu
   const burger = document.getElementById('burger')
   const menu = document.getElementById('menu')
@@ -41,21 +20,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       menu.classList.remove('active')
       header.classList.remove('menu-active')
     })
-  })
-
-  //accordion
-
-  let accordion = document.querySelector('.text-accordion')
-  let accordionBtn = accordion.querySelector('#accordion-trigger')
-  let accordionContent = accordion.querySelector('.text-accordion__content')
-
-  accordionBtn.addEventListener('click', function (e) {
-    this.parentNode.classList.toggle('active')
-    if (accordionContent.style.maxHeight) {
-      accordionContent.style.maxHeight = null
-    } else {
-      accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px'
-    }
   })
 
   //add class "hide" to header when scroll down and remove when scroll up
@@ -101,44 +65,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     btn.addEventListener('click', () => {
       if (map.src === btn.dataset.address) return
       else map.src = btn.dataset.address
-      
     })
   })
-
-  //send form
-  document.getElementById("contact-form").addEventListener("submit", async function(event) {
-    event.preventDefault();
-    const form = event.target;
-    const formData = new FormData(form);
-    console.log(Object.fromEntries(formData.entries()))
-
-    const body = {
-      ...Object.fromEntries(formData.entries()),
-      product_type: formData.getAll('product_type')
-    }
-    const responseContainer = document.getElementById("response-form");
-    
-    try {
-        const response = await fetch("/.netlify/functions/submitForm", {
-            method: "POST",
-            body: JSON.stringify(body),
-        });
-        
-        const data = await response.json();
-        // responseContainer.textContent = data.message;
-    } catch (error) {
-        // responseContainer.textContent = "Error submitting form.";
-        console.error(error);
-    }
-  });
-
-  //init country code select
-  const input = document.querySelector("#phone-select");
-  window.intlTelInput(input, {
-    initialCountry: "ua",
-    formatOnDisplay: true,
-    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
-  });
 
   //open/close product modal
   let activeModal;
@@ -176,4 +104,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     })
   })
 
+  accordionModule.init('accordion')
+  dropdownModule.init('dropdown')
+  formModule.init('contact-form')
 })

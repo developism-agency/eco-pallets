@@ -1245,15 +1245,62 @@ body {
     max-width: 626px;
     width: 100%;
     align-self: flex-start; }
-    .contact-us__form > .btn {
+    .contact-us__form > .btn-submit {
       width: 100%;
+      border: none;
+      cursor: pointer;
       background-color: #DDEDED;
       color: #0E0D12;
-      justify-content: space-between; }
-      .contact-us__form > .btn:hover {
-        color: #FFFFFF; }
-        .contact-us__form > .btn:hover .arrow:after {
-          transform: scale(3500%) !important; }
+      height: 68px;
+      font-weight: 700;
+      padding: 16px 24px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: .2s; }
+      .contact-us__form > .btn-submit .name {
+        position: relative;
+        z-index: 2; }
+      .contact-us__form > .btn-submit .arrow, .contact-us__form > .btn-submit .check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 14px;
+        width: 36px;
+        height: 36px;
+        background-color: #388D46;
+        border-radius: 50%;
+        transition: .2s; }
+        .contact-us__form > .btn-submit .arrow img, .contact-us__form > .btn-submit .check img {
+          transition: .2s; }
+      .contact-us__form > .btn-submit .check {
+        display: none;
+        background-color: #FFFFFF; }
+      .contact-us__form > .btn-submit:hover {
+        color: #FFFFFF;
+        background-color: #388D46; }
+        .contact-us__form > .btn-submit:hover .arrow {
+          background-color: #FFFFFF; }
+          .contact-us__form > .btn-submit:hover .arrow img {
+            filter: grayscale(100%) brightness(45%) sepia(100%) hue-rotate(32deg) saturate(300%); }
+      .contact-us__form > .btn-submit.submited {
+        pointer-events: none;
+        background-color: #388D46; }
+        .contact-us__form > .btn-submit.submited .name {
+          font-size: 16px;
+          color: #FFFFFF; }
+        .contact-us__form > .btn-submit.submited .arrow {
+          display: none; }
+        .contact-us__form > .btn-submit.submited .check {
+          display: flex; }
+    .contact-us__form .error {
+      color: #FF4949; }
+      .contact-us__form .error .product-type__title, .contact-us__form .error small {
+        color: #FF4949; }
+      .contact-us__form .error > input {
+        border-bottom: 2px solid #FF4949 !important; }
     .contact-us__form .product-type {
       margin-bottom: 22px; }
       .contact-us__form .product-type__title {
@@ -1305,13 +1352,16 @@ body {
       outline: none; }
     .contact-us__form .row {
       display: flex;
+      align-items: flex-start;
       grid-gap: 18px;
       margin-bottom: 18px; }
       .contact-us__form .row > * {
         width: 50%; }
+      .contact-us__form .row label input {
+        width: 100%; }
     .contact-us__form .phone {
       display: flex;
-      grid-gap: 10px;
+      flex-direction: column;
       margin-bottom: 22px; }
       .contact-us__form .phone .iti {
         width: 100%;

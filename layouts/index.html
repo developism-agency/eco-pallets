@@ -60,7 +60,7 @@
         </a>
         {{ if .Site.IsMultiLingual }}
           <div class="header__lang">
-            <div class="dropdown">
+            <div class="dropdown" id="dropdown">
               <input type="checkbox" class="dropdown__switch" id="filter-switch" hidden />
               <label for="filter-switch" class="dropdown__options-filter">
                 <ul class="dropdown__filter" role="listbox" tabindex="-1">
@@ -126,7 +126,7 @@
             <div class="title-label green">Про нас</div>
             <h2 class="title white">{{ .Params.about.title }}</h2>
             <p class="text white">{{ .Params.about.text.visible }}</p>
-            <div class="text-accordion">
+            <div class="text-accordion" id="accordion">
               <div class="text-accordion__content" id="accordion-content">
                 <p class="text white">{{ .Params.about.text.hidden }}</p>
               </div>
@@ -299,26 +299,31 @@
             <form class="contact-us__form" id="contact-form">
               <div class="row">
                 <input type="text" name="name" placeholder="Як вас звати">
-                <input type="email" name="email" placeholder="Ваш e-mail">
+                <label class="error-message">
+                  <input type="text" name="email" placeholder="Ваш e-mail" data-message-valid="Email is not valid">
+                  <small></small>
+                </label>
               </div>
-              <div class="phone">
-                <input type="phone" name="phone_number" id="phone-select">
+              <div class="phone error-message">
+                <input type="phone" name="phone_number" id="phone-select" data-message-valid="Phone number is not valid" data-message-required="Phone number cannot be blank">
+                <small></small>
               </div>
-              <div class="product-type">
-                <h3 class="product-type__title">ВИБЕРІТЬ ТИП ТОВАРУ*:</h3>
+              <div class="product-type error-message">
+                <h3 class="product-type__title">ВИБЕРІТЬ ТИП ТОВАРУ*: <small></small></h3>
                 <div class="product-type__list">
                   {{ range .Params.form.types }}
                     <label class="product-type__item">
-                      <input type="checkbox" name="product_type" class="input" value="{{ . }}">
+                      <input type="checkbox" name="product_type" class="input" value="{{ . }}" data-message-required="Product type must be selected">
                       <div class="check">{{ . }}</div>
                     </label>
                   {{ end }}
                 </div>
               </div>
               <textarea name="message" class="message" placeholder="Повідомлення"></textarea>
-              <button type="submit" class="btn btn--arrow" id="response-form">
+              <button type="submit" class="btn-submit" id="response-form" data-submit-message="Дякуємо вам!<br>Ми зв'яжемося з вами якомога швидше!">
                 <span class="name">{{ .Params.utils.btns.order }}</span>
                 <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
+                <span class="check"><img src="../img/submit-check.png" alt=""></span>
               </button>
             </form>
             <div class="contact-us__img">
@@ -387,46 +392,6 @@
           </div>
         </div>
       </div>
-      <table style="">
-        <tr>
-          <th>Ім'я</th>
-          <th>Email</th>
-          <th>Телефон</th>
-          <th>Тип продукту</th>
-          <th>Повідомлення</th>
-        </tr>
-        <tr>
-          <td>${name}</td>
-          <td>${email}</td>
-          <td>${phone_number}</td>
-          <td>${product_type}</td>
-          <td>${message}</td>
-        </tr>
-      </table>
-      <style>
-        table {
-          border-collapse: collapse;
-          width: 80%;
-          margin: 20px auto;
-          border: 1px solid #0E0D12;
-        }
-      
-        th, td {
-          text-align: left;
-          padding: 12px;
-          border: 1px solid #0E0D12;
-        }
-      
-        th {
-          background-color: #f2f2f2;
-          font-size: 18px;
-          font-weight: 700;
-        }
-      
-        tr:nth-child(even) {
-          background-color: #f2f2f2;
-        }
-      </style>
     </section>
   </main>
   <footer class="footer">
@@ -501,6 +466,7 @@
   </div>
   <div class="modal-bg"></div>
   <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+  <script scr="../js/itiModule.js"></script>
   <script type="module" src="../js/main.js"></script>
 </body>
 </html>

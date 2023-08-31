@@ -37,25 +37,11 @@ exports.handler = async (event) => {
           <th style="text-align: left; padding: 12px; border: 1px solid #0E0D12; background-color: #f2f2f2; font-size: 18px; font-weight: 700;">Message</th>
         </tr>
         <tr>
-          <td style="text-align: left; padding: 12px; border: 1px solid #0E0D12;">John Doe</td>
-          <td style="text-align: left; padding: 12px; border: 1px solid #0E0D12;">john@example.com</td>
-          <td style="text-align: left; padding: 12px; border: 1px solid #0E0D12;">123-456-7890</td>
-          <td style="text-align: left; padding: 12px; border: 1px solid #0E0D12;">Electronics</td>
-          <td style="text-align: left; padding: 12px; border: 1px solid #0E0D12;">Interested in purchasing a new laptop.</td>
-        </tr>
-        <tr>
-          <td style="text-align: left; padding: 12px; border: 1px solid #0E0D12;">Jane Smith</td>
-          <td style="text-align: left; padding: 12px; border: 1px solid #0E0D12;">jane@example.com</td>
-          <td style="text-align: left; padding: 12px; border: 1px solid #0E0D12;">987-654-3210</td>
-          <td style="text-align: left; padding: 12px; border: 1px solid #0E0D12;">Clothing</td>
-          <td style="text-align: left; padding: 12px; border: 1px solid #0E0D12;">Inquiry about summer clothing collection.</td>
-        </tr>
-        <tr>
-          <td style="text-align: left; padding: 12px; border: 1px solid #0E0D12;">Sam Johnson</td>
-          <td style="text-align: left; padding: 12px; border: 1px solid #0E0D12;">sam@example.com</td>
-          <td style="text-align: left; padding: 12px; border: 1px solid #0E0D12;">555-123-4567</td>
-          <td style="text-align: left; padding: 12px; border: 1px solid #0E0D12;">Home Appliances</td>
-          <td style="text-align: left; padding: 12px; border: 1px solid #0E0D12;">Question about warranty on kitchen appliances.</td>
+          <td style="text-align: left; padding: 12px; border: 1px solid #0E0D12;">${name}</td>
+          <td style="text-align: left; padding: 12px; border: 1px solid #0E0D12;">${email}</td>
+          <td style="text-align: left; padding: 12px; border: 1px solid #0E0D12;">${phone_number}</td>
+          <td style="text-align: left; padding: 12px; border: 1px solid #0E0D12;">${product_type}</td>
+          <td style="text-align: left; padding: 12px; border: 1px solid #0E0D12;">${message}</td>
         </tr>
       </table>
       `
