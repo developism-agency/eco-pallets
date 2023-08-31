@@ -74,6 +74,7 @@ const formModule = (function() {
   function setupSubmit() {
     form.addEventListener("submit", async function(event) {
       event.preventDefault();
+      
       formData = new FormData(form);
 
       if (!validateInputs()) return

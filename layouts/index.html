@@ -79,7 +79,7 @@
             </div>
           </div>
         {{ end }}
-        <button class="btn btn--dark desktop" href="#form">{{ .Params.utils.btns.call }}</button>
+        <button class="btn btn--dark desktop" data-form-trigger>{{ .Params.utils.btns.call }}</button>
         <div class="burger" id="burger">
           <div class="burger__inner">
           </div>
@@ -93,7 +93,7 @@
         <div class="hero__inner">
           <div class="hero__content">
             <span class="title-label diff">
-              <mark>50+</mark>  Видів нестандартних піддонів
+              {{ .Params.hero.label }}
             </span>
             <h1 class="title">{{ .Params.hero.title }}</h1>
             <p class="text">{{ .Params.hero.text }}</p>
@@ -123,7 +123,7 @@
       <div class="container">
         <div class="about__inner">
           <div class="about__content">
-            <div class="title-label green">Про нас</div>
+            <div class="title-label green">{{ .Params.about.label }}</div>
             <h2 class="title white">{{ .Params.about.title }}</h2>
             <p class="text white">{{ .Params.about.text.visible }}</p>
             <div class="text-accordion" id="accordion">
@@ -163,7 +163,7 @@
     <section class="products" id="products">
       <div class="container">
         <div class="products__inner">
-          <div class="title-label">продукція</div>
+          <div class="title-label">{{ .Params.products.label }}</div>
           <div class="products__head">
             <h2 class="title">{{ .Params.products.title }}</h2>
             <p class="subtitle">{{ .Params.products.subtitle }}</p>
@@ -226,7 +226,7 @@
     <section class="services" id="services">
       <div class="container">
         <div class="services__inner">
-          <div class="title-label">Послуги</div>
+          <div class="title-label">{{ .Params.services.label }}</div>
           <h2 class="title">{{ .Params.services.title }}</h2>
           <div class="services__list">
             {{ range .Params.services.services }}
@@ -243,7 +243,7 @@
     <section class="pros" id="pros">
       <div class="container">
         <div class="pros__inner">
-          <div class="title-label green">чому ми ?</div>
+          <div class="title-label green">{{ .Params.pros.label }}</div>
           <h2 class="title white">{{ .Params.pros.title }}</h2>
           <div class="pros__list">
             {{ range .Params.pros.pros }}
@@ -269,7 +269,7 @@
     <section class="cert" id="cert">
       <div class="container">
         <div class="cert__inner">
-          <div class="title-label">сертифікати</div>
+          <div class="title-label">{{ .Params.cert.label }}</div>
           <h2 class="title">{{ .Params.cert.title }}</h2>
           <div class="cert__list">
             <div class="cert__item">
@@ -293,14 +293,14 @@
     <section class="contact-us" id="form">
       <div class="container">
         <div class="contact-us__inner">
-          <div class="title-label green">СПІВПРАЦЯ З НАМИ</div>
+          <div class="title-label green">{{ .Params.form.label }}</div>
           <h2 class="title white">{{ .Params.form.title }}</h2>
           <div class="contact-us__content">
             <form class="contact-us__form" id="contact-form">
               <div class="row">
-                <input type="text" name="name" placeholder="Як вас звати">
+                <input type="text" name="name" placeholder="{{ .Params.utils.placeholders.name }}">
                 <label class="error-message">
-                  <input type="text" name="email" placeholder="Ваш e-mail" data-message-valid="Email is not valid">
+                  <input type="text" name="email" placeholder="{{ .Params.utils.placeholders.email }}" data-message-valid="Email is not valid">
                   <small></small>
                 </label>
               </div>
@@ -319,7 +319,7 @@
                   {{ end }}
                 </div>
               </div>
-              <textarea name="message" class="message" placeholder="Повідомлення"></textarea>
+              <textarea name="message" class="message" placeholder="{{ .Params.utils.placeholders.message }}"></textarea>
               <button type="submit" class="btn-submit" id="response-form" data-submit-message="Дякуємо вам!<br>Ми зв'яжемося з вами якомога швидше!">
                 <span class="name">{{ .Params.utils.btns.order }}</span>
                 <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
@@ -336,7 +336,7 @@
     <section class="map" id="contacts">
       <div class="container">
         <div class="map__inner">
-          <div class="title-label">КОНТАКТИ</div>
+          <div class="title-label">{{ .Params.contacts.label }}</div>
           <h2 class="title">{{ .Params.contacts.title }}</h2>
           <div class="map__content">
             <div class="map__info">
@@ -438,31 +438,14 @@
     </div>
   </footer>
   <div class="form-modal">
-    <form class="contact-us__form" id="contact-form">
-      <div class="row">
-        <input type="text" name="name" placeholder="Як вас звати">
-        <input type="email" name="email" placeholder="Ваш e-mail">
-      </div>
-      <div class="phone">
-        <input type="phone" name="phone_number" id="phone-select">
-      </div>
-      <div class="product-type">
-        <h3 class="product-type__title">ВИБЕРІТЬ ТИП ТОВАРУ*:</h3>
-        <div class="product-type__list">
-          {{ range .Params.form.types }}
-            <label class="product-type__item">
-              <input type="checkbox" name="product_type" class="input" value="Дрова в ящику">
-              <div class="check">{{ . }}</div>
-            </label>
-          {{ end }}
-        </div>
-      </div>
-      <textarea name="message" class="message" placeholder="Повідомлення"></textarea>
-      <button type="submit" class="btn btn--arrow" id="response-form">
-        <span class="name">Зробити замовлення</span>
-        <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
-      </button>
-    </form>
+    <div class="form-modal__title">
+      <h2 class="title white">Написати нам</h2>
+    </div>
+    <div class="close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M17.1871 1L10 8.18706L2.81286 1L1 2.81284L8.18714 9.9999L1 17.187L2.81286 18.9998L10 11.8127L17.1871 18.9998L19 17.187L11.8129 9.9999L19 2.81284L17.1871 1Z" fill="black"/>
+      </svg>
+    </div>
   </div>
   <div class="modal-bg"></div>
   <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>

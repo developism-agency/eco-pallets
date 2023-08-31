@@ -54,16 +54,52 @@ body {
 }
 
 .form-modal {
-  display: none;
+  display: flex;
+  flex-direction: column;
   position: fixed;
   z-index: 999999;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: scale(0) translate(-50%, -50%);
   background-color: $green;
   padding: 50px;
   width: 100%;
   max-width: 726px;
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  .close {
+    background-color: $white;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s;
+
+    svg path {
+      transition: .2s;
+    }
+
+    &:hover {
+      background-color: $light-green;
+
+      svg path {
+        fill: $white;
+      }
+    }
+  }
+
+  &.active {
+    transform: scale(1) translate(-50%, -50%);
+  }
 
   .contact-us__form {
     width: unset;
@@ -91,7 +127,6 @@ body {
     padding: 20px;
     height: 100vh;
     max-width: unset;
-    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
