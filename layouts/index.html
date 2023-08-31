@@ -290,7 +290,7 @@
         </div>
       </div>
     </section>
-    <section class="contact-us">
+    <section class="contact-us" id="form">
       <div class="container">
         <div class="contact-us__inner">
           <div class="title-label green">СПІВПРАЦЯ З НАМИ</div>
@@ -309,7 +309,7 @@
                 <div class="product-type__list">
                   {{ range .Params.form.types }}
                     <label class="product-type__item">
-                      <input type="checkbox" name="product_type" class="input" value="Дрова в ящику">
+                      <input type="checkbox" name="product_type" class="input" value="{{ . }}">
                       <div class="check">{{ . }}</div>
                     </label>
                   {{ end }}

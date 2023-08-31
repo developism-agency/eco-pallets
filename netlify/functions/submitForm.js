@@ -26,6 +26,24 @@ exports.handler = async (event) => {
         Phone Number: ${phone_number}
         Product Type: ${product_type}
         Message: ${message}
+      `,
+      html: `
+      <table>
+        <tr>
+          <th>Ім'я</th>
+          <th>Email</th>
+          <th>Телефон</th>
+          <th>Тип продукту</th>
+          <th>Повідомлення</th>
+        </tr>
+        <tr>
+          <td>${name}</td>
+          <td>${email}</td>
+          <td>${phone_number}</td>
+          <td>${product_type}</td>
+          <td>${message}</td>
+        </tr>
+      </table>
       `
     };
 

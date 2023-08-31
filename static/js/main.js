@@ -110,12 +110,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
     event.preventDefault();
     const form = event.target;
     const formData = new FormData(form);
-    // const responseContainer = document.getElementById("response-form");
+    console.log(Object.fromEntries(formData.entries()))
+
+    const body = {
+      ...object.fromEntries(formData.entries()),
+      product_type: formData.getAll('product_type')
+    }
+    const responseContainer = document.getElementById("response-form");
     
     try {
         const response = await fetch("/.netlify/functions/submitForm", {
             method: "POST",
-            body: JSON.stringify(Object.fromEntries(formData.entries())),
+            body: JSON.stringify(body),
         });
         
         const data = await response.json();
