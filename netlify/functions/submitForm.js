@@ -44,6 +44,28 @@ exports.handler = async (event) => {
           <td>${message}</td>
         </tr>
       </table>
+      <style>
+        table {
+          border-collapse: collapse;
+          width: 80%;
+          margin: 20px auto;
+          background-color: white;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+      
+        th, td {
+          text-align: left;
+          padding: 12px;
+        }
+      
+        th {
+          background-color: #f2f2f2;
+        }
+      
+        tr:nth-child(even) {
+          background-color: #f2f2f2;
+        }
+      </style>
       `
     };
 
