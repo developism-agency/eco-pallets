@@ -1259,7 +1259,8 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      transition: .2s; }
+      transition: .2s;
+      outline: none; }
       .contact-us__form > .btn-submit .name {
         position: relative;
         z-index: 2; }

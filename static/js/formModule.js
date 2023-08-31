@@ -89,6 +89,7 @@ const formModule = (function() {
           });
           
           const data = await response.json();
+          displaySuccesSubmit()
           // responseContainer.textContent = data.message;
       } catch (error) {
           // responseContainer.textContent = "Error submitting form.";
