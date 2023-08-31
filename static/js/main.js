@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     console.log(Object.fromEntries(formData.entries()))
 
     const body = {
-      ...object.fromEntries(formData.entries()),
+      ...Object.fromEntries(formData.entries()),
       product_type: formData.getAll('product_type')
     }
     const responseContainer = document.getElementById("response-form");
