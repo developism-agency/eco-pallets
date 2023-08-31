@@ -39,9 +39,11 @@ const formModule = (function() {
     }
 
     if ((emailValue !== '' && !isEmail(emailValue)) && phoneValue !== '' && productTypeValue.some(value => value !== '')) {
+      return false
+    } else {
       clearValidationClasses()
       return true
-    } else { return false }
+    }
   }
 
   function setErrorFor(input, message) {
@@ -90,9 +92,7 @@ const formModule = (function() {
           
           const data = await response.json();
           displaySuccesSubmit()
-          // responseContainer.textContent = data.message;
       } catch (error) {
-          // responseContainer.textContent = "Error submitting form.";
           console.error(error);
       }
     })
@@ -100,12 +100,14 @@ const formModule = (function() {
 
   function displaySuccesSubmit() {
     const btn = form.querySelector('.btn-submit')
+    const originalText = btn.querySelector('.name').innerHTML
     btn.querySelector('.name').innerHTML = btn.dataset.submitMessage
     btn.classList.add('submited')
 
     setTimeout(() => {
       btn.classList.remove('submited')
-    })
+      btn.querySelector('.name').innerHTML = originalText
+    }, 2000)
   }
 
   return { init }

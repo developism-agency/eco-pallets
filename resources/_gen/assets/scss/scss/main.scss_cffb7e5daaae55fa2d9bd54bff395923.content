@@ -1260,7 +1260,8 @@ body {
       justify-content: space-between;
       align-items: center;
       transition: .2s;
-      outline: none; }
+      outline: none;
+      text-align: start; }
       .contact-us__form > .btn-submit .name {
         position: relative;
         z-index: 2; }
