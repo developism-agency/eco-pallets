@@ -38,10 +38,9 @@ const formModule = (function() {
       setErrorFor(productType, productType[0].dataset.messageRequired)
     }
 
-    if ((emailValue !== '' && !isEmail(emailValue)) && phoneValue !== '' && productTypeValue.some(value => value !== '')) {
+    if ((emailValue !== '' && !isEmail(emailValue)) && phoneValue !== '' && !iti.isValidNumber() && productTypeValue.length) {
       return false
     } else {
-      clearValidationClasses()
       return true
     }
   }
@@ -61,7 +60,6 @@ const formModule = (function() {
   function clearValidationClasses() {
     const erroredItems = document.querySelectorAll('.error')
     erroredItems.forEach(item => {
-      console.log(item)
       item.classList.remove('error')
       item.querySelector('small').innerText = ''
     })

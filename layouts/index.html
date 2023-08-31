@@ -300,27 +300,28 @@
               <div class="row">
                 <input type="text" name="name" placeholder="{{ .Params.utils.placeholders.name }}">
                 <label class="error-message">
-                  <input type="text" name="email" placeholder="{{ .Params.utils.placeholders.email }}" data-message-valid="Email is not valid">
+                  <input type="text" name="email" placeholder="{{ .Params.utils.placeholders.email }}" data-message-valid="{{ .Params.utils.validation.invalid }}">
                   <small></small>
                 </label>
               </div>
               <div class="phone error-message">
-                <input type="phone" name="phone_number" id="phone-select" data-message-valid="Phone number is not valid" data-message-required="Phone number cannot be blank">
+                <input type="phone" name="phone_number" id="phone-select" data-message-valid="{{ .Params.utils.validation.invalid }}" data-message-required="{{ .Params.utils.validation.required }}">
                 <small></small>
               </div>
               <div class="product-type error-message">
                 <h3 class="product-type__title">ВИБЕРІТЬ ТИП ТОВАРУ*: <small></small></h3>
                 <div class="product-type__list">
+                  {{ $required := .Params.utils.validation.required }}
                   {{ range .Params.form.types }}
                     <label class="product-type__item">
-                      <input type="checkbox" name="product_type" class="input" value="{{ . }}" data-message-required="Product type must be selected">
+                      <input type="checkbox" name="product_type" class="input" value="{{ . }}" data-message-required="{{ $required }}">
                       <div class="check">{{ . }}</div>
                     </label>
                   {{ end }}
                 </div>
               </div>
               <textarea name="message" class="message" placeholder="{{ .Params.utils.placeholders.message }}"></textarea>
-              <button type="submit" class="btn-submit" id="response-form" data-submit-message="Дякуємо вам!<br>Ми зв'яжемося з вами якомога швидше!">
+              <button type="submit" class="btn-submit" id="response-form" data-submit-message="{{ .Params.utils.success }}">
                 <span class="name">{{ .Params.utils.btns.order }}</span>
                 <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
                 <span class="check"><img src="../img/submit-check.png" alt=""></span>

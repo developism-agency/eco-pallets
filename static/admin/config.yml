@@ -165,3 +165,10 @@ collections:
                 { label: 'Повідомлення', name: 'message', widget: 'string', i18n: true },
               ]
             }
+          - { label: 'Повідомлення валідації', name: 'validation', widget: 'object', i18n: true,
+              fields: [
+                { label: 'Поле обов`язкове', name: 'required', widget: 'string', i18n: true },
+                { label: 'Невірний формат', name: 'invalid', widget: 'string', i18n: true },
+              ]
+            }
+          - { label: 'Повідомлення про відправку', name: 'success', widget: 'string', i18n: true }
