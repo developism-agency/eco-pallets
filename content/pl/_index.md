@@ -44,10 +44,14 @@ products:
         image: /img/pallets-full.webp
         text: >-
           Nie musisz już tracić czasu na rąbanie drewna na opał - zrobiliśmy to
-          za Ciebie!\
+          za Ciebie!
 
 
-          Asortyment Eco Paleta obejmuje suche i świeżo ścięte drewno opałowe w skrzyniach wykonanych z różnych rodzajów drewna (buk, grab). Drewno opałowe ma długość **25-50 cm.** W razie potrzeby możemy pociąć drewno opałowe o innym rozmiarze.\
+
+
+          Asortyment Eco Paleta obejmuje suche i świeżo ścięte drewno opałowe w skrzyniach wykonanych z różnych rodzajów drewna (buk, grab). Drewno opałowe ma długość **25-50 cm.** W razie potrzeby możemy pociąć drewno opałowe o innym rozmiarze.
+
+
 
 
           Wszystkie produkty są składane maksymalnie szczelnie, zgodnie z technologią ich przechowywania i transportu.
@@ -68,6 +72,8 @@ products:
           ### U nas można nabyć takie używane palety:
 
 
+
+
           * 1 kategoria, klasa A – jasny
 
           * 2 kategoria, klasa B – ciemny
@@ -86,7 +92,11 @@ products:
           Palety te są uważane za jedne z najlepszych na rynku: wyróżniają się one szerokim zakresem zastosowania i długim okresem eksploatacji.
 
 
+
+
           ### Charakterystyki:
+
+
 
 
           * Wymiary (SxDxW): 800 x 1200 x 144 mm
@@ -116,7 +126,11 @@ products:
           Możemy zrealizować wszelkie inne produkty, których potrzebują nasi klienci.
 
 
+
+
           ### Oprócz produktów niestandardowych, nasz asortyment obejmuje również palety w takich rozmiarach:
+
+
 
 
           * 400x600 mm
@@ -159,11 +173,15 @@ products:
           przeznaczone do wytwarzania palet.
 
 
+
+
           * Wymiary: 1200x800x20-22x78-140-143
 
           * Wilgotność: 16%
 
           * Drewno: sosna
+
+
 
 
           **Nasz asortyment obejmuje również sztaby z drewna iglastego i prefabrykaty do produkcji palet o niestandardowych rozmiarach.**
@@ -178,6 +196,8 @@ products:
           wykonujemy naniesienie logo.
 
 
+
+
           ### Wymiary:
 
 
@@ -186,6 +206,8 @@ products:
           * 1200x800x200 mm
 
           * 600x800x200 mm
+
+
 
 
           **4 złącza zawiasowe**
