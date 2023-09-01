@@ -159,7 +159,7 @@ products:
           * Wood material: Pine
 
 
-          Our range also includes coniferous timber and pallet workpieces of non-standard sizes.
+          **Our range also includes coniferous timber and pallet workpieces of non-standard sizes.**
         image: /img/палетна-заготовка.webp
     - name: Pallet boards
       image: /img/борд.webp
