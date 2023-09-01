@@ -155,11 +155,15 @@ products:
           und für die Herstellung von Paletten bestimmt sind.
 
 
+
+
           * Abmessungen: 1200x800x20-22x78-140-143
 
           * Feuchte: 16%
 
           * Holzmaterial: Kiefer
+
+
 
 
           **Unser Sortiment umfasst auch Nadelholz und Paletten-Werkstücke in nicht standardisierten Größen.**
