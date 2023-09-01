@@ -5,6 +5,7 @@ hero:
     di settori: dall'industria farmaceutica e alimentare all'industria
     petrolifera e del gas o ai trasporti."
   image: /img/hero-img.webp
+  label: 50+ Tipi di pallet non standard
 about:
   title: Informazioni sull'azienda
   text:
@@ -29,6 +30,7 @@ about:
 
       Oggi Eco Pallet è una moderna produzione dei migliori pallet in legno standardizzati per la certificazione europea.  Offriamo più di 50 tipi di pallet non standard e altri prodotti in legno progettati per un'ampia gamma di settori: da quello farmaceutico e alimentare a quello petrolifero e del gas o dei trasporti.
   image: /img/about-img.webp
+  label: Chi siamo
 products:
   title: Un'ampia gamma di prodotti e la capacità di evadere quasi tutti gli ordini
   subtitle: La nostra missione è fornire ai nostri clienti le migliori soluzioni
@@ -37,20 +39,159 @@ products:
   list:
     - name: "Legna da ardere in scatola "
       image: /img/products-img.webp
+      modal:
+        title: "Legna da ardere in scatola "
+        image: /img/pallets-full.webp
+        text: >-
+          Non devi più perdere tempo a tagliare legna da ardere. L’abbiamo già
+          fatto per te! La gamma Eco Pallet comprende legna da ardere secca e
+          appena tagliata in scatole di diversi tipi di legno (faggio e carpino,
+          ad esempio). La nostra legna da ardere ha normalmente una lunghezza di
+          10-20 pollici ma, se necessario, possiamo tagliarla in pezzi di
+          dimensioni diverse. 
+
+          Tutti i prodotti sono impilati il più strettamente possibile, in base alle loro esigenze di stoccaggio e trasporto.
     - name: "Pallet usati di varie dimensioni "
       image: /img/піддони.webp
+      modal:
+        title: "Pallet usati di varie dimensioni "
+        image: /img/вживані-піддони-різних-розмірів.webp
+        text: >-
+          Offriamo pallet usati di alta qualità che sono quasi come nuovi! Tutti
+          i nostri prodotti sono conformi agli standard europei e non presentano
+          danni strutturali che potrebbero influire sul loro funzionamento. 
+
+
+          ### La nostra azienda vi fornirà i seguenti pallet usati: 
+
+
+          * categoria 1 classe A — chiaro 
+
+          * categoria 2 classe Β — scuro
     - name: "Pallet in legno EPAL "
       image: /img/піддон.webp
+      modal:
+        title: "Pallet in legno EPAL "
+        image: /img/дерев-яні-піддони-epal.webp
+        text: >-
+          Offriamo più di 50 tipi di pallet per vari settori, in linea con gli
+          standard europei per la certificazione. Tutti i prodotti EPAL
+          (European Pallet Association) sono fabbricati su una speciale linea
+          automatizzata utilizzando chiodi a vite (circolari) a norma. Questi
+          pallet sono considerati tra i migliori sul mercato e si distinguono
+          per la loro vasta gamma di applicazioni e la lunga durata.
+
+
+          ### Specifiche:
+
+
+          * Dimensioni (LxPxA): 800 x 1200 x 144 mm 
+
+          * Peso: 24 kg 
+
+          * Impatto del carico: 2500 kg 
+
+          * Utilizzo: Multiplo 
+
+          * Ingresso forcella: 4 lati 
+
+          * Adatto per il contatto con prodotti alimentari: Sì 
+
+          * Sistemi di carico automatizzati: Sì
     - name: "Pallet di dimensioni fuori standard "
       image: /img/нес-піддон.webp
+      modal:
+        title: "Pallet di dimensioni fuori standard "
+        image: /img/піддони-нестандартних-розмірів.webp
+        text: >-
+          Offriamo pallet di dimensioni fuori standard che dovrebbero soddisfare
+          le esigenze di qualsiasi azienda. Siamo in grado di lavorare in base
+          ai vostri disegni e specifiche di produzione, oppure possiamo
+          conformarci alle specifiche tecniche per nostro conto sempre in
+          accordo con il cliente. Ad esempio, uno dei nostri ordini speciali
+          riguardava una serie di pile piramidali di legno con condotti di
+          ventilazione per la conservazione delle verdure. Siamo in grado di
+          produrre qualsiasi altro prodotto richiesto dai nostri clienti.
+
+
+          ### Oltre ai prodotti fuori standard, nella nostra gamma di prodotti sono contemplate anche pallet delle seguenti dimensioni:
+
+
+          * 400х600 mm
+
+          * 600х600 mm
+
+          * 600х800 mm
+
+          * 800х1150 mm
+
+          * 900х1200 mm
+
+          * 1000х1000 mm
+
+          * 1100х1100 mm
+
+          * 1150х1150 mm
+
+          * 1200х1200 mm
+
+          * 1200х800 mm
+
+          * 1200х1000 mm
+
+          * 1250х1250 mm
+
+          * 2000х800 mm
+
+          * 2000х1000 mm
+
+          * 3000х1000 mm
     - name: "Pezzi per pallet "
       image: /img/заготовка.webp
+      modal:
+        title: "Pezzi per pallet "
+        image: /img/палетна-заготовка.webp
+        text: >-
+          Offriamo pezzi per pallet: tavole di legno di alta qualità, di
+          dimensioni Euro-standard, tagliate su una linea di segatura
+          automatizzata e destinate alla produzione di pallet. 
+
+
+          * Dimensioni: 1200x800x20-22x78-140-143 
+
+          * Umidità: 16% 
+
+          * Materiale legno: Pino 
+
+
+          **La nostra gamma comprende anche pezzi in legno di conifere e pallet di dimensioni fuori standard.**
     - name: Pannelli per pallet
       image: /img/борд.webp
+      modal:
+        title: Pannelli per pallet
+        image: /img/палетні-борти.webp
+        text: >-
+          Offriamo pannelli di pallet per carrelli di diverse dimensioni. La
+          tavola può essere fatta di una o due tavole. Se necessario, possiamo
+          anche apporre il vostro logo.
+
+
+          ### Dimensioni:
+
+
+          * 1200x1000x200 mm
+
+          * 1200х800х200 mm
+
+          *  600x800x200 mm
+
+
+          **Inclusi anche 4 giunti a snodo**
   special:
     title: "Ordine speciale "
     text: Offriamo vari prodotti in legno, sia basati su nostri disegni e specifiche
       che  basati su disegni e specifiche fornite dai nostri clienti.
+  label: prodotti
 services:
   title: Forniamo un’ampia gamma di servizi:fabbricazione,vendita,cambio e
     noleggio di pallet.
@@ -61,6 +202,7 @@ services:
     - Consegna di pallet su ordinazione
     - Noleggio di pallet
     - Servizi aggiuntivi
+  label: Servizi
 pros:
   pros:
     - name: Materiali di altissima qualità
@@ -91,8 +233,10 @@ pros:
       image: /img/cert-icon.svg
   title: Perché sceglierci
   cta: Choose Eco Pallet - we offer the best conditions for cooperation!
+  label: Perché noi?
 cert:
   title: I nostri pallet sono standardizzati per la certificazione europea
+  label: certificati
 form:
   title: COLLABORAZIONE CON NOI
   types:
@@ -103,6 +247,7 @@ form:
     - "Pezzi per pallet "
     - Pannelli per pallet
     - "Ordine speciale "
+  label: Scrivici
 contacts:
   title: Contattaci e invieremo il tuo ordine al più presto possibile!
   assembly:
@@ -114,5 +259,29 @@ contacts:
   euStorage:
     location: Via Gunduliceva 12, Maribor, Slovenia, 2000
     locationLink: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2743.7518396693945!2d15.669558776687664!3d46.55259566016454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476f771770cbf365%3A0x2afd82719b7fc5aa!2zR3VuZHVsacSNZXZhIHVsaWNhIDEyLCAyMDAwIE1hcmlib3IsINCh0LvQvtCy0LXQvdGW0Y8!5e0!3m2!1suk!2sua!4v1693070311213!5m2!1suk!2sua
+  label: CONTATTO
+utils:
+  linkedIn: https://www.linkedin.com/company/developism/?viewAsMember=true
+  nav:
+    about: Chi siamo
+    products: Prodotti
+    services: Servizi
+    pros: Perché noi?
+    cert: Certificati
+    contacts: Contatti
+  btns:
+    call: Contattateci
+    products: Prodotti
+    more: Maggiori dettagli
+    order: Effettuare un ordine
+    showOnMap: Mostra sulla mappa
+  placeholders:
+    name: Qual è il suo nome
+    email: Indirizzo e-mail
+    message: Messaggi
+  validation:
+    required: Questo campo deve essere compilato
+    invalid: L'indirizzo e-mail è errato
+  success: Grazie mille! Vi risponderemo al più presto!
 title: null
 ---
