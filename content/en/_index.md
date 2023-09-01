@@ -34,6 +34,7 @@ about:
 
       Today Eco Pallet is a modern production of the best wooden pallets standardized for European certification.  We offer more than 50 types of non-standard pallets and other wooden products designed for a wide range of industries: from pharmaceuticals and food processing to oil and gas or transportation.
   image: /img/about-img.webp
+  label: About us
 products:
   title: Large selection of goods and the ability to fulfill almost any order
   subtitle: Our mission is to provide our customers with the best solutions for
@@ -41,10 +42,47 @@ products:
   list:
     - name: Firewood in a box
       image: /img/products-img.webp
+      modal:
+        title: Firewood in a box
+        text: >-
+          You no longer have to spend time chopping firewood — we did it for
+          you!\
+
+
+          The Eco Pallet range includes dry and freshly-cut firewood in boxes made of several types of wood (beech and hornbeam, for example). By default, our firewood is 10-20 inches in length. If necessary, we can chop firewood of a different size.
+
+
+          All products are stacked as tightly as possible, in accordance with their storage and transportation needs.
+        image: /img/pallets-full.webp
     - name: Used pallets of various dimensions
       image: /img/піддони.webp
+      modal:
+        title: Used pallets of various dimensions
+        text: >-
+          We offer high-quality used pallets that are almost as good as new!
+
+          All of our products comply with European standards, and have no structural damage that could affect their function.
+
+
+          ### Our company will provide you with the following used pallets: 
+
+
+          * 1 category А class — light
+
+          * 2 category В class — dark
+        image: /img/вживані-піддони-різних-розмірів.webp
     - name: EPAL wooden pallets
       image: /img/піддон.webp
+      modal:
+        image: /img/дерев-яні-піддони-epal.webp
+        title: EPAL wooden pallets
+        text: >-
+          We offer more than 50 types of pallets for various industries,
+          standardized for European certification. All EPAL (European Pallet
+          Association) products are manufactured on a special automated line
+          using licensed screw (ring) nails.
+
+          These pallets are considered among the best on the market, and are distinguished by their wide range of applications and long service life.
     - name: "Pallets of non-standard dimensions "
       image: /img/нес-піддон.webp
     - name: Pallet workpiece
@@ -57,6 +95,7 @@ products:
       We offer various wooden products, either based on our own drawings and
       specifications or according to the drawings and specifications provided by
       our customers.
+  label: products
 services:
   title: "We provide the full range of services: manufacture, selling, swapping
     and lease of the pallets. "
