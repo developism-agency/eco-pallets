@@ -78,6 +78,24 @@ products:
           using licensed screw (ring) nails.
 
           These pallets are considered among the best on the market, and are distinguished by their wide range of applications and long service life.
+
+
+          ### Specification:
+
+
+          * Dimensions (WxDxH): 800 x 1200 x 144 mm
+
+          * Weight: 24 kg
+
+          * Load impact: 2500 kg
+
+          * Usage: Multiple
+
+          * Fork Access: 4 sides
+
+          * Acceptable for contact with food products: Yes
+
+          * Automated loading systems: Yes
     - name: "Pallets of non-standard dimensions "
       image: /img/нес-піддон.webp
       modal:
