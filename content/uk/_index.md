@@ -90,6 +90,18 @@ products:
 
 
           ### У нас можна придбати наступні вживані піддони:
+
+
+          * <!--StartFragment-->
+
+            1 категорія А клас — світлий
+
+            <!--EndFragment-->
+          * <!--StartFragment-->
+
+            2 категорія В клас — темний
+
+            <!--EndFragment-->
         image: /img/вживані-піддони-різних-розмірів.webp
     - name: Дерев'яні піддони EPAL
       image: /img/піддон.webp
@@ -112,6 +124,42 @@ products:
 
           ### Характеристики:
 
+
+          * <!--StartFragment-->
+
+            Розміри (ШxДxВ): 800 x 1200 x 144 мм
+
+            <!--EndFragment-->
+          * <!--StartFragment-->
+
+            Вага: 24 кг
+
+            <!--EndFragment-->
+          * <!--StartFragment-->
+
+            Динамічне навантаження: 2500 кг
+
+            <!--EndFragment-->
+          * <!--StartFragment-->
+
+            Використання: Багаторазове
+
+            <!--EndFragment-->
+          * <!--StartFragment-->
+
+            Під’їзд: 4 сторони
+
+            <!--EndFragment-->
+          * <!--StartFragment-->
+
+            Допустимий для контакту з харчовими продуктами: Так
+
+            <!--EndFragment-->
+          * <!--StartFragment-->
+
+            Автоматичні системи завантаження: Так
+
+            <!--EndFragment-->
 
           <!--EndFragment-->
         image: /img/дерев-яні-піддони-epal.webp
@@ -140,6 +188,82 @@ products:
           ### Окрім нестандартної продукції, в нашому асортименті також представлені піддони таких розмірів:
 
 
+          * <!--StartFragment-->
+
+            400х600 мм
+
+            <!--EndFragment-->
+          * <!--StartFragment-->
+
+            600х600 мм
+
+            <!--EndFragment-->
+          * <!--StartFragment-->
+
+            600х800 мм
+
+            <!--EndFragment-->
+          * <!--StartFragment-->
+
+            800х1150 мм
+
+            <!--EndFragment-->
+          * <!--StartFragment-->
+
+            900х1200 мм
+
+            <!--EndFragment-->
+          * <!--StartFragment-->
+
+            1000х1000 мм
+
+            <!--EndFragment-->
+          * <!--StartFragment-->
+
+            1100х1100 мм
+
+            <!--EndFragment-->
+          * <!--StartFragment-->
+
+            3000х1000 мм
+
+            <!--EndFragment-->
+          * <!--StartFragment-->
+
+            1150х1150 мм
+
+            <!--EndFragment-->
+          * <!--StartFragment-->
+
+            1200х1200 мм
+
+            <!--EndFragment-->
+          * <!--StartFragment-->
+
+            1200х800 мм
+
+            <!--EndFragment-->
+          * <!--StartFragment-->
+
+            1200х1000 мм
+
+            <!--EndFragment-->
+          * <!--StartFragment-->
+
+            1250х1250 мм
+
+            <!--EndFragment-->
+          * <!--StartFragment-->
+
+            2000х800 мм
+
+            <!--EndFragment-->
+          * <!--StartFragment-->
+
+            2000х1000 мм
+
+            <!--EndFragment-->
+
           <!--EndFragment-->
     - name: Палетна заготовка
       image: /img/заготовка.webp
@@ -160,6 +284,41 @@ products:
 
 
           ### Характеристики:
+
+
+          <!--StartFragment-->
+
+
+          Розміри: 1200x800x20-22x78-140-143
+
+
+          <!--EndFragment-->
+
+
+          <!--StartFragment-->
+
+
+          Вологість: 16%
+
+
+          <!--EndFragment-->
+
+
+          <!--StartFragment-->
+
+
+          Деревина: сосна
+
+
+          <!--EndFragment-->
+
+
+
+
+          <!--StartFragment-->
+
+
+          Також у нашому асортименті представлено хвойний брусок та палетні заготовки нестандартних розмірів.
 
 
           <!--EndFragment-->
@@ -183,6 +342,22 @@ products:
 
           ### Розміри:
 
+
+          * <!--StartFragment-->
+
+            1200x1000x200 мм
+
+            <!--EndFragment-->
+          * <!--StartFragment-->
+
+            1200х800х200 мм
+
+            <!--EndFragment-->
+          * <!--StartFragment-->
+
+            600x800x200 мм
+
+            <!--EndFragment-->
 
           <!--EndFragment-->
   special:
