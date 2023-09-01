@@ -841,7 +841,8 @@ body {
   .about__stats {
     width: 100%; }
   .about__img {
-    height: 250px;
+    height: 400px;
+    min-height: unset;
     margin-top: 22px; } }
 
 @media screen and (max-width: 720px) {
@@ -857,6 +858,8 @@ body {
     grid-gap: 15px; }
     .about__stats > * {
       width: 100%; }
+  .about__img {
+    height: 300px; }
   .text-accordion {
     margin-bottom: 16px; }
     .text-accordion__btn {
@@ -893,7 +896,9 @@ body {
   .about__content br {
     content: " ";
     display: block;
-    margin: 1.6em 0; } }
+    margin: 1.6em 0; }
+  .about__img {
+    height: 250px; } }
 
 .products {
   margin-bottom: 144px; }

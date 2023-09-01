@@ -174,7 +174,8 @@
     }
 
     &__img {
-      height: 250px;
+      height: 400px;
+      min-height: unset;
       margin-top: 22px;
     }
   }
@@ -206,6 +207,10 @@
       &>* {
         width: 100%;
       }
+    }
+
+    &__img {
+      height: 300px;
     }
   }
 
@@ -273,6 +278,10 @@
         display: block;
         margin: 1.6em 0;
       }
+    }
+
+    &__img {
+      height: 250px;
     }
   }
 }
