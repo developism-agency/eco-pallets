@@ -76,21 +76,6 @@ collections:
           - { label: 'Лейбл', name: 'label', widget: 'string', i18n: true }
           - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
           - { label: 'Список послуг', name: 'services', widget: 'list', i18n: true, field: { label: 'Назва послуги', name: 'name', widget: 'string', i18n: true } }
-      - label: 'Сертифікати'
-        name: 'cert'
-        i18n: true
-        widget: 'object'
-        required: false
-        fields:
-          - { label: 'Лейбл', name: 'label', widget: 'string', i18n: true }
-          - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
-          - { label: 'Сертифікати', name: 'list', widget: 'object', i18n: true,
-              fields: [
-                { label: 'EPAL', name: 'cert1', widget: 'string', i18n: true },
-                { label: 'Фітосанітарний сертифікат', name: 'cert2', widget: 'string', i18n: true },
-                { label: 'Санітарно-епідеміологічна експертиза', name: 'cert3', widget: 'string', i18n: true },
-              ]
-            }
       - label: 'Переваги'
         name: 'pros'
         i18n: true
@@ -115,6 +100,13 @@ collections:
         fields:
           - { label: 'Лейбл', name: 'label', widget: 'string', i18n: true }
           - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
+          - { label: 'Сертифікати', name: 'list', widget: 'object', i18n: true,
+              fields: [
+                { label: 'EPAL', name: 'cert1', widget: 'string', i18n: true },
+                { label: 'Фітосанітарний сертифікат', name: 'cert2', widget: 'string', i18n: true },
+                { label: 'Санітарно-епідеміологічна експертиза', name: 'cert3', widget: 'string', i18n: true },
+              ]
+            }
       - name: 'form'
         label: "Форма зворотнього зв'язку"
         i18n: true
