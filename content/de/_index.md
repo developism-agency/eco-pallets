@@ -66,7 +66,11 @@ products:
           Alle unsere Produkte entsprechen den europäischen Normen und weisen keine strukturellen Schäden auf, die ihre Funktion beeinträchtigen könnten.
 
 
+
+
           **Unser Unternehmen bietet Ihnen folgende gebrauchte Paletten an:**
+
+
 
 
           * 1 Kategorie А Klasse — hell
@@ -82,7 +86,11 @@ products:
           Diese Paletten gelten als zu den besten auf dem Markt gehörig und zeichnen sich durch vielfältigen Einsatzmöglichkeiten und lange Lebensdauer aus.
 
 
+
+
           ### Spezifikation:
+
+
 
 
           * Abmessungen (LxBxH): 800 x 1200 x 144 mm
@@ -112,7 +120,11 @@ products:
           Wir können jedes andere von unseren Kunden gewünschte Produkt herstellen.
 
 
+
+
           ### Neben den nicht standardisierten Produkten sind auch Paletten mit folgenden Abmessungen in unserem Sortiment vertreten:
+
+
 
 
           * 400х600 mm
@@ -178,6 +190,8 @@ products:
           Bei Bedarf können wir auch ein Logo anbringen.
 
 
+
+
           ### Abmessungen:
 
 
@@ -186,6 +200,8 @@ products:
           * 1200х800х200 mm
 
           * 600x800x200 mm
+
+
 
 
           **Umfasst auch 4 Gabelgelenke.**
