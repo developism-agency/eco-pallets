@@ -186,4 +186,4 @@ collections:
                 { label: 'Невірний формат', name: 'invalid', widget: 'string', i18n: true },
               ]
             }
-          - { label: 'Повідомлення про відправку', name: 'success', widget: 'string', i18n: true }
+          - { label: 'Повідомлення про відправку', name: 'success', widget: 'markdown', i18n: true, minimal: true, buttons: [] }
