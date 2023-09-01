@@ -85,10 +85,25 @@ products:
           These pallets are considered among the best on the market, and are distinguished by their wide range of applications and long service life.
     - name: "Pallets of non-standard dimensions "
       image: /img/нес-піддон.webp
+      modal:
+        title: "Pallets of non-standard dimensions "
+        text: Pallets of non-standard dimensions Pallets of non-standard dimensions
+          Pallets of non-standard dimensions
+        image: /img/піддони-нестандартних-розмірів.webp
     - name: Pallet workpiece
       image: /img/заготовка.webp
+      modal:
+        title: Pallet workpiece
+        text: Pallet workpiecePallet workpiecePallet workpiecePallet workpiecePallet
+          workpiece
+        image: /img/палетна-заготовка.webp
     - name: Pallet boards
       image: /img/борд.webp
+      modal:
+        title: Pallet boards
+        text: Pallet boardsPallet boardsPallet boardsPallet boardsPallet boardsPallet
+          boardsPallet boards
+        image: /img/палетні-борти.webp
   special:
     title: Special order
     text: >
@@ -106,6 +121,7 @@ services:
     - Delivery of pallets to order
     - Pallet rental
     - Additional services
+  label: SERVICES
 pros:
   pros:
     - name: "Materials of the highest quality "
@@ -138,8 +154,10 @@ pros:
       image: /img/cert-icon.svg
   title: Our benefits
   cta: Choose Eco Pallet - we offer the best conditions for cooperation!
+  label: Why us?
 cert:
   title: Our pallets are standardized for European certification
+  label: certificates
 form:
   title: COOPERATION WITH US
   types:
@@ -150,6 +168,7 @@ form:
     - Pallet workpiece
     - Pallet boards
     - Special order
+  label: Write to us
 contacts:
   title: Please, contact us,  and we deliver your order ASAP!
   assembly:
@@ -161,5 +180,29 @@ contacts:
   euStorage:
     location: Slovenia, Maribor 2000, 12 Gunduliceva str.
     locationLink: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2743.7518396693945!2d15.669558776687664!3d46.55259566016454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476f771770cbf365%3A0x2afd82719b7fc5aa!2zR3VuZHVsacSNZXZhIHVsaWNhIDEyLCAyMDAwIE1hcmlib3IsINCh0LvQvtCy0LXQvdGW0Y8!5e0!3m2!1suk!2sua!4v1693070311213!5m2!1suk!2sua
+  label: CONTACT
+utils:
+  linkedIn: https://www.linkedin.com/company/developism/?viewAsMember=true
+  nav:
+    about: About us
+    products: Products
+    services: Services
+    pros: Why us?
+    cert: Certificates
+    contacts: Contacts
+  btns:
+    call: Contact us
+    products: Our products
+    more: More details
+    order: Make an order
+    showOnMap: Show on map
+  placeholders:
+    name: Your name
+    email: Your e-mail
+    message: Message
+  validation:
+    required: This field is required
+    invalid: Email address is incorrect
+  success: Thank you very much! We will get back to you as soon as possible!
 title: null
 ---
