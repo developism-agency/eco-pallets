@@ -20,7 +20,7 @@ collections:
         widget: 'object'
         required: false
         fields:
-          - { label: 'Лейбл', name: 'label', widget: 'markdown', i18n: true }
+          - { label: 'Лейбл', name: 'label', widget: 'markdown', i18n: true, minimal: true, buttons: ['italic'] }
           - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
           - { label: 'Текст', name: 'text', widget: 'string', i18n: true }
           - { label: 'Зображення', name: 'image', widget: 'image', i18n: true }
@@ -55,7 +55,7 @@ collections:
                 { lable: 'Повна інформація', name: 'modal', widget: 'object', i18n: true,
                   fields: [
                     { label: 'Заголовок', name: 'title', widget: 'string', i18n: true },
-                    { label: 'Текст', name: 'text', widget: 'markdown', i18n: true },
+                    { label: 'Текст', name: 'text', widget: 'markdown', i18n: true, buttons: ['italic', 'bold', 'bulleted-list'] },
                     { label: 'Зображення', name: 'image', widget: 'image', i18n: true },
                   ]
                 }
@@ -76,6 +76,21 @@ collections:
           - { label: 'Лейбл', name: 'label', widget: 'string', i18n: true }
           - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
           - { label: 'Список послуг', name: 'services', widget: 'list', i18n: true, field: { label: 'Назва послуги', name: 'name', widget: 'string', i18n: true } }
+      - label: 'Сертифікати'
+        name: 'cert'
+        i18n: true
+        widget: 'object'
+        required: false
+        fields:
+          - { label: 'Лейбл', name: 'label', widget: 'string', i18n: true }
+          - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
+          - { label: 'Сертифікати', name: 'list', widget: 'object', i18n: true,
+              fields: [
+                { label: 'EPAL', name: 'cert1', widget: 'string', i18n: true },
+                { label: 'Фітосанітарний сертифікат', name: 'cert2', widget: 'string', i18n: true },
+                { label: 'Санітарно-епідеміологічна експертиза', name: 'cert3', widget: 'string', i18n: true },
+              ]
+            }
       - label: 'Переваги'
         name: 'pros'
         i18n: true

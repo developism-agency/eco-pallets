@@ -159,6 +159,10 @@
     .text {
       margin-bottom: 32px;
     }
+
+    .btn {
+      margin-top: 32px;
+    }
   }
 
   &__img {
@@ -289,6 +293,11 @@
 
   .product-modal {
     overflow: scroll;
+
+    &__info {
+      margin-top: 16px;
+    }
+
     &__inner {
       padding-top: 30px;
     }

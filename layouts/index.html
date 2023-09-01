@@ -93,7 +93,7 @@
         <div class="hero__inner">
           <div class="hero__content">
             <span class="title-label diff">
-              {{ .Params.hero.label }}
+              {{ .Params.hero.label | markdownify }}
             </span>
             <h1 class="title">{{ .Params.hero.title }}</h1>
             <p class="text">{{ .Params.hero.text }}</p>
@@ -187,7 +187,7 @@
                   <div class="product-modal__inner">
                     <div class="product-modal__info">
                       <h2 class="title">{{ .modal.title }}</h2>
-                      <div class="text">{{ .modal.text | markdownify }}</div>
+                      <div class="markdown">{{ .modal.text | markdownify }}</div>
                       <button class="btn btn--arrow">
                         <span class="name">{{ $orderBtn }}</span>
                         <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
@@ -274,17 +274,17 @@
           <div class="cert__list">
             <div class="cert__item">
               <div class="img"><img src="../img/epal-icon.svg" alt=""></div>
-              <h3 class="title">Сертифікція EPAL</h3>
+              <h3 class="title">{{ .Params.cert.list.cert1 }}</h3>
             </div>
             <div class="divider"></div>
             <div class="cert__item">
               <div class="img"><img src="../img/cert-icon.svg" alt=""></div>
-              <h3 class="title">Фітосанітарний сертифікат</h3>
+              <h3 class="title">{{ .Params.cert.list.cert2 }}</h3>
             </div>
             <div class="divider"></div>
             <div class="cert__item">
               <div class="img"><img src="../img/cert-icon.svg" alt=""></div>
-              <h3 class="title">Санітарно-епідеміологічна експертиза</h3>
+              <h3 class="title">{{ .Params.cert.list.cert3 }}</h3>
             </div>
           </div>
         </div>
