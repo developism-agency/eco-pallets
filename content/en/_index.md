@@ -165,8 +165,23 @@ products:
       image: /img/борд.webp
       modal:
         title: Pallet boards
-        text: Pallet boardsPallet boardsPallet boardsPallet boardsPallet boardsPallet
-          boardsPallet boards
+        text: >-
+          We offer pallet boards for trays of different dimensions.  The board
+          can be made of one or two planks. If needed, we can also include logo
+          placement.
+
+
+          ### Dimensions:
+
+
+          * 1200x1000x200 mm
+
+          * 1200х800х200 mm
+
+          * 600x800x200 mm
+
+
+          **Also includes 4 knuckle joints.**
         image: /img/палетні-борти.webp
   special:
     title: Special order
