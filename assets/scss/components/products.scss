@@ -44,6 +44,16 @@
   max-width: 626px;
   background-color: $font-light;
 
+  &>* {
+    &:first-child {
+      width: 60%;
+    }
+
+    &:nth-child(2) {
+      width: 40%;
+    }
+  }
+
   &__info {
     display: flex;
     flex-direction: column;
@@ -57,6 +67,8 @@
   &__img {
     display: flex;
     align-items: flex-end;
+    justify-content: flex-end;
+    max-width: 250px;
     img {
       max-height: 100%;
     }

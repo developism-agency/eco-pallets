@@ -136,6 +136,7 @@ collections:
           - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
           - { label: 'Виробництво', name: 'assembly', widget: 'object', i18n: true,
               fields: [
+                { label: 'Лейбл', name: 'label', widget: 'string', i18n: true },
                 { label: 'Локація', name: 'location', widget: 'string', i18n: true },
                 { label: 'Посилання на локацію', name: 'locationLink', widget: 'string', i18n: true },
                 { label: 'Телефон', name: 'phone', widget: 'string', i18n: true },
@@ -144,6 +145,7 @@ collections:
             }
           - { label: 'Склад в Європі', name: 'euStorage', widget: 'object', i18n: true,
               fields: [
+                { label: 'Лейбл', name: 'label', widget: 'string', i18n: true },
                 { label: 'Локація', name: 'location', widget: 'string', i18n: true },
                 { label: 'Посилання на локацію', name: 'locationLink', widget: 'string', i18n: true },
               ]

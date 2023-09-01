@@ -70,18 +70,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   let activeModal;
 
-  const btnOpenForm = document.querySelector('[data-form-trigger]')
+  const btnsOpenForm = document.querySelectorAll('[data-form-trigger]')
 
-  btnOpenForm.addEventListener('click', () => {
-    const modal = document.querySelector('.form-modal')
-    //move form from .contact-us section to .from-modal
-    const form = document.querySelector('.contact-us__form')
-    modal.appendChild(form)
-
-    activeModal = modal
-    modal.classList.add('active')
-    modalBg.classList.add('active')
-    body.classList.add('fixed')
+  btnsOpenForm.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const modal = document.querySelector('.form-modal')
+      //move form from .contact-us section to .from-modal
+      const form = document.querySelector('.contact-us__form')
+      modal.appendChild(form)
+  
+      activeModal = modal
+      modal.classList.add('active')
+      modalBg.classList.add('active')
+      body.classList.add('fixed')
+    })
   })
 
   document.querySelector('.form-modal .close').addEventListener('click', () => {
