@@ -16,6 +16,8 @@ about:
       stacks, pallet blanks, and firewood.
 
 
+
+
       At the same time, we mastered the art of custom orders, producing pallets of non-standard dimensions on demand. A year later, in 2019, our company received a European license for the production of EPAL pallets.
     hidden: >-
       Our mission is to provide our customers with the best solutions for
@@ -25,6 +27,8 @@ about:
       and convenient pallets with a long service life.   We are experts in
       pallets and boxes. Contact us, and we will be happy to select products
       that can meet all the needs of your business!  
+
+
 
 
       Today Eco Pallet is a modern production of the best wooden pallets standardized for European certification.  We offer more than 50 types of non-standard pallets and other wooden products designed for a wide range of industries: from pharmaceuticals and food processing to oil and gas or transportation.
