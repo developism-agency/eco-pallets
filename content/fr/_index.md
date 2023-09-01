@@ -157,6 +157,9 @@ products:
           de sciage automatisée et destinée à la fabrication de palettes.
 
 
+          ### Dimensions:
+
+
           * Dimensions : 1200x800x20-22x78-140-143
 
           * Humidité : 16%
