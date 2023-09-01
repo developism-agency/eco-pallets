@@ -152,11 +152,15 @@ products:
           manufacture of pallets.
 
 
+
+
           * Dimensions: 1200x800x20-22x78-140-143
 
           * Humidity: 16%
 
           * Wood material: Pine
+
+
 
 
           **Our range also includes coniferous timber and pallet workpieces of non-standard sizes.**
