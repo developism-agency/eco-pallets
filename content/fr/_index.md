@@ -5,12 +5,7 @@ hero:
     large éventail d'industries : de l'industrie pharmaceutique et alimentaire à
     l'industrie pétrolière et gazière, en passant par les transports."
   image: /img/hero-img.webp
-  label: |-
-    <!--StartFragment-->
-
-    **50+** Types de palettes non-standard
-
-    <!--EndFragment-->
+  label: "**50+** Types de palettes non-standard"
 about:
   title: About company
   text:
