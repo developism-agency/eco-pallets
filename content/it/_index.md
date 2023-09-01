@@ -44,11 +44,12 @@ products:
         image: /img/pallets-full.webp
         text: >-
           Non devi più perdere tempo a tagliare legna da ardere. L’abbiamo già
-          fatto per te! La gamma Eco Pallet comprende legna da ardere secca e
-          appena tagliata in scatole di diversi tipi di legno (faggio e carpino,
-          ad esempio). La nostra legna da ardere ha normalmente una lunghezza di
-          10-20 pollici ma, se necessario, possiamo tagliarla in pezzi di
-          dimensioni diverse. 
+          fatto per te!
+
+
+          La gamma Eco Pallet comprende legna da ardere secca e appena tagliata in scatole di diversi tipi di legno (faggio e carpino, ad esempio). La nostra legna da ardere ha normalmente una lunghezza di 10-20 pollici ma, se necessario, possiamo tagliarla in pezzi di dimensioni diverse. 
+
+
 
           Tutti i prodotti sono impilati il più strettamente possibile, in base alle loro esigenze di stoccaggio e trasporto.
     - name: "Pallet usati di varie dimensioni "
@@ -62,7 +63,11 @@ products:
           danni strutturali che potrebbero influire sul loro funzionamento. 
 
 
-          ### La nostra azienda vi fornirà i seguenti pallet usati: 
+
+
+          ### La nostra azienda vi fornirà i seguenti pallet usati:
+
+
 
 
           * categoria 1 classe A — chiaro 
@@ -82,7 +87,11 @@ products:
           per la loro vasta gamma di applicazioni e la lunga durata.
 
 
+
+
           ### Specifiche:
+
+
 
 
           * Dimensioni (LxPxA): 800 x 1200 x 144 mm 
@@ -114,7 +123,11 @@ products:
           produrre qualsiasi altro prodotto richiesto dai nostri clienti.
 
 
+
+
           ### Oltre ai prodotti fuori standard, nella nostra gamma di prodotti sono contemplate anche pallet delle seguenti dimensioni:
+
+
 
 
           * 400х600 mm
@@ -157,11 +170,15 @@ products:
           automatizzata e destinate alla produzione di pallet. 
 
 
+
+
           * Dimensioni: 1200x800x20-22x78-140-143 
 
           * Umidità: 16% 
 
           * Materiale legno: Pino 
+
+
 
 
           **La nostra gamma comprende anche pezzi in legno di conifere e pallet di dimensioni fuori standard.**
@@ -176,6 +193,8 @@ products:
           anche apporre il vostro logo.
 
 
+
+
           ### Dimensioni:
 
 
@@ -183,7 +202,9 @@ products:
 
           * 1200х800х200 mm
 
-          *  600x800x200 mm
+          * 600x800x200 mm
+
+
 
 
           **Inclusi anche 4 giunti a snodo**
