@@ -41,10 +41,14 @@ products:
         title: Firewood in a box
         text: >-
           You no longer have to spend time chopping firewood — we did it for
-          you!\
+          you!
+
+
 
 
           The Eco Pallet range includes dry and freshly-cut firewood in boxes made of several types of wood (beech and hornbeam, for example). By default, our firewood is 10-20 inches in length. If necessary, we can chop firewood of a different size.
+
+
 
 
           All products are stacked as tightly as possible, in accordance with their storage and transportation needs.
@@ -59,7 +63,11 @@ products:
           All of our products comply with European standards, and have no structural damage that could affect their function.
 
 
-          ### Our company will provide you with the following used pallets: 
+
+
+          ### Our company will provide you with the following used pallets:
+
+
 
 
           * 1 category А class — light
@@ -80,7 +88,11 @@ products:
           These pallets are considered among the best on the market, and are distinguished by their wide range of applications and long service life.
 
 
+
+
           ### Specification:
+
+
 
 
           * Dimensions (WxDxH): 800 x 1200 x 144 mm
@@ -109,7 +121,11 @@ products:
           We can produce any other product required by our clients.
 
 
+
+
           ### Apart from non-standard products, the following pallet dimensions are also represented in our product range:
+
+
 
 
           * 400х600 mm
