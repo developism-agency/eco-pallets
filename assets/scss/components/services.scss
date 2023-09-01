@@ -75,7 +75,7 @@
 
     &__list {
       &>* {
-        height: 44px;
+        height: unset;
       }
 
       .btn {
@@ -85,7 +85,8 @@
 
     &__item {
       font-size: 14px;
-      padding: 16px 30px;
+      padding: 14px;
+      text-align: center;
     }
   }
 }

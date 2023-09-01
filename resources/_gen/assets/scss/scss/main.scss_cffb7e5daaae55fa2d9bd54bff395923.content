@@ -1178,12 +1178,13 @@ body {
     .services .title {
       margin-bottom: 22px; }
     .services__list > * {
-      height: 44px; }
+      height: unset; }
     .services__list .btn {
       font-size: 14px; }
     .services__item {
       font-size: 14px;
-      padding: 16px 30px; } }
+      padding: 14px;
+      text-align: center; } }
 
 @media screen and (max-width: 560px) {
   .services .btn {
