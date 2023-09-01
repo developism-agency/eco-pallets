@@ -100,15 +100,66 @@ products:
       image: /img/нес-піддон.webp
       modal:
         title: "Pallets of non-standard dimensions "
-        text: Pallets of non-standard dimensions Pallets of non-standard dimensions
-          Pallets of non-standard dimensions
+        text: >-
+          We offer pallets of non-standard dimensions that should meet the needs
+          of any business.
+
+          We can work according to your production drawings and specifications, or we can fulfil the technical specifications on our own in consultation with the client. For example, one of our special orders was for a set of wooden pyramids with ventilation ducts for storing vegetables.
+
+          We can produce any other product required by our clients.
+
+
+          ### Apart from non-standard products, the following pallet dimensions are also represented in our product range:
+
+
+          * 400х600 mm
+
+          * 600х600 mm
+
+          * 600х800 mm
+
+          * 800х1150 mm
+
+          * 900х1200 mm
+
+          * 1000х1000 mm
+
+          * 1100х1100 mm
+
+          * 1150х1150 mm
+
+          * 1200х1200 mm
+
+          * 1200х800 mm
+
+          * 1200х1000 mm
+
+          * 1250х1250 mm
+
+          * 2000х800 mm
+
+          * 2000х1000 mm
+
+          * 3000х1000 mm
         image: /img/піддони-нестандартних-розмірів.webp
     - name: Pallet workpiece
       image: /img/заготовка.webp
       modal:
         title: Pallet workpiece
-        text: Pallet workpiecePallet workpiecePallet workpiecePallet workpiecePallet
-          workpiece
+        text: >-
+          We offer pallet workpieces — high-quality, Euro-standard-sized wooden
+          boards, sawn on an automated sawing line and intended for the
+          manufacture of pallets.
+
+
+          * Dimensions: 1200x800x20-22x78-140-143
+
+          * Humidity: 16%
+
+          * Wood material: Pine
+
+
+          Our range also includes coniferous timber and pallet workpieces of non-standard sizes.
         image: /img/палетна-заготовка.webp
     - name: Pallet boards
       image: /img/борд.webp
