@@ -34,8 +34,8 @@ collections:
           - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
           - { label: 'Текст', name: 'text', widget: 'object', i18n: true, 
               fields: [
-                { label: 'Видимий текст', name: 'visible', widget: 'text', i18n: true },
-                { label: 'Схований текст', name: 'hidden', widget: 'text', i18n: true },
+                { label: 'Видимий текст', name: 'visible', widget: 'markdown', i18n: true, buttons: [] },
+                { label: 'Схований текст', name: 'hidden', widget: 'markdown', i18n: true, buttons: [] },
               ]
             }
           - { label: 'Зображення', name: 'image', widget: 'image', i18n: true }
