@@ -5,6 +5,12 @@ hero:
     large éventail d'industries : de l'industrie pharmaceutique et alimentaire à
     l'industrie pétrolière et gazière, en passant par les transports."
   image: /img/hero-img.webp
+  label: |-
+    <!--StartFragment-->
+
+    **50+** Types de palettes non-standard
+
+    <!--EndFragment-->
 about:
   title: About company
   text:
@@ -30,6 +36,7 @@ about:
 
       Aujourd'hui, Eco Pallet est un producteur moderne des meilleures palettes en bois normalisées pour la certification européenne.  Nous proposons plus de 50 types de palettes non standard et d'autres produits en bois conçus pour un large éventail d'industries : de la pharmacie et de la transformation des aliments au pétrole et au gaz, en passant par le transport.
   image: /img/about-img.webp
+  label: A propos de nous
 products:
   title: Grand choix de produits et capacité à répondre à presque toutes les commandes
   subtitle: Notre mission est de fournir à nos clients les meilleures solutions
@@ -38,14 +45,131 @@ products:
   list:
     - name: Bois de chauffe en caisse
       image: /img/products-img.webp
+      modal:
+        title: Bois de chauffe en caisse
+        text: >-
+          Vous n’aurez plus à perdre de temps à découper le bois de chauffe –
+          nous l’avons fait pour vous !
+
+
+          La gamme Eco Pallet inclut du bois de chauffe sec et fraîchement coupé dans des caisses composées de différentes sortes de bois (hêtre et charme, par exemple). Par défaut, notre bois de chauffe mesure de 30 à 60 cm de long. Nous pouvons découper le bois de chauffe dans une autre taille si nécessaire.
+
+
+          Tous nos produits sont empilés aussi étroitement que possible, en fonction des besoins de stockage et de transport.
+        image: /img/pallets-full.webp
     - name: Palettes déjà utilisées de différentes dimensions
       image: /img/піддони.webp
+      modal:
+        title: Palettes déjà utilisées de différentes dimensions
+        text: >-
+          Nous proposons des palettes déjà utilisées de haute qualité
+          quasi-neuves !
+
+          Tous nous produits répondent aux normes Européennes et ne présentent aucun dommage structurel qui pourrait affecter leur rôle.
+
+
+          ### Notre société vous fournira les palettes déjà utilisées suivantes :
+
+
+          * Catégorie 1 classe A – claire
+
+          * Catégorie 2 classe B – sombre
+        image: /img/вживані-піддони-різних-розмірів.webp
     - name: Palettes en bois EPAL
       image: /img/піддон.webp
+      modal:
+        title: Palettes en bois EPAL
+        text: >-
+          Nous proposons plus de 50 sortes de palettes standardisées sous label
+          Européen pour diverses industries.
+
+          Tous les produits EPAL (Association des Palettes Européennes) sont fabriquées sur une ligne automatisée spécifique qui utilise des clous filetés (bagues à pas de vis) agréés.
+
+          Ces palettes sont considérées comme les meilleures du marché, et se distinguent par leur large éventail d’applications et leur longue durée de vie.
+
+
+          ### Caractéristiques :
+
+
+          * Dimensions (lxLxH) : 800 x 1200 x 144 mm
+
+          * Poids : 24 kg
+
+          * Charge supportée : 2500 kg
+
+          * Usage : Multiples
+
+          * Accès des fourches : par les 4 côtés
+
+          * Peut entrer au contact des denrées alimentaires : Oui
+
+          * Systèmes de chargement automatisés : Oui
+        image: /img/дерев-яні-піддони-epal.webp
     - name: Palettes de dimensions non-standard
       image: /img/нес-піддон.webp
+      modal:
+        title: Palettes de dimensions non-standard
+        image: /img/піддони-нестандартних-розмірів.webp
+        text: >-
+          Nous proposons des palettes de dimensions non-standard qui peuvent
+          répondre aux besoins de n’importe quelle entreprise.
+
+          Nous pouvons travailler en fonction de vos schémas et spécifications de fabrication, ou alors nous pouvons remplir les spécifications techniques par nous-mêmes en accord avec le client. Par exemple, l’une de nos commandes particulières concernait un lot de pyramides en bois comprenant des conduits d’aération pour conserver des légumes.
+
+          Nous pouvons fabriquer tout autre produit exigé par nos clients.
+
+
+          ### Mis à part les produits non-standards, les dimensions suivantes de palettes sont également représentées dans notre gamme de produits :
+
+
+          * 400х600 mm
+
+          * 600х600 mm
+
+          * 600х800 mm
+
+          * 800х1150 mm
+
+          * 900х1200 mm
+
+          * 1000х1000 mm
+
+          * 1100х1100 mm
+
+          * 1150х1150 mm
+
+          * 1200х1200 mm
+
+          * 1200х800 mm
+
+          * 1200х1000 mm
+
+          * 1250х1250 mm
+
+          * 2000х800 mm
+
+          * 2000х1000 mm
+
+          * 3000x1000 mm
     - name: Palette de pièces à usiner
       image: /img/заготовка.webp
+      modal:
+        image: /img/палетна-заготовка.webp
+        title: Palette de pièces à usiner
+        text: >-
+          Nous proposons des palettes de pièces à usiner de haute qualité. Des
+          panneaux de bois de taille standard Européenne, découpés sur une ligne
+          de sciage automatisée et destinée à la fabrication de palettes.
+
+
+          * Dimensions : 1200x800x20-22x78-140-143
+
+          * Humidité : 16%
+
+          * Type de bois : Pin
+
+
+          **Notre gamme inclut également du bois de conifères et des palettes de pièces à usiner de tailles non-standard.**
     - name: Panneaux de palette
       image: /img/борд.webp
   special:
@@ -54,6 +178,7 @@ products:
       Nous proposons des produits en bois divers et variés, en se basant sur nos
       propres plans et spécifications, ou bien en accord avec les plans et
       spécifications de nos clients.
+  label: Les Produits
 services:
   title: "Nous proposons un large éventail de services : production, vente,
     échange et location de palettes."
