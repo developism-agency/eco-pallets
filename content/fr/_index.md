@@ -172,6 +172,27 @@ products:
           **Notre gamme inclut également du bois de conifères et des palettes de pièces à usiner de tailles non-standard.**
     - name: Panneaux de palette
       image: /img/борд.webp
+      modal:
+        image: /img/палетні-борти.webp
+        title: Panneaux de palette
+        text: >-
+          Nous proposons des panneaux de palette pour plateaux de différentes
+          dimensions. Le panneau peut être constitué d’une ou de deux planches.
+
+          Si nécessaire, nous pouvons aussi inclure le placement du logo.
+
+
+          ### **Dimensions:**
+
+
+          * 1200x1000x200 mm
+
+          * 1200х800х200 mm
+
+          * 600x800x200 mm
+
+
+          **Cela inclut également 4 pivots.**
   special:
     title: Commande particulière
     text: >
@@ -189,6 +210,7 @@ services:
     - Livraison de palettes à la demande
     - Location de palettes
     - Services additionnels
+  label: SERVICES
 pros:
   pros:
     - name: "Matériaux de grande qualité "
@@ -225,11 +247,13 @@ pros:
         nous avons tous les certificats de qualité requis et nous produisons des
         produits manufacturés répondant aux normes Européennes.
       image: /img/cert-icon.svg
-  title: Наші переваги
+  title: Nos avantages
   cta: Choisissez Eco Pallet - nous offrons les meilleures conditions de confort
     et de rentabilité pour la coopération!
+  label: Pourquoi nous ?
 cert:
   title: Nos palettes sont normalisées pour la certification européenne
+  label: certificats
 form:
   title: Nous écrire
   types:
@@ -240,6 +264,7 @@ form:
     - Palette de pièces à usiner
     - Panneaux de palette
     - Commande particulière
+  label: COOPÉRATION AVEC NOUS
 contacts:
   title: N'hésitez pas à nous contacter et nous vous livrerons votre commande
     aussi vite que possible!
@@ -252,5 +277,29 @@ contacts:
   euStorage:
     location: 12 Gunduliceva Street, Maribor, Slovénie, 2000
     locationLink: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2743.7518396693945!2d15.669558776687664!3d46.55259566016454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476f771770cbf365%3A0x2afd82719b7fc5aa!2zR3VuZHVsacSNZXZhIHVsaWNhIDEyLCAyMDAwIE1hcmlib3IsINCh0LvQvtCy0LXQvdGW0Y8!5e0!3m2!1suk!2sua!4v1693070311213!5m2!1suk!2sua
+  label: CONTACT
+utils:
+  linkedIn: https://www.linkedin.com/company/developism/?viewAsMember=true
+  nav:
+    about: A propos de nous
+    products: Produits
+    services: Services
+    pros: Pourquoi nous?
+    cert: Certificats
+    contacts: Contacts
+  btns:
+    call: Contactez nous
+    products: Nos produits
+    more: Plus de détails
+    order: Passer une commande
+    showOnMap: Afficher sur la carte
+  placeholders:
+    name: Quel est votre nom ?
+    email: Votre adresse e-mail
+    message: Les messages
+  validation:
+    required: Ce champ est obligatoire
+    invalid: L'adresse électronique est incorrecte
+  success: Merci beaucoup ! Nous reviendrons vers vous dès que possible !
 title: null
 ---
