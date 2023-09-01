@@ -44,10 +44,14 @@ products:
         title: Bois de chauffe en caisse
         text: >-
           Vous n’aurez plus à perdre de temps à découper le bois de chauffe –
-          nous l’avons fait pour vous !
+          nous l’avons fait pour vous!
+
+
 
 
           La gamme Eco Pallet inclut du bois de chauffe sec et fraîchement coupé dans des caisses composées de différentes sortes de bois (hêtre et charme, par exemple). Par défaut, notre bois de chauffe mesure de 30 à 60 cm de long. Nous pouvons découper le bois de chauffe dans une autre taille si nécessaire.
+
+
 
 
           Tous nos produits sont empilés aussi étroitement que possible, en fonction des besoins de stockage et de transport.
@@ -63,7 +67,11 @@ products:
           Tous nous produits répondent aux normes Européennes et ne présentent aucun dommage structurel qui pourrait affecter leur rôle.
 
 
+
+
           ### Notre société vous fournira les palettes déjà utilisées suivantes :
+
+
 
 
           * Catégorie 1 classe A – claire
@@ -83,7 +91,11 @@ products:
           Ces palettes sont considérées comme les meilleures du marché, et se distinguent par leur large éventail d’applications et leur longue durée de vie.
 
 
+
+
           ### Caractéristiques :
+
+
 
 
           * Dimensions (lxLxH) : 800 x 1200 x 144 mm
@@ -114,7 +126,11 @@ products:
           Nous pouvons fabriquer tout autre produit exigé par nos clients.
 
 
+
+
           ### Mis à part les produits non-standards, les dimensions suivantes de palettes sont également représentées dans notre gamme de produits :
+
+
 
 
           * 400х600 mm
@@ -157,6 +173,8 @@ products:
           de sciage automatisée et destinée à la fabrication de palettes.
 
 
+
+
           ### Dimensions:
 
 
@@ -165,6 +183,8 @@ products:
           * Humidité : 16%
 
           * Type de bois : Pin
+
+
 
 
           **Notre gamme inclut également du bois de conifères et des palettes de pièces à usiner de tailles non-standard.**
@@ -180,6 +200,8 @@ products:
           Si nécessaire, nous pouvons aussi inclure le placement du logo.
 
 
+
+
           ### **Dimensions:**
 
 
@@ -188,6 +210,8 @@ products:
           * 1200х800х200 mm
 
           * 600x800x200 mm
+
+
 
 
           **Cela inclut également 4 pivots.**
