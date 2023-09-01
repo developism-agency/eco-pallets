@@ -5,12 +5,7 @@ hero:
     industries: from pharmaceuticals and food processing to the oil and gas
     industry or transportation."
   image: /img/hero-img.webp
-  label: |-
-    <!--StartFragment-->
-
-    **50+** Types of non-standard pallets
-
-    <!--EndFragment-->
+  label: "**50+** Types of non-standard pallets"
 about:
   title: About company
   text:
