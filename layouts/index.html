@@ -125,10 +125,10 @@
           <div class="about__content">
             <div class="title-label green">{{ .Params.about.label }}</div>
             <h2 class="title white">{{ .Params.about.title }}</h2>
-            <div class="text white">{{ .Params.about.text.visible | markdownify }}</div>
+            <div class="text white markdown">{{ .Params.about.text.visible | markdownify }}</div>
             <div class="text-accordion" id="accordion">
               <div class="text-accordion__content" id="accordion-content">
-                <div class="text white">{{ .Params.about.text.hidden | markdownify }}</div>
+                <div class="text white markdown">{{ .Params.about.text.hidden | markdownify }}</div>
               </div>
               <button class="text-accordion__btn" id="accordion-trigger">
                 <span class="name">{{ .Params.utils.btns.more }}</span>
@@ -439,13 +439,15 @@
     </div>
   </footer>
   <div class="form-modal">
-    <div class="form-modal__title">
-      <h2 class="title white">Написати нам</h2>
-    </div>
-    <div class="close">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-        <path d="M17.1871 1L10 8.18706L2.81286 1L1 2.81284L8.18714 9.9999L1 17.187L2.81286 18.9998L10 11.8127L17.1871 18.9998L19 17.187L11.8129 9.9999L19 2.81284L17.1871 1Z" fill="black"/>
-      </svg>
+    <div class="form-modal__inner">
+      <div class="form-modal__title">
+        <h2 class="title white">Написати нам</h2>
+      </div>
+      <div class="close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M17.1871 1L10 8.18706L2.81286 1L1 2.81284L8.18714 9.9999L1 17.187L2.81286 18.9998L10 11.8127L17.1871 18.9998L19 17.187L11.8129 9.9999L19 2.81284L17.1871 1Z" fill="black"/>
+        </svg>
+      </div>
     </div>
   </div>
   <div class="modal-bg"></div>

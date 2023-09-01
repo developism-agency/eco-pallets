@@ -115,8 +115,7 @@
   height: 100vh;
   max-height: 800px;
   background-color: #EBEBEB;
-  display: flex;
-  justify-content: center;
+  overflow: scroll;
   transition: all .3s;
 
   &.active {
@@ -154,6 +153,8 @@
   &__inner {
     position: relative;
     width: calc(100% - 154px);
+    margin: 0 auto;
+    min-height: 100%;
     display: flex;
     justify-content: space-between;
   }
@@ -163,6 +164,7 @@
     max-width: 626px;
     width: 50%;
     margin-right: 34px;
+    padding: 60px 0;
 
     .title {
       margin-bottom: 32px;
@@ -181,7 +183,6 @@
     margin-right: -77px;
     width: 60%;
     max-width: 700px;
-    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -306,12 +307,12 @@
   .product-modal {
     overflow: scroll;
 
-    &__info {
-      margin-top: 16px;
+    &__inner {
+      padding-top: unset;
     }
 
-    &__inner {
-      padding-top: 30px;
+    &__info {
+      padding: 30px 0 12px 0;
     }
 
     &__img {

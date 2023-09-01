@@ -88,6 +88,13 @@ h4.title {
 }
 
 .markdown {
+
+  &.white {
+    p, i, em, strong {
+      color: $white !important;
+    }
+  }
+
   p {
     font-size: 16px;
     color: $font-gray;
@@ -227,6 +234,14 @@ h4.title {
     }
 
     ul {
+      -webkit-columns: 1;
+      -moz-columns: 1;
+      columns: 1;
+
+      li {
+        font-size: 12px;
+      }
+
       &:not(:last-child) {
         margin-bottom: 12px;
       }

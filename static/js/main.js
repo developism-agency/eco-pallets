@@ -74,13 +74,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   btnsOpenForm.forEach(btn => {
     btn.addEventListener('click', () => {
-      const modal = document.querySelector('.form-modal')
+      const modal = document.querySelector('.form-modal__inner')
       //move form from .contact-us section to .from-modal
       const form = document.querySelector('.contact-us__form')
       modal.appendChild(form)
   
-      activeModal = modal
-      modal.classList.add('active')
+      activeModal = modal.parentElement
+      modal.parentElement.classList.add('active')
       modalBg.classList.add('active')
       body.classList.add('fixed')
     })

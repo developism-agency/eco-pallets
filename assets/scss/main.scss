@@ -54,8 +54,6 @@ body {
 }
 
 .form-modal {
-  display: flex;
-  flex-direction: column;
   position: fixed;
   z-index: 999999;
   top: 50%;
@@ -65,6 +63,8 @@ body {
   padding: 50px;
   width: 100%;
   max-width: 726px;
+  max-height: 100%;
+  overflow: scroll;
 
   &__title {
     margin-bottom: 32px;
@@ -130,6 +130,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .close {
+      width: 34px;
+      height: 34px;
+      top: 8px;
+      right: 8px;
+
+      svg {
+        width: 14.5px;
+        height: 14.5px;
+      }
+    }
   }
 }
 

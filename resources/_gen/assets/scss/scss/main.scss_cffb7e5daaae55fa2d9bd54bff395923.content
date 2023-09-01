@@ -168,6 +168,9 @@ h4.title {
   .text.sm {
     font-size: 14px; }
 
+.markdown.white p, .markdown.white i, .markdown.white em, .markdown.white strong {
+  color: #FFFFFF !important; }
+
 .markdown p {
   font-size: 16px;
   color: #535353; }
@@ -249,8 +252,13 @@ h4.title {
     color: #388D46; }
     .markdown i:not(:last-child) {
       margin-bottom: 16px; }
-  .markdown ul:not(:last-child) {
-    margin-bottom: 12px; } }
+  .markdown ul {
+    -moz-columns: 1;
+    columns: 1; }
+    .markdown ul li {
+      font-size: 12px; }
+    .markdown ul:not(:last-child) {
+      margin-bottom: 12px; } }
 
 .btn {
   background-color: #FFFFFF;
@@ -431,8 +439,6 @@ body {
     transform: scale(1); }
 
 .form-modal {
-  display: flex;
-  flex-direction: column;
   position: fixed;
   z-index: 999999;
   top: 50%;
@@ -441,7 +447,9 @@ body {
   background-color: #1B4D3E;
   padding: 50px;
   width: 100%;
-  max-width: 726px; }
+  max-width: 726px;
+  max-height: 100%;
+  overflow: scroll; }
   .form-modal__title {
     margin-bottom: 32px; }
   .form-modal .close {
@@ -485,7 +493,15 @@ body {
     max-width: unset;
     flex-direction: column;
     justify-content: center;
-    align-items: center; } }
+    align-items: center; }
+    .form-modal .close {
+      width: 34px;
+      height: 34px;
+      top: 8px;
+      right: 8px; }
+      .form-modal .close svg {
+        width: 14.5px;
+        height: 14.5px; } }
 
 .header {
   background-color: #F3F3F3;
@@ -984,8 +1000,7 @@ body {
   height: 100vh;
   max-height: 800px;
   background-color: #EBEBEB;
-  display: flex;
-  justify-content: center;
+  overflow: scroll;
   transition: all .3s; }
   .product-modal.active {
     bottom: 0; }
@@ -1012,13 +1027,16 @@ body {
   .product-modal__inner {
     position: relative;
     width: calc(100% - 154px);
+    margin: 0 auto;
+    min-height: 100%;
     display: flex;
     justify-content: space-between; }
   .product-modal__info {
     align-self: center;
     max-width: 626px;
     width: 50%;
-    margin-right: 34px; }
+    margin-right: 34px;
+    padding: 60px 0; }
     .product-modal__info .title {
       margin-bottom: 32px; }
     .product-modal__info .text {
@@ -1029,7 +1047,6 @@ body {
     margin-right: -77px;
     width: 60%;
     max-width: 700px;
-    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; }
@@ -1105,10 +1122,10 @@ body {
     max-height: 180px; }
   .product-modal {
     overflow: scroll; }
-    .product-modal__info {
-      margin-top: 16px; }
     .product-modal__inner {
-      padding-top: 30px; }
+      padding-top: unset; }
+    .product-modal__info {
+      padding: 30px 0 12px 0; }
     .product-modal__img {
       min-height: 350px; }
     .product-modal .close {
@@ -1195,7 +1212,9 @@ body {
   .services .btn {
     width: 100%;
     padding-right: 30px;
-    padding-left: 30px; }
+    padding-left: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px; }
   .services__item {
     width: 100%;
     padding: 16px 20px; } }
