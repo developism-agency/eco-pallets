@@ -450,7 +450,7 @@ body {
   width: 100%;
   max-width: 726px;
   max-height: 100%;
-  overflow: scroll; }
+  overflow: auto; }
   .form-modal__title {
     margin-bottom: 32px; }
   .form-modal .close {
@@ -1001,7 +1001,7 @@ body {
   height: 100vh;
   max-height: 800px;
   background-color: #EBEBEB;
-  overflow: scroll;
+  overflow: auto;
   transition: all .3s; }
   .product-modal.active {
     bottom: 0; }

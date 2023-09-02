@@ -115,7 +115,7 @@
   height: 100vh;
   max-height: 800px;
   background-color: #EBEBEB;
-  overflow: scroll;
+  overflow: auto;
   transition: all .3s;
 
   &.active {
