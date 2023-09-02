@@ -1,4 +1,5 @@
 ---
+title: null
 hero:
   title: Eco Pallet — to nowoczesna produkcja najlepszych palet drewnianych
   text: "Oferujemy palety i inne produkty drewniane przeznaczone dla szerokiej
@@ -316,5 +317,4 @@ utils:
     required: To pole musi zostać wypełnione
     invalid: Adres e-mail jest niepoprawny
   success: Bardzo dziękujemy! Odezwiemy się tak szybko, jak to możliwe!
-title: null
 ---

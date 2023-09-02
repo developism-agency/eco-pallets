@@ -1,4 +1,5 @@
 ---
+title: null
 hero:
   title: Eco Pallet — is a modern production of the best wooden pallets
   text: "We offer pallets and other wooden products designed for a wide range of
@@ -313,5 +314,4 @@ utils:
     required: This field is required
     invalid: Email address is incorrect
   success: Thank you very much! We will get back to you as soon as possible!
-title: null
 ---

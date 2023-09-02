@@ -1,4 +1,5 @@
 ---
+title: null
 hero:
   title: Eco Pallet — è una moderna produzione dei migliori pallet in legno
   text: "Offriamo pallet e altri prodotti in legno progettati per un'ampia gamma
@@ -310,5 +311,4 @@ utils:
     required: Questo campo deve essere compilato
     invalid: L'indirizzo e-mail è errato
   success: Grazie mille! Vi risponderemo al più presto!
-title: null
 ---

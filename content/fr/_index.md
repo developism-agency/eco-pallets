@@ -1,4 +1,5 @@
 ---
+title: null
 hero:
   title: Eco Pallet — est une production moderne des meilleures palettes en bois
   text: "Nous proposons des palettes et d'autres produits en bois conçus pour un
@@ -329,5 +330,4 @@ utils:
     required: Ce champ est obligatoire
     invalid: L'adresse électronique est incorrecte
   success: Merci beaucoup ! Nous reviendrons vers vous dès que possible !
-title: null
 ---
