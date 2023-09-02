@@ -14,6 +14,7 @@ collections:
     folder: 'content'
     i18n: true
     fields:
+      - {label: "Заголовок", name: "title", widget: "hidden", default: 'Вміст'}
       - label: 'Головна секція'
         name: 'hero'
         i18n: true
@@ -36,6 +37,14 @@ collections:
               fields: [
                 { label: 'Видимий текст', name: 'visible', widget: 'markdown', i18n: true, buttons: [] },
                 { label: 'Схований текст', name: 'hidden', widget: 'markdown', i18n: true, buttons: [] },
+              ]
+            }
+          - { label: 'Статистики', name: 'stats', widget: 'object', i18n: true, 
+              fields: [
+                { label: 'Заголовок про піддони', name: 'palletsTitle', widget: 'string', i18n: true },
+                { label: 'Текст про піддони', name: 'palletsText', widget: 'string', i18n: true },
+                { label: 'Заголовок про працівників', name: 'employeesTitle', widget: 'string', i18n: true },
+                { label: 'Текст про працівників', name: 'employeesText', widget: 'string', i18n: true },
               ]
             }
           - { label: 'Зображення', name: 'image', widget: 'image', i18n: true }

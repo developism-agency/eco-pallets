@@ -1378,7 +1378,7 @@ body {
         justify-content: center;
         align-items: center;
         margin-left: 14px;
-        width: 36px;
+        min-width: 36px;
         height: 36px;
         background-color: #388D46;
         border-radius: 50%;
@@ -1550,7 +1550,6 @@ body {
       padding: 14px 12px;
       font-size: 14px; }
       .contact-us__form .btn-submit .arrow, .contact-us__form .btn-submit .check {
-        width: unset;
         min-width: 24px;
         height: 24px; }
         .contact-us__form .btn-submit .arrow img, .contact-us__form .btn-submit .check img {

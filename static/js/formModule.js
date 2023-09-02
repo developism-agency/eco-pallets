@@ -119,7 +119,7 @@ const formModule = (function() {
     setTimeout(() => {
       btn.classList.remove('submited')
       btn.querySelector('.name').innerHTML = originalText
-    }, 3000)
+    }, 5000)
   }
 
   return { init }
