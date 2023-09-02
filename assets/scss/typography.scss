@@ -105,18 +105,20 @@ h4.title {
   }
 
   strong {
+    display: inline-block;
     font-weight: 700;
     font-size: 20px;
     &:not(:last-child) {
-      margin-bottom: 10px;
+      margin-bottom: 14px;
+    }
+
+    & + ul {
+      margin-top: -6px;
     }
   }
 
   i, em {
     font-style: normal;
-    &:not(:last-child) {
-      margin-bottom: 16px;
-    }
   }
 
   ul {

@@ -300,18 +300,18 @@
               <div class="row">
                 <input type="text" name="name" placeholder="{{ .Params.utils.placeholders.name }}">
                 <label class="error-message">
-                  <input type="text" name="email" placeholder="{{ .Params.utils.placeholders.email }}" data-message-valid="{{ .Params.utils.validation.invalid }}">
+                  <input type="text" name="email" placeholder="{{ .Params.utils.placeholders.email }}" data-message-valid="{{ .Params.utils.validation.invalidEmail }}">
                   <small></small>
                 </label>
               </div>
               <div class="phone error-message">
-                <input type="phone" name="phone_number" id="phone-select" data-message-valid="{{ .Params.utils.validation.invalid }}" data-message-required="{{ .Params.utils.validation.required }}">
+                <input type="phone" name="phone_number" id="phone-select" data-message-valid="{{ .Params.utils.validation.invalidPhone }}" data-message-required="{{ .Params.utils.validation.requiredPhone }}">
                 <small></small>
               </div>
               <div class="product-type error-message">
-                <h3 class="product-type__title">ВИБЕРІТЬ ТИП ТОВАРУ*: <small></small></h3>
+                <h3 class="product-type__title">{{ .Params.form.typesTitle }} <small></small></h3>
                 <div class="product-type__list">
-                  {{ $required := .Params.utils.validation.required }}
+                  {{ $required := .Params.utils.validation.requiredProductType }}
                   {{ range .Params.form.types }}
                     <label class="product-type__item">
                       <input type="checkbox" name="product_type" class="input" value="{{ . }}" data-message-required="{{ $required }}">
@@ -341,7 +341,7 @@
           <h2 class="title">{{ .Params.contacts.title }}</h2>
           <div class="map__content">
             <div class="map__info">
-              <div class="title-label sub">.Params.contacts.assembly.label</div>
+              <div class="title-label sub">{{ .Params.contacts.assembly.label }}</div>
               <ul>
                 <li>
                   <div class="img"><img src="../img/location-icon.png" alt=""></div>
@@ -368,7 +368,7 @@
                 </li>
               </ul>
               <div class="divider"></div>
-              <div class="title-label sub">.Params.contacts.euStorage.label</div>
+              <div class="title-label sub">{{ .Params.contacts.euStorage.label }}</div>
               <ul>
                 <li>
                   <div class="img"><img src="../img/location-icon.png" alt=""></div>

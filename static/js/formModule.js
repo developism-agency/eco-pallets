@@ -22,26 +22,36 @@ const formModule = (function() {
     const phoneValue = phone.value
     const productTypeValue = formData.getAll('product_type')
 
+    const validityArr = ['email', 'phone-required', 'phone-valid', 'product-type']
+
     if (emailValue !== '' && !isEmail(emailValue)) {
       setErrorFor(email, email.dataset.messageValid)
+    } else {
+      validityArr.splice(validityArr.indexOf('email'), 1)
     }
     
     if (phoneValue === '') {
       setErrorFor(phone, phone.dataset.messageRequired)
+    } else {
+      validityArr.splice(validityArr.indexOf('phone-required'), 1)
     }
 
     if (!iti.isValidNumber()) {
       setErrorFor(phone, phone.dataset.messageValid)
+    } else {
+      validityArr.splice(validityArr.indexOf('phone-valid'), 1)
     }
 
     if (!productTypeValue.length) {
       setErrorFor(productType, productType[0].dataset.messageRequired)
+    } else {
+      validityArr.splice(validityArr.indexOf('product-type'), 1)
     }
 
-    if ((emailValue !== '' && !isEmail(emailValue)) && phoneValue !== '' && !iti.isValidNumber() && productTypeValue.length) {
-      return false
-    } else {
+    if (validityArr.length === 0) {
       return true
+    } else {
+      return false
     }
   }
 
@@ -75,7 +85,10 @@ const formModule = (function() {
       
       formData = new FormData(form);
 
-      if (!validateInputs()) return
+      if (!validateInputs()) {
+        console.log('not valid')
+        return
+      }
     
       const body = {
         ...Object.fromEntries(formData.entries()),

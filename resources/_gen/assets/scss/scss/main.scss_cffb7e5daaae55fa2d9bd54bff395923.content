@@ -178,15 +178,16 @@ h4.title {
     margin-bottom: 16px; }
 
 .markdown strong {
+  display: inline-block;
   font-weight: 700;
   font-size: 20px; }
   .markdown strong:not(:last-child) {
-    margin-bottom: 10px; }
+    margin-bottom: 14px; }
+  .markdown strong + ul {
+    margin-top: -6px; }
 
 .markdown i, .markdown em {
   font-style: normal; }
-  .markdown i:not(:last-child), .markdown em:not(:last-child) {
-    margin-bottom: 16px; }
 
 .markdown ul {
   list-style: none;
@@ -1404,12 +1405,13 @@ body {
           display: none; }
         .contact-us__form > .btn-submit.submited .check {
           display: flex; }
-    .contact-us__form .error {
-      color: #FF4949; }
-      .contact-us__form .error .product-type__title, .contact-us__form .error small {
-        color: #FF4949; }
-      .contact-us__form .error > input {
-        border-bottom: 2px solid #FF4949 !important; }
+    .contact-us__form .error small {
+      color: #FF4949;
+      margin-top: 4px;
+      font-size: 14px;
+      font-weight: 700; }
+    .contact-us__form .error input:not([type=checkbox]), .contact-us__form .error textarea {
+      border-bottom: 2px solid #FF4949 !important; }
     .contact-us__form .product-type {
       margin-bottom: 22px; }
       .contact-us__form .product-type__title {
@@ -1431,7 +1433,7 @@ body {
         appearance: none; }
       .contact-us__form .product-type .check {
         padding: 10px 22px;
-        height: 39px;
+        min-height: 39px;
         display: flex;
         align-items: center;
         overflow: hidden;
@@ -1487,10 +1489,11 @@ body {
             transform: translateY(-50%);
             z-index: 99; }
         .contact-us__form .phone .iti__selected-flag {
-          padding: 14px; }
+          padding: 14px;
+          font-weight: 700; }
       .contact-us__form .phone input {
         width: 100%;
-        padding: 10px 18px 10px 90px; }
+        padding: 10px 18px 10px 130px !important; }
 
 @media screen and (max-width: 1200px) {
   .contact-us__img {
@@ -1533,10 +1536,26 @@ body {
       margin-bottom: 20px;
       grid-gap: 10px; }
       .contact-us__form .phone input {
-        padding: 12px 12px 12px 80px;
+        padding: 12px 12px 12px 120px !important;
         width: 100%; }
+      .contact-us__form .phone .iti__selected-flag {
+        padding: 12px;
+        font-size: 14px; }
+    .contact-us__form .error small {
+      font-size: 12px; }
     .contact-us__form .message {
       margin-bottom: 16px; }
+    .contact-us__form .btn-submit {
+      height: unset;
+      padding: 14px 12px;
+      font-size: 14px; }
+      .contact-us__form .btn-submit .arrow, .contact-us__form .btn-submit .check {
+        width: unset;
+        min-width: 24px;
+        height: 24px; }
+        .contact-us__form .btn-submit .arrow img, .contact-us__form .btn-submit .check img {
+          width: 12px;
+          height: 12px; }
     .contact-us__form .product-type {
       margin-bottom: 20px; }
       .contact-us__form .product-type__title {
