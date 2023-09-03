@@ -6,7 +6,7 @@ public_folder: /img
 locale: 'uk'
 i18n:
   structure: multiple_folders
-  locales: [uk, en, fr, de, it, pl]
+  locales: [uk, pl, en, fr, de, it]
   default_locale: uk
 collections:
   - label: 'Головна сторінка'
