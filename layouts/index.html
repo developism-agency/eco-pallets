@@ -107,6 +107,7 @@
           </div>
           {{ $heroImg := resources.Get .Params.hero.image }}
           <div class="hero__img" style="background-image: url({{ $heroImg }})">
+            {{ .Params.hero.image }}
           </div>
           <div class="scroll-down" id="scrollDown">
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="28" viewBox="0 0 26 28" fill="none">
