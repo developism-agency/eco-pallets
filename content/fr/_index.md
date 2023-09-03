@@ -6,7 +6,7 @@ hero:
     large éventail d'industries : de l'industrie pharmaceutique et alimentaire à
     l'industrie pétrolière et gazière, en passant par les transports."
   image: /img/hero-img.webp
-  label: "**50+** Types de palettes non-standard"
+  label: "***50+*** Types de palettes non-standard"
 about:
   title: About company
   text:
@@ -27,12 +27,17 @@ about:
       qualité, respectueuses de l'environnement, pratiques et commodes, avec une
       longue durée de vie.   Nous sommes des experts en matière de palettes et
       de caisses. Contactez-nous, et nous serons heureux de sélectionner des
-      produits qui peuvent répondre à tous les besoins de votre entreprise!  
+      produits qui peuvent répondre à tous les besoins de votre entreprise!
 
 
       Aujourd'hui, Eco Pallet est un producteur moderne des meilleures palettes en bois normalisées pour la certification européenne.  Nous proposons plus de 50 types de palettes non standard et d'autres produits en bois conçus pour un large éventail d'industries : de la pharmacie et de la transformation des aliments au pétrole et au gaz, en passant par le transport.
   image: /img/about-img.webp
   label: A propos de nous
+  stats:
+    palletsTitle: 100 000+
+    employeesTitle: 30+
+    palletsText: Nombre de palettes produites par mois
+    employeesText: Nombre de salariés de l'entreprise
 products:
   title: Grand choix de produits et capacité à répondre à presque toutes les commandes
   subtitle: Notre mission est de fournir à nos clients les meilleures solutions
@@ -68,11 +73,7 @@ products:
           Tous nous produits répondent aux normes Européennes et ne présentent aucun dommage structurel qui pourrait affecter leur rôle.
 
 
-
-
-          ### Notre société vous fournira les palettes déjà utilisées suivantes :
-
-
+          ### **Notre société vous fournira les palettes déjà utilisées suivantes :**
 
 
           * Catégorie 1 classe A – claire
@@ -92,11 +93,7 @@ products:
           Ces palettes sont considérées comme les meilleures du marché, et se distinguent par leur large éventail d’applications et leur longue durée de vie.
 
 
-
-
-          ### Caractéristiques :
-
-
+          ### **Caractéristiques :**
 
 
           * Dimensions (lxLxH) : 800 x 1200 x 144 mm
@@ -127,11 +124,7 @@ products:
           Nous pouvons fabriquer tout autre produit exigé par nos clients.
 
 
-
-
-          ### Mis à part les produits non-standards, les dimensions suivantes de palettes sont également représentées dans notre gamme de produits :
-
-
+          ### **Mis à part les produits non-standards, les dimensions suivantes de palettes sont également représentées dans notre gamme de produits :**
 
 
           * 400х600 mm
@@ -174,9 +167,7 @@ products:
           de sciage automatisée et destinée à la fabrication de palettes.
 
 
-
-
-          ### Dimensions:
+          ### **Dimensions:**
 
 
           * Dimensions : 1200x800x20-22x78-140-143
@@ -184,8 +175,6 @@ products:
           * Humidité : 16%
 
           * Type de bois : Pin
-
-
 
 
           **Notre gamme inclut également du bois de conifères et des palettes de pièces à usiner de tailles non-standard.**
@@ -201,8 +190,6 @@ products:
           Si nécessaire, nous pouvons aussi inclure le placement du logo.
 
 
-
-
           ### **Dimensions:**
 
 
@@ -211,8 +198,6 @@ products:
           * 1200х800х200 mm
 
           * 600x800x200 mm
-
-
 
 
           **Cela inclut également 4 pivots.**
@@ -292,6 +277,7 @@ form:
     - Panneaux de palette
     - Commande particulière
   label: COOPÉRATION AVEC NOUS
+  typesTitle: "SÉLECTIONNER LE TYPE DE PRODUIT* :"
 contacts:
   title: N'hésitez pas à nous contacter et nous vous livrerons votre commande
     aussi vite que possible!
@@ -329,5 +315,9 @@ utils:
   validation:
     required: Ce champ est obligatoire
     invalid: L'adresse électronique est incorrecte
+    invalidEmail: L'adresse e-mail est incorrecte
+    requiredPhone: Ce champ est obligatoire
+    requiredProductType: Ce champ est obligatoire
+    invalidPhone: Le numéro de téléphone est erroné
   success: Merci beaucoup ! Nous reviendrons vers vous dès que possible !
 ---
