@@ -15,7 +15,8 @@
     <div class="container">
       <div class="header__inner">
         <a href="/" class="header__logo">
-          <img src="../img/logo.svg" alt="">
+          {{ $logo := resources.Get "images/logo.svg" }}
+          <img src="{{ $logo.RelPermalink }}" alt="">
         </a>
         <nav class="header__nav" id="menu">
           <ul>
@@ -87,6 +88,7 @@
       </div>
     </div>
   </header>
+  {{ $btnArrow := resources.Get "images/btn-arrow.svg" }}
   <main>
     <section class="hero">
       <div class="container">
@@ -97,12 +99,14 @@
             </span>
             <h1 class="title">{{ .Params.hero.title }}</h1>
             <p class="text">{{ .Params.hero.text }}</p>
+            
             <a class="btn btn--arrow" href="#products">
               <span class="name">{{ .Params.utils.btns.products }}</span>
-              <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
+              <span class="arrow"><img src="{{ $btnArrow.RelPermalink }}" alt=""></span>
             </a>
           </div>
-          <div class="hero__img" style="background-image: url({{ .Params.hero.image }})">
+          {{ $heroImg := resources.Get .Params.hero.image }}
+          <div class="hero__img" style="background-image: url({{ $heroImg }})">
           </div>
           <div class="scroll-down" id="scrollDown">
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="28" viewBox="0 0 26 28" fill="none">
@@ -132,7 +136,7 @@
               </div>
               <button class="text-accordion__btn" id="accordion-trigger">
                 <span class="name">{{ .Params.utils.btns.more }}</span>
-                <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
+                <span class="arrow"><img src="{{ $btnArrow.RelPermalink }}" alt=""></span>
               </button>
             </div>
             <div class="about__stats">
@@ -177,7 +181,7 @@
                   <h3 class="title">{{ .name }}</h3>
                   <button class="btn btn--arrow" data-modal-trigger>
                     <span class="name">{{ $moreBtn }}</span>
-                    <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
+                    <span class="arrow"><img src="{{ $btnArrow.RelPermalink }}" alt=""></span>
                   </button>
                 </div>
                 <div class="product__img">
@@ -190,7 +194,7 @@
                       <div class="markdown">{{ .modal.text | markdownify }}</div>
                       <button class="btn btn--arrow" data-form-trigger>
                         <span class="name">{{ $orderBtn }}</span>
-                        <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
+                        <span class="arrow"><img src="{{ $btnArrow.RelPermalink }}" alt=""></span>
                       </button>
                       <button class="close">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -212,7 +216,7 @@
                 <p class="subtitle">{{ .Params.products.special.text }}</p>
                 <button class="btn btn--arrow" data-form-trigger>
                   <span class="name">{{ .Params.utils.btns.order }}</span>
-                  <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
+                  <span class="arrow"><img src="{{ $btnArrow.RelPermalink }}" alt=""></span>
                 </button>
               </div>
               <div class="special__img">
@@ -234,7 +238,7 @@
             {{ end }}
             <button class="btn btn--arrow" data-form-trigger>
               <span class="name">{{ .Params.utils.btns.order }}</span>
-              <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
+              <span class="arrow"><img src="{{ $btnArrow.RelPermalink }}" alt=""></span>
             </button>
           </div>
         </div>
@@ -323,7 +327,7 @@
               <textarea name="message" class="message" placeholder="{{ .Params.utils.placeholders.message }}"></textarea>
               <button type="submit" class="btn-submit" id="response-form" data-submit-message="{{ .Params.utils.success }}">
                 <span class="name">{{ .Params.utils.btns.order }}</span>
-                <span class="arrow"><img src="../img/btn-arrow.svg" alt=""></span>
+                <span class="arrow"><img src="{{ $btnArrow.RelPermalink }}" alt=""></span>
                 <span class="check"><img src="../img/submit-check.png" alt=""></span>
               </button>
             </form>
