@@ -134,6 +134,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
     })
   })
 
+  // chek if ul has more than 8 li and add class two-columns
+  const productModals = document.querySelectorAll('.product-modal')
+  
+  productModals.forEach(modal => {
+    const ul = modal.querySelector('.markdown ul')
+
+    if (ul && ul.children.length >= 8) {
+      ul.classList.add('two-columns')
+    }
+  })
+
   accordionModule.init('accordion')
   dropdownModule.init('dropdown')
   formModule.init('contact-form')

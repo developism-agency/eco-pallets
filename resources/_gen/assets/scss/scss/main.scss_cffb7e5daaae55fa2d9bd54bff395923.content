@@ -177,23 +177,24 @@ h4.title {
   .markdown p:not(:last-child) {
     margin-bottom: 16px; }
 
-.markdown strong {
+.markdown strong, .markdown h3 {
   display: inline-block;
   font-weight: 700;
   font-size: 20px; }
-  .markdown strong:not(:last-child) {
+  .markdown strong:not(:last-child), .markdown h3:not(:last-child) {
     margin-bottom: 14px; }
-  .markdown strong + ul {
-    margin-top: -6px; }
+  .markdown strong + ul, .markdown h3 + ul {
+    margin-top: -2px; }
 
 .markdown i, .markdown em {
   font-style: normal; }
 
 .markdown ul {
   list-style: none;
-  padding-left: 11px;
-  -moz-columns: 2;
-  columns: 2; }
+  padding-left: 11px; }
+  .markdown ul.two-columns {
+    -moz-columns: 2;
+    columns: 2; }
   .markdown ul:not(:last-child) {
     margin-bottom: 16px; }
   .markdown ul li:not(:last-child) {
@@ -1247,6 +1248,7 @@ body {
       align-items: flex-start; }
       .pros__item.white .subtitle {
         margin-top: auto;
+        color: #0E0D12;
         margin-bottom: 22px; }
       .pros__item.white .btn {
         margin-top: auto; }
@@ -1270,7 +1272,8 @@ body {
     margin-bottom: 12px; }
   .pros__item .title {
     margin-bottom: 8px; }
-  .pros__item .subtitle {
+  .pros__item.white .subtitle {
+    font-size: 14px;
     margin-bottom: 12px; } }
 
 .cert__inner {

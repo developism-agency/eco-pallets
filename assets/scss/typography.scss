@@ -104,7 +104,7 @@ h4.title {
     }
   }
 
-  strong {
+  strong, h3 {
     display: inline-block;
     font-weight: 700;
     font-size: 20px;
@@ -113,7 +113,7 @@ h4.title {
     }
 
     & + ul {
-      margin-top: -6px;
+      margin-top: -2px;
     }
   }
 
@@ -124,9 +124,13 @@ h4.title {
   ul {
     list-style: none;
     padding-left: 11px;
-    -webkit-columns: 2;
-    -moz-columns: 2;
-    columns: 2;
+    
+
+    &.two-columns {
+      -webkit-columns: 2;
+      -moz-columns: 2;
+      columns: 2;
+    }
 
     &:not(:last-child) {
       margin-bottom: 16px;
