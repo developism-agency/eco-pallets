@@ -17,6 +17,10 @@ body {
   &.fixed {
     overflow: hidden;
   }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .container {
