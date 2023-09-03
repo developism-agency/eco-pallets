@@ -6,7 +6,7 @@ hero:
     di settori: dall'industria farmaceutica e alimentare all'industria
     petrolifera e del gas o ai trasporti."
   image: /img/hero-img.webp
-  label: 50+ Tipi di pallet non standard
+  label: "*50+* Tipi di pallet non standard"
 about:
   title: Informazioni sull'azienda
   text:
@@ -26,12 +26,17 @@ about:
       tutti gli ordini, i nostri clienti ricevono sempre pallet di alta qualità,
       ecologici, pratici e convenienti, con una lunga durata.   Siamo esperti di
       pallet e scatole. Contattateci e saremo lieti di selezionare prodotti in
-      grado di soddisfare tutte le esigenze della vostra attività!  
+      grado di soddisfare tutte le esigenze della vostra attività!
 
 
       Oggi Eco Pallet è una moderna produzione dei migliori pallet in legno standardizzati per la certificazione europea.  Offriamo più di 50 tipi di pallet non standard e altri prodotti in legno progettati per un'ampia gamma di settori: da quello farmaceutico e alimentare a quello petrolifero e del gas o dei trasporti.
   image: /img/about-img.webp
   label: Chi siamo
+  stats:
+    palletsTitle: 100 000+
+    employeesTitle: 30+
+    palletsText: Numero di pallet prodotti al mese
+    employeesText: Numero di dipendenti dell'impresa
 products:
   title: Un'ampia gamma di prodotti e la capacità di evadere quasi tutti gli ordini
   subtitle: La nostra missione è fornire ai nostri clienti le migliori soluzioni
@@ -64,11 +69,7 @@ products:
           danni strutturali che potrebbero influire sul loro funzionamento. 
 
 
-
-
-          ### La nostra azienda vi fornirà i seguenti pallet usati:
-
-
+          ### **La nostra azienda vi fornirà i seguenti pallet usati:**
 
 
           * categoria 1 classe A — chiaro 
@@ -88,11 +89,7 @@ products:
           per la loro vasta gamma di applicazioni e la lunga durata.
 
 
-
-
-          ### Specifiche:
-
-
+          ### **Specifiche:**
 
 
           * Dimensioni (LxPxA): 800 x 1200 x 144 mm 
@@ -124,11 +121,7 @@ products:
           produrre qualsiasi altro prodotto richiesto dai nostri clienti.
 
 
-
-
-          ### Oltre ai prodotti fuori standard, nella nostra gamma di prodotti sono contemplate anche pallet delle seguenti dimensioni:
-
-
+          ### **Oltre ai prodotti fuori standard, nella nostra gamma di prodotti sono contemplate anche pallet delle seguenti dimensioni:**
 
 
           * 400х600 mm
@@ -194,9 +187,7 @@ products:
           anche apporre il vostro logo.
 
 
-
-
-          ### Dimensioni:
+          ### **Dimensioni:**
 
 
           * 1200x1000x200 mm
@@ -204,8 +195,6 @@ products:
           * 1200х800х200 mm
 
           * 600x800x200 mm
-
-
 
 
           **Inclusi anche 4 giunti a snodo**
@@ -274,6 +263,7 @@ form:
     - Pannelli per pallet
     - "Ordine speciale "
   label: Scrivici
+  typesTitle: "SELEZIONARE IL TIPO DI PRODOTTO*:"
 contacts:
   title: Contattaci e invieremo il tuo ordine al più presto possibile!
   assembly:
@@ -310,5 +300,9 @@ utils:
   validation:
     required: Questo campo deve essere compilato
     invalid: L'indirizzo e-mail è errato
+    invalidEmail: L'indirizzo e-mail non è corretto
+    requiredPhone: Questo campo è obbligatorio
+    requiredProductType: Questo campo è obbligatorio
+    invalidPhone: Il numero di telefono non è corretto
   success: Grazie mille! Vi risponderemo al più presto!
 ---
