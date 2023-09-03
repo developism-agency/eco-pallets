@@ -6,7 +6,7 @@ hero:
     Branchen an: von der Pharma- und Lebensmittelindustrie über die Öl- und
     Gasindustrie bis hin zum Transportwesen."
   image: /img/hero-img.webp
-  label: "**50+** Arten von Nicht-Standardpaletten"
+  label: "***50+*** Arten von Nicht-Standardpaletten"
 about:
   title: Über die Firma
   text:
@@ -26,12 +26,17 @@ about:
       hochwertige, umweltfreundliche, praktische und bequeme Paletten mit einer
       langen Lebensdauer.   Wir sind Experten für Paletten und Kisten. Wenden
       Sie sich an uns, und wir werden gerne Produkte auswählen, die allen
-      Anforderungen Ihres Unternehmens gerecht werden!  
+      Anforderungen Ihres Unternehmens gerecht werden!
 
 
       Heute ist Eco Pallet eine moderne Produktion der besten Holzpaletten, die für die europäische Zertifizierung standardisiert sind.  Wir bieten mehr als 50 Arten von Nicht-Standard-Paletten und andere Holzprodukte für eine breite Palette von Branchen: von der Pharma- und Lebensmittelverarbeitung bis hin zu Öl und Gas oder Transport.
   image: /img/about-img.webp
   label: Über uns
+  stats:
+    palletsTitle: 100 000+
+    employeesTitle: 30+
+    employeesText: Zahl der Beschäftigten des Unternehmens
+    palletsText: Anzahl der produzierten Paletten pro Monat
 products:
   title: Große Auswahl an Waren und die Fähigkeit, fast jede Bestellung zu erfüllen
   subtitle: Unser Ziel ist es, unseren Kunden die besten Lösungen für die
@@ -87,11 +92,7 @@ products:
           Diese Paletten gelten als zu den besten auf dem Markt gehörig und zeichnen sich durch vielfältigen Einsatzmöglichkeiten und lange Lebensdauer aus.
 
 
-
-
-          ### Spezifikation:
-
-
+          ### **Spezifikation:**
 
 
           * Abmessungen (LxBxH): 800 x 1200 x 144 mm
@@ -121,11 +122,7 @@ products:
           Wir können jedes andere von unseren Kunden gewünschte Produkt herstellen.
 
 
-
-
-          ### Neben den nicht standardisierten Produkten sind auch Paletten mit folgenden Abmessungen in unserem Sortiment vertreten:
-
-
+          ### **Neben den nicht standardisierten Produkten sind auch Paletten mit folgenden Abmessungen in unserem Sortiment vertreten:**
 
 
           * 400х600 mm
@@ -191,9 +188,7 @@ products:
           Bei Bedarf können wir auch ein Logo anbringen.
 
 
-
-
-          ### Abmessungen:
+          ### **Abmessungen:**
 
 
           * 1200x1000x200 mm
@@ -201,8 +196,6 @@ products:
           * 1200х800х200 mm
 
           * 600x800x200 mm
-
-
 
 
           **Umfasst auch 4 Gabelgelenke.**
@@ -277,6 +270,7 @@ form:
     - Paletten-Rahmen
     - Sonderauftrag
   label: Schreiben Sie uns
+  typesTitle: "WÄHLEN SIE DIE ART DES PRODUKTS*:"
 contacts:
   title: Bitte kontaktieren Sie uns, wir führen Ihren Auftrag ehestmöglich aus!
   assembly:
@@ -313,5 +307,9 @@ utils:
   validation:
     required: Dieses Feld muss ausgefüllt werden
     invalid: Die E-Mail-Adresse ist nicht korrekt
+    invalidEmail: Die E-Mail-Adresse ist falsch
+    requiredPhone: Dieses Feld ist erforderlich
+    requiredProductType: Dieses Feld ist erforderlich
+    invalidPhone: Die Rufnummer ist falsch
   success: Herzlichen Dank! Wir werden so schnell wie möglich auf Sie zurückkommen!
 ---
