@@ -6,7 +6,7 @@ hero:
     gamy branż: od przemysłu farmaceutycznego i spożywczego po przemysł naftowy
     i gazowy czy transport."
   image: /img/hero-img.webp
-  label: 50+ Typy niestandardowych palet
+  label: "*50+* Typy niestandardowych palet"
 about:
   title: O firmie
   text:
@@ -27,12 +27,17 @@ about:
       środowiska, praktyczne i wygodne palety o długiej żywotności.   Jesteśmy
       ekspertami w dziedzinie palet i skrzyń. Skontaktuj się z nami, a z
       przyjemnością dobierzemy produkty, które spełnią wszystkie potrzeby Twojej
-      firmy!  
+      firmy!
 
 
       Dziś Eco Pallet to nowoczesna produkcja najlepszych palet drewnianych standaryzowanych do certyfikacji europejskiej.  Oferujemy ponad 50 rodzajów niestandardowych palet i innych produktów drewnianych przeznaczonych dla szerokiej gamy branż: od farmaceutycznej i przetwórstwa spożywczego po ropę i gaz czy transport.
   image: /img/about-img.webp
   label: O nas
+  stats:
+    palletsText: Liczba palet produkowanych miesięcznie
+    employeesText: Liczba pracowników przedsiębiorstwa
+    employeesTitle: 30+
+    palletsTitle: 100 000+
 products:
   title: Szeroka gama produktów i możliwość realizacji niemal każdego zamówienia
   subtitle: Naszą misją jest dostarczanie naszym klientom najlepszych rozwiązań w
@@ -68,11 +73,7 @@ products:
           Wszystkie produkty z naszego asortymentu są zgodne z normami europejskimi i nie posiadają uszkodzeń mechanicznych, które mogłyby wpłynąć na ich eksploatację.
 
 
-
-
-          ### U nas można nabyć takie używane palety:
-
-
+          ### **U nas można nabyć takie używane palety:**
 
 
           * 1 kategoria, klasa A – jasny
@@ -93,11 +94,7 @@ products:
           Palety te są uważane za jedne z najlepszych na rynku: wyróżniają się one szerokim zakresem zastosowania i długim okresem eksploatacji.
 
 
-
-
-          ### Charakterystyki:
-
-
+          ### **Charakterystyki:**
 
 
           * Wymiary (SxDxW): 800 x 1200 x 144 mm
@@ -127,11 +124,7 @@ products:
           Możemy zrealizować wszelkie inne produkty, których potrzebują nasi klienci.
 
 
-
-
-          ### Oprócz produktów niestandardowych, nasz asortyment obejmuje również palety w takich rozmiarach:
-
-
+          ### **Oprócz produktów niestandardowych, nasz asortyment obejmuje również palety w takich rozmiarach:**
 
 
           * 400x600 mm
@@ -197,9 +190,7 @@ products:
           wykonujemy naniesienie logo.
 
 
-
-
-          ### Wymiary:
+          ### **Wymiary:**
 
 
           * 1200x1000x200 mm
@@ -207,8 +198,6 @@ products:
           * 1200x800x200 mm
 
           * 600x800x200 mm
-
-
 
 
           **4 złącza zawiasowe**
@@ -280,6 +269,7 @@ form:
     - Nadstawki paletowe
     - Zamówienie specjalne
   label: WSPÓŁPRACA Z NAMI
+  typesTitle: "WYBIERZ TYP PRODUKTU*:"
 contacts:
   title: Skontaktuj się z nami, a wyślemy Twoje zamówienie jak najszybciej!
   assembly:
@@ -316,5 +306,9 @@ utils:
   validation:
     required: To pole musi zostać wypełnione
     invalid: Adres e-mail jest niepoprawny
+    invalidEmail: Adres e-mail jest nieprawidłowy
+    requiredPhone: To pole jest wymagane
+    requiredProductType: To pole jest wymagane
+    invalidPhone: Numer telefonu jest nieprawidłowy
   success: Bardzo dziękujemy! Odezwiemy się tak szybko, jak to możliwe!
 ---
