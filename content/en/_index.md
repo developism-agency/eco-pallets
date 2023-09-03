@@ -6,7 +6,7 @@ hero:
     industries: from pharmaceuticals and food processing to the oil and gas
     industry or transportation."
   image: /img/hero-img.webp
-  label: "**50+** Types of non-standard pallets"
+  label: "***50+*** Types of non-standard pallets"
 about:
   title: About company
   text:
@@ -17,8 +17,6 @@ about:
       stacks, pallet blanks, and firewood.
 
 
-
-
       At the same time, we mastered the art of custom orders, producing pallets of non-standard dimensions on demand. A year later, in 2019, our company received a European license for the production of EPAL pallets.
     hidden: >-
       Our mission is to provide our customers with the best solutions for
@@ -27,14 +25,17 @@ about:
       customers always receive high-quality, environmentally friendly, practical
       and convenient pallets with a long service life.   We are experts in
       pallets and boxes. Contact us, and we will be happy to select products
-      that can meet all the needs of your business!  
-
-
+      that can meet all the needs of your business!
 
 
       Today Eco Pallet is a modern production of the best wooden pallets standardized for European certification.  We offer more than 50 types of non-standard pallets and other wooden products designed for a wide range of industries: from pharmaceuticals and food processing to oil and gas or transportation.
   image: /img/about-img.webp
   label: About us
+  stats:
+    palletsTitle: 100 000+
+    employeesTitle: 30+
+    palletsText: Number of produced pallets per month
+    employeesText: Number of employees of the company
 products:
   title: Large selection of goods and the ability to fulfill almost any order
   subtitle: Our mission is to provide our customers with the best solutions for
@@ -49,11 +50,7 @@ products:
           you!
 
 
-
-
-          The Eco Pallet range includes dry and freshly-cut firewood in boxes made of several types of wood (beech and hornbeam, for example). By default, our firewood is 10-20 inches in length. If necessary, we can chop firewood of a different size.
-
-
+          The Eco Pallet range includes dry and freshly-cut firewood in boxes made of several types of wood (beech and hornbeam, for example). By default, our firewood is **10-20 inches** in length. If necessary, we can chop firewood of a different size.
 
 
           All products are stacked as tightly as possible, in accordance with their storage and transportation needs.
@@ -68,11 +65,7 @@ products:
           All of our products comply with European standards, and have no structural damage that could affect their function.
 
 
-
-
-          ### Our company will provide you with the following used pallets:
-
-
+          ### **Our company will provide you with the following used pallets:**
 
 
           * 1 category А class — light
@@ -93,11 +86,7 @@ products:
           These pallets are considered among the best on the market, and are distinguished by their wide range of applications and long service life.
 
 
-
-
-          ### Specification:
-
-
+          ### **Specification:**
 
 
           * Dimensions (WxDxH): 800 x 1200 x 144 mm
@@ -126,11 +115,7 @@ products:
           We can produce any other product required by our clients.
 
 
-
-
-          ### Apart from non-standard products, the following pallet dimensions are also represented in our product range:
-
-
+          ### **Apart from non-standard products, the following pallet dimensions are also represented in our product range:**
 
 
           * 400х600 mm
@@ -196,7 +181,7 @@ products:
           placement.
 
 
-          ### Dimensions:
+          ### **Dimensions:**
 
 
           * 1200x1000x200 mm
@@ -277,6 +262,7 @@ form:
     - Pallet boards
     - Special order
   label: Write to us
+  typesTitle: "SELECT THE TYPE OF PRODUCT*:"
 contacts:
   title: Please, contact us,  and we deliver your order ASAP!
   assembly:
@@ -313,5 +299,9 @@ utils:
   validation:
     required: This field is required
     invalid: Email address is incorrect
+    invalidEmail: Email address is incorrect
+    requiredPhone: This field is required
+    requiredProductType: This field is required
+    invalidPhone: Phone number is incorrect
   success: Thank you very much! We will get back to you as soon as possible!
 ---
