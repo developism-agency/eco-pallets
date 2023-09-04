@@ -307,7 +307,11 @@
   .product-modal {
     max-height: 100%;
     height: unset;
-    overflow: unset;
+
+    &.active {
+      top: 0;
+      bottom: 0;
+    }
 
     &__inner {
       padding-top: unset;

@@ -1126,8 +1126,10 @@ body {
     max-height: 180px; }
   .product-modal {
     max-height: 100%;
-    height: unset;
-    overflow: unset; }
+    height: unset; }
+    .product-modal.active {
+      top: 0;
+      bottom: 0; }
     .product-modal__inner {
       padding-top: unset;
       height: unset;
