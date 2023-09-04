@@ -14,7 +14,7 @@ collections:
     folder: 'content'
     i18n: true
     fields:
-      - {label: "Заголовок", name: "title", widget: "hidden", default: 'Вміст'}
+      - {label: "Title", name: "title", widget: "hidden", default: 'Вміст'}
       - label: 'Головна секція'
         name: 'hero'
         i18n: true
