@@ -6,7 +6,7 @@ hero:
     gamy branż: od przemysłu farmaceutycznego i spożywczego po przemysł naftowy
     i gazowy czy transport."
   image: /img/hero-img.webp
-  label: "*50+* Typy niestandardowych palet"
+  label: 50+ Typy niestandardowych palet
 about:
   title: O firmie
   text:
