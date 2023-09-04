@@ -188,7 +188,7 @@ h4.title {
 
 .markdown strong {
   font-weight: 700;
-  color: #1B4D3E;
+  color: #535353;
   font-size: inherit; }
 
 .markdown i, .markdown em {
