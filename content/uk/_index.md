@@ -299,7 +299,7 @@ utils:
     more: Детальніше
     order: Зробити замовлення
     showOnMap: Показати на мапі
-  linkedIn: https://www.linkedin.com/company/developism/?viewAsMember=true
+  linkedIn: https://www.linkedin.com/company/eco-palletua/
   placeholders:
     name: Як вас звати
     email: Ваш e-mail
