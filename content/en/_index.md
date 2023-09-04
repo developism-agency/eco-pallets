@@ -210,6 +210,7 @@ services:
     - Delivery of pallets to order
     - Pallet rental
     - Additional services
+    - Test
   label: SERVICES
 pros:
   pros:
