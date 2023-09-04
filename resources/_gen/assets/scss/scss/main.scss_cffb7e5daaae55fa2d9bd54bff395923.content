@@ -1125,10 +1125,13 @@ body {
     max-width: unset;
     max-height: 180px; }
   .product-modal {
-    overflow: scroll;
-    max-height: 100%; }
+    max-height: 100%;
+    height: unset;
+    overflow: unset; }
     .product-modal__inner {
-      padding-top: unset; }
+      padding-top: unset;
+      height: unset;
+      min-height: 100vh; }
     .product-modal__info {
       padding: 30px 0 12px 0; }
       .product-modal__info .btn {
