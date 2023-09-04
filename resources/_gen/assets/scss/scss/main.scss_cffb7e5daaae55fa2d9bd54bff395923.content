@@ -177,14 +177,17 @@ h4.title {
   .markdown p:not(:last-child) {
     margin-bottom: 16px; }
 
-.markdown strong, .markdown h3 {
+.markdown h3 {
   display: inline-block;
   font-weight: 700;
   font-size: 20px; }
-  .markdown strong:not(:last-child), .markdown h3:not(:last-child) {
+  .markdown h3:not(:last-child) {
     margin-bottom: 14px; }
-  .markdown strong + ul, .markdown h3 + ul {
+  .markdown h3 + ul {
     margin-top: -2px; }
+
+.markdown strong {
+  font-weight: 700; }
 
 .markdown i, .markdown em {
   font-style: normal; }

@@ -104,7 +104,7 @@ h4.title {
     }
   }
 
-  strong, h3 {
+  h3 {
     display: inline-block;
     font-weight: 700;
     font-size: 20px;
@@ -115,6 +115,12 @@ h4.title {
     & + ul {
       margin-top: -2px;
     }
+  }
+
+  strong {
+    font-weight: 700;
+    color: #1B4D3E;
+    font-size: inherit;
   }
 
   i, em {
