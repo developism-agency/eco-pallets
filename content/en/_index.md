@@ -279,7 +279,7 @@ contacts:
     label: Warehouse in Europe
   label: CONTACT
 utils:
-  linkedIn: https://www.linkedin.com/company/developism/?viewAsMember=true
+  linkedIn: https://www.linkedin.com/company/eco-palletua/
   nav:
     about: About us
     products: Products
