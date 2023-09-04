@@ -306,6 +306,7 @@
 
   .product-modal {
     overflow: scroll;
+    max-height: 100%;
 
     &__inner {
       padding-top: unset;

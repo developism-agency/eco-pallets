@@ -1125,7 +1125,8 @@ body {
     max-width: unset;
     max-height: 180px; }
   .product-modal {
-    overflow: scroll; }
+    overflow: scroll;
+    max-height: un; }
     .product-modal__inner {
       padding-top: unset; }
     .product-modal__info {
