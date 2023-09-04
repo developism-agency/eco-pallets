@@ -314,6 +314,13 @@
 
     &__info {
       padding: 30px 0 12px 0;
+
+      .btn {
+        height: unset;
+        padding: 16px 24px;
+        font-size: 14px;
+      }
+      
     }
 
     &__img {
