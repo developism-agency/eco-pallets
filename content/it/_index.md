@@ -279,7 +279,7 @@ contacts:
     label: Magazzino in Europa
   label: CONTATTO
 utils:
-  linkedIn: https://www.linkedin.com/company/developism/?viewAsMember=true
+  linkedIn: https://www.linkedin.com/company/eco-palletua/
   nav:
     about: Chi siamo
     products: Prodotti

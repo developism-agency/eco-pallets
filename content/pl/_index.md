@@ -285,7 +285,7 @@ contacts:
     label: Magazyn w Europie
   label: Kontakty
 utils:
-  linkedIn: https://www.linkedin.com/company/developism/?viewAsMember=true
+  linkedIn: https://www.linkedin.com/company/eco-palletua/
   nav:
     about: O nas
     products: Produkty

@@ -294,7 +294,7 @@ contacts:
     label: Entrepôt en Europe
   label: CONTACT
 utils:
-  linkedIn: https://www.linkedin.com/company/developism/?viewAsMember=true
+  linkedIn: https://www.linkedin.com/company/eco-palletua/
   nav:
     about: A propos de nous
     products: Produits
