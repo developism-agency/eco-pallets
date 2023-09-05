@@ -7,7 +7,7 @@ locale: 'uk'
 i18n:
   structure: multiple_folders
   locales: [ua, pl, en, fr, de, it]
-  default_locale: uk
+  default_locale: ua
 collections:
   - label: 'Головна сторінка'
     name: 'main-page'
