@@ -104,8 +104,8 @@
               <span class="arrow"><img src="{{ $btnArrow.RelPermalink }}" alt=""></span>
             </a>
           </div>
-          {{ $heroImg := resources.Get .Params.hero.image }}"
-          <div class="hero__img" style="background-image: url('{{ $heroImg.RelPermalink }}')">
+          {{/*  {{ $heroImg := resources.Get .Params.hero.image }}"  */}}
+          <div class="hero__img" style="background-image: url('')">
           </div>
           <div class="scroll-down" id="scrollDown">
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="28" viewBox="0 0 26 28" fill="none">
@@ -161,8 +161,8 @@
               </div>
             </div>
           </div>
-          {{ $aboutImg := resources.Get .Params.about.image }}
-          <div class="about__img" style="background-image: url('{{ $aboutImg.RelPermalink }}')"></div>
+          {{/*  {{ $aboutImg := resources.Get .Params.about.image }}  */}}
+          <div class="about__img" style="background-image: url('')"></div>
         </div>
       </div>
     </section>
@@ -187,9 +187,9 @@
                     <span class="arrow"><img src="{{ $btnArrow.RelPermalink }}" alt=""></span>
                   </button>
                 </div>
-                {{ $productImg := resources.Get .image }}
+                
                 <div class="product__img">
-                  <img src="{{ $productImg.RelPermalink }}" alt="">
+                  <img src="" alt="">
                 </div>
                 <div class="product-modal">
                   <div class="product-modal__inner">
@@ -206,8 +206,8 @@
                         </svg>
                       </button>
                     </div>
-                    {{ $productImgModal := resources.Get .modal.image }}
-                    <div class="product-modal__img" style="background-image: url('{{ $productImgModal }}')">
+                    
+                    <div class="product-modal__img" style="background-image: url('')">
                     </div>
                   </div>
                 </div>
