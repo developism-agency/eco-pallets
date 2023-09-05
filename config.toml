@@ -3,8 +3,8 @@ languageCode = 'en-us'
 title = 'Eco-pallets'
 defaultContentLanguage = 'en'
 [languages]
-  [languages.uk]
-    contentDir = 'content/uk'
+  [languages.ua]
+    contentDir = 'content/ua'
     languageCode = 'uk-UA'
     languageName = 'Ukrainian'
     title = ''
