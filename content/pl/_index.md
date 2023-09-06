@@ -31,7 +31,7 @@ about:
 
 
       Dziś Eco Pallet to nowoczesna produkcja najlepszych palet drewnianych standaryzowanych do certyfikacji europejskiej.  Oferujemy ponad 50 rodzajów niestandardowych palet i innych produktów drewnianych przeznaczonych dla szerokiej gamy branż: od farmaceutycznej i przetwórstwa spożywczego po ropę i gaz czy transport.
-  image: /img/about-img.webp
+  image: /images/about-img.webp
   label: O nas
   stats:
     palletsText: Liczba palet produkowanych miesięcznie
@@ -44,10 +44,10 @@ products:
     zakresie umieszczania, przechowywania i transportu szerokiej gamy ładunków.
   list:
     - name: Drewno opałowe w skrzyni
-      image: /img/products-img.webp
+      image: /images/products-img.webp
       modal:
         title: Drewno opałowe w skrzyni
-        image: /img/pallets-full.webp
+        image: /images/pallets-full.webp
         text: >-
           Nie musisz już tracić czasu na rąbanie drewna na opał - zrobiliśmy to
           za Ciebie!
@@ -62,10 +62,10 @@ products:
 
           Wszystkie produkty są składane maksymalnie szczelnie, zgodnie z technologią ich przechowywania i transportu.
     - name: Używane palety w różnych rozmiarach
-      image: /img/піддони.webp
+      image: /images/піддони.webp
       modal:
         title: Używane palety w różnych rozmiarach
-        image: /img/вживані-піддони-різних-розмірів.webp
+        image: /images/вживані-піддони-різних-розмірів.webp
         text: >-
           Oferujemy wysokiej jakości używane palety, które praktycznie nie
           ustępują jakością nowym produktom.
@@ -80,10 +80,10 @@ products:
 
           * 2 kategoria, klasa B – ciemny
     - name: Palety drewniane EPAL
-      image: /img/піддон.webp
+      image: /images/піддон.webp
       modal:
         title: Palety drewniane EPAL
-        image: /img/дерев-яні-піддони-epal.webp
+        image: /images/дерев-яні-піддони-epal.webp
         text: >-
           Oferujemy ponad 50 rodzajów palet dla różnych branży, znormalizowanych
           pod kątem certyfikacji europejskiej. Wszystkie produkty EPAL
@@ -111,10 +111,10 @@ products:
 
           * Automatyczne systemy załadunku: Tak
     - name: Palety o niestandardowych rozmiarach
-      image: /img/нес-піддон.webp
+      image: /images/нес-піддон.webp
       modal:
         title: Palety o niestandardowych rozmiarach
-        image: /img/піддони-нестандартних-розмірів.webp
+        image: /images/піддони-нестандартних-розмірів.webp
         text: >-
           Oferujemy produkcję palet o niestandardowych rozmiarach, które mogą
           zaspokoić potrzeby każdego biznesu.
@@ -157,10 +157,10 @@ products:
 
           * 3000x1000 mm
     - name: Prefabrykat do produkcji palet
-      image: /img/заготовка.webp
+      image: /images/заготовка.webp
       modal:
         title: Prefabrykat do produkcji palet
-        image: /img/палетна-заготовка.webp
+        image: /images/палетна-заготовка.webp
         text: >-
           Oferujemy prefabrykat do produkcji palet - wysokiej jakości deski
           drewniane o wymiarach euro, cięte na automatycznej linii piłowania i
@@ -180,10 +180,10 @@ products:
 
           **Nasz asortyment obejmuje również sztaby z drewna iglastego i prefabrykaty do produkcji palet o niestandardowych rozmiarach.**
     - name: Nadstawki paletowe
-      image: /img/борд.webp
+      image: /images/борд.webp
       modal:
         title: Nadstawki paletowe
-        image: /img/палетні-борти.webp
+        image: /images/палетні-борти.webp
         text: >-
           Oferujemy nadstawki paletowe do palet o różnych rozmiarach. Nadstawka
           może być wykonana z jednej lub dwóch desek. W razie potrzeby
