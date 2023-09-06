@@ -5,7 +5,7 @@ hero:
   text: "Offriamo pallet e altri prodotti in legno progettati per un'ampia gamma
     di settori: dall'industria farmaceutica e alimentare all'industria
     petrolifera e del gas o ai trasporti."
-  image: /images/hero-img.webp
+  image: /images/hero-img.jpg
   label: "*50+* Tipi di pallet non standard"
 about:
   title: Informazioni sull'azienda
@@ -30,7 +30,7 @@ about:
 
 
       Oggi Eco Pallet è una moderna produzione dei migliori pallet in legno standardizzati per la certificazione europea.  Offriamo più di 50 tipi di pallet non standard e altri prodotti in legno progettati per un'ampia gamma di settori: da quello farmaceutico e alimentare a quello petrolifero e del gas o dei trasporti.
-  image: /images/about-img.webp
+  image: /images/about-img.jpg
   label: Chi siamo
   stats:
     palletsTitle: 100 000+
@@ -44,10 +44,10 @@ products:
     merci.
   list:
     - name: "Legna da ardere in scatola "
-      image: /images/products-img.webp
+      image: /images/products-img.png
       modal:
         title: "Legna da ardere in scatola "
-        image: /images/pallets-full.webp
+        image: /images/дрова-в-ящику-full-1-.jpg
         text: >-
           Non devi più perdere tempo a tagliare legna da ardere. L’abbiamo già
           fatto per te!
@@ -59,10 +59,10 @@ products:
 
           Tutti i prodotti sono impilati il più strettamente possibile, in base alle loro esigenze di stoccaggio e trasporto.
     - name: "Pallet usati di varie dimensioni "
-      image: /images/піддони.webp
+      image: /images/піддони.png
       modal:
         title: "Pallet usati di varie dimensioni "
-        image: /images/вживані-піддони-різних-розмірів.webp
+        image: /images/вживані-піддони-різних-розмірів.jpg
         text: >-
           Offriamo pallet usati di alta qualità che sono quasi come nuovi! Tutti
           i nostri prodotti sono conformi agli standard europei e non presentano
@@ -76,10 +76,10 @@ products:
 
           * categoria 2 classe Β — scuro
     - name: "Pallet in legno EPAL "
-      image: /images/піддон.webp
+      image: /images/піддон.png
       modal:
         title: "Pallet in legno EPAL "
-        image: /images/дерев-яні-піддони-epal.webp
+        image: /images/дерев-яні-піддони-epal.jpg
         text: >-
           Offriamo più di 50 tipi di pallet per vari settori, in linea con gli
           standard europei per la certificazione. Tutti i prodotti EPAL
@@ -106,10 +106,10 @@ products:
 
           * Sistemi di carico automatizzati: Sì
     - name: "Pallet di dimensioni fuori standard "
-      image: /images/нес-піддон.webp
+      image: /images/нес-піддон.png
       modal:
         title: "Pallet di dimensioni fuori standard "
-        image: /images/піддони-нестандартних-розмірів.webp
+        image: /images/піддони-нестандартних-розмірів.jpg
         text: >-
           Offriamo pallet di dimensioni fuori standard che dovrebbero soddisfare
           le esigenze di qualsiasi azienda. Siamo in grado di lavorare in base
@@ -154,10 +154,10 @@ products:
 
           * 3000х1000 mm
     - name: "Pezzi per pallet "
-      image: /images/заготовка.webp
+      image: /images/заготовка.png
       modal:
         title: "Pezzi per pallet "
-        image: /images/палетна-заготовка.webp
+        image: /images/палетна-заготовка.jpg
         text: >-
           Offriamo pezzi per pallet: tavole di legno di alta qualità, di
           dimensioni Euro-standard, tagliate su una linea di segatura
@@ -177,10 +177,10 @@ products:
 
           **La nostra gamma comprende anche pezzi in legno di conifere e pallet di dimensioni fuori standard.**
     - name: Pannelli per pallet
-      image: /images/борд.webp
+      image: /images/борд.png
       modal:
         title: Pannelli per pallet
-        image: /images/палетні-борти.webp
+        image: /images/палетні-борти.png
         text: >-
           Offriamo pannelli di pallet per carrelli di diverse dimensioni. La
           tavola può essere fatta di una o due tavole. Se necessario, possiamo
