@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{/*  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -104,9 +104,8 @@
               <span class="arrow"><img src="{{ $btnArrow.RelPermalink }}" alt=""></span>
             </a>
           </div>
-          {{/*  {{ $heroImg := resources.Get .Params.hero.image }}"  */}}
-          <div class="hero__img" style="background-image: url('')">
-          </div>
+          {{ $heroImg := resources.GetMatch .Params.hero.image }}
+          <div class="hero__img" style="background-image: url('{{ $heroImg.RelPermalink }}')"></div>
           <div class="scroll-down" id="scrollDown">
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="28" viewBox="0 0 26 28" fill="none">
               <g clip-path="url(#clip0_816_3748)">
@@ -161,8 +160,8 @@
               </div>
             </div>
           </div>
-          {{/*  {{ $aboutImg := resources.Get .Params.about.image }}  */}}
-          <div class="about__img" style="background-image: url('')"></div>
+          {{ $aboutImg := resources.Get .Params.about.image }}
+          <div class="about__img" style="background-image: url('{{ $aboutImg.RelPermalink }}')"></div>
         </div>
       </div>
     </section>
@@ -178,7 +177,6 @@
             {{ $moreBtn := .Params.utils.btns.more }}
             {{ $orderBtn := .Params.utils.btns.order }}
             {{ range .Params.products.list }}
-
               <div class="product">
                 <div class="product__info">
                   <h3 class="title">{{ .name }}</h3>
@@ -187,9 +185,9 @@
                     <span class="arrow"><img src="{{ $btnArrow.RelPermalink }}" alt=""></span>
                   </button>
                 </div>
-                
+                {{ $productImg := resources.Get .image }}
                 <div class="product__img">
-                  <img src="" alt="">
+                  <img src="{{ $productImg.RelPermalink }}" alt="">
                 </div>
                 <div class="product-modal">
                   <div class="product-modal__inner">
@@ -206,8 +204,8 @@
                         </svg>
                       </button>
                     </div>
-                    
-                    <div class="product-modal__img" style="background-image: url('')">
+                    {{ $productImgModal := resources.Get .modal.image }}
+                    <div class="product-modal__img" style="background-image: url('{{ $productImgModal.RelPermalink }}')">
                     </div>
                   </div>
                 </div>
@@ -224,8 +222,9 @@
                   <span class="arrow"><img src="{{ $btnArrow.RelPermalink }}" alt=""></span>
                 </button>
               </div>
+              {{ $specialImg := resources.Get "images/special-img.png" }}
               <div class="special__img">
-                <img src="../img/special-img.webp" alt="">
+                <img src="{{ $specialImg.RelPermalink }}" alt="">
               </div>
             </div>
           </div>
@@ -257,16 +256,18 @@
           <div class="pros__list">
             {{ range .Params.pros.pros }}
               <div class="pros__item">
+                {{ $prosImg := resources.Get .image }}
                 <div class="img">
-                  <img src="{{ .image }}" alt="">
+                  <img src="{{ $prosImg.RelPermalink }}" alt="">
                 </div>
                 <h4 class="title white">{{ .name }}</h4>
                 <div class="text white sm">{{ .text }}</div>
               </div>
             {{ end }}
             <div class="pros__item white">
+              {{ $phoneIcon := resources.Get "images/phone-icon.svg" }}
               <div class="img">
-                <img src="../img/phone-icon.svg" alt="">
+                <img src="{{ $phoneIcon.RelPermalink }}" alt="">
               </div>
               <h4 class="subtitle bold">{{ .Params.pros.cta }}</h4>
               <button class="btn btn--dark" data-form-trigger>{{ .Params.utils.btns.call }}</button>
@@ -282,17 +283,19 @@
           <h2 class="title">{{ .Params.cert.title }}</h2>
           <div class="cert__list">
             <div class="cert__item">
-              <div class="img"><img src="../img/epal-icon.svg" alt=""></div>
+              {{ $epalIcon := resources.Get "images/epal-icon.svg" }}
+              <div class="img"><img src="{{ $epalIcon.RelPermalink }}" alt=""></div>
               <h3 class="title">{{ .Params.cert.list.cert1 }}</h3>
             </div>
             <div class="divider"></div>
             <div class="cert__item">
-              <div class="img"><img src="../img/cert-icon.svg" alt=""></div>
+              {{ $certIcon := resources.Get "images/cert-icon.svg" }}
+              <div class="img"><img src="{{ $certIcon.RelPermalink }}" alt=""></div>
               <h3 class="title">{{ .Params.cert.list.cert2 }}</h3>
             </div>
             <div class="divider"></div>
             <div class="cert__item">
-              <div class="img"><img src="../img/cert-icon.svg" alt=""></div>
+              <div class="img"><img src="{{ $certIcon.RelPermalink }}" alt=""></div>
               <h3 class="title">{{ .Params.cert.list.cert3 }}</h3>
             </div>
           </div>
@@ -337,8 +340,9 @@
                 <span class="check"><img src="{{ $checkIcon.RelPermalink }}" alt=""></span>
               </button>
             </form>
+            {{ $formImg := resources.Get "images/form-img.png" }}
             <div class="contact-us__img">
-              <img src="../img/form-img.webp" alt="pallets">
+              <img src="{{ $formImg.RelPermalink }}" alt="pallets">
             </div>
           </div>
         </div>
@@ -354,11 +358,11 @@
               <div class="title-label sub">{{ .Params.contacts.assembly.label }}</div>
               <ul>
                 <li>
-                  <div class="img"><img src="../img/location-icon.png" alt=""></div>
+                  {{ $locationIcon := resources.Get "images/location-icon.png" }}
+                  <div class="img"><img src="{{ $locationIcon.RelPermalink }}" alt=""></div>
                   <div class="text">
                     {{ .Params.contacts.assembly.location }}
                     <button class="btn-link" data-address="{{ .Params.contacts.assembly.locationLink }}">
-                      {{/*  https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.9143067351333!2d24.277662982750268!3d49.99421604332794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ace56df37893f%3A0xa79093f4a54544f5!2sSchool%20of%20Velyke%20Kolodno!5e0!3m2!1suk!2sua!4v1693070158395!5m2!1suk!2sua  */}}
                       <span class="btn-text">{{ .Params.utils.btns.showOnMap }}</span>
                       <span class="arrow">
                         <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
@@ -369,11 +373,12 @@
                   </div>
                 </li>
                 <li>
-                  <div class="img"><img src="../img/phone-icon.png" alt=""></div>
+                  <div class="img"><img src="{{ $phoneIcon.RelPermalink }}" alt=""></div>
                   <div class="text"><a href="tel:{{ .Params.contacts.assembly.phone }}">{{ .Params.contacts.assembly.phone }}</a></div>
                 </li>
                 <li>
-                  <div class="img"><img src="../img/mail-icon.png" alt=""></div>
+                  {{ $mailIcon := resources.Get "images/mail-icon.png" }}
+                  <div class="img"><img src="{{ $mailIcon.RelPermalink }}" alt=""></div>
                   <div class="text"><a href="mailto:{{ .Params.contacts.assembly.email }}">{{ .Params.contacts.assembly.email }}</a></div>
                 </li>
               </ul>
@@ -381,11 +386,10 @@
               <div class="title-label sub">{{ .Params.contacts.euStorage.label }}</div>
               <ul>
                 <li>
-                  <div class="img"><img src="../img/location-icon.png" alt=""></div>
+                  <div class="img"><img src="{{ $locationIcon.RelPermalink }}" alt=""></div>
                   <div class="text">
                     {{ .Params.contacts.euStorage.location }}
                     <button class="btn-link" data-address="{{ .Params.contacts.euStorage.locationLink }}">
-                      {{/*  https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2743.7518396693945!2d15.669558776687664!3d46.55259566016454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476f771770cbf365%3A0x2afd82719b7fc5aa!2zR3VuZHVsacSNZXZhIHVsaWNhIDEyLCAyMDAwIE1hcmlib3IsINCh0LvQvtCy0LXQvdGW0Y8!5e0!3m2!1suk!2sua!4v1693070311213!5m2!1suk!2sua  */}}
                       <span class="btn-text">{{ .Params.utils.btns.showOnMap }}</span>
                       <span class="arrow">
                         <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
@@ -410,7 +414,7 @@
       <div class="footer__inner">
         <div class="footer__top">
           <div class="header__logo">
-            <img src="../img/logo.svg" alt="">
+            <img src="{{ $logo.RelPermalink }}" alt="">
           </div>
           <nav class="header__nav">
             <ul>
@@ -465,4 +469,4 @@
   <script scr="../js/itiModule.js"></script>
   <script type="module" src="../js/main.js"></script>
 </body>
-</html>
+</html>  */}}
