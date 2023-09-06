@@ -5,7 +5,7 @@ hero:
   text: "Wir bieten Paletten und andere Holzprodukte für eine Vielzahl von
     Branchen an: von der Pharma- und Lebensmittelindustrie über die Öl- und
     Gasindustrie bis hin zum Transportwesen."
-  image: /images/hero-img.webp
+  image: /images/hero-img.jpg
   label: "***50+*** Arten von Nicht-Standardpaletten"
 about:
   title: Über die Firma
@@ -30,7 +30,7 @@ about:
 
 
       Heute ist Eco Pallet eine moderne Produktion der besten Holzpaletten, die für die europäische Zertifizierung standardisiert sind.  Wir bieten mehr als 50 Arten von Nicht-Standard-Paletten und andere Holzprodukte für eine breite Palette von Branchen: von der Pharma- und Lebensmittelverarbeitung bis hin zu Öl und Gas oder Transport.
-  image: /images/about-img.webp
+  image: /images/about-img.jpg
   label: Über uns
   stats:
     palletsTitle: 100 000+
@@ -43,10 +43,10 @@ products:
     Platzierung, Lagerung und den Transport einer Vielzahl von Gütern zu bieten.
   list:
     - name: Brennholz in einer Kiste
-      image: /images/products-img.webp
+      image: /images/products-img.png
       modal:
         title: Brennholz in einer Kiste
-        image: /images/pallets-full.webp
+        image: /images/дрова-в-ящику-full-1-.jpg
         text: >-
           Sie müssen keine Zeit mehr damit verbringen, Brennholz zu hacken – wir
           haben es schon für Sie erledigt!
@@ -61,10 +61,10 @@ products:
 
           Alle Produkte werden so dicht wie möglich gestapelt, entsprechend den Anforderungen an Lagerung und Transport.
     - name: Gebrauchte Paletten von unterschiedlichen Abmessungen
-      image: /images/піддони.webp
+      image: /images/піддони.png
       modal:
         title: Gebrauchte Paletten von unterschiedlichen Abmessungen
-        image: /images/вживані-піддони-різних-розмірів.webp
+        image: /images/вживані-піддони-різних-розмірів.jpg
         text: >-
           Wir bieten hochwertige gebrauchte Paletten, die fast so gut wie neu
           sind!
@@ -83,10 +83,10 @@ products:
 
           * 2 Kategorie В Klasse — dunkel
     - name: EPAL-Holzpaletten
-      image: /images/піддон.webp
+      image: /images/піддон.png
       modal:
         title: EPAL-Holzpaletten
-        image: /images/дерев-яні-піддони-epal.webp
+        image: /images/дерев-яні-піддони-epal.jpg
         text: >-2
            Wir bieten mehr als 50 Paletten Arten für verschiedene Branchen, die für die europäische Zertifizierung standardisiert sind. Alle EPAL (European Pallet Association) Produkte werden auf einer speziellen automatisierten Linie unter Verwendung von lizenzierten Schraubnägeln (Ringnägeln) hergestellt.
           Diese Paletten gelten als zu den besten auf dem Markt gehörig und zeichnen sich durch vielfältigen Einsatzmöglichkeiten und lange Lebensdauer aus.
@@ -109,10 +109,10 @@ products:
 
           * Automatisierte Ladesysteme: ja
     - name: "Pallets mit Nicht-Standard-Abmessungen "
-      image: /images/нес-піддон.webp
+      image: /images/нес-піддон.png
       modal:
         title: "Pallets mit Nicht-Standard-Abmessungen "
-        image: /images/піддони-нестандартних-розмірів.webp
+        image: /images/піддони-нестандартних-розмірів.jpg
         text: >-
           Wir bieten Paletten mit Nicht-Standard-Abmessungen, die den
           Anforderungen jedes Unternehmens gerecht werden sollten.
@@ -155,10 +155,10 @@ products:
 
           * 3000х1000 mm
     - name: Paletten-Werkstücke
-      image: /images/заготовка.webp
+      image: /images/заготовка.png
       modal:
         title: Paletten-Werkstücke
-        image: /images/палетна-заготовка.webp
+        image: /images/палетна-заготовка.jpg
         text: >-
           Wir bieten Paletten-Werkstücke – hochwertige Holzbretter im
           Euro-Norm-Format, die auf einer automatischen Sägelinie gesägt werden
@@ -178,10 +178,10 @@ products:
 
           **Unser Sortiment umfasst auch Nadelholz und Paletten-Werkstücke in nicht standardisierten Größen.**
     - name: Paletten-Rahmen
-      image: /images/борд.webp
+      image: /images/борд.png
       modal:
         title: Paletten-Rahmen
-        image: /images/палетні-борти.webp
+        image: /images/палетні-борти.png
         text: >-
           Wir bieten Paletten-Rahmen für Trays in verschiedenen
           Abmessungen.  Der Rahmen kann aus einem oder zwei Brettern bestehen.
