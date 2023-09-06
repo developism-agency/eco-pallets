@@ -224,29 +224,29 @@ pros:
       text: Wykorzystujemy jakościowe materiały przyjazne dla środowiska, dzięki czemu
         nasze produkty przez długi czas pozostaną praktyczne, trwałe, wygodne i
         bezpieczne.
-      image: /img/leafs-icon.svg
+      image: /images/leafs-icon.svg
     - name: "Zgodność z zadaniem technicznym "
       text: Posiadamy automatyczne linie do zbijania palet, rąbania drewna opałowego,
         tartaki i wiele innych urządzeń, które zapewniają wysoką precyzyjność
         produkcji w ścisłej zgodności z zadaniem technicznym.
-      image: /img/mechanism-icon.svg
+      image: /images/mechanism-icon.svg
     - name: Szeroki asortyment
       text: Produkujemy ponad 50 gatunków towarów i możemy również realizować
         indywidualne zamówienia. Możemy dostarczyć małe i duże ilości w krótkim
         czasie. Wymagana liczba palet jest zawsze do dyspozycji w naszych
         magazynach, dzięki czemu otrzymasz swoje zamówienie w najkrótszym
         terminie.
-      image: /img/layers-icon.svg
+      image: /images/layers-icon.svg
     - name: Towary nowe i używane
       text: Oferujemy zarówno towary nowe, jak i używane, dlatego każdy klient może
         wybrać produkty odpowiadające mu pod względem jakości i ceny.
-      image: /img/shapes-icon.svg
+      image: /images/shapes-icon.svg
     - name: Certyfikacja europejska
       text: "Sprzedajemy najlepsze palety, które są znormalizowane pod kątem
         certyfikacji europejskiej: posiadamy wszystkie niezbędne certyfikaty
         jakości i wytwarzamy produkty zgodnie z normami obowiązującymi w
         Europie."
-      image: /img/cert-icon.svg
+      image: /images/cert-icon.svg
   title: Nasze zalety
   cta: Wybieraj Eco Paleta - oferujemy lepsze, komfortowe i korzystne warunki
     współpracy!
