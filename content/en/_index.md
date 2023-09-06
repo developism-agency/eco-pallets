@@ -29,7 +29,7 @@ about:
 
 
       Today Eco Pallet is a modern production of the best wooden pallets standardized for European certification.  We offer more than 50 types of non-standard pallets and other wooden products designed for a wide range of industries: from pharmaceuticals and food processing to oil and gas or transportation.
-  image: /img/about-img.webp
+  image: /images/about-img.webp
   label: About us
   stats:
     palletsTitle: 100 000+
@@ -42,7 +42,7 @@ products:
     placing, storing and transporting a variety of cargo.
   list:
     - name: Firewood in a box
-      image: /img/products-img.webp
+      image: /images/products-img.webp
       modal:
         title: Firewood in a box
         text: >-
@@ -54,9 +54,9 @@ products:
 
 
           All products are stacked as tightly as possible, in accordance with their storage and transportation needs.
-        image: /img/pallets-full.webp
+        image: /images/pallets-full.webp
     - name: Used pallets of various dimensions
-      image: /img/піддони.webp
+      image: /images/піддони.webp
       modal:
         title: Used pallets of various dimensions
         text: >-
@@ -71,11 +71,11 @@ products:
           * 1 category А class — light
 
           * 2 category В class — dark
-        image: /img/вживані-піддони-різних-розмірів.webp
+        image: /images/вживані-піддони-різних-розмірів.webp
     - name: EPAL wooden pallets
-      image: /img/піддон.webp
+      image: /images/піддон.webp
       modal:
-        image: /img/дерев-яні-піддони-epal.webp
+        image: /images/дерев-яні-піддони-epal.webp
         title: EPAL wooden pallets
         text: >-
           We offer more than 50 types of pallets for various industries,
@@ -103,7 +103,7 @@ products:
 
           * Automated loading systems: Yes
     - name: "Pallets of non-standard dimensions "
-      image: /img/нес-піддон.webp
+      image: /images/нес-піддон.webp
       modal:
         title: "Pallets of non-standard dimensions "
         text: >-
@@ -147,9 +147,9 @@ products:
           * 2000х1000 mm
 
           * 3000х1000 mm
-        image: /img/піддони-нестандартних-розмірів.webp
+        image: /images/піддони-нестандартних-розмірів.webp
     - name: Pallet workpiece
-      image: /img/заготовка.webp
+      image: /images/заготовка.webp
       modal:
         title: Pallet workpiece
         text: >-
@@ -170,9 +170,9 @@ products:
 
 
           **Our range also includes coniferous timber and pallet workpieces of non-standard sizes.**
-        image: /img/палетна-заготовка.webp
+        image: /images/палетна-заготовка.webp
     - name: Pallet boards
-      image: /img/борд.webp
+      image: /images/борд.webp
       modal:
         title: Pallet boards
         text: >-
@@ -192,7 +192,7 @@ products:
 
 
           **Also includes 4 knuckle joints.**
-        image: /img/палетні-борти.webp
+        image: /images/палетні-борти.webp
   special:
     title: Special order
     text: >
@@ -218,30 +218,30 @@ pros:
       text: >
         We use high-quality eco-friendly materials, so our products will remain
         practical, durable, comfortable, and safe.
-      image: /img/leafs-icon.svg
+      image: /images/leafs-icon.svg
     - name: "Compliance with technical requirements  "
       text: >
         We have automated lines for palletizing, firewood splitting, sawmilling,
         and many other mechanical processes that ensure high-precision
         production in strict accordance with your technical specifications.
-      image: /img/mechanism-icon.svg
+      image: /images/mechanism-icon.svg
     - name: "Wide product range "
       text: >
         We produce more than 50 types of goods, and can also fulfil individual
         orders. We can supply small and large volumes in a short time. However
         many pallets you need, they’re always available in our warehouses, so
         you will receive your order as soon as possible.
-      image: /img/layers-icon.svg
+      image: /images/layers-icon.svg
     - name: "Brand new and used products "
       text: We offer both new and used goods, so each customer can choose products
         that suit them in terms of quality and price.
-      image: /img/shapes-icon.svg
+      image: /images/shapes-icon.svg
     - name: "European certification  "
       text: >
         We sell the best pallets, standardized for European certification: we
         have all the necessary quality certificates, and manufacture products in
         accordance with European standards.
-      image: /img/cert-icon.svg
+      image: /images/cert-icon.svg
   title: Our benefits
   cta: Choose Eco Pallet - we offer the best conditions for cooperation!
   label: Why us?
