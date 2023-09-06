@@ -5,7 +5,7 @@ hero:
   text: "Nous proposons des palettes et d'autres produits en bois conçus pour un
     large éventail d'industries : de l'industrie pharmaceutique et alimentaire à
     l'industrie pétrolière et gazière, en passant par les transports."
-  image: /images/hero-img.webp
+  image: /images/hero-img.jpg
   label: "***50+*** Types de palettes non-standard"
 about:
   title: About company
@@ -31,7 +31,7 @@ about:
 
 
       Aujourd'hui, Eco Pallet est un producteur moderne des meilleures palettes en bois normalisées pour la certification européenne.  Nous proposons plus de 50 types de palettes non standard et d'autres produits en bois conçus pour un large éventail d'industries : de la pharmacie et de la transformation des aliments au pétrole et au gaz, en passant par le transport.
-  image: /images/about-img.webp
+  image: /images/about-img.jpg
   label: A propos de nous
   stats:
     palletsTitle: 100 000+
@@ -45,7 +45,7 @@ products:
     marchandises.
   list:
     - name: Bois de chauffe en caisse
-      image: /images/products-img.webp
+      image: /images/products-img.png
       modal:
         title: Bois de chauffe en caisse
         text: >-
@@ -61,9 +61,9 @@ products:
 
 
           Tous nos produits sont empilés aussi étroitement que possible, en fonction des besoins de stockage et de transport.
-        image: /images/pallets-full.webp
+        image: /images/дрова-в-ящику-full-1-.jpg
     - name: Palettes déjà utilisées de différentes dimensions
-      image: /images/піддони.webp
+      image: /images/піддони.png
       modal:
         title: Palettes déjà utilisées de différentes dimensions
         text: >-
@@ -79,9 +79,9 @@ products:
           * Catégorie 1 classe A – claire
 
           * Catégorie 2 classe B – sombre
-        image: /images/вживані-піддони-різних-розмірів.webp
+        image: /images/вживані-піддони-різних-розмірів.jpg
     - name: Palettes en bois EPAL
-      image: /images/піддон.webp
+      image: /images/піддон.png
       modal:
         title: Palettes en bois EPAL
         text: >-
@@ -109,12 +109,12 @@ products:
           * Peut entrer au contact des denrées alimentaires : Oui
 
           * Systèmes de chargement automatisés : Oui
-        image: /images/дерев-яні-піддони-epal.webp
+        image: /images/дерев-яні-піддони-epal.jpg
     - name: Palettes de dimensions non-standard
-      image: /images/нес-піддон.webp
+      image: /images/нес-піддон.png
       modal:
         title: Palettes de dimensions non-standard
-        image: /images/піддони-нестандартних-розмірів.webp
+        image: /images/піддони-нестандартних-розмірів.jpg
         text: >-
           Nous proposons des palettes de dimensions non-standard qui peuvent
           répondre aux besoins de n’importe quelle entreprise.
@@ -157,9 +157,9 @@ products:
 
           * 3000x1000 mm
     - name: Palette de pièces à usiner
-      image: /images/заготовка.webp
+      image: /images/заготовка.png
       modal:
-        image: /images/палетна-заготовка.webp
+        image: /images/палетна-заготовка.jpg
         title: Palette de pièces à usiner
         text: >-
           Nous proposons des palettes de pièces à usiner de haute qualité. Des
@@ -179,9 +179,9 @@ products:
 
           **Notre gamme inclut également du bois de conifères et des palettes de pièces à usiner de tailles non-standard.**
     - name: Panneaux de palette
-      image: /images/борд.webp
+      image: /images/борд.png
       modal:
-        image: /images/палетні-борти.webp
+        image: /images/палетні-борти.png
         title: Panneaux de palette
         text: >-
           Nous proposons des panneaux de palette pour plateaux de différentes
