@@ -30,7 +30,7 @@ about:
 
 
       Heute ist Eco Pallet eine moderne Produktion der besten Holzpaletten, die für die europäische Zertifizierung standardisiert sind.  Wir bieten mehr als 50 Arten von Nicht-Standard-Paletten und andere Holzprodukte für eine breite Palette von Branchen: von der Pharma- und Lebensmittelverarbeitung bis hin zu Öl und Gas oder Transport.
-  image: /img/about-img.webp
+  image: /images/about-img.webp
   label: Über uns
   stats:
     palletsTitle: 100 000+
@@ -43,10 +43,10 @@ products:
     Platzierung, Lagerung und den Transport einer Vielzahl von Gütern zu bieten.
   list:
     - name: Brennholz in einer Kiste
-      image: /img/products-img.webp
+      image: /images/products-img.webp
       modal:
         title: Brennholz in einer Kiste
-        image: /img/pallets-full.webp
+        image: /images/pallets-full.webp
         text: >-
           Sie müssen keine Zeit mehr damit verbringen, Brennholz zu hacken – wir
           haben es schon für Sie erledigt!
@@ -61,10 +61,10 @@ products:
 
           Alle Produkte werden so dicht wie möglich gestapelt, entsprechend den Anforderungen an Lagerung und Transport.
     - name: Gebrauchte Paletten von unterschiedlichen Abmessungen
-      image: /img/піддони.webp
+      image: /images/піддони.webp
       modal:
         title: Gebrauchte Paletten von unterschiedlichen Abmessungen
-        image: /img/вживані-піддони-різних-розмірів.webp
+        image: /images/вживані-піддони-різних-розмірів.webp
         text: >-
           Wir bieten hochwertige gebrauchte Paletten, die fast so gut wie neu
           sind!
@@ -83,10 +83,10 @@ products:
 
           * 2 Kategorie В Klasse — dunkel
     - name: EPAL-Holzpaletten
-      image: /img/піддон.webp
+      image: /images/піддон.webp
       modal:
         title: EPAL-Holzpaletten
-        image: /img/дерев-яні-піддони-epal.webp
+        image: /images/дерев-яні-піддони-epal.webp
         text: >-2
            Wir bieten mehr als 50 Paletten Arten für verschiedene Branchen, die für die europäische Zertifizierung standardisiert sind. Alle EPAL (European Pallet Association) Produkte werden auf einer speziellen automatisierten Linie unter Verwendung von lizenzierten Schraubnägeln (Ringnägeln) hergestellt.
           Diese Paletten gelten als zu den besten auf dem Markt gehörig und zeichnen sich durch vielfältigen Einsatzmöglichkeiten und lange Lebensdauer aus.
@@ -109,10 +109,10 @@ products:
 
           * Automatisierte Ladesysteme: ja
     - name: "Pallets mit Nicht-Standard-Abmessungen "
-      image: /img/нес-піддон.webp
+      image: /images/нес-піддон.webp
       modal:
         title: "Pallets mit Nicht-Standard-Abmessungen "
-        image: /img/піддони-нестандартних-розмірів.webp
+        image: /images/піддони-нестандартних-розмірів.webp
         text: >-
           Wir bieten Paletten mit Nicht-Standard-Abmessungen, die den
           Anforderungen jedes Unternehmens gerecht werden sollten.
@@ -155,10 +155,10 @@ products:
 
           * 3000х1000 mm
     - name: Paletten-Werkstücke
-      image: /img/заготовка.webp
+      image: /images/заготовка.webp
       modal:
         title: Paletten-Werkstücke
-        image: /img/палетна-заготовка.webp
+        image: /images/палетна-заготовка.webp
         text: >-
           Wir bieten Paletten-Werkstücke – hochwertige Holzbretter im
           Euro-Norm-Format, die auf einer automatischen Sägelinie gesägt werden
@@ -178,10 +178,10 @@ products:
 
           **Unser Sortiment umfasst auch Nadelholz und Paletten-Werkstücke in nicht standardisierten Größen.**
     - name: Paletten-Rahmen
-      image: /img/борд.webp
+      image: /images/борд.webp
       modal:
         title: Paletten-Rahmen
-        image: /img/палетні-борти.webp
+        image: /images/палетні-борти.webp
         text: >-
           Wir bieten Paletten-Rahmen für Trays in verschiedenen
           Abmessungen.  Der Rahmen kann aus einem oder zwei Brettern bestehen.
@@ -222,32 +222,32 @@ pros:
       text: >
         Wir verwenden hochwertige, umweltfreundliche Materialien, so dass unsere
         Produkte praktisch, langlebig, komfortabel und sicher bleiben.
-      image: /img/leafs-icon.svg
+      image: /images/leafs-icon.svg
     - name: "Compliance mit technischen Anforderungen  "
       text: Wir verfügen über automatisierte Linien für die Palettierung, das Spalten
         von Brennholz, das Sägen und viele andere mechanische Prozesse, die eine
         hochpräzise Produktion in strikter Übereinstimmung mit Ihren technischen
         Spezifikationen sicherstellen.
-      image: /img/mechanism-icon.svg
+      image: /images/mechanism-icon.svg
     - name: "Breites Produktspektrum "
       text: Wir produzieren mehr als 50 Arten von Waren und können auch individuelle
         Aufträge erfüllen. Wir können kleine und große Mengen in kurzer Zeit
         liefern. Egal wie viele Paletten Sie benötigen, sie sind in unseren
         Lagern immer verfügbar, so dass Sie Ihre Bestellung ehestmöglich
         erhalten.
-      image: /img/layers-icon.svg
+      image: /images/layers-icon.svg
     - name: "Neue und gebrauchte Produkte "
       text: Wir bieten sowohl Neu- als auch Gebrauchtwaren an, so dass jeder Kunde die
         Produkte auswählen kann, die ihm hinsichtlich Qualität und Preis
         zusagen.
-      image: /img/shapes-icon.svg
+      image: /images/shapes-icon.svg
     - name: "Europäische Zertifizierung  "
       text: >
         Wir verkaufen die besten Paletten, die für die europäische
         Zertifizierung genormt sind: Wir verfügen über alle erforderlichen
         Qualitätszertifikate und stellen die Produkte gemäß den europäischen
         Normen her.
-      image: /img/cert-icon.svg
+      image: /images/cert-icon.svg
   title: Unsere Stärken
   cta: Wählen Sie Eco Pallet – wir bieten die besten Bedingungen für eine
     Zusammenarbeit!
