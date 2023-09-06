@@ -5,7 +5,7 @@ hero:
   text: "We offer pallets and other wooden products designed for a wide range of
     industries: from pharmaceuticals and food processing to the oil and gas
     industry or transportation."
-  image: /images/hero-img.webp
+  image: /images/hero-img.jpg
   label: "*50+* Types of non-standard pallets"
 about:
   title: About company
@@ -29,7 +29,7 @@ about:
 
 
       Today Eco Pallet is a modern production of the best wooden pallets standardized for European certification.  We offer more than 50 types of non-standard pallets and other wooden products designed for a wide range of industries: from pharmaceuticals and food processing to oil and gas or transportation.
-  image: /images/about-img.webp
+  image: /images/about-img.jpg
   label: About us
   stats:
     palletsTitle: 100 000+
@@ -42,7 +42,7 @@ products:
     placing, storing and transporting a variety of cargo.
   list:
     - name: Firewood in a box
-      image: /images/products-img.webp
+      image: /images/products-img.png
       modal:
         title: Firewood in a box
         text: >-
@@ -54,9 +54,9 @@ products:
 
 
           All products are stacked as tightly as possible, in accordance with their storage and transportation needs.
-        image: /images/pallets-full.webp
+        image: /images/дрова-в-ящику-full-1-.jpg
     - name: Used pallets of various dimensions
-      image: /images/піддони.webp
+      image: /images/піддони.png
       modal:
         title: Used pallets of various dimensions
         text: >-
@@ -71,11 +71,11 @@ products:
           * 1 category А class — light
 
           * 2 category В class — dark
-        image: /images/вживані-піддони-різних-розмірів.webp
+        image: /images/вживані-піддони-різних-розмірів.jpg
     - name: EPAL wooden pallets
-      image: /images/піддон.webp
+      image: /images/піддон.png
       modal:
-        image: /images/дерев-яні-піддони-epal.webp
+        image: /images/дерев-яні-піддони-epal.jpg
         title: EPAL wooden pallets
         text: >-
           We offer more than 50 types of pallets for various industries,
@@ -103,7 +103,7 @@ products:
 
           * Automated loading systems: Yes
     - name: "Pallets of non-standard dimensions "
-      image: /images/нес-піддон.webp
+      image: /images/нес-піддон.png
       modal:
         title: "Pallets of non-standard dimensions "
         text: >-
@@ -147,9 +147,9 @@ products:
           * 2000х1000 mm
 
           * 3000х1000 mm
-        image: /images/піддони-нестандартних-розмірів.webp
+        image: /images/піддони-нестандартних-розмірів.jpg
     - name: Pallet workpiece
-      image: /images/заготовка.webp
+      image: /images/заготовка.png
       modal:
         title: Pallet workpiece
         text: >-
@@ -170,9 +170,9 @@ products:
 
 
           **Our range also includes coniferous timber and pallet workpieces of non-standard sizes.**
-        image: /images/палетна-заготовка.webp
+        image: /images/палетна-заготовка.jpg
     - name: Pallet boards
-      image: /images/борд.webp
+      image: /images/борд.png
       modal:
         title: Pallet boards
         text: >-
@@ -192,7 +192,7 @@ products:
 
 
           **Also includes 4 knuckle joints.**
-        image: /images/палетні-борти.webp
+        image: /images/палетні-борти.png
   special:
     title: Special order
     text: >
