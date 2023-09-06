@@ -31,7 +31,7 @@ about:
 
 
       Aujourd'hui, Eco Pallet est un producteur moderne des meilleures palettes en bois normalisées pour la certification européenne.  Nous proposons plus de 50 types de palettes non standard et d'autres produits en bois conçus pour un large éventail d'industries : de la pharmacie et de la transformation des aliments au pétrole et au gaz, en passant par le transport.
-  image: /img/about-img.webp
+  image: /images/about-img.webp
   label: A propos de nous
   stats:
     palletsTitle: 100 000+
@@ -45,7 +45,7 @@ products:
     marchandises.
   list:
     - name: Bois de chauffe en caisse
-      image: /img/products-img.webp
+      image: /images/products-img.webp
       modal:
         title: Bois de chauffe en caisse
         text: >-
@@ -61,9 +61,9 @@ products:
 
 
           Tous nos produits sont empilés aussi étroitement que possible, en fonction des besoins de stockage et de transport.
-        image: /img/pallets-full.webp
+        image: /images/pallets-full.webp
     - name: Palettes déjà utilisées de différentes dimensions
-      image: /img/піддони.webp
+      image: /images/піддони.webp
       modal:
         title: Palettes déjà utilisées de différentes dimensions
         text: >-
@@ -79,9 +79,9 @@ products:
           * Catégorie 1 classe A – claire
 
           * Catégorie 2 classe B – sombre
-        image: /img/вживані-піддони-різних-розмірів.webp
+        image: /images/вживані-піддони-різних-розмірів.webp
     - name: Palettes en bois EPAL
-      image: /img/піддон.webp
+      image: /images/піддон.webp
       modal:
         title: Palettes en bois EPAL
         text: >-
@@ -109,12 +109,12 @@ products:
           * Peut entrer au contact des denrées alimentaires : Oui
 
           * Systèmes de chargement automatisés : Oui
-        image: /img/дерев-яні-піддони-epal.webp
+        image: /images/дерев-яні-піддони-epal.webp
     - name: Palettes de dimensions non-standard
-      image: /img/нес-піддон.webp
+      image: /images/нес-піддон.webp
       modal:
         title: Palettes de dimensions non-standard
-        image: /img/піддони-нестандартних-розмірів.webp
+        image: /images/піддони-нестандартних-розмірів.webp
         text: >-
           Nous proposons des palettes de dimensions non-standard qui peuvent
           répondre aux besoins de n’importe quelle entreprise.
@@ -157,9 +157,9 @@ products:
 
           * 3000x1000 mm
     - name: Palette de pièces à usiner
-      image: /img/заготовка.webp
+      image: /images/заготовка.webp
       modal:
-        image: /img/палетна-заготовка.webp
+        image: /images/палетна-заготовка.webp
         title: Palette de pièces à usiner
         text: >-
           Nous proposons des palettes de pièces à usiner de haute qualité. Des
@@ -179,9 +179,9 @@ products:
 
           **Notre gamme inclut également du bois de conifères et des palettes de pièces à usiner de tailles non-standard.**
     - name: Panneaux de palette
-      image: /img/борд.webp
+      image: /images/борд.webp
       modal:
-        image: /img/палетні-борти.webp
+        image: /images/палетні-борти.webp
         title: Panneaux de palette
         text: >-
           Nous proposons des panneaux de palette pour plateaux de différentes
@@ -226,14 +226,14 @@ pros:
         Nous utilisons des matériaux de haute qualité respectueux de
         l’environnement, aussi nos produits resteront fonctionnels, durables,
         confortables et sécurisants.
-      image: /img/leafs-icon.svg
+      image: /images/leafs-icon.svg
     - name: "Conformité aux exigences techniques "
       text: >
         Nous possédons des lignes automatisées pour la palettisation, la découpe
         du bois de chauffe, le sciage et bien d’autres processus mécaniques qui
         assurent une production de haute précision en parfaite conformité avec
         vos spécifications techniques.
-      image: /img/mechanism-icon.svg
+      image: /images/mechanism-icon.svg
     - name: Large éventail de produits
       text: >
         Nous produisons plus de 50 sortes de biens et nous pouvons également
@@ -242,19 +242,19 @@ pros:
         de palettes qu’il vous faille, elles seront toujours disponibles dans
         nos entrepôts, pour que vous puissiez les recevoir aussi vite que
         possible.
-      image: /img/layers-icon.svg
+      image: /images/layers-icon.svg
     - name: Produits neufs ou déjà utilisés
       text: >
         Nous proposons aussi bien des produits neufs que déjà utilisés, de cette
         manière chaque client peut choisir les produits qui lui conviennent en
         termes de qualité et de prix.
-      image: /img/shapes-icon.svg
+      image: /images/shapes-icon.svg
     - name: "Certification Européenne "
       text: >
         Nous vendons les meilleures palettes standardisées sous label Européen :
         nous avons tous les certificats de qualité requis et nous produisons des
         produits manufacturés répondant aux normes Européennes.
-      image: /img/cert-icon.svg
+      image: /images/cert-icon.svg
   title: Nos avantages
   cta: Choisissez Eco Pallet - nous offrons les meilleures conditions de confort
     et de rentabilité pour la coopération!
