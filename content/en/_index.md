@@ -5,7 +5,7 @@ hero:
   text: "We offer pallets and other wooden products designed for a wide range of
     industries: from pharmaceuticals and food processing to the oil and gas
     industry or transportation."
-  image: /img/hero-img.webp
+  image: /images/hero-img.webp
   label: "*50+* Types of non-standard pallets"
 about:
   title: About company

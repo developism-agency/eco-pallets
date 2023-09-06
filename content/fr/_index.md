@@ -5,7 +5,7 @@ hero:
   text: "Nous proposons des palettes et d'autres produits en bois conçus pour un
     large éventail d'industries : de l'industrie pharmaceutique et alimentaire à
     l'industrie pétrolière et gazière, en passant par les transports."
-  image: /img/hero-img.webp
+  image: /images/hero-img.webp
   label: "***50+*** Types de palettes non-standard"
 about:
   title: About company

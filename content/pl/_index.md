@@ -5,7 +5,7 @@ hero:
   text: "Oferujemy palety i inne produkty drewniane przeznaczone dla szerokiej
     gamy branż: od przemysłu farmaceutycznego i spożywczego po przemysł naftowy
     i gazowy czy transport."
-  image: /img/hero-img.webp
+  image: /images/hero-img.webp
   label: "*50+* Typy niestandardowych palet"
 about:
   title: O firmie
