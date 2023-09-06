@@ -30,7 +30,7 @@ about:
 
 
       Oggi Eco Pallet è una moderna produzione dei migliori pallet in legno standardizzati per la certificazione europea.  Offriamo più di 50 tipi di pallet non standard e altri prodotti in legno progettati per un'ampia gamma di settori: da quello farmaceutico e alimentare a quello petrolifero e del gas o dei trasporti.
-  image: /img/about-img.webp
+  image: /images/about-img.webp
   label: Chi siamo
   stats:
     palletsTitle: 100 000+
@@ -44,10 +44,10 @@ products:
     merci.
   list:
     - name: "Legna da ardere in scatola "
-      image: /img/products-img.webp
+      image: /images/products-img.webp
       modal:
         title: "Legna da ardere in scatola "
-        image: /img/pallets-full.webp
+        image: /images/pallets-full.webp
         text: >-
           Non devi più perdere tempo a tagliare legna da ardere. L’abbiamo già
           fatto per te!
@@ -59,10 +59,10 @@ products:
 
           Tutti i prodotti sono impilati il più strettamente possibile, in base alle loro esigenze di stoccaggio e trasporto.
     - name: "Pallet usati di varie dimensioni "
-      image: /img/піддони.webp
+      image: /images/піддони.webp
       modal:
         title: "Pallet usati di varie dimensioni "
-        image: /img/вживані-піддони-різних-розмірів.webp
+        image: /images/вживані-піддони-різних-розмірів.webp
         text: >-
           Offriamo pallet usati di alta qualità che sono quasi come nuovi! Tutti
           i nostri prodotti sono conformi agli standard europei e non presentano
@@ -76,10 +76,10 @@ products:
 
           * categoria 2 classe Β — scuro
     - name: "Pallet in legno EPAL "
-      image: /img/піддон.webp
+      image: /images/піддон.webp
       modal:
         title: "Pallet in legno EPAL "
-        image: /img/дерев-яні-піддони-epal.webp
+        image: /images/дерев-яні-піддони-epal.webp
         text: >-
           Offriamo più di 50 tipi di pallet per vari settori, in linea con gli
           standard europei per la certificazione. Tutti i prodotti EPAL
@@ -106,10 +106,10 @@ products:
 
           * Sistemi di carico automatizzati: Sì
     - name: "Pallet di dimensioni fuori standard "
-      image: /img/нес-піддон.webp
+      image: /images/нес-піддон.webp
       modal:
         title: "Pallet di dimensioni fuori standard "
-        image: /img/піддони-нестандартних-розмірів.webp
+        image: /images/піддони-нестандартних-розмірів.webp
         text: >-
           Offriamo pallet di dimensioni fuori standard che dovrebbero soddisfare
           le esigenze di qualsiasi azienda. Siamo in grado di lavorare in base
@@ -154,10 +154,10 @@ products:
 
           * 3000х1000 mm
     - name: "Pezzi per pallet "
-      image: /img/заготовка.webp
+      image: /images/заготовка.webp
       modal:
         title: "Pezzi per pallet "
-        image: /img/палетна-заготовка.webp
+        image: /images/палетна-заготовка.webp
         text: >-
           Offriamo pezzi per pallet: tavole di legno di alta qualità, di
           dimensioni Euro-standard, tagliate su una linea di segatura
@@ -177,10 +177,10 @@ products:
 
           **La nostra gamma comprende anche pezzi in legno di conifere e pallet di dimensioni fuori standard.**
     - name: Pannelli per pallet
-      image: /img/борд.webp
+      image: /images/борд.webp
       modal:
         title: Pannelli per pallet
-        image: /img/палетні-борти.webp
+        image: /images/палетні-борти.webp
         text: >-
           Offriamo pannelli di pallet per carrelli di diverse dimensioni. La
           tavola può essere fatta di una o due tavole. Se necessario, possiamo
@@ -219,29 +219,29 @@ pros:
     - name: Materiali di altissima qualità
       text: Utilizziamo materiali ecologici di alta qualità, quindi i nostri prodotti
         rimarranno pratici, durevoli, confortevoli e sicuri nel tempo.
-      image: /img/leafs-icon.svg
+      image: /images/leafs-icon.svg
     - name: Conformità ai requisiti tecnici
       text: "Disponiamo di linee automatizzate per la pallettizzazione, il taglio
         della legna da ardere, la segheria e molti altri processi meccanici che
         garantiscono una produzione di alta precisione in stretta conformità con
         le vostre specifiche tecniche. "
-      image: /img/mechanism-icon.svg
+      image: /images/mechanism-icon.svg
     - name: Ampia gamma di prodotti
       text: "Produciamo più di 50 tipi di articoli e siamo in grado di evadere anche
         singoli ordini. Siamo in grado di fornire piccoli e grandi quantitativi
         in breve tempo. I nostri prodotti sono sempre disponibili nei nostri
         magazzini indipendentemente dal numero di pallet di cui avete bisogno,
         quindi il vostro ordine arriverà al più presto. "
-      image: /img/layers-icon.svg
+      image: /images/layers-icon.svg
     - name: Prodotti nuovi e usati
       text: "Offriamo prodotti sia nuovi che usati così ogni cliente può scegliere i
         prodotti di preferenza in termini di qualità e prezzo. "
-      image: /img/shapes-icon.svg
+      image: /images/shapes-icon.svg
     - name: Certificazione europea
       text: "Vendiamo i migliori pallet, in linea con gli standard europei per la
         certificazione: abbiamo tutti i certificati di qualità necessari e
         produciamo prodotti in conformità con gli standard europei."
-      image: /img/cert-icon.svg
+      image: /images/cert-icon.svg
   title: Perché sceglierci
   cta: Choose Eco Pallet - we offer the best conditions for cooperation!
   label: Perché noi?
