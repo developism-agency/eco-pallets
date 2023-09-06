@@ -1036,7 +1036,6 @@ body {
   .product-modal__inner {
     position: relative;
     width: calc(100% - 154px);
-    max-width: 1286px;
     margin: 0 auto;
     min-height: 100%;
     display: flex;
