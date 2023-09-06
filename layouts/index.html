@@ -1,4 +1,4 @@
-{{/*  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -14,7 +14,7 @@
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        {{ $logo := resources.Get "images/logo.svg" }}
+        {{ $logo := resources.Get "images/logo.svg" | fingerprint }}
         <a href="/" class="header__logo">
           <img src="{{ $logo.RelPermalink }}" alt="">
         </a>
@@ -88,7 +88,7 @@
       </div>
     </div>
   </header>
-  {{ $btnArrow := resources.Get "images/btn-arrow.svg" }}
+  {{ $btnArrow := resources.Get "images/btn-arrow.svg" | fingerprint }}
   <main>
     <section class="hero">
       <div class="container">
@@ -104,7 +104,7 @@
               <span class="arrow"><img src="{{ $btnArrow.RelPermalink }}" alt=""></span>
             </a>
           </div>
-          {{ $heroImg := resources.GetMatch .Params.hero.image }}
+          {{ $heroImg := resources.GetMatch .Params.hero.image | fingerprint }}
           <div class="hero__img" style="background-image: url('{{ $heroImg.RelPermalink }}')"></div>
           <div class="scroll-down" id="scrollDown">
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="28" viewBox="0 0 26 28" fill="none">
@@ -139,7 +139,7 @@
             </div>
             <div class="about__stats">
               <div class="stat-card">
-                {{ $qtyImg := resources.Get "images/qty-icon.png" }}
+                {{ $qtyImg := resources.Get "images/qty-icon.png" | fingerprint }}
                 <div class="img">
                   <img src="{{ $qtyImg.RelPermalink }}" alt="">
                 </div>
@@ -149,7 +149,7 @@
                 </div>
               </div>
               <div class="stat-card">
-                {{ $employeesImg := resources.Get "images/employees-icon.png" }}
+                {{ $employeesImg := resources.Get "images/employees-icon.png" | fingerprint }}
                 <div class="img">
                   <img src="{{ $employeesImg.RelPermalink }}" alt="">
                 </div>
@@ -160,7 +160,7 @@
               </div>
             </div>
           </div>
-          {{ $aboutImg := resources.Get .Params.about.image }}
+          {{ $aboutImg := resources.Get .Params.about.image | fingerprint }}
           <div class="about__img" style="background-image: url('{{ $aboutImg.RelPermalink }}')"></div>
         </div>
       </div>
@@ -185,7 +185,7 @@
                     <span class="arrow"><img src="{{ $btnArrow.RelPermalink }}" alt=""></span>
                   </button>
                 </div>
-                {{ $productImg := resources.Get .image }}
+                {{ $productImg := resources.Get .image | fingerprint }}
                 <div class="product__img">
                   <img src="{{ $productImg.RelPermalink }}" alt="">
                 </div>
@@ -204,7 +204,7 @@
                         </svg>
                       </button>
                     </div>
-                    {{ $productImgModal := resources.Get .modal.image }}
+                    {{ $productImgModal := resources.Get .modal.image | fingerprint }}
                     <div class="product-modal__img" style="background-image: url('{{ $productImgModal.RelPermalink }}')">
                     </div>
                   </div>
@@ -222,7 +222,7 @@
                   <span class="arrow"><img src="{{ $btnArrow.RelPermalink }}" alt=""></span>
                 </button>
               </div>
-              {{ $specialImg := resources.Get "images/special-img.png" }}
+              {{ $specialImg := resources.Get "images/special-img.png" | fingerprint }}
               <div class="special__img">
                 <img src="{{ $specialImg.RelPermalink }}" alt="">
               </div>
@@ -256,7 +256,7 @@
           <div class="pros__list">
             {{ range .Params.pros.pros }}
               <div class="pros__item">
-                {{ $prosImg := resources.Get .image }}
+                {{ $prosImg := resources.Get .image | fingerprint }}
                 <div class="img">
                   <img src="{{ $prosImg.RelPermalink }}" alt="">
                 </div>
@@ -265,7 +265,7 @@
               </div>
             {{ end }}
             <div class="pros__item white">
-              {{ $phoneIcon := resources.Get "images/phone-icon.svg" }}
+              {{ $phoneIcon := resources.Get "images/phone-icon.svg" | fingerprint }}
               <div class="img">
                 <img src="{{ $phoneIcon.RelPermalink }}" alt="">
               </div>
@@ -283,13 +283,13 @@
           <h2 class="title">{{ .Params.cert.title }}</h2>
           <div class="cert__list">
             <div class="cert__item">
-              {{ $epalIcon := resources.Get "images/epal-icon.svg" }}
+              {{ $epalIcon := resources.Get "images/epal-icon.svg" | fingerprint }}
               <div class="img"><img src="{{ $epalIcon.RelPermalink }}" alt=""></div>
               <h3 class="title">{{ .Params.cert.list.cert1 }}</h3>
             </div>
             <div class="divider"></div>
             <div class="cert__item">
-              {{ $certIcon := resources.Get "images/cert-icon.svg" }}
+              {{ $certIcon := resources.Get "images/cert-icon.svg" | fingerprint }}
               <div class="img"><img src="{{ $certIcon.RelPermalink }}" alt=""></div>
               <h3 class="title">{{ .Params.cert.list.cert2 }}</h3>
             </div>
@@ -333,14 +333,14 @@
                 </div>
               </div>
               <textarea name="message" class="message" placeholder="{{ .Params.utils.placeholders.message }}"></textarea>
-              {{ $checkIcon := resources.Get "images/submit-check.png" }}
+              {{ $checkIcon := resources.Get "images/submit-check.png" | fingerprint }}
               <button type="submit" class="btn-submit" id="response-form" data-submit-message="{{ .Params.utils.success }}">
                 <span class="name">{{ .Params.utils.btns.order }}</span>
                 <span class="arrow"><img src="{{ $btnArrow.RelPermalink }}" alt=""></span>
                 <span class="check"><img src="{{ $checkIcon.RelPermalink }}" alt=""></span>
               </button>
             </form>
-            {{ $formImg := resources.Get "images/form-img.png" }}
+            {{ $formImg := resources.Get "images/form-img.png" | fingerprint }}
             <div class="contact-us__img">
               <img src="{{ $formImg.RelPermalink }}" alt="pallets">
             </div>
@@ -358,7 +358,7 @@
               <div class="title-label sub">{{ .Params.contacts.assembly.label }}</div>
               <ul>
                 <li>
-                  {{ $locationIcon := resources.Get "images/location-icon.png" }}
+                  {{ $locationIcon := resources.Get "images/location-icon.png" | fingerprint }}
                   <div class="img"><img src="{{ $locationIcon.RelPermalink }}" alt=""></div>
                   <div class="text">
                     {{ .Params.contacts.assembly.location }}
@@ -377,7 +377,7 @@
                   <div class="text"><a href="tel:{{ .Params.contacts.assembly.phone }}">{{ .Params.contacts.assembly.phone }}</a></div>
                 </li>
                 <li>
-                  {{ $mailIcon := resources.Get "images/mail-icon.png" }}
+                  {{ $mailIcon := resources.Get "images/mail-icon.png" | fingerprint }}
                   <div class="img"><img src="{{ $mailIcon.RelPermalink }}" alt=""></div>
                   <div class="text"><a href="mailto:{{ .Params.contacts.assembly.email }}">{{ .Params.contacts.assembly.email }}</a></div>
                 </li>
@@ -469,4 +469,4 @@
   <script scr="../js/itiModule.js"></script>
   <script type="module" src="../js/main.js"></script>
 </body>
-</html>  */}}
+</html>
