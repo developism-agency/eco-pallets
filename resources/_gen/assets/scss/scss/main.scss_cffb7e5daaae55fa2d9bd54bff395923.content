@@ -824,7 +824,7 @@ body {
     .text-accordion__btn:hover {
       color: #FFFFFF; }
     .text-accordion__btn:hover .arrow:after {
-      transform: scale(1510%); }
+      transform: scale(1810%); }
   .text-accordion.active .text-accordion__btn {
     margin-top: 14px; }
     .text-accordion.active .text-accordion__btn .arrow img {
