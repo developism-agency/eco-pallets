@@ -473,7 +473,7 @@
   {{ $formModule := resources.Get "js/formModule.js" }}
   {{ $itiModule := resources.Get "js/itiModule.js" }}
   {{ $js := slice $mainJs $accordionModule $dropdownModule $formModule $itiModule | resources.Concat "js/bundle.js" | js.Build }}
-  {{ $js := $js | resources.Minify | fingerprint } }}
+  {{ $js := $js | resources.Minify | fingerprint }}
   <script type="module" src="{{ $js.RelPermalink }}"></script>
 </body>
 </html>
