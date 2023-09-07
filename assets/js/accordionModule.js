@@ -24,5 +24,3 @@ const accordionModule = (function () {
 
   return { init }
 })()
-
-export default accordionModule

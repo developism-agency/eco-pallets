@@ -37,5 +37,3 @@ const dropdownModule = (function () {
 
   return { init }
 })()
-
-export default dropdownModule

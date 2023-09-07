@@ -1,5 +1,3 @@
-import iti from './itiModule.js'
-
 const formModule = (function() {
   let form
   let email
@@ -124,5 +122,3 @@ const formModule = (function() {
 
   return { init }
 })()
-
-export default formModule

@@ -5,5 +5,3 @@ const iti = window.intlTelInput(input, {
   onlyCountries: ["ua", "en", "de", "fr", "it", "us", "pl"],
   utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
 });
-
-export default iti;

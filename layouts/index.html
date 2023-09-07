@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {{ with resources.Get "scss/main.scss" | toCSS | postCSS }}
-    <link rel="stylesheet" href="{{ .RelPermalink }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  {{ $options := dict "transpiler" "libsass" "targetPath" "css/style.css" }}
+  {{ with resources.Get "scss/main.scss" | toCSS $options | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
   {{ end }}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
   <title>Eco-Pallets</title>
@@ -463,7 +467,13 @@
   </div>
   <div class="modal-bg"></div>
   <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
-  <script scr="../js/itiModule.js"></script>
-  <script type="module" src="../js/main.js"></script>
+  {{ $mainJs := resources.Get "js/main.js" }}
+  {{ $accordionModule := resources.Get "js/accordionModule.js"}}
+  {{ $dropdownModule := resources.Get "js/dropdownModule.js" }}
+  {{ $formModule := resources.Get "js/formModule.js" }}
+  {{ $itiModule := resources.Get "js/itiModule.js" }}
+  {{ $js := slice $mainJs $accordionModule $dropdownModule $formModule $itiModule | resources.Concat "js/bundle.js" | js.Build }}
+  {{ $js := $js | resources.Minify | fingerprint } }}
+  <script type="module" src="{{ $js.RelPermalink }}"></script>
 </body>
 </html>

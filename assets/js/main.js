@@ -1,7 +1,3 @@
-import accordionModule from './accordionModule.js'
-import dropdownModule from './dropdownModule.js'
-import formModule from './formModule.js'
-
 document.addEventListener("DOMContentLoaded", function(event) {
   //burger menu
   const burger = document.getElementById('burger')
