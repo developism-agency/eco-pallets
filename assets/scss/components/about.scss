@@ -43,6 +43,16 @@
     background-position: bottom;
     min-height: 510px;
     align-self: flex-start;
+
+    picture {
+      height: 100%;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
   }
 }
 
