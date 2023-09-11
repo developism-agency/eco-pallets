@@ -1,7 +1,7 @@
 baseURL = 'https://earnest-vacherin-ad7e04.netlify.app/'
 languageCode = 'en-US'
 title = 'Eco-pallets'
-defaultContentLanguage = 'en'
+defaultContentLanguage = 'ua'
 [security]
 	[security.exec]
 		allow = ['^go$', '^npx$', '^postcss$', '^babel$']
