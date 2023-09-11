@@ -1,5 +1,5 @@
 baseURL = 'https://earnest-vacherin-ad7e04.netlify.app/'
-languageCode = 'uk-UA'
+languageCode = 'en-US'
 title = 'Eco-pallets'
 defaultContentLanguage = 'ua'
 [security]
