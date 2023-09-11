@@ -221,11 +221,11 @@
                         <span class="name">{{ $orderBtn }}</span>
                         <span class="arrow"><img src="{{ $btnArrow.RelPermalink }}" alt=""></span>
                       </button>
-                      <button class="close" aria-label="Close modal">
+                      <div class="close" aria-label="Close modal">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                           <path d="M17.1871 1L10 8.18706L2.81286 1L1 2.81284L8.18714 9.9999L1 17.187L2.81286 18.9998L10 11.8127L17.1871 18.9998L19 17.187L11.8129 9.9999L19 2.81284L17.1871 1Z" fill="black"/>
                         </svg>
-                      </button>
+                      </div>
                     </div>
                     {{ with resources.Get .modal.image | fingerprint }}
                       {{ $webp := .Resize (printf "%dx%d webp" .Width .Height) }}
