@@ -311,5 +311,6 @@ utils:
     requiredPhone: Dieses Feld ist erforderlich
     requiredProductType: Dieses Feld ist erforderlich
     invalidPhone: Die Rufnummer ist falsch
+    captchaRequired: Dieses Feld ist erforderlich
   success: Herzlichen Dank! Wir werden so schnell wie möglich auf Sie zurückkommen!
 ---
