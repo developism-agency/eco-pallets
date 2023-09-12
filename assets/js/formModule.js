@@ -108,7 +108,17 @@ const formModule = (function() {
     })
   }
 
-  function displaySuccesSubmit() {
+  function captchaPassed () {
+    const btn = form.querySelector('.btn-submit')
+    btn.disabled = false
+  }
+
+  function captchaExpired () {
+    const btn = form.querySelector('.btn-submit')
+    btn.disabled = true
+  }
+
+  function displaySuccesSubmit () {
     const btn = form.querySelector('.btn-submit')
     const originalText = btn.querySelector('.name').innerHTML
     btn.querySelector('.name').innerHTML = btn.dataset.submitMessage
@@ -120,5 +130,5 @@ const formModule = (function() {
     }, 5000)
   }
 
-  return { init }
+  return { init, captchaPassed, captchaExpired }
 })()

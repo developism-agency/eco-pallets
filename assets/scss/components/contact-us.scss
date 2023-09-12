@@ -49,6 +49,12 @@
       outline: none;
       text-align: start;
 
+      &:disabled {
+        pointer-events: none;
+        cursor: not-allowed;
+        opacity: .6;
+      }
+
       .name {
         position: relative;
         z-index: 2;

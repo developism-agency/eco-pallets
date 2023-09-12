@@ -364,8 +364,10 @@
                 </div>
               </div>
               <textarea name="message" class="message" placeholder="{{ .Params.utils.placeholders.message }}"></textarea>
+              <div id="g-recaptcha"></div>
+              <br>
               {{ $checkIcon := resources.Get "images/submit-check.png" | fingerprint }}
-              <button type="submit" class="btn-submit" id="response-form" data-submit-message="{{ .Params.utils.success }}" aria-label="Send mail">
+              <button type="submit" class="btn-submit" id="response-form" data-submit-message="{{ .Params.utils.success }}" aria-label="Send mail" disabled>
                 <span class="name">{{ .Params.utils.btns.order }}</span>
                 <span class="arrow"><img src="{{ $btnArrow.RelPermalink }}" alt=""></span>
                 <span class="check"><img src="{{ $checkIcon.RelPermalink }}" alt=""></span>
@@ -507,8 +509,9 @@
   {{ $dropdownModule := resources.Get "js/dropdownModule.js" }}
   {{ $formModule := resources.Get "js/formModule.js" }}
   {{ $itiModule := resources.Get "js/itiModule.js" }}
-  {{ $js := slice $mainJs $accordionModule $dropdownModule $formModule $itiModule | resources.Concat "js/bundle.js" | js.Build }}
+  {{ $js := slice $accordionModule $dropdownModule $formModule $itiModule $mainJs | resources.Concat "js/bundle.js" | js.Build }}
   {{ $js := $js | resources.Minify | fingerprint }}
   <script type="module" src="{{ $js.RelPermalink }}" defer></script>
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCaptchaCallback&render=explicit" async defer></script>
 </body>
 </html>
