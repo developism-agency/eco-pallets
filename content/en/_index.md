@@ -303,5 +303,6 @@ utils:
     requiredPhone: This field is required
     requiredProductType: This field is required
     invalidPhone: Phone number is incorrect
+    captchaRequired: This field is required
   success: Thank you very much! We will get back to you as soon as possible!
 ---

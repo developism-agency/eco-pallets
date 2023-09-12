@@ -311,5 +311,6 @@ utils:
     requiredPhone: Це поле обов'язкове
     invalidPhone: Номер телефону неправильний
     requiredProductType: Це поле обов'язкове
+    captchaRequired: Це поле обов'язкове
   success: Дякуємо вам! Ми зв'яжемося з вами якомога швидше!
 ---
