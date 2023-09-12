@@ -310,5 +310,6 @@ utils:
     requiredPhone: To pole jest wymagane
     requiredProductType: To pole jest wymagane
     invalidPhone: Numer telefonu jest nieprawidłowy
+    captchaRequired: To pole jest wymagane
   success: Bardzo dziękujemy! Odezwiemy się tak szybko, jak to możliwe!
 ---
