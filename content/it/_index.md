@@ -304,5 +304,6 @@ utils:
     requiredPhone: Questo campo è obbligatorio
     requiredProductType: Questo campo è obbligatorio
     invalidPhone: Il numero di telefono non è corretto
+    captchaRequired: Questo campo è obbligatorio
   success: Grazie mille! Vi risponderemo al più presto!
 ---
