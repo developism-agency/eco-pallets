@@ -4,12 +4,14 @@ const formModule = (function() {
   let phone
   let productType
   let formData
+  let captcha
 
   function init(formId) {
     form = document.querySelector(`#${formId}`)
     email = form.querySelector('[name="email"]')
     phone = form.querySelector('[name="phone_number"]')
     productType = form.querySelectorAll('[name="product_type"]')
+    captcha = form.querySelector('.g-recaptcha')
 
     setupSubmit()
   }
@@ -20,7 +22,9 @@ const formModule = (function() {
     const phoneValue = phone.value
     const productTypeValue = formData.getAll('product_type')
 
-    const validityArr = ['email', 'phone-required', 'phone-valid', 'product-type']
+    const validityArr = ['email', 'phone-required', 'phone-valid', 'product-type', 'captcha']
+
+    const captchaResponse = grecaptcha.getResponse()
 
     if (emailValue !== '' && !isEmail(emailValue)) {
       setErrorFor(email, email.dataset.messageValid)
@@ -44,6 +48,12 @@ const formModule = (function() {
       setErrorFor(productType, productType[0].dataset.messageRequired)
     } else {
       validityArr.splice(validityArr.indexOf('product-type'), 1)
+    }
+
+    if (captchaResponse.length === 0) {
+      setErrorFor(captcha, captcha.dataset.messageRequired)
+    } else {
+      validityArr.splice(validityArr.indexOf('captcha'), 1)
     }
 
     if (validityArr.length === 0) {
@@ -84,7 +94,6 @@ const formModule = (function() {
       formData = new FormData(form);
 
       if (!validateInputs()) {
-        console.log('not valid')
         return
       }
     

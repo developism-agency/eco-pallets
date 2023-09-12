@@ -166,8 +166,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   function onloadCaptchaCallback() {
     grecaptcha.render('g-recaptcha', {
       'sitekey': '6Ld8xxQoAAAAAI6A7bA38R7GJUmd2B_iw8Ub9PTY',
-      'callback': formModule.captchaPassed,
-      'expired-callback': formModule.captchaExpired,
     });
   }
 
