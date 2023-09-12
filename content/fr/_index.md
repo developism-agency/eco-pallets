@@ -319,5 +319,6 @@ utils:
     requiredPhone: Ce champ est obligatoire
     requiredProductType: Ce champ est obligatoire
     invalidPhone: Le numéro de téléphone est erroné
+    captchaRequired: Ce champ est obligatoire
   success: Merci beaucoup ! Nous reviendrons vers vous dès que possible !
 ---
