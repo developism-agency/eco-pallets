@@ -104,12 +104,12 @@ const formModule = (function() {
       const responseContainer = document.getElementById("response-form");
       
       try {
-          const response = await fetch("/.netlify/functions/submitForm", {
-              method: "POST",
-              body: JSON.stringify(body),
-          });
+          // const response = await fetch("/.netlify/functions/submitForm", {
+          //     method: "POST",
+          //     body: JSON.stringify(body),
+          // });
           
-          const data = await response.json();
+          // const data = await response.json();
           displaySuccesSubmit()
       } catch (error) {
           console.error(error);
