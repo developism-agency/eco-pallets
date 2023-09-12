@@ -189,6 +189,7 @@ collections:
                 { label: 'Телефон обов`язковий', name: 'requiredPhone', widget: 'string', i18n: true },
                 { label: 'Направильний формат номеру', name: 'invalidPhone', widget: 'string', i18n: true },
                 { label: "Тип продукту обо'язковий", name: 'requiredProductType', widget: 'string', i18n: true },
+                { label: "Капчя обо'язкова", name: 'captchaRequired', widget: 'string', i18n: true }
               ]
             }
           - { label: 'Повідомлення про відправку', name: 'success', widget: 'markdown', i18n: true, minimal: true, buttons: [] }

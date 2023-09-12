@@ -364,7 +364,7 @@
                 </div>
               </div>
               <textarea name="message" class="message" placeholder="{{ .Params.utils.placeholders.message }}"></textarea>
-              <div class="g-recaptcha error-message" data-message-required="Required">
+              <div class="g-recaptcha error-message" data-message-required="{{ .Params.utils.validation.captchaRequired }}">
                 <div id="g-recaptcha"></div>
                 <small></small>
               </div>
