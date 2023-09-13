@@ -125,6 +125,10 @@
   overflow: auto;
   transition: all .3s;
 
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
   &.active {
     bottom: 0;
   }
