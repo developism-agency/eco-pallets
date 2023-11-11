@@ -173,14 +173,12 @@
               </div>
             </div>
           </div>
-          {{ with resources.Get .Params.about.image | fingerprint }}
-            {{ $webp := .Resize (printf "%dx%d webp" .Width .Height) }}
-            <div class="about__img">
-              <picture>
-                <source srcset="{{ $webp.RelPermalink }}" type="image/webp">
-                <img src="{{ .RelPermalink }}" loading="lazy" width="{{ .Width }}" height="{{ .Height }}" alt="">
-              </picture>
-            </div>
+          {{ with resources.Get .Params.about.video | fingerprint }}
+            {{ $webm := .Resize (printf "%dx%d webm" .Width .Height) }}
+            <video autoplay muted loop playsinline preload="none" width="{{ .Width }}" height="{{ .Height }}">
+              <source src="{{ $webm.RelPermalink }}" type="video/webm">
+              <source src="{{ .RelPermalink }}" type="video/mp4">
+            </video>
           {{ end }}
         </div>
       </div>

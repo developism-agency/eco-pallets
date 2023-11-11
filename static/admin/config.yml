@@ -46,7 +46,7 @@ collections:
                 { label: 'Текст про працівників', name: 'employeesText', widget: 'string', i18n: true },
               ]
             }
-          - { label: 'Зображення', name: 'image', widget: 'image', i18n: true }
+          - { label: 'Відео', name: 'video', widget: 'file', i18n: true }
       - label: 'Продукція'
         name: 'products'
         i18n: true
