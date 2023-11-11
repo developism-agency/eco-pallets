@@ -38,6 +38,7 @@ about:
     employeesText: Liczba pracowników przedsiębiorstwa
     employeesTitle: 30+
     palletsTitle: 100 000+
+  video: /images/about-video.mp4
 products:
   title: Szeroka gama produktów i możliwość realizacji niemal każdego zamówienia
   subtitle: Naszą misją jest dostarczanie naszym klientom najlepszych rozwiązań w

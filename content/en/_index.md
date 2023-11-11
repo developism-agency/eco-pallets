@@ -36,6 +36,7 @@ about:
     employeesTitle: 30+
     palletsText: Number of produced pallets per month
     employeesText: Number of employees of the company
+  video: /images/about-video.mp4
 products:
   title: Large selection of goods and the ability to fulfill almost any order
   subtitle: Our mission is to provide our customers with the best solutions for
