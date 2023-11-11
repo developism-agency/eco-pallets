@@ -310,7 +310,7 @@
         <div class="cert__inner">
           <div class="title-label">{{ .Params.cert.label }}</div>
           <h2 class="title">{{ .Params.cert.title }}</h2>
-          {{/*  <div class="cert__list">
+          <div class="cert__list">
             <div class="cert__item">
               {{ $epalIcon := resources.Get "images/epal-icon.svg" | fingerprint }}
               <div class="img"><img src="{{ $epalIcon.RelPermalink }}" alt=""></div>
@@ -330,7 +330,7 @@
               <h3 class="title">{{ .Params.cert.list.cert3.name }}</h3>
               <a href="{{ .Params.cert.list.cert3.file.RelPermalink }}" target="_blank">{{ .Params.utils.btns.cert }}</a>
             </div>
-          </div>  */}}
+          </div>
         </div>
       </div>
     </section>
