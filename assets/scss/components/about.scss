@@ -189,7 +189,6 @@
     }
 
     &__img {
-      height: 400px;
       min-height: unset;
       margin-top: 22px;
     }
@@ -224,9 +223,6 @@
       }
     }
 
-    &__img {
-      height: 300px;
-    }
   }
 
   .text-accordion {
@@ -295,8 +291,5 @@
       }
     }
 
-    &__img {
-      height: 250px;
-    }
   }
 }
