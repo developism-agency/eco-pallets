@@ -264,9 +264,15 @@ cert:
   title: Nos palettes sont normalisées pour la certification européenne
   label: certificats
   list:
-    cert1: Certification EPAL
-    cert2: Certificat phytosanitaire
-    cert3: Expertise sanitaire et épidémiologique
+    cert1: 
+      name: Certification EPAL
+      file: /images/1.pdf
+    cert2:
+      name: Certificat phytosanitaire
+      file: /images/2.pdf
+    cert3:
+      name: Expertise sanitaire et épidémiologique
+      file: /images/3.pdf
 form:
   title: Nous écrire
   types:

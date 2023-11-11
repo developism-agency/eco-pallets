@@ -249,9 +249,15 @@ cert:
   title: Our pallets are standardized for European certification
   label: certificates
   list:
-    cert1: EPAL certification
-    cert2: Phytosanitary certificate
-    cert3: Sanitary and epidemiological expertise
+    cert1: 
+      name: EPAL certification
+      file: /images/1.pdf
+    cert2:
+      name: Phytosanitary certificate
+      file: /images/2.pdf
+    cert3:
+      name: Sanitary and epidemiological expertise
+      file: /images/3.pdf
 form:
   title: COOPERATION WITH US
   types:

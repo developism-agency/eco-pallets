@@ -256,9 +256,15 @@ cert:
   title: Nasze palety są standaryzowane zgodnie z europejską certyfikacją
   label: certyfikaty
   list:
-    cert1: Certyfikat EPAL
-    cert2: Świadectwo fitosanitarne
-    cert3: Ekspertyza sanitarno-epidemiologiczna
+    cert1: 
+      name: Certyfikat EPAL
+      file: /images/1.pdf
+    cert2:
+      name: Świadectwo fitosanitarne
+      file: /images/2.pdf
+    cert3:
+      name: Ekspertyza sanitarno-epidemiologiczna
+      file: /images/3.pdf
 form:
   title: Napisz do nas
   types:

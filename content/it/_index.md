@@ -250,9 +250,15 @@ cert:
   title: I nostri pallet sono standardizzati per la certificazione europea
   label: certificati
   list:
-    cert1: Certificazione EPAL
-    cert2: Certificato fitosanitario
-    cert3: Competenze sanitarie ed epidemiologiche
+    cert1: 
+      name: Certificazione EPAL
+      file: /images/1.pdf
+    cert2:
+      name: Certificato fitosanitario
+      file: /images/2.pdf
+    cert3:
+      name: Competenze sanitarie ed epidemiologiche
+      file: /images/3.pdf
 form:
   title: COLLABORAZIONE CON NOI
   types:

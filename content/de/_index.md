@@ -257,9 +257,15 @@ cert:
   title: Unsere Paletten sind für die europäische Zertifizierung genormt
   label: Zertifikate
   list:
-    cert1: EPAL-Zertifizierung
-    cert2: Phytosanitäres Zertifikat
-    cert3: Sanitäres und epidemiologisches Fachwissen
+    cert1: 
+      name: EPAL-Zertifizierung
+      file: /images/1.pdf
+    cert2:
+      name: Phytosanitäres Zertifikat
+      file: /images/2.pdf
+    cert3:
+      name: Sanitäres und epidemiologisches Fachwissen
+      file: /images/3.pdf
 form:
   title: ZUSAMMENARBEIT MIT UNS
   types:
