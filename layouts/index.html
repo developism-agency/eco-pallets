@@ -173,12 +173,12 @@
               </div>
             </div>
           </div>
-          {{ with resources.Get "images/about-video.mp4" | fingerprint }}
-            {{ $webm := .Resize (printf "%dx%d webm" .Width .Height) }}
-            <video autoplay muted loop playsinline preload="none" width="{{ .Width }}" height="{{ .Height }}">
-              <source src="{{ $webm.RelPermalink }}" type="video/webm">
-              <source src="{{ .RelPermalink }}" type="video/mp4">
-            </video>
+          {{ with resources.Get .Params.about.video | fingerprint }}
+            <div class="about__img">
+              <video controls autoplay muted playsinline preload="none">
+                <source src="{{ .RelPermalink }}" type="video/mp4">
+              </video>
+            </div>
           {{ end }}
         </div>
       </div>
