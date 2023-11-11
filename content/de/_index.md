@@ -37,6 +37,7 @@ about:
     employeesTitle: 30+
     employeesText: Zahl der Beschäftigten des Unternehmens
     palletsText: Anzahl der produzierten Paletten pro Monat
+  video: /images/about-video.mp4
 products:
   title: Große Auswahl an Waren und die Fähigkeit, fast jede Bestellung zu erfüllen
   subtitle: Unser Ziel ist es, unseren Kunden die besten Lösungen für die

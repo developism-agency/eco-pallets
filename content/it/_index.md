@@ -37,6 +37,7 @@ about:
     employeesTitle: 30+
     palletsText: Numero di pallet prodotti al mese
     employeesText: Numero di dipendenti dell'impresa
+  video: /images/about-video.mp4
 products:
   title: Un'ampia gamma di prodotti e la capacità di evadere quasi tutti gli ordini
   subtitle: La nostra missione è fornire ai nostri clienti le migliori soluzioni
