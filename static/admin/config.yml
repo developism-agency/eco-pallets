@@ -110,9 +110,24 @@ collections:
           - { label: 'Заголовок', name: 'title', widget: 'string', i18n: true }
           - { label: 'Сертифікати', name: 'list', widget: 'object', i18n: true,
               fields: [
-                { label: 'EPAL', name: 'cert1', widget: 'string', i18n: true },
-                { label: 'Фітосанітарний сертифікат', name: 'cert2', widget: 'string', i18n: true },
-                { label: 'Санітарно-епідеміологічна експертиза', name: 'cert3', widget: 'string', i18n: true },
+                { label: 'EPAL', name: 'cert1', widget: 'object', i18n: true, 
+                  fields: [
+                    { label: 'Назва', name: 'name', widget: 'string', i18n: true },
+                    { label: 'Посилання', name: 'file', widget: 'file', i18n: true },
+                  ]
+                },
+                { label: 'Фітосанітарний сертифікат', name: 'cert2', widget: 'object', i18n: true, 
+                  fields: [
+                    { label: 'Назва', name: 'name', widget: 'string', i18n: true },
+                    { label: 'Посилання', name: 'file', widget: 'file', i18n: true },
+                  ]
+                },
+                { label: 'Санітарно-епідеміологічна експертиза', name: 'cert3', widget: 'object', i18n: true, 
+                  fields: [
+                    { label: 'Назва', name: 'name', widget: 'string', i18n: true },
+                    { label: 'Посилання', name: 'file', widget: 'file', i18n: true },
+                  ]
+                },
               ]
             }
       - name: 'form'
@@ -173,7 +188,8 @@ collections:
                 { label: 'Наші продукти', name: 'products', widget: 'string', i18n: true },
                 { label: 'Детальніше', name: 'more', widget: 'string', i18n: true },
                 { label: 'Зробити замовлення', name: 'order', widget: 'string', i18n: true },
-                { labels: 'Показати на мапі', name: 'showOnMap', widget: 'string', i18n: true}
+                { label: 'Показати на мапі', name: 'showOnMap', widget: 'string', i18n: true},
+                { label: 'Переглянути сертифікати', name: 'cert', widget: 'string', i18n: true },
               ]
             }
           - { label: 'Шаблони для полів', name: 'placeholders', widget: 'object', i18n: true,

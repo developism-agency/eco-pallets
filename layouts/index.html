@@ -314,18 +314,21 @@
             <div class="cert__item">
               {{ $epalIcon := resources.Get "images/epal-icon.svg" | fingerprint }}
               <div class="img"><img src="{{ $epalIcon.RelPermalink }}" alt=""></div>
-              <h3 class="title">{{ .Params.cert.list.cert1 }}</h3>
+              <h3 class="title">{{ .Params.cert.list.cert1.name }}</h3>
+              <a href="{{ .Params.cert.list.cert1.file.RelPermalink }}" target="_blank">{{ .Params.utils.btns.cert }}</a>
             </div>
             <div class="divider"></div>
             <div class="cert__item">
               {{ $certIcon := resources.Get "images/cert-icon.svg" | fingerprint }}
               <div class="img"><img src="{{ $certIcon.RelPermalink }}" alt=""></div>
-              <h3 class="title">{{ .Params.cert.list.cert2 }}</h3>
+              <h3 class="title">{{ .Params.cert.list.cert2.name }}</h3>
+              <a href="{{ .Params.cert.list.cert2.file.RelPermalink }}" target="_blank">{{ .Params.utils.btns.cert }}</a>
             </div>
             <div class="divider"></div>
             <div class="cert__item">
               <div class="img"><img src="{{ $certIcon.RelPermalink }}" alt=""></div>
-              <h3 class="title">{{ .Params.cert.list.cert3 }}</h3>
+              <h3 class="title">{{ .Params.cert.list.cert3.name }}</h3>
+              <a href="{{ .Params.cert.list.cert3.file.RelPermalink }}" target="_blank">{{ .Params.utils.btns.cert }}</a>
             </div>
           </div>
         </div>
