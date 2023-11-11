@@ -250,7 +250,7 @@ cert:
   title: I nostri pallet sono standardizzati per la certificazione europea
   label: certificati
   list:
-    cert1: 
+    cert1:
       name: Certificazione EPAL
       file: /images/1.pdf
     cert2:
@@ -300,6 +300,7 @@ utils:
     more: Maggiori dettagli
     order: Effettuare un ordine
     showOnMap: Mostra sulla mappa
+    cert: Переглянути сертифікат
   placeholders:
     name: Qual è il suo nome
     email: Indirizzo e-mail

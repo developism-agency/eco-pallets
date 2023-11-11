@@ -256,7 +256,7 @@ cert:
   title: Nasze palety są standaryzowane zgodnie z europejską certyfikacją
   label: certyfikaty
   list:
-    cert1: 
+    cert1:
       name: Certyfikat EPAL
       file: /images/1.pdf
     cert2:
@@ -306,6 +306,7 @@ utils:
     more: Więcej szczegółów
     order: Złóż zamówienie
     showOnMap: Pokaż na mapie
+    cert: Переглянути сертифікат
   placeholders:
     name: Jak masz na imię?
     email: Adres e-mail

@@ -257,7 +257,7 @@ cert:
   title: Наші палети стандартизовані під європейську сертифікацію
   label: сертифікати
   list:
-    cert1: 
+    cert1:
       name: Сертифікція EPAL
       file: /images/1.pdf
     cert2:
@@ -306,6 +306,7 @@ utils:
     more: Детальніше
     order: Зробити замовлення
     showOnMap: Показати на мапі
+    cert: Переглянути сертифікат
   linkedIn: https://www.linkedin.com/company/eco-palletua/
   placeholders:
     name: Як вас звати

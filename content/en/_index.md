@@ -249,7 +249,7 @@ cert:
   title: Our pallets are standardized for European certification
   label: certificates
   list:
-    cert1: 
+    cert1:
       name: EPAL certification
       file: /images/1.pdf
     cert2:
@@ -299,6 +299,7 @@ utils:
     more: More details
     order: Make an order
     showOnMap: Show on map
+    cert: Переглянути сертифікат
   placeholders:
     name: Your name
     email: Your e-mail

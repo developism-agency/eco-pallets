@@ -264,7 +264,7 @@ cert:
   title: Nos palettes sont normalisées pour la certification européenne
   label: certificats
   list:
-    cert1: 
+    cert1:
       name: Certification EPAL
       file: /images/1.pdf
     cert2:
@@ -315,6 +315,7 @@ utils:
     more: Plus de détails
     order: Passer une commande
     showOnMap: Afficher sur la carte
+    cert: Переглянути сертифікат
   placeholders:
     name: Quel est votre nom ?
     email: Votre adresse e-mail

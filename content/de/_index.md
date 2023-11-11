@@ -257,7 +257,7 @@ cert:
   title: Unsere Paletten sind für die europäische Zertifizierung genormt
   label: Zertifikate
   list:
-    cert1: 
+    cert1:
       name: EPAL-Zertifizierung
       file: /images/1.pdf
     cert2:
@@ -307,6 +307,7 @@ utils:
     order: Bestellung aufgeben
     more: Mehr Details
     showOnMap: Auf der Karte anzeigen
+    cert: Переглянути сертифікат
   placeholders:
     name: Wie lautet Ihr Name?
     email: Ihre E-Mail Adresse
