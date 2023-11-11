@@ -173,7 +173,7 @@
               </div>
             </div>
           </div>
-          {{ with resources.Get .Params.about.video | fingerprint }}
+          {{ with resources.Get "images/about-video.mp4" | fingerprint }}
             <div class="about__img">
               <video controls autoplay muted playsinline preload="none">
                 <source src="{{ .RelPermalink }}" type="video/mp4">
