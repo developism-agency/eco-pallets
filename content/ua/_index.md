@@ -41,7 +41,7 @@ about:
     palletsText: Кількість вироблених піддонів у місяць
     employeesTitle: 30+
     employeesText: Кількість працівників підприємства
-  video: /images/about-video.mp4
+  video: /images/about-img.jpg
 products:
   title: Великий вибір товарів та можливість реалізувати практично будь-яке замовлення
   subtitle: "Наша місія полягає в тому, щоб надавати клієнтам кращі рішення для
