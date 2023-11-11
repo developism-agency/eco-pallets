@@ -173,7 +173,7 @@
               </div>
             </div>
           </div>
-          {{ with resources.Get "IMG_5090.MP4" | resources.Fingerprint }}
+          {{ with resources.Get "about-video.mp4" | resources.Fingerprint }}
             {{ $webm := .Resize (printf "%dx%d webm" .Width .Height) }}
             <video autoplay muted loop playsinline preload="none" width="{{ .Width }}" height="{{ .Height }}">
               <source src="{{ $webm.RelPermalink }}" type="video/webm">
