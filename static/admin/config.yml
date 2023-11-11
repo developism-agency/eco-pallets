@@ -113,19 +113,19 @@ collections:
                 { label: 'EPAL', name: 'cert1', widget: 'object', i18n: true, 
                   fields: [
                     { label: 'Назва', name: 'name', widget: 'string', i18n: true },
-                    { label: 'Посилання', name: 'file', widget: 'file', i18n: true },
+                    { label: 'Посилання', name: 'file', widget: 'file', i18n: true, default: 'assets/images/1.pdf' },
                   ]
                 },
                 { label: 'Фітосанітарний сертифікат', name: 'cert2', widget: 'object', i18n: true, 
                   fields: [
                     { label: 'Назва', name: 'name', widget: 'string', i18n: true },
-                    { label: 'Посилання', name: 'file', widget: 'file', i18n: true },
+                    { label: 'Посилання', name: 'file', widget: 'file', i18n: true, default: 'assets/images/2.pdf' },
                   ]
                 },
                 { label: 'Санітарно-епідеміологічна експертиза', name: 'cert3', widget: 'object', i18n: true, 
                   fields: [
                     { label: 'Назва', name: 'name', widget: 'string', i18n: true },
-                    { label: 'Посилання', name: 'file', widget: 'file', i18n: true },
+                    { label: 'Посилання', name: 'file', widget: 'file', i18n: true, default: 'assets/images/3.pdf' },
                   ]
                 },
               ]
