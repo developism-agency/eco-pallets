@@ -262,10 +262,10 @@ cert:
       file: /images/1.pdf
     cert2:
       name: Phytosanitäres Zertifikat
-      file: /images/2.pdf
+      file: /images/3.pdf
     cert3:
       name: Sanitäres und epidemiologisches Fachwissen
-      file: /images/3.pdf
+      file: /images/2.pdf
 form:
   title: ZUSAMMENARBEIT MIT UNS
   types:
