@@ -254,10 +254,10 @@ cert:
       file: /images/1.pdf
     cert2:
       name: Phytosanitary certificate
-      file: /images/2.pdf
+      file: /images/3.pdf
     cert3:
       name: Sanitary and epidemiological expertise
-      file: /images/3.pdf
+      file: /images/2.pdf
 form:
   title: COOPERATION WITH US
   types:
