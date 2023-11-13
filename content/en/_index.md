@@ -299,7 +299,7 @@ utils:
     more: More details
     order: Make an order
     showOnMap: Show on map
-    cert: Переглянути сертифікат
+    cert: View certificate
   placeholders:
     name: Your name
     email: Your e-mail
