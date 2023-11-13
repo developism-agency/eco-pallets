@@ -307,7 +307,7 @@ utils:
     order: Bestellung aufgeben
     more: Mehr Details
     showOnMap: Auf der Karte anzeigen
-    cert: Переглянути сертифікат
+    cert: Zertifikat ansehen
   placeholders:
     name: Wie lautet Ihr Name?
     email: Ihre E-Mail Adresse
