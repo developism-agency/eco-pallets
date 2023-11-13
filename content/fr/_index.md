@@ -269,10 +269,10 @@ cert:
       file: /images/1.pdf
     cert2:
       name: Certificat phytosanitaire
-      file: /images/2.pdf
+      file: /images/3.pdf
     cert3:
       name: Expertise sanitaire et épidémiologique
-      file: /images/3.pdf
+      file: /images/2.pdf
 form:
   title: Nous écrire
   types:
