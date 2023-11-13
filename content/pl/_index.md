@@ -261,10 +261,10 @@ cert:
       file: /images/1.pdf
     cert2:
       name: Świadectwo fitosanitarne
-      file: /images/2.pdf
+      file: /images/3.pdf
     cert3:
       name: Ekspertyza sanitarno-epidemiologiczna
-      file: /images/3.pdf
+      file: /images/2.pdf
 form:
   title: Napisz do nas
   types:
