@@ -306,7 +306,7 @@ utils:
     more: Więcej szczegółów
     order: Złóż zamówienie
     showOnMap: Pokaż na mapie
-    cert: Переглянути сертифікат
+    cert: Wyświetl certyfikat
   placeholders:
     name: Jak masz na imię?
     email: Adres e-mail
