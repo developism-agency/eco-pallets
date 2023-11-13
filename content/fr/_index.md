@@ -315,7 +315,7 @@ utils:
     more: Plus de détails
     order: Passer une commande
     showOnMap: Afficher sur la carte
-    cert: Переглянути сертифікат
+    cert: Voir le certificat
   placeholders:
     name: Quel est votre nom ?
     email: Votre adresse e-mail
