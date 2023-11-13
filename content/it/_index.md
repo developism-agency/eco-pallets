@@ -300,7 +300,7 @@ utils:
     more: Maggiori dettagli
     order: Effettuare un ordine
     showOnMap: Mostra sulla mappa
-    cert: Переглянути сертифікат
+    cert: Visualizza certificato
   placeholders:
     name: Qual è il suo nome
     email: Indirizzo e-mail
