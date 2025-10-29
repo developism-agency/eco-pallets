@@ -5,7 +5,7 @@ hero:
   text: "Offriamo pallet e altri prodotti in legno progettati per un'ampia gamma
     di settori: dall'industria farmaceutica e alimentare all'industria
     petrolifera e del gas o ai trasporti."
-  image: /images/hero-img.jpg
+  image: /images/3i2a3226-1-.jpg
   label: "*50+* Tipi di pallet non standard"
 about:
   title: Informazioni sull'azienda
