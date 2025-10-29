@@ -5,7 +5,7 @@ hero:
   text: "Wir bieten Paletten und andere Holzprodukte für eine Vielzahl von
     Branchen an: von der Pharma- und Lebensmittelindustrie über die Öl- und
     Gasindustrie bis hin zum Transportwesen."
-  image: /images/hero-img.jpg
+  image: /images/3i2a3226-1-.jpg
   label: "***50+*** Arten von Nicht-Standardpaletten"
 about:
   title: Über die Firma
