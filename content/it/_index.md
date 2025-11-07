@@ -255,7 +255,7 @@ cert:
       file: /images/1.pdf
     cert2:
       name: Certificato fitosanitario
-      file: /images/3.pdf
+      file: /images/13105.pdf
     cert3:
       name: Competenze sanitarie ed epidemiologiche
       file: /images/2.pdf
