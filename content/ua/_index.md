@@ -262,7 +262,7 @@ cert:
       file: /images/1.pdf
     cert2:
       name: Фітосанітарний сертифікат
-      file: /images/3.pdf
+      file: /images/3_69ff0565d845f055e9296f068a0d20f24578fa24c907b767c0ff4efe6a75b505.pdf
     cert3:
       name: Санітарно-епідеміологічна експертиза
       file: /images/2.pdf
