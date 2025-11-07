@@ -254,7 +254,7 @@ cert:
       file: /images/1.pdf
     cert2:
       name: Phytosanitary certificate
-      file: /images/3_69ff0565d845f055e9296f068a0d20f24578fa24c907b767c0ff4efe6a75b505.pdf
+      file: /images/13105.pdf
     cert3:
       name: Sanitary and epidemiological expertise
       file: /images/2.pdf
